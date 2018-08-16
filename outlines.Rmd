@@ -1,0 +1,64 @@
+---
+title: "outlines"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+```
+
+# Paper Outline 1 - assumptions
+
+* We care about process inferences.
+* There are a variety of process assumptions that sometimes go unnoticed -- they are implied by the theoretical explanation or the statistical model applied to the data. 
+* They become explicit when you try to implement the theory in a comp model.
+* They become explicit when you consider some statistical properties of repeated measures. 
+
+* Comp model principle.
+
+  + Here it is (implicitly) acknowledged in the literature during a theoretical discussion. 
+  
+    + Here are the implications. 
+    
+     
+     
+* Statistical principle.
+
+  + Here it is (implicitly) acknowledged in the literature through the model they applied.
+  
+      + Here are the implications. 
+
+
+# Paper Outline 2 - Aguinisy
+
+* We care about process inferences. To study it, to understand it, we need to be able to describe it. 
+* Lots of technical material on statistical and computational process concepts. This material is too sophisticated for students with average doctoral level graduate training.
+* We distill some concepts from the statistical and computational realms to help people grapple with process inferences. 
+
+# Paper Outline 3 - cool stuff out there 
+
+* We care about process inferences.
+* We are starting to accumulate a really cool literature on process.
+* There are other cool concepts out there, we want to make people aware of them to augment their research.
+
+# Paper outline 4 -- we aren't going to get to functional forms, but here is how you can help.
+
+* We care about process inferences.
+* Comp modelers want us to specify functional forms to get to process. This is unrealistic, and not everyone has to work at that level.
+* Instead, we want to make people aware of emerge process behavior that might result if we did know the equations. If you don't want to comp model but you are interested in process, study these things, be explicit about them, model them, and help us work backwards. 
+
+* Saying that the process is stationary doesn't give me the equations, but it does help me more than you not saying it. 
+
+* Here are some comp modeling principles, some "knowing the equations" stuff. If we knew all of this, we would get emergent process behavior.
+* Now, here are some common ways of describing this emergent process behavior. (equilibrium, feedback, stationary, random walks).
+
+# Paper outline 5 -- Process Is vs. Process Description
+
+* We care about process infernces.
+* There are many different aspects to this. Comp modelers, statistical modeling, theoretical explanations. 
+* They use different terms and call for different things.
+* We claim that knowing functional forms IS process. 
+* Everything else is just description. 
+
+* You can tell me that the variables are stationary. But that doesn't tell me what their means are over time. If you had given me the equations, stationary would or would not result. 
+

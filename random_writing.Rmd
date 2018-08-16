@@ -1,0 +1,124 @@
+---
+title: "Random_writing"
+output: html_document
+---
+
+
+## Statistical
+
+The process has a statistical property. If yes, we can make assumptions about it, use a common language to describe it, and have license to use certain models. 
+
+The more negative approach: some models assume a certain property. So if you see this model applied, they are implicitly stating that the process must adhere to the statistical property.
+
+### Stationarity
+
+#### Math
+
+The unconditional probability distribution of the observed variables does not change over time. 
+
+#### Words
+
+Each variable in the process maintains a similar mean and variance over time. The amount of sleep I get each day is a stationary process.
+
+#### Models that assume this
+
+### Random Walks
+
+#### Math
+
+Equation
+
+#### Words
+
+The process has no direction, it simly compiles error over time. The random movement of a unicellular organism through a sterile environment with no chemical gradient is a random walk. 
+
+#### Models that assume this
+
+## Cointegration
+
+## Damping 
+
+## Diffusion 
+
+
+
+
+### Markov Process
+
+The process relies only on its current state. The movement of a player across a shoots and ladders game is a markov process. 
+
+### Stochastic Volatility
+
+### Cointegration
+
+### Damping
+
+### Diffusion
+
+## Computational Modeling
+
+Things I must include in my explanation of a process to be able to run a computational model. 
+
+### Equilibrium
+
+Does the process return to baseline?
+
+### Duration
+
+For how long is my outcome affected?
+
+### Lag 
+
+How many time periods does it take for my effect to occur? 
+
+### Noise
+
+Is there error in the system, if so, where?
+
+### Variables, parameters, scales
+
+What are the variables? What are the scales of the variables? Can I meaningfully combine the variables? What are the parameters that relate the variables to one another?
+
+
+
+
+### Ando and Simon Aggregation
+
+## Sampling - the process is a sampling mechanism
+
+The process coheres to a sampling mechanism that produces a distribution. 
+
+### MCMC Sampling
+
+A process that moves through different discrete states by using an acceptance criteria to move from its current state to a randomly selected other state. A frog jumping across lilly pads is a MCMC sampling mechanism that produces the distribution of lilly pad quality. The frog compares its current pad with other pads and switches based on which one has more flies. It returns to or spends more time on higher quality pads. 
+
+### Spatial Temporal Sampling
+
+A process where units -- or agents -- are attracted to elements in their environment and therefore create aggregating patterns across time and space. Ants foraging for food show a spatial temporal sampling mechanism, where clusters of ants reveal where higher quality food sites are. 
+
+
+## Sampling - learning about distribution perspective
+
+
+## Sampling - learning about distribution perspective
+
+We can learn about the distribution that defines some system without knowing the process that generated the distribution.
+
+Is the process the distribution of food sites, or the ant behavior?
+
+### MCMC Sampling
+
+States = lilly pads
+Proposal distribution = considering other lilly pads
+Status quo = current pad
+Acceptance criteria = lilly pad fly quality
+
+Run it and you get distribution of lilly pad quality. 
+
+There is a distribution of food sites. We don't know what generated it, but we can sample it to found out its distribution. 
+
+we dont know the process that generated lilly pad quality, but we can sample it to find out its distribution. 
+we don't know the process that generated food sites, but we can sample it to find out its distribution.
+we don't know the process that generated pathogens, but we can sample them to find out their distribution.
+
+

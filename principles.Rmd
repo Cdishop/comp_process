@@ -1,0 +1,72 @@
+---
+title: "principles paried with outline 1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+```
+
+
+# Process Principles
+ 
+
+## Computational Specifics -- Things I need to know to make a process comp model
+
+### Noise
+
+Is there error in the system, if so, where?
+
+### Variables and Scales
+
+What are the variables? What are the scales of the variables?
+
+### Parameters and Functions
+
+Can I meaningfully combine the variables? What are the parameters that relate the variables to one another? What is the functional form of the relationship? This includes lag. 
+
+### Time Scale
+
+How long does the process operate for?
+
+# Paper break
+
+Now, if I know the specifics listed above, I will get emergent process behavior. What is listed below are terms that we use to describe this behavior. Terms from systems theory, and terms from the statistical modeling literature. 
+
+## Systems theory terms
+
+### Equilibrium
+
+### Cycles and Oscillations
+
+### Feedback Loops
+
+You can tell me that the process has feedback loops. But that doesn't tell me how to specify them. If you had given me the equations, feedback loops would or would not result. 
+
+### Periodicity (Monge)
+
+### Trend (Monge)
+
+### Duration (Monge)
+
+### Magnitude (Monge)
+
+## Statistical and Mathematical Terms
+
+### Stationarity
+
+You can tell me that the variables are stationary. But that doesn't tell me what their means are over time. If you had given me the equations, stationary would or would not result. 
+
+### Random Walks
+
+### Cointegration
+
+### Diffusion 
+
+### Damping
+
+### Markov Process
+
+# Conclusion
+
+It's really hard to specify the functional form of relationships. Here are some concepts to explore that help us work backwards. 
