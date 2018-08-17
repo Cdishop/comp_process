@@ -1,0 +1,36 @@
+---
+title: "principles paired with outline 1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+```
+
+
+# Process Principles
+ 
+
+## Computational
+
+### Feedback Loops
+
+### Equilibrium
+
+### Cycles and Oscillations
+
+### Duration
+
+
+## Statistical 
+
+### Stationarity
+
+### Directionality
+
+### Lag
+
+### Unobserved Heterogeneity
+
+
+

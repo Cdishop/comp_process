@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 # Paper Outline 1 - assumptions
 
 * We care about process inferences.
-* There are a variety of process assumptions that sometimes go unnoticed -- they are implied by the theoretical explanation or the statistical model applied to the data. 
+* There are a variety of process notions and assumptions that sometimes go unnoticed -- they are implied by the theoretical explanation or the statistical model applied to the data. 
 * They become explicit when you try to implement the theory in a comp model.
 * They become explicit when you consider some statistical properties of repeated measures. 
 
@@ -45,7 +45,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 * We care about process inferences.
 * Comp modelers want us to specify functional forms to get to process. This is unrealistic, and not everyone has to work at that level.
-* Instead, we want to make people aware of emerge process behavior that might result if we did know the equations. If you don't want to comp model but you are interested in process, study these things, be explicit about them, model them, and help us work backwards. 
+* Instead, we want to make people aware of emergent process behavior that might result if we did know the equations. If you don't want to comp model but you are interested in process, study these things, be explicit about them, model them, and help us work backwards. 
 
 * Saying that the process is stationary doesn't give me the equations, but it does help me more than you not saying it. 
 

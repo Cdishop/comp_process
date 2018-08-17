@@ -1,0 +1,98 @@
+---
+title: "Meeting"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+```
+
+# Take aways from last time
+
+* Listed a bunch of computational and dynamic principles.
+
+* Now try to compile them into coherent categories.
+
+* Today: some category ideas.
+
+I noticed something while I was trying to clump our principles together: we have "data generating" notions, like parameters and constants, and we have "emergent" notions, like equilibrium and stationarity. You don't need to tell me the emergent notions if you tell me the DG notions. You can tell me that the process returns to equilibrium, but if you just gave me the equations I would know that automatically. You can tell me that the process is stationary, but that doesn't give me the means over time. Now, that framing is negative, so here is an outline with that concept in mind but that makes it more positive: 
+
+# Outline 1
+
+* We care about process inferences.
+* Comp modelers want us to specify functional forms to get to process. This is unrealistic, and not everyone has to work at that level.
+* Instead, we want to make people aware of emergent process behavior that might result if we did know the equations. If you don't want to comp model but you are interested in process, study these things, be explicit about them, model them, and help us work backwards. 
+
+## Principles for outline 1
+
+### Computational
+
+* Key States
+* State Dynamics
+* Constants
+* Actions
+* Action Selection
+* Context/Environment
+* Noise
+* Time Scale
+
+### Paper Break
+
+In other words, you need to give me all of the equations and what they represent. But asking everyone to either a) comp model or b) represent their process with equations seems like a big burden. We certainly want to get there, but there must be another way for people to help. How so? By exploring some emergent process behavior that would result had I known the equations. 
+
+If I had the specifics above, I would get emergent process behavior. We think there is merit to studying this emergent behavior as a way of working backwards. You may not be able to give me the equations, but pay attention to some of the concepts that we unpack. What is listed below are terms that we use to describe this emergent behavior. Terms from systems theory and dynamics, and terms from the statistical modeling literature. 
+
+### Systems Theory and Dynamics terms
+
+* Equilibrium
+* Cycles and Oscillations
+* Feedback Loops
+* Periodicity (Monge)
+* Trend (Monge)
+* Duration (Monge)
+* Magnitude (Monge)
+
+### Statistical Terms
+
+* Autoregression
+* Unobserved Heterogeneity
+* Stationarity
+* Random Walks
+* Cointegration
+* Diffusion
+* Dampening
+* Markov Process
+
+## Conclusion
+
+It's really hard to specify the functional form of relationships. Here are some concepts to explore that help us work backwards. 
+
+# Outline 2 - principles implicit in our literature
+
+* We care about process inferences.
+* There are a variety of process notions and assumptions that sometimes go unnoticed -- they are implied by the theoretical explanation or the statistical model applied to the data. 
+* They become explicit when you try to implement the theory in a comp model.
+* They become explicit when you consider some statistical properties of repeated measures. 
+
+* Comp model principle.
+
+  + Here it is (implicitly) acknowledged in the literature during a theoretical discussion. 
+  
+    + Here are the implications. 
+    
+     
+     
+* Statistical principle.
+
+  + Here it is (implicitly) acknowledged in the literature through the model they applied.
+  
+      + Here are the implications.
+      
+## But organizing the principles is harder here
+
+* I'm constrained by finding literature examples
+* Is action selection an assumption? Is the environment an assumption? 
+
+

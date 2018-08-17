@@ -1,5 +1,5 @@
 ---
-title: "principles paried with outline 1"
+title: "principles paired with outline 4"
 output: html_document
 ---
 
@@ -13,27 +13,29 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 ## Computational Specifics -- Things I need to know to make a process comp model
 
+### Key States
+
+### State Dynamics
+
+### Constants
+
+### Actions
+
+### Action selection
+
+### Context/Environment
+
 ### Noise
-
-Is there error in the system, if so, where?
-
-### Variables and Scales
-
-What are the variables? What are the scales of the variables?
-
-### Parameters and Functions
-
-Can I meaningfully combine the variables? What are the parameters that relate the variables to one another? What is the functional form of the relationship? This includes lag. 
 
 ### Time Scale
 
-How long does the process operate for?
-
 # Paper break
 
-Now, if I know the specifics listed above, I will get emergent process behavior. What is listed below are terms that we use to describe this behavior. Terms from systems theory, and terms from the statistical modeling literature. 
+In other words, you need to give me all of the equations and what they represent. But asking everyone to either a) comp model or b) represent their process with equations seems like a big burden. We certainly want to get there, but there must be another way for people to help. How so? By exploring some emergent process behavior that would result had I known the equations. 
 
-## Systems theory terms
+If I had the specifics above, I would get emergent process behavior. We think there is merit to studying this emergent behavior as a way of working backwards. You may not be able to give me the equations, but pay attention to some of the concepts that we unpack. What is listed below are terms that we use to describe this emergent behavior. Terms from systems theory and dynamics, and terms from the statistical modeling literature. 
+
+## Systems Theory and Dynamics terms
 
 ### Equilibrium
 
@@ -52,6 +54,8 @@ You can tell me that the process has feedback loops. But that doesn't tell me ho
 ### Magnitude (Monge)
 
 ## Statistical and Mathematical Terms
+
+### Autoregression
 
 ### Stationarity
 
