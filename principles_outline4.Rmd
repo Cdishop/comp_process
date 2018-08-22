@@ -7,35 +7,30 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 ```
 
+Alternative representations of process behavior
+Representing process behavior in various ways
+The many forms of process
 
 # Process Principles
- 
 
-## Computational Specifics -- Things I need to know to make a process comp model
+# Systems Theory Terms
 
-### Key States
+# Mathematical and Statistical Ideas
+# Computational and Agent based representations
+deshon and rench 
+simon ant behavior
 
-### State Dynamics
 
-### Constants
 
-### Actions
 
-### Action selection
 
-### Context/Environment
+## Systems Theory Terms
 
-### Noise
+### Stocks 
 
-### Time Scale
+### Flows
 
-# Paper break
-
-In other words, you need to give me all of the equations and what they represent. But asking everyone to either a) comp model or b) represent their process with equations seems like a big burden. We certainly want to get there, but there must be another way for people to help. How so? By exploring some emergent process behavior that would result had I known the equations. 
-
-If I had the specifics above, I would get emergent process behavior. We think there is merit to studying this emergent behavior as a way of working backwards. You may not be able to give me the equations, but pay attention to some of the concepts that we unpack. What is listed below are terms that we use to describe this emergent behavior. Terms from systems theory and dynamics, and terms from the statistical modeling literature. 
-
-## Systems Theory and Dynamics terms
+### Accumulation
 
 ### Equilibrium
 
@@ -43,34 +38,135 @@ If I had the specifics above, I would get emergent process behavior. We think th
 
 ### Feedback Loops
 
-You can tell me that the process has feedback loops. But that doesn't tell me how to specify them. If you had given me the equations, feedback loops would or would not result. 
+Feedback loops are one or more links that eventually relate a variable to itself at a later point in time (Monge). Monge presents three common types of feedback loops. A self-loop is where a variable influences itself. A mutual causal loop represents the (nearly) simultaneous influence of two variables on each other. Finally, a standard loop represents the effects a variable has on itself through its influence on a chain of other variables. 
 
-### Periodicity (Monge)
+Stability analysis is an important aspect of dynamic systems. Maruyama (1968) introduced to the social sciences the notions of deviation amplification and deviation counteraction to represent the influence that a feedback loop has on the initial variable. Deviation counteraction is a negative feedback loop where a magnitude of change in one direction in the initial variable leads in time through the feedback loop to an eventual change in the initial variable in the opposite direction. Thus, an increase in the magnitude of X will lead eventually to a decrease in X through the subsequent influence of the other variables in the loop. Since X has changed a second time, it causes the process to repeat. However, since X decreased this time but the loop is still negative, this decrease in X leads eventually to an increase in X. This is oscillatory behavior. 
 
-### Trend (Monge)
+Deviation amplification represents a positive loop in which an initial change in a variable leads eventually to further changes in the variable in the same direction. Thus, an increase in the initial variable leads eventually to a further increase in the variable. Likewise, an initial decrease leads to a further decrease. It is of course important to find out where the system reaches stability. Blalock (1969) notes that stability is determined by the sign and magnitude of the product of the coefficients along the loop. Two general rules specify the type and stability of feedback. First, if the product of the coefficients is above zero, the feedback is positive; if below zero, the feedback is negative. Second, if the absolute value of the product is below one, the feedback is stable; if above one, the feedback is unstable (421). 
 
-### Duration (Monge)
+### Continuity (Monge)
+
+Does the variable have a consistent nonzero value through time? Zero represents the nonexistence of the variable. A continuous time variable, such as organizational climate, is typically viewed as one that always exists at some value (Joyce and Slocum, 1984). A discontinous-time variable, such as the payment of the monthly bonus in the Scanlon managagement process, is one that occurs, then does not have a value until it occurs again at the next month (Monge & Cozzens, 1987).
 
 ### Magnitude (Monge)
 
-## Statistical and Mathematical Terms
+The amount of the variable at each time point. Can be negative if the scale allows for it.
+Magnitude is eight units.
 
-### Autoregression
+### Rate of Change (Monge)
 
-### Stationarity
+How fast the magnitude increases or decreases per one unit of time. 
 
-You can tell me that the variables are stationary. But that doesn't tell me what their means are over time. If you had given me the equations, stationary would or would not result. 
+### Trend (Monge)
+
+The long term increase or decrease in the magnitude of a variable. Can be a positive or negative value. 
+There is an upward trend of two units each time the variable occurs. 
+
+### Periodicity (Monge)
+
+The amount of time that transpires between the regular repeating of the values of the variable, controlling for trend. These are essentially cycles. 
+Something happens every six time points. 
+
+### Duration (Monge)
+
+The length of time that a variable exists at some nonzero value (primarily for discontinuous time variables). How long a variable "lasts for."
+Duration of two time units. 
+
+### Summary
+
+In discontinous systems, rates of change are instant (think of a bar plot...the left line is an instant spike up to a value of 8). In continuous systems, rates of change would be "two units per time period."
+He also gets into a typology of causes and effects for a two state system: history, lag, rate of change, magnitude of change, and permanence of change (duration). These essentially overlap with what was discussed above, the difference is that you focus on them as a function of something else. X has a two unit change in magnitude that lasts for three time units (duration), and four time units later (lag) Y has a two unit change in magnitude that lasts for ten time units (duration). 
+
+## Mathematical, Statistical and Dynamic Systems Terms
+
+### A deterministic difference equation
+
+### A difference equation with a forcing term
+
+### A difference equation with a forcing term an an autoregressive coefficient
+
+Changing the parameters leads to different types of behavior.
+
+### Stochastics
 
 ### Random Walks
 
+### Stationarity
+
 ### Cointegration
 
-### Diffusion 
+### Granger Causality and Directionality
+
+X granger causes Y if Y can be better predicted by the histories of both X and Y than the history of Y alone. If lagged values of X help predict current values of Y in a forecast formed from lagged values of both X and Y, then X is said to Granger cause Y. We implement this notion by regressing eggs on lagged eggs and lagged chickens; if the coefficients on lagged chickens are significant as a group, then chickens cause eggs. A symetric regression tests the reverse causality. We perform the Granger causality tests using one to four lags. The number of lags in each equation is the same for eggs and chickens. To conclude that one of the two "came first," we must find unidirectional causality from one to the other. In other words, we must reject the noncausality of the one to the other and at the same time fail to reject the noncausality of the other to the one. If either both cause each other or neigher causes the other, the question will remain unanswered. Results reject that eggs do not Granger cause chickens. They provide no such reject of the hypothesis that chickens do not Granger cause eggs. Therefore, we conclude that eggs cause chickens. A better phrasing might be "temporally related" (Granger & Newbold, p. 225) -- Thurman and Fisher 1988 call it temporally ordered. 
+
+### Diffusion
 
 ### Damping
 
 ### Markov Process
 
-# Conclusion
 
-It's really hard to specify the functional form of relationships. Here are some concepts to explore that help us work backwards. 
+
+
+ 
+
+## Computational Specifics -- Things I need to know to make a process comp model
+
+### Key States
+
+What are the important variables? A variable is an entity that can take different values at one point in time. A state is a variable that fluctuates over time. These terms, therefore, focus on one state variable. In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
+
+We can also talk about the global state of the system as a whole -- its cumulative form. The state of the *system* describes enough about the system to determine its future behavior in the absence of any external forces affecting the system. The set of possible combinations of state variables is called the state space of a system.
+
+### State Dynamics
+
+### Constants
+
+Values that do not change over time. Usually constants occur in the coefficients, or the weights. Vancouver's comp model 2018 included a weight relating assigned goal difficulty and goal specificity to self-efficacy that did not change over time.  
+
+### Actions
+
+### Action selection
+
+### Context/Environment
+
+How is the process situated? Simon's mouse behavior environment. He defines the context in which it can move around. Things happen with respect to the environment. 
+
+### Noise
+
+Is there error in the system, if so, where?
+
+### Time Scale
+
+How long does the process operate for? How many iterations does my for loop go for?
+
+### Simple rules Simon 1956 model
+
+key states:
+
+* hunger and thirst
+
+State dynamics:
+
+* hunger and thirst increase over time because maintaining body temperature requires energy
+
+Actions used to satisfy those states:
+
+* resting, exploration, goal striving
+
+Action selection
+
+* state of hunger or third dips below a threshold, then exploration is initiated. 
+* other rules for when the rat runs into goals
+
+Environment
+
+* a space with goals within which the entity moves
+
+
+
+# Paper break
+
+In other words, you need to give me all of the equations and what they represent. But asking everyone to either a) comp model or b) represent their process with equations seems like a big burden. We certainly want to get there, but there must be another way for people to help. How so? By exploring some emergent process behavior that would result had I known the equations. 
+
+If I had the specifics above, I would get emergent process behavior. We think there is merit to studying this emergent behavior as a way of working backwards. You may not be able to give me the equations, but pay attention to some of the concepts that we unpack. What is listed below are terms that we use to describe this emergent behavior. Terms from systems theory and dynamics, and terms from the statistical modeling literature. 
