@@ -7,9 +7,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 ```
 
-Alternative representations of process behavior
-Representing process behavior in various ways
-The many forms of process
 
 # Process Principles
 
@@ -21,20 +18,33 @@ deshon and rench
 simon ant behavior
 
 
-
+dynamics: the behavior of stocks and flows over time (meadows 18). Imagine a bathtub filled with water, with its drain plugged up and its facets turned off -- an unchanging, undynamic, boring system (18). 
 
 
 ## Systems Theory Terms
 
-### Stocks 
+### Stocks and Flows
 
-### Flows
+A stock is a store, a quantity, an accumulation of material or information that has built up over time. It may be the water in a bathtub, a population, the books in a bookstore, the wood in a tree, the money in a bank, your own self confidence. A stock does not have to be physical. Your reserve of good will toward others or your supply of hope that the world can be better are both stocks (meadows 18). 
 
-### Accumulation
+Stocks change over time through the actions of flows. Flows are filling and draining, births and deaths, purchases and sales, growth and decay, deposits and withdrawals, successes and failures. A stock, then, is the present memory of the history of changing flows within the system (meadows 18). 
 
-### Equilibrium
+* As long as the sum of all inflows exceeds the sum of all outflows, the level of the stock will rise.
+* As long as the sum of all outflows exceeds the sum of all inflows, the level of the stock will fall.
+* If the sum of all outflows equals the sum of all inflows, the stock level will not change; it will be held in dynamic equilibrium at whatever level it happened to be when teh two sets of flows became equal (22).
 
-### Cycles and Oscillations
+A stock can be increased by decreasing its outflow rate as well as by increasing its inflow rate (22).
+Stocks generally change slowly, even when the flows into or out of them change suddenly. Therefore, stocks act as delays or buffers or shock absorbers in systems (23). 
+
+all 23
+People often underestimate the inherent momentum of a stock. It takes a long time for populations to grow or stop growing, for wood to accumulate in a forest, for a reservoir to fill up, for a mine to be depleted. An economy cannot build up a large stock of functioning factories and highways and electric plants overnight, even if a lot of money is available. Once an economy has a lot of oil-burning furnaces and automobile engines, it cannot change quickly to furnaces and engines that burn on a different fuel, even if the price of oil suddenly changes. It has taken decades to accumulate the stratospheric pollutants that destroy the earth's ozone layer; it will take decades for those pollutants to be removed.
+Changes in stocks set the pace of the dynamics of the systems. Industrialization cannot proceed faster than the rate at which factories and machines can be constructed and the rate at which human beings can be educated to run and maintain them. Forests can't grow overnight. Once contaminates have accumulated in groundwater, they can be washed away only at the rate of groundwater turnover, which may take decades or even centuries. 
+The time lags that come from slowly changing stocks can cause problems in systems, but they also can be sources of stability. Soil that has accumulated over centuries rarely erodes all at once. A population that has learned many skills doesn't forget them immediately. You can pump groundwater faster than the rate it recharges for a long time before the aquifier is drawn down far enough to be damaged. The time lags imposed by stocks allow room to maneuver, to experiment, and to revise policies that aren't working. 
+
+Stocks allow the inflows and outflows to be decoupled and to be independent and temporarily out of balance with each other (24). 
+
+Balancing feedback loops are equilibrating or goal-seeking structures in systems and are both sources of stability and sources of resistance to change (30).
+Reinforcing feedback loops are self-enhancing, leading to exponential growth or to runaway collapses over time. They are found whenever a stock has the capacity to reinforce or reproduce itself (32).
 
 ### Feedback Loops
 
@@ -43,6 +53,10 @@ Feedback loops are one or more links that eventually relate a variable to itself
 Stability analysis is an important aspect of dynamic systems. Maruyama (1968) introduced to the social sciences the notions of deviation amplification and deviation counteraction to represent the influence that a feedback loop has on the initial variable. Deviation counteraction is a negative feedback loop where a magnitude of change in one direction in the initial variable leads in time through the feedback loop to an eventual change in the initial variable in the opposite direction. Thus, an increase in the magnitude of X will lead eventually to a decrease in X through the subsequent influence of the other variables in the loop. Since X has changed a second time, it causes the process to repeat. However, since X decreased this time but the loop is still negative, this decrease in X leads eventually to an increase in X. This is oscillatory behavior. 
 
 Deviation amplification represents a positive loop in which an initial change in a variable leads eventually to further changes in the variable in the same direction. Thus, an increase in the initial variable leads eventually to a further increase in the variable. Likewise, an initial decrease leads to a further decrease. It is of course important to find out where the system reaches stability. Blalock (1969) notes that stability is determined by the sign and magnitude of the product of the coefficients along the loop. Two general rules specify the type and stability of feedback. First, if the product of the coefficients is above zero, the feedback is positive; if below zero, the feedback is negative. Second, if the absolute value of the product is below one, the feedback is stable; if above one, the feedback is unstable (421). 
+
+
+### Equilibrium
+
 
 ### Continuity (Monge)
 
@@ -62,7 +76,7 @@ How fast the magnitude increases or decreases per one unit of time.
 The long term increase or decrease in the magnitude of a variable. Can be a positive or negative value. 
 There is an upward trend of two units each time the variable occurs. 
 
-### Periodicity (Monge)
+### Periodicity (Monge) Cycles and Oscillations
 
 The amount of time that transpires between the regular repeating of the values of the variable, controlling for trend. These are essentially cycles. 
 Something happens every six time points. 
@@ -145,10 +159,11 @@ How long does the process operate for? How many iterations does my for loop go f
 key states:
 
 * hunger and thirst
+* It is easier to think of these as stocks: food and water.
 
 State dynamics:
 
-* hunger and thirst increase over time because maintaining body temperature requires energy
+* The body requires energy, so the food and water stocks decrease over time (i.e., hunger and thirst increase)
 
 Actions used to satisfy those states:
 
@@ -156,12 +171,30 @@ Actions used to satisfy those states:
 
 Action selection
 
-* state of hunger or third dips below a threshold, then exploration is initiated. 
-* other rules for when the rat runs into goals
+* If the food and water stocks are above threshold, the agent rests
+* When the stock of any need dips below threshold, the agent explores
 
+* During exploration
+    + agent randomly runs into objects. If they encounter a single object relevant to one of the needs, the agent acquires it
+    + If the agent encounters two or more need-relevant objects, they evoke a simple ratio to make a decision 
+        * compare energy required to meet the need (M) to the storage capacity with respect to the need (S)
+        * or the effort required to get the object to how large the stock for this need is. Super large stocks take precedence
+        
 Environment
 
 * a space with goals within which the entity moves
+* the individual is located in an environment that contains spatially distributed goal-relevant objects such as sources of food and water (239).
+* the size of the food and water stocks are determined by the availability of the resources in the environment. Water is easier to come by than food and so food storage requirements are greater. Similarly, breathable air is easier to obtain than water and so its storage requirements are less than both food and water (239). 
+
+
+Key
+* Dynamics of the environment
+  + position of goal-relevant objects in the environments changes and new goal objects appear as the agent moves
+* Internal dynamics
+  + internal states change and decay over time
+* To understand behavior you need to know internal agent dynamics and the distribution of goal-relevant objects in the environment
+
+### Simon explanation of behavior
 
 
 

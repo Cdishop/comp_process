@@ -1,0 +1,91 @@
+---
+title: "intro"
+output: pdf_document
+---
+
+Alternative representations of process behavior
+Representing process behavior in various ways
+The many forms of explaining a process
+
+# bliese hook
+* discontinuities are everywhere
+* examples and models
+* here is an additional discontinuity model to augment what you are doing
+
+# aguinis hook
+* we care about A
+* there is a large technical literature on A
+* your average phd doesn't get the training to understand it
+* we review and bring it down to earth for people to understand
+
+# monge
+* we care about process and dynamic theories
+* but longitudinal research is scarce and most explanations are not dynamic
+* we lack the conceptual tools
+* most empirical studies are cross sectional
+* we present a framework for the development of dynamic theories. The framework should also lead to improvements in longitudinal research
+
+
+# Ours short
+* we care about explaining how a process functions
+
+* there are many ways to do this. there are alternative representations
+
+* sometimes these alternative ways can go unnoticed. Different literatures; different words; sophisticated math at some points. 
+
+* we want to describe 
++ augment
++ reduce sophistication of math
++ allow people to speak about process at whatever level they please. Sometimes people claim that mathematical representations are the only route, the only thing that merits the term theory (Pearl), and others want all computational modeling (Vancouver). Although it can be helpful to do so, it seems unrealistic that everyone is going to do this. So here are different ways of exploring process and dynamic behavior. 
+
+* systems theory
+* math and stats
+* computational
+
+
+## Math required quotes
+
+Pearl 2009: Any conception of causation worthy of the title "theory" must be able to (1) represent causal questions in some mathematical language, (2) provide a precise language for communicating assumptions under which the questions need to be answered, (3) provide a systematic way of answering at least some of these questions and labeling others "unanswerable", and (4) provide a method of determining what assumptions or new measurements would be needed to answer the "unanswerable" questions. (p 102)
+
+Vancouver 2010 formal comp model. Without formal (i.e., computational) theory, it can be difficult to (a) understand what theorists are specifically trying to say (i.e., informal theories can be ambiguous) and b) understand how behavior will play out over time (i.e., prediction without external supports such as simulation software is difficult when theory or phenomenon exhibit nonlinearities). In contrast, computational models explicitly describe the nature of relationships proposed and, if dynamic, allow researchers to observe the behavior that emerges as the theorized system interacts with its environment. p. 986
+
+Vancouver 2010 jom. some theoretical ideas might not lend themselves to computational representations or might require math that is so arcane as to limit the audience of the theory. p. 788 Computational models are merely a form of a theory. 
+
+mathematics is the language of science. This maxim is taken seriously in the physical sciences, but it has been taken less seriously in the social sciences (Adner, Polos, Ryall, & Sorenson, 2009; Harrison, Lin, Carroll, & Carley, 2007). SO SOCIAL SCIENTISTS ARE NOT GOING TO MAKE EVERYTHING MATHEMATICAL. 
+
+Vancouver 2012. Very few computational modelers in our field. SO NOT EVERYONE IS GOING TO COMPUTATIONAL MODEL. Computational models are algorithmic descriptions of process details (Sun, 2008), typically operationalized as computer programs (Taber & Timpone, 1996). As such, the provide a more precise, transparent, and internally consistent approach to theorizing (Adner et al., 2009). p. 602 - 603. Nearly all recent theories in organizational science are informal, probably due to the richness of natural language and the fact that it is our default mode of communication p. 604. 
+So computational models help because we cannot understand dynamic relationships over time. Our paper is about helping people even acknowledge what dynamic behavior is. 
+
+
+
+ron sun. computational models present process details using algorithmic descriptions. Mathematical models present relationships between variables using mathematical equations. Verbal-conceptual models describe entities, relations, and processes in natural languages. 
+
+Simon explanation of behavior. difference equation or computer program. Have to have laws that act on the current state endlessly. 
+
+## we care about explaining process quotes
+
+early 1990s we started to become interested in dynamic processes (Monge 1990; Box and Jenkins, 1976; Mohr, 1982; Monge et al., 1984) p. 406. and an increasing emphasis on longitudinal research. This growing emphasis on dynamic processes is important because is has the potential to significantly alter and improve our fundamental knowledge about organizations p. 407. 
+
+Theorists state that they are interested in developing dynamic or process theories (Hannan & Freeman, 1977; Markus & Robey, 1988; Mohr, 1982; Tushman & Romanelli, 1985). 
+
+Have to pay attention to when things occur (Mitchell and James 2001)
+
+People advocate taking a temporal lens (Shipp 2015). 
+
+Recent effort in organizational psychology and organizational behavior (OPOB) research has placed increasing emphasis on understanding dynamic phenomena and processes that are critical for worker well-being and productivity. These include self-regulation processes (Vancouver et al., 2014), workplace emotions and emotional labor (Beal et al., 2013; Gabrield & Diefendorff, 2015), workpjlace stress and well-being (Fuller et al., 2003; Sonnnentag, 2015; Wang et al., 2013), job search (Liu et al., 2014; Wanberg et al., 2012), and newcomer adjustment (Kammeyer-Mueller et al., 2013). In addition, the study of dynamic phenomena and processes has also made important progress in team science, especially in terms of understanding the development of team emergent states (Dionne et al., 2010; Kozlwoski & Chao, 2012). Temporal issues is one of the most popular quantitative topics covered by ORM (Aguinis et al., 2009). Wang dynamic review p. 242.
+
+Emphasis on dynamics is growing: self-regulatory processes (Louro, Pieter, & Zeelenberg, 2007), depression (Hankin, Fraley, & Abela, 2005), workplace emotions (Bono, Foldes, Vinson, & Muros, 2007), workplace stress (Fuller et al., 2003), and organizational performance (Short, Ketchen, Bennett, & duToit, 2006). p. 117
+Research interests in dynamic processes is increasing exponentially. A topic search for the terms dynamic and dyanmics in Thomson's Web of Science, social scienc database yielded over 81,996 hits over the period covered from 1956 to 2009. An examination of the frequency of the topic by year indicates that itnerest in dynamic process is growing exponentially. Prior to 1990, the topic of dynamics occurred at a rate of approximately 100 to 600 per year, growing slowly but steadily over the 34-year span from 1956 to 19990. In the late 1990s, dynamics was an increasingly popular article topic, yielding a steady increase of hits from 621 in 1990 to 3031 in 1999. This rate continued to increase from 3,132 in 2000 to 7,299 in 2009. Rick multiavariate 2012
+
+Ployhart vandenberg 2010. It is safe to say that most theories in the organizational sciences are either explicitly or implicitly longitudinal in nature. Lack of longitudinal studies. little guidance on how one addresses the conceptual issues of a longitudinal study. design stuff important .analysistcal stuff important. We integarate the theoretical, methodological, and analytical issues associated with longitudinal data analysis for those wishing to design or evaluate longitudinal research. 
+
+
+# Our long
+
+ployhart and vandenberg: concepts, methods, and analyses of longitudinal data. 
+Our paper: different explanations of process phenomenon. 
+
+
+
+
+
