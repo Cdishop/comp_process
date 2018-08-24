@@ -5,7 +5,7 @@ output: pdf_document
 
 Alternative representations of process behavior
 Representing process behavior in various ways
-The many forms of explaining a process
+The many forms of explaining process
 
 # bliese hook
 * discontinuities are everywhere
@@ -42,6 +42,21 @@ The many forms of explaining a process
 * math and stats
 * computational
 
+ANOTHER OPTIONS
+
+* we care about explaining how a process functions
+
+* there are many ways to do this. there are alternative representations
+
+* sometimes these alternative ways can go unnoticed. Different literatures; different words; sophisticated math at some points. 
+
+* Moreover, some people have preferences as to what explanations should actually entail.
++ Pearl says it has to have math
++ Vancouver says a computational representation would be nice
+
+* But it seems like a huge burden to ask everyone to use math or make a computational model. Our field has few comp models. Our field doesn't play by the maxim of math like they do in the physical sciences.
+
+* there are many ways of explaining how a process functions, we want to 
 
 ## Math required quotes
 
@@ -83,10 +98,33 @@ ployhart pitariu. Theory building in organizational sciences has moved from the 
 
 # Our long
 
-ployhart and vandenberg: concepts, methods, and analyses of longitudinal data. 
-Our paper: different explanations of process phenomenon. 
+* we care about explaining how a process functions
+
+* there are many ways to do this. there are alternative representations
+
+* we want to describe 
++ augment
++ reduce sophistication of math
++ allow people to speak about process at whatever level they please. Sometimes people claim that mathematical representations are the only route, the only thing that merits the term theory (Pearl), and others want all computational modeling (Vancouver). Although it can be helpful to do so, it seems unrealistic that everyone is going to do this. Renee Thom qualitative theory can be just as helpful; there is room for informal theory. So here are different ways of exploring process and dynamic behavior. 
+
+* there are similar papers out there. ployhart and vandenberg: concepts, design, and analyses of longitudinal data (how to actually run a longitudinal study). pitarius and ployhartd: how to propose dynamic hypotheses. Our paper: different explanations of process phenomenon.
+
+* systems theory
+* math and stats
+* computational
 
 
+We -- organizational psychologists -- are increasingly interested in process and dynamic phenomena. This interest covers many content areas, including emotional labor [@bono2007; @beal2015; @gabriel2015], workplace stress and well-being [@ritter2016; @wang2014], organizatiional performance [@short2006], self-regulation [@hardy2018], newcomer adjustment [@kammeyer-meuller2013], justice and trust [@kaltianinen2017], leadership [@farh2018; @schaubroeck2016; @kalish2016], decision-making [@huang2012], team performance [@humphrey2017], counterproductive work behaviors [@meier2013], work-family conflict [@matthews2014], job satisfaction [@zablah2016], and team emergent states [@kozlowski2012]. 
+use of the term dynamics is growing in empirical studies
+number of time points in longitudinal studies is growing
+increasing emphasis on methods for longitudianl data analysis
+reviews on dynamic models, time, and how to propose dynamic hypotheses
+in summary, explaining how a process functions appears to be of great interest to current organizational science. 
 
+There are many ways to do so -- alternative representations that we might use when we want to describe sequences of events and their relationships. Just as different statistical models can be used to draw the same inference from data given the appropriate assumptions about the data generating process, we can use different forms of explanation to describe process. For example, Bandura [-@bandura] and Kuwabara et al. [-@kuwabara2018], respectively, explain self regulation and lay beliefs about networking with verbal theories, @denrell2009 presents a mathematical explanation of social impressions, and @vancouver2014 employ both mathematical and computational approaches to explain self-regulation. People use different labels for these strategies -- for example, qualitative versus quantitative [@thom1067] or computational, mathematical, and verbal [@son2008] -- but the point is that researchers describe process in various ways. Moreover, each approach contains terms and principles that researchers use to explain and understand what they are describing. 
 
+In this paper, we point out these principles and terms and discuss the different ways researchers explain process. We provide several contributions in doing so. First, we believe our discussion will help researchers augment their current approach to explaining process. It can be helpful to be exposted to different approaches, provide ideas etc., and we hope our paper provides new ideas to seasoned researchers in this area. Second, some of the principles are technical and sophisticated and may not transfer well to researchers with graduate-level training. The literature on the principles is technical and hard to follow. Much of this work is not easily accessible to researchers with the usual methodological and statistical background obtained from doctoral level training in managemenet; we want to help distill it. Finally, we want to point out ways to study process for researchers who may not want to want to develop sophisticated math or computational models. Some people claim that math is the only option. For example, Pearl (2009) states that any explanation "worthy of the title theory must be able to represent causal questions in some mathematical language" (p. 102). There is also some pressure to produce computational theories. For example, VANCOUVER COMP MODELS ARE BETTER; AND KOZLOWSKI COMP FRAMEWORKS ARE BETTER.
+But there are not many comp modelers in organizational psychology VANCOUVER ORM; and the social sciences do not emphasize mathematics as much as some of the more physical sciences (vancouver point out cites). Moreoever, Renee Thom points out that sometimes qualitative representations produce more error than their quantitative counterparts but nonetheless are better clues to the underlying process. We are not interested in claiming that one approach is better or worse than another; we want to describe process principles from different domains to give researchers alternative ways of talking about, specifying, and representing process behavior. 
+
+Below, we do these things. There are other excellent papers on aspects that we will not cover. Ployhart and Vandenberg discuss how to design and analyze a longitudinal study, Pitariu and Ployhart how to propose dynamic hypotheses, and Wang provides an overview of dynamic statistical models. In this paper, conversely, we focus solely on principles researchers use when they explain process. 
 
