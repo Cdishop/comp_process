@@ -1,0 +1,51 @@
+---
+title: "intro"
+output: pdf_document
+---
+
+We -- organizational psychologists -- are increasingly interested in process and dynamic phenomena. Longitudinal studies are becoming more prevalent in our literature and the number of time points they employ appears to be growing [@xu2018]. The empirical literature uses the term "dynamics" at an expoentially larger rate every year [@deshon2012]. A majority of published methods literature now focuses on longitudinal data analysis [@aguinis2009], and there are now many great reviews on the conceptual and methodological issues related to process and dynamics [@wang2016; @beal2015; @shipp2015; @mitchell2001]. Moreover, this interest covers many content areas, including emotional labor [@bono2007; @beal2015; @gabriel2015], workplace stress and well-being [@ritter2016; @wang2014], organizatiional performance [@short2006], self-regulation [@hardy2018], newcomer adjustment [@kammeyer-meuller2013], justice and trust [@kaltianinen2017], leadership [@farh2018; @schaubroeck2016; @kalish2016], decision-making [@huang2012], team performance [@humphrey2017], counterproductive work behaviors [@meier2013], work-family conflict [@matthews2014], job satisfaction [@zablah2016], and team emergent states [@kozlowski2012]. In summary, explaining how a process functions appears to be of great interest to current organizational science. 
+
+There are many ways to do so -- alternative representations that we might use when we want to describe sequences of events and their relationships. Just as different statistical models can be used to draw the same inference from data given the appropriate assumptions about the data generating process, we can use different forms of explanation to describe process. For example, Bandura [-@bandura] and Kuwabara et al. [-@kuwabara2018], respectively, explain self regulation and lay beliefs about networking with verbal theories, @denrell2009 presents a mathematical explanation of social impressions, and @vancouver2014 employ both mathematical and computational approaches to explain self-regulation. People use different labels for these strategies -- for example, qualitative versus quantitative [@thom1067] or computational, mathematical, and verbal [@son2008] -- but the point is that researchers describe process in various ways. Moreover, each approach contains terms and principles that researchers use to explain and understand what they are studying.  
+
+In this paper, we point out these principles and discuss the different ways researchers explain process. Our discussion will move across literature that uses verbal, mathematical, and computational explanations. These are all ways to represent relationships over time at different levels of abstraction. For example, we could use a difference equation to explain the trajctory of one variable over time, or we could use terms like autoregression, cycles, or periodicity that describe the same emergent behavior but in a different way. 
+
+We provide several contributions in doing so. First, we believe our discussion will help researchers augment their current approach to explaining process. It can be helpful to be exposed to different approaches, provide ideas etc., and we hope our paper provides new ideas to seasoned researchers in this area. Second, some of the principles are technical and sophisticated and may not transfer well to researchers with graduate-level training. The literature on the principles is technical and hard to follow. Much of this work is not easily accessible to researchers with the usual methodological and statistical background obtained from doctoral level training in managemenet; we want to help distill it. Finally, we want to point out ways to study process for researchers who may not want to want to develop sophisticated math or computational models. Some people claim that math is the only option. For example, Pearl (2009) states that any explanation "worthy of the title theory must be able to represent causal questions in some mathematical language" (p. 102). There is also some pressure to produce computational theories. For example, VANCOUVER COMP MODELS ARE BETTER; AND KOZLOWSKI COMP FRAMEWORKS ARE BETTER.
+But there are not many comp modelers in organizational psychology VANCOUVER ORM; and the social sciences do not emphasize mathematics as much as some of the more physical sciences (vancouver point out cites). Moreoever, Renee Thom points out that sometimes qualitative representations produce more error than their quantitative counterparts but nonetheless are better clues to the underlying process. We do not claim that one approach is better or worse than another; we simply want to describe process principles from different domains to give researchers alternative ways of talking about, specifying, and representing process behavior. 
+
+Below, we do these things. There are other excellent papers on aspects that we will not cover. Ployhart and Vandenberg discuss how to design and analyze a longitudinal study, Pitariu and Ployhart how to propose dynamic hypotheses, and Wang provides an overview of dynamic statistical models. In this paper, conversely, we focus solely on principles researchers use when they explain process. 
+
+# What is process
+
+## Dymamics
+
+The system has memory. The past has memory. 
+Monge: "In most forms of dynamic analysis it is essential to know how variables depend unpon their own past history" p. 409
+Wang: "A dynamic model can be defined as a representation of a system that evolves over time. In particular it describes how the system evolves from a given state at time *t* to another state at time *t + 1* as goverened by the transition rules and potential external inputs." p. 242
+Vancouver 2012 orm. "Dynamic variables behave as if they have memory; that is, their value at any one time depends somewhat on their previous value." p. 604
+pitariu and ployhart. "A dynamic relationship is defined as a longitudinal relationship between two variables" p. 406 -- but this doesn't say anything about memory
+
+## Longitudinal and Change
+
+PLoyhart and Vandenberg. "Longitudinal research emphasizes the study of change and contains at minimum three repeated observations on at least one of the substantive constructs of interest" p. 97. Notice that they emphasize change. "an emphasis on change permits researchers to capture two important characteristics of change: a) within-unit change across time, or growth trajectories, and b) interunit differences in change that can be either predicted or used for prediction" p. 97
+
+Notice that ployhart tends to align with the growth modeling literature, where the modes of exploration are:
+
+Baltes and nesselraode 1979
+*identify intra-individual change
+  + how *i* changes over time
+*identify interindividual differences in intra-individual change
+  + how Julie changes over time is different from how Tom changes over time
+*interrelationships of change
+  + similarities and differences in change on two or more variables
+*determinants of intra-individual change
+  + predicting intercepts and slopes
+*determinants of inter-individual differences in intra-invididual change
+  + predict individual differences in intercepts and slopes
+
+"The study of phenomena in their time-related constancy and change is the aim of longitudinal methodology" baltes and nesselroade 1979
+
+## Process
+
+things that happen over time. Mememory may or may not matter...but it usually does. Change -- and by change I mean non-stationary -- may or may not happen.
+Process is about trajectories. What is the behavior of the trajectory? What is the system of trajectories? How are they related?
+
