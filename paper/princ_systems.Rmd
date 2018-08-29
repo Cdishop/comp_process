@@ -7,6 +7,8 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 ```
 
+when I finished writing last time I was thinking about how to make this a "number of variables" sectioned paper. One variable over time: multiple variables over time and their influence
+
 # Systems Theory Principles
 
 * stocks and flows
@@ -35,33 +37,130 @@ The behavior of a stock -- whether it rises, falls, or remains the same -- depen
 
 \noindent In other words, stocks change with respect to the summative properties of their flows. Stocks also set the pace for the dynamics of the system. Even when flows are changing rapidly, the stock may change slowly because accumulation occurred over a long period of time. 
 
-## Transition to Monge
+Figure 1 plots a simple stock and flow system over 20 time periods. 
 
-Now imagine stock and flow behavior on a time series plot over time. How do we describe the patterns we see over time? We have identified stocks and flows, we have labeled them, now we want to describe the trajectories to help us explain the process. Look to monge.
+```{r, echo = F}
+set.seed(4)
 
-Monge 1990 provides an excellent framework for describing trajectories. These include trend, magnitude, rate of change, and periodicity and are shown in the figure below.
+time <- 20
+into <- 5
+outof <- 5
+df_mat <- matrix(, ncol = 4, nrow = time)
+count <- 0
 
-![](fig_monge1.png)
+for(i in 1:time){
+  count <- count + 1
+  
+  if(i == 1){
+    
+    df_mat[count, 1] <- i
+    df_mat[count, 2] <- 5
+    df_mat[count, 3] <- 5
+    df_mat[count, 4] <- df_mat[count, 2] - df_mat[count, 3]
+  }else if (i < 11){
+    
+  df_mat[count, 1] <- i
+  df_mat[count, 2] <- into + (i * 0.5)
+  df_mat[count, 3] <- outof
+  df_mat[count, 4] <- df_mat[count, 2] - df_mat[count, 3]
+
+        
+  }else{
+    
+  df_mat[count, 1] <- i
+  df_mat[count, 2] <- into
+  df_mat[count, 3] <- outof + (i * 0.3)
+  df_mat[count, 4] <- df_mat[count, 2] - df_mat[count, 3]
+    
+  }
+
+  
+}
+
+df <- data.frame(df_mat)
+names(df) <- c('Time', 'Inflow', 'Outflow', 'Stock')
+library(tidyverse)
+
+df <- df %>%
+  gather(Inflow, Outflow, Stock, key = 'Variable', value = 'Value')
+
+library(ggplot2)
+plot1 <- ggplot(df, aes(x = Time, y = Value, color = Variable)) + 
+  geom_point() + 
+  geom_line()
+
+plot1
+
+```
+
+\noindent Beginning at time zero, inflows are equal to outflows and the stock therefore sits at zero. Over the first ten time points, however, outflows remain the same whereas inflows increase. With inflows exceeding outflows the stock also increases up until time point ten. At this time, inflows drop back down to five whereas outflows increase -- leading to a large reduction in the stock. As outflows continue to rise over time with no counterbalancing movement from the inflow, the stock ultimately decreases. 
+
+### Transition to Monge
+
+Systems theory uses stocks and flows as general labels for each of the things in the system. Above, we described the behavior of the stocks and flows with simple terms -- increasing, decreasing, or constant. Systems theory also provides a more systematic way of describing trajectories and explaining behavior over time. These are unpacked in an excellent paper by Monge 1990, and the framework includes trend, magnitude, rate of change, and periodicity. Each of these is shown respectively in figure two. 
+
+![](figs/fig_monge1.png)
+
+![](figs/fig_monge2.png)
+
 
 ## Trend
+
+Dividing figure two into two portions -- the top and bottom -- reveals differences in trend. All of the panels on the top of figure two have trend, whereas those on the bottom do not. Trend is the systematic increase or decrease of a variable over time. People might say things like, "there is an \{upward, positive, increasing} trend in variable $x$ over time."
 
 
 The long term increase or decrease in the magnitude of a variable. Can be a positive or negative value. 
 There is an upward trend of two units each time the variable occurs. 
 
 
-## Continuity
-
-Does the variable have a consistent nonzero value through time? Zero represents the nonexistence of the variable. A continuous time variable, such as organizational climate, is typically viewed as one that always exists at some value (Joyce and Slocum, 1984). A discontinous-time variable, such as the payment of the monthly bonus in the Scanlon managagement process, is one that occurs, then does not have a value until it occurs again at the next month (Monge & Cozzens, 1987).
-
 ## Magnitude
+
+Magnitude is the level, value, or amount of the variable at each time point -- the number on the $y$ axis at each respective point in time. For example, in panel *C* of figure two the magnitude is low at times 1, 2, and 3, but is high at later points in time. Additionally, panel *E* and *F* have the same magnitude if we average their values over time, but panel *E* contains both high and low magnitude, whereas the magnitude for the trajectory in panel *F* remains relatively constant.
+
+NOTICE THAT MY EXPLANATION IS DIFFERENT FROM HIS LABELS -- WHICH I DON'T LIKE. Figure 3 shows a more systematic depiction but I don't think it is as useful; people won't get it right away.
+
+
+## Rate of Change
+
+Monge refers to rate of change as "How fast the magnitude increases or decreases per one unit of time." Keep in mind this is a different notion from how "change" is used in the growth modeling statistical literature. Panels *G* and *H* reveal differences in rates of change. 
+
+## Periodicity; Cycles; Oscillations
+
+Periodicity is the amount of time before a pattern repeats itself, and it is equivalent to terms like cycles or oscillations. The most important piece about periodicity is that it must be couched with "controlling for trend." Notice that panel *A* is periodic because, after controlling for trend, there are repeated patterns over time. People would use phrases like "something happens every six time points."
+
+## Feedback loops - not sure where to put this. Maybe nowhere
+
+## Equilibrium
+
+could do this with two variables
+
+## Summary
+
+These terms describe trajectory behavior over time for each variable in the system. 
+
+great paper; go read about it
+duration; how to talk about things that relate to one another like lags.
+how two things influence one another
+
+
+
+the behavior of the trajectories of each variable in the system over time. 
+
+
+
+The amount of time that transpires between the regular repeating of the values of the variable, controlling for trend. These are essentially cycles. 
+Something happens every six time points. 
+
 
 The amount of the variable at each time point. Can be negative if the scale allows for it.
 Magnitude is eight units.
 
-## Rate of Change
 
-How fast the magnitude increases or decreases per one unit of time. 
+## Continuity
+
+Does the variable have a consistent nonzero value through time? Zero represents the nonexistence of the variable. A continuous time variable, such as organizational climate, is typically viewed as one that always exists at some value (Joyce and Slocum, 1984). A discontinous-time variable, such as the payment of the monthly bonus in the Scanlon managagement process, is one that occurs, then does not have a value until it occurs again at the next month (Monge & Cozzens, 1987).
+
+
 
 
 
