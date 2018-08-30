@@ -1,0 +1,138 @@
+---
+title: "princ_math"
+output: pdf_document
+---
+
+# Mathematical, Statistical and Dynamics Principles
+
+## Difference Equations
+
+In mathematics, a basic representation of a process over time is a difference equation: 
+
+\begin{equation}
+\label{basicD}
+y = y_{t - 1}
+\end{equation}
+
+\noindent where the value of $y$ is the same at each $t$, and the emergent behavior would be a flat line across time. In systems theory terms, there would be no trend. 
+
+Although equation \ref{basicD} seems simple, it introduces a fundamental concept in dynamics: memory. The variable now depends on where it was in the past. It is constrained, there are boundaries on where it can go.
+
+As we add terms to this basic difference equation the behavior of the variable becomes more complex. Adding a forcing constant, *c* in equation \ref{basicD} produces positive or negative trend depending on whether *c* is, respectively, positive or negative. For example, the following equation:
+
+\begin{equation}
+\begin{split}
+\label{diffC}
+y &= y_{t-1} + c \\ 
+c &= -4
+\end{split}
+\end{equation}
+
+\noindent produces a line that decreases by four units at each time point. 
+
+The next level of complexity comes from autoregressive terms, which represent the extent to which the variable relates to itself over time. Here:
+
+\begin{equation}
+\begin{split}
+\label{diffA}
+y &= a y_{t-1} \\ 
+a &= 0.5
+\end{split}
+\end{equation}
+
+\noindent the variable is described over time but it does not retain the same value at each $t$. Instead, the variable is *similar* over time and the autoregressive term, $a$, describes the extent of that similarity. In equation \ref{diffA}, $a$ is 0.5, meaning that the relationship between the variable now and itself at the next time point will be 0.5.
+
+There are fundamental behaviors of dynamic variables based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of a variable with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and oscillating chaos when $a$ is negative. When the autoregressive term falls between zero and one, conversely, the variable converges to equilibrium -- shown in the bottom two panels. Either the variable oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). 
+
+```{r, echo = F, fig.cap = "something here\\label{dynamics_plot}", cache = T}
+
+time <- 20
+df_mat <- matrix(, ncol = 5, nrow = time)
+countit <- 1
+
+df_mat[countit, 1] <- 1
+df_mat[countit, 2] <- 10
+df_mat[countit, 3] <- 10
+df_mat[countit, 4] <- 10
+df_mat[countit, 5] <- 10
+
+for(i in 2:time){
+  countit <- countit + 1
+  
+  df_mat[countit, 1] <- i
+  df_mat[countit, 2] <- 1.5*df_mat[countit - 1, 2]
+  df_mat[countit, 3] <- -1.5*df_mat[countit - 1, 3]
+  df_mat[countit, 4] <- 0.5*df_mat[countit - 1, 4]
+  df_mat[countit, 5] <- -0.5*df_mat[countit - 1, 5]
+
+  
+}
+
+df <- data.frame(df_mat)
+names(df) <- c('Time', 'a_1', 'a_2', 'a_3', 'a_4')
+title1 <- paste(0, '|', ('a'), '|', '<', 1)
+title2 <- (paste('|', ('a'), '|', '>', 1))
+
+
+library(tidyverse)
+df <- df %>%
+  gather(starts_with('a'), key = 'variable', value = 'value') %>%
+  mutate(auto_valence = case_when(
+    variable == 'a_1' ~ 'Positive a',
+    variable == 'a_2' ~ 'Negative a',
+    variable == 'a_3' ~ 'Positive a',
+    variable == 'a_4' ~ 'Negative a'
+  )) %>%
+  mutate(auto_value = case_when(
+    variable %in% c('a_1', 'a_2') ~ title2,
+    variable %in% c('a_3', 'a_4') ~ title1
+  ))
+
+ggplot(df, aes(x = Time, y = value)) + 
+  geom_point() + 
+  geom_line() + 
+  facet_grid(auto_value ~ auto_valence,
+             scales = 'free_y') +
+  theme_classic() + 
+  theme(axis.ticks = element_blank(),
+                axis.text = element_blank()) + 
+  ylab(NULL)
+  
+
+
+
+```
+
+\begin{center}
+
+---------------
+
+Insert Figure \ref{dynamics_plot} Here
+
+---------------
+
+\end{center}
+
+## Equilibrium
+
+Equilibrium, then, describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems. In these contexts, equilibrium again means that the state remains constant unless disturbed by an outside force, but here it refers to the state of the entire system (i.e., all of the variables). In *static* equalibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
+
+Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of food available for the bobcats also goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. This back and forth oscillating pattern between variables describes a dynamic equilibrium. 
+
+## Stochastics
+
+## Random Walks
+
+## Stationarity
+
+## Cointegration
+
+## Granger Causality and Directionality
+
+X granger causes Y if Y can be better predicted by the histories of both X and Y than the history of Y alone. If lagged values of X help predict current values of Y in a forecast formed from lagged values of both X and Y, then X is said to Granger cause Y. We implement this notion by regressing eggs on lagged eggs and lagged chickens; if the coefficients on lagged chickens are significant as a group, then chickens cause eggs. A symetric regression tests the reverse causality. We perform the Granger causality tests using one to four lags. The number of lags in each equation is the same for eggs and chickens. To conclude that one of the two "came first," we must find unidirectional causality from one to the other. In other words, we must reject the noncausality of the one to the other and at the same time fail to reject the noncausality of the other to the one. If either both cause each other or neigher causes the other, the question will remain unanswered. Results reject that eggs do not Granger cause chickens. They provide no such reject of the hypothesis that chickens do not Granger cause eggs. Therefore, we conclude that eggs cause chickens. A better phrasing might be "temporally related" (Granger & Newbold, p. 225) -- Thurman and Fisher 1988 call it temporally ordered. 
+
+## Diffusion
+
+## Damping
+
+## Markov Process
