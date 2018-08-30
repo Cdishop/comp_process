@@ -3,6 +3,13 @@ title: "intro"
 output: pdf_document
 ---
 
+sys theory
+math
+
+comp models in computer
+I could just put these things into the computer. direct code like a difference equation. but there are other properties that become apparent when you do so. here they are.
+
+
 We -- organizational psychologists -- are increasingly interested in process and dynamic phenomena. Longitudinal studies are becoming more prevalent in our literature and the number of time points they employ appears to be growing [@xu2018]. The empirical literature uses the term "dynamics" at an expoentially larger rate every year [@deshon2012]. A majority of published methods literature now focuses on longitudinal data analysis [@aguinis2009], and there are now many great reviews on the conceptual and methodological issues related to process and dynamics [@wang2016; @beal2015; @shipp2015; @mitchell2001]. Moreover, this interest covers many content areas, including emotional labor [@bono2007; @beal2015; @gabriel2015], workplace stress and well-being [@ritter2016; @wang2014], organizatiional performance [@short2006], self-regulation [@hardy2018], newcomer adjustment [@kammeyer-meuller2013], justice and trust [@kaltianinen2017], leadership [@farh2018; @schaubroeck2016; @kalish2016], decision-making [@huang2012], team performance [@humphrey2017], counterproductive work behaviors [@meier2013], work-family conflict [@matthews2014], job satisfaction [@zablah2016], and team emergent states [@kozlowski2012]. In summary, explaining how a process functions appears to be of great interest to current organizational science. 
 
 There are many ways to do so -- alternative representations that we might use when we want to describe sequences of events and their relationships. Just as different statistical models can be used to draw the same inference from data given the appropriate assumptions about the data generating process, we can use different forms of explanation to describe process. For example, Bandura [-@bandura] and Kuwabara et al. [-@kuwabara2018], respectively, explain self regulation and lay beliefs about networking with verbal theories, @denrell2009 presents a mathematical explanation of social impressions, and @vancouver2014 employ both mathematical and computational approaches to explain self-regulation. People use different labels for these strategies -- for example, qualitative versus quantitative [@thom1067] or computational, mathematical, and verbal [@son2008] -- but the point is that researchers describe process in various ways. Moreover, each approach uses its own terms and principles to represent the phenomenon.
@@ -48,4 +55,5 @@ Baltes and nesselraode 1979
 
 things that happen over time. Mememory may or may not matter...but it usually does. Change -- and by change I mean non-stationary -- may or may not happen.
 Process is about trajectories. What is the behavior of the trajectory? What is the system of trajectories? How are they related?
+Explain the behavior of how things happen over time. Causal or non causal. What is the sequence of events. What happens?
 

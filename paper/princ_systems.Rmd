@@ -106,75 +106,43 @@ Systems theory uses stocks and flows as general labels for each of the things in
 
 ## Trend
 
-Dividing figure two into two portions -- the top and bottom -- reveals differences in trend. All of the panels on the top of figure two have trend, whereas those on the bottom do not. Trend is the systematic increase or decrease of a variable over time. People might say things like, "there is an \{upward, positive, increasing} trend in variable $x$ over time."
-
-
-The long term increase or decrease in the magnitude of a variable. Can be a positive or negative value. 
-There is an upward trend of two units each time the variable occurs. 
-
+Dividing figure two into two portions -- the top and bottom -- reveals differences in trend. All of the panels on the top of figure two have trend, whereas those on the bottom do not. Trend is the systematic increase or decrease of a variable over time. 
 
 ## Magnitude
 
 Magnitude is the level, value, or amount of the variable at each time point -- the number on the $y$ axis at each respective point in time. For example, in panel *C* of figure two the magnitude is low at times 1, 2, and 3, but is high at later points in time. Additionally, panel *E* and *F* have the same magnitude if we average their values over time, but panel *E* contains both high and low magnitude, whereas the magnitude for the trajectory in panel *F* remains relatively constant.
 
-NOTICE THAT MY EXPLANATION IS DIFFERENT FROM HIS LABELS -- WHICH I DON'T LIKE. Figure 3 shows a more systematic depiction but I don't think it is as useful; people won't get it right away.
-
-
 ## Rate of Change
 
-Monge refers to rate of change as "How fast the magnitude increases or decreases per one unit of time." Keep in mind this is a different notion from how "change" is used in the growth modeling statistical literature. Panels *G* and *H* reveal differences in rates of change. 
+Monge refers to rate of change as "How fast the magnitude increases or decreases per one unit of time." Panels *G* and *H* reveal differences in rates of change. 
 
 ## Periodicity; Cycles; Oscillations
 
-Periodicity is the amount of time before a pattern repeats itself, and it is equivalent to terms like cycles or oscillations. The most important piece about periodicity is that it must be couched with "controlling for trend." Notice that panel *A* is periodic because, after controlling for trend, there are repeated patterns over time. People would use phrases like "something happens every six time points."
+Periodicity is the amount of time before a pattern repeats itself, and it is equivalent to terms like cycles or oscillations. The most important piece about periodicity is that it must be couched with "controlling for trend." Notice that panel *A* is periodic because, after controlling for trend, there are repeated patterns over time.
 
-## Feedback loops - not sure where to put this. Maybe nowhere
+# Now two variables
 
-## Equilibrium
+It is of course possible to combine these notions when researchers are studying processes with more than one variable. For example, a researcher might describe the magnitude in their presumed dependent variable with respect to the magnitude of their independent variable, or the rates of change across the system of variables. When we become interested in describing relationships between the system of variables, however, a few other terms are needed.
 
-could do this with two variables
+## Lags
+
+How long does it take for the presumed independent variable to produce an effect on the outcome? This is the notion of lag.
+
+## Permanence
+
+The other side of what we just talked about: once the effect happens, how long does it last?
+
+## Feedback Loops
+
+Systems theory researchers often put feedback loops as a central component to their discussion or analysis. This idea is also a common explanation in our own literature. Feedback loops describe processes where a variable eventually relates back to itself. For example, EXAMPLE HERE. 
+
+Researchers often focus on the behavior that results as a function of this feedback. When feedback causes the variable to move in the opposite direction than it initially moved, this is known as negative feedback, deviation counteraction, or a balancing feedback loop [@monge; @meadows]. Here, an initial increase in $x$ leads to subsequent changes in the system that, through time, eventually cause $x$ to decrease. Now that $x$ has gone down, more changes happen in the system that, through time, eventually cause $x$ to increase. 
+
+When feedback, instead, causes the variable to move in the same direction that it initially moved, this is known as postive feedback, deviation ampliciation, or a reinforcing feedback loop [@monge; @meadows]. Here, changes in $x$ in one direction lead to eventual changes in $x$ in the same direction and thus produce exponential, explosive, or amplifying behavior. 
 
 ## Summary
 
-These terms describe trajectory behavior over time for each variable in the system. 
+These notions are valuable tools to explain process. Note that we did not cover everything to keep the reading concise and consistent. For example, @monge also covers discontinuous systems, so please refer to his excellent paper for an even deeper discussion. 
 
-great paper; go read about it
-duration; how to talk about things that relate to one another like lags.
-how two things influence one another
+Now we turn to math.
 
-
-
-the behavior of the trajectories of each variable in the system over time. 
-
-
-
-The amount of time that transpires between the regular repeating of the values of the variable, controlling for trend. These are essentially cycles. 
-Something happens every six time points. 
-
-
-The amount of the variable at each time point. Can be negative if the scale allows for it.
-Magnitude is eight units.
-
-
-## Continuity
-
-Does the variable have a consistent nonzero value through time? Zero represents the nonexistence of the variable. A continuous time variable, such as organizational climate, is typically viewed as one that always exists at some value (Joyce and Slocum, 1984). A discontinous-time variable, such as the payment of the monthly bonus in the Scanlon managagement process, is one that occurs, then does not have a value until it occurs again at the next month (Monge & Cozzens, 1987).
-
-
-
-
-
-## Periodicity; Cycles; Oscillations
-
-The amount of time that transpires between the regular repeating of the values of the variable, controlling for trend. These are essentially cycles. 
-Something happens every six time points. 
-
-### Duration
-
-The length of time that a variable exists at some nonzero value (primarily for discontinuous time variables). How long a variable "lasts for."
-Duration of two time units. 
-
-### Summary
-
-In discontinous systems, rates of change are instant (think of a bar plot...the left line is an instant spike up to a value of 8). In continuous systems, rates of change would be "two units per time period."
-He also gets into a typology of causes and effects for a two state system: history, lag, rate of change, magnitude of change, and permanence of change (duration). These essentially overlap with what was discussed above, the difference is that you focus on them as a function of something else. X has a two unit change in magnitude that lasts for three time units (duration), and four time units later (lag) Y has a two unit change in magnitude that lasts for ten time units (duration). 
