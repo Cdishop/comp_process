@@ -15,8 +15,6 @@ One common approach to explaining how things happen over time is to identify sto
 
 \noindent That last sentence is what makes a stock imply behavior over time. We speak about stocks by both referring to what they contain right now but also how they have developed and where they are likely to go. Also note that stocks do not have to change.
 
-Many organizational phenomena can be viewed as combinations of stocks and flows. Stocks: Affect [@sonnentag], helping behaviors, depletion, number of customers, justice perceptions, work-family conflict. Flows: turnover, stressful events, goal assignments. Sometimes the same thing can be expressed as both a stock and a flow, depending on how the researcher abstracts the situation. For example, the number of work tasks could be a stock, where it increases when we are given more assignments and decreases when we finish them. Or it could be a flow that leads into something like stress. 
-
 The behavior of a stock -- whether it rises, falls, or remains the same -- depends on the nature of flows. We can learn about stock behavior by subtracting outflows from inflows. Doing so leads to three general principles about stocks. They will [@cronin2008]:
 
 1. rise when inflows exceed outflows
@@ -97,9 +95,9 @@ plot1
 
 ```
 
-\noindent Beginning at the first time point, inflows are equal to outflows and the stock therefore sits at zero. Over the first ten time points, however, outflows remain the same whereas inflows increase. With inflows exceeding outflows the stock also increases up until time point ten. At this time, inflows drop back down to five whereas outflows increase -- leading to a large reduction in the stock. As outflows continue to rise over time with no counterbalancing movement from the inflow, the stock ultimately decreases. 
+\noindent Beginning at the first time point, inflows are equal to outflows and the stock therefore sits at zero. Over the first ten time points, however, outflows remain the same whereas inflows increase. With inflows exceeding outflows the stock also increases up until time point ten. At this time, inflows drop back down to five whereas outflows increase -- leading to a large reduction in the stock. As outflows continue to rise over time -- with no counterbalancing movement from the inflow -- the stock ultimately decreases. 
 
-Systems theory uses stocks and flows as general labels for each of the things in the system. Above, we described the behavior of the stocks and flows with simple terms -- increasing, decreasing, or constant. Systems theory also provides a more systematic way of describing trajectories and explaining behavior over time. These are unpacked in an excellent paper by Monge (1990), and the framework includes trend, magnitude, rate of change, and periodicity. Each of these is shown respectively in figure \ref{monge}. 
+Systems theory uses stocks and flows as general labels for each of the things in the system. Above, we described the behavior of the stocks and flows with simple terms -- increasing, decreasing, or constant. Systems theory also provides a more systematic way of describing trajectories and explaining behavior over time. These are unpacked in an excellent paper by Monge (1990), and the framework includes trend, magnitude, rate of change, and periodicity. These are shown respectively in figure \ref{monge}. 
 
 ```{r, echo = F, fig.cap = 'something else\\label{monge}'}
 
@@ -120,7 +118,7 @@ Insert Figure \ref{monge} Here
 
 ## Trend
 
-Dividing figure two into two portions -- the top and bottom -- reveals differences in trend. All of the panels on the top of figure two have trend, whereas those on the bottom do not. Trend is the systematic increase or decrease of a variable over time. 
+Dividing figure \ref{monge} into two portions -- the top and bottom -- reveals differences in trend. All of the panels on the top of the figure have trend, whereas those on the bottom do not. Trend is the systematic increase or decrease of a variable over time. 
 
 ## Magnitude
 
@@ -153,6 +151,10 @@ Systems theory researchers often convey process by using feedback loops. This id
 There are two common ways to describe the behavior of a focal variable within a feedback loop. When feedback causes the variable to move in the opposite direction than it initially moved, this is known as negative feedback, deviation counteraction, or a balancing feedback loop [@monge; @meadows]. Here, an initial increase in $x$ leads to subsequent changes in the system that, through time, eventually cause $x$ to decrease. Now that $x$ has gone down, more changes happen in the system that, through time, eventually cause $x$ to increase. 
 
 When feedback, instead, causes the variable to move in the same direction that it initially moved, this is known as postive feedback, deviation ampliciation, or a reinforcing feedback loop [@monge; @meadows]. Here, changes in $x$ in one direction lead to eventual changes in $x$ in the same direction and thus produce exponential, explosive, or amplifying behavior. Of course, we can also identify whether there is positive or negative feedback for every variable in the system.
+
+## Example
+
+Literature example of someone using these terms to explain something.
 
 ## Summary
 

@@ -2,7 +2,7 @@
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{compile_cp_files/figure-latex/unnamed-chunk-4-1.pdf}
+\includegraphics{figs/unnamed-chunk-4-1.pdf}
 \caption{\label{fig:unnamed-chunk-4}something\label{stocks}}
 \end{figure*}
 \begin{figure*}[hbt]
@@ -14,6 +14,13 @@
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{compile_cp_files/figure-latex/unnamed-chunk-6-1.pdf}
+\includegraphics{figs/unnamed-chunk-6-1.pdf}
 \caption{\label{fig:unnamed-chunk-6}something here\label{dynamics_plot}}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{figs/unnamed-chunk-7-1.pdf}
+\caption{\label{fig:unnamed-chunk-7}another\label{noise}}
 \end{figure*}
