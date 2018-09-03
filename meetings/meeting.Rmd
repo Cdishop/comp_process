@@ -11,88 +11,56 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 # Take aways from last time
 
-* Listed a bunch of computational and dynamic principles.
+* Feeling good about principles. 
 
-* Now try to compile them into coherent categories.
+* Today: writing structure and questions.
 
-* Today: some category ideas.
 
-I noticed something while I was trying to clump our principles together: we have "data generating" notions, like parameters and constants, and we have "emergent" notions, like equilibrium and stationarity. You don't need to tell me the emergent notions if you tell me the DG notions. You can tell me that the process returns to equilibrium, but if you just gave me the equations I would know that automatically. You can tell me that the process is stationary, but that doesn't give me the means over time. Now, that framing is negative, so here is an outline with that concept in mind but that makes it more positive: 
+# Question 1
 
-# Outline 1
+* Current form: systems theory, math, comp. 
 
-* We care about process inferences.
-* Comp modelers want us to specify functional forms to get to process. This is unrealistic, and not everyone has to work at that level.
-* Instead, we want to make people aware of emergent process behavior that might result if we did know the equations. If you don't want to comp model but you are interested in process, study these things, be explicit about them, model them, and help us work backwards. 
-
-## Principles for outline 1
-
-### Computational
-
-* Key States
-* State Dynamics
-* Constants
-* Actions
-* Action Selection
-* Context/Environment
-* Noise
-* Time Scale
-
-### Paper Break
-
-In other words, you need to give me all of the equations and what they represent. But asking everyone to either a) comp model or b) represent their process with equations seems like a big burden. We certainly want to get there, but there must be another way for people to help. How so? By exploring some emergent process behavior that would result had I known the equations. 
-
-If I had the specifics above, I would get emergent process behavior. We think there is merit to studying this emergent behavior as a way of working backwards. You may not be able to give me the equations, but pay attention to some of the concepts that we unpack. What is listed below are terms that we use to describe this emergent behavior. Terms from systems theory and dynamics, and terms from the statistical modeling literature. 
-
-### Systems Theory and Dynamics terms
-
-* Equilibrium
-* Cycles and Oscillations
-* Feedback Loops
-* Periodicity (Monge)
-* Trend (Monge)
-* Duration (Monge)
-* Magnitude (Monge)
-
-### Statistical Terms
-
-* Autoregression
-* Unobserved Heterogeneity
-* Stationarity
-* Random Walks
-* Cointegration
-* Diffusion
-* Dampening
-* Markov Process
-
-## Conclusion
-
-It's really hard to specify the functional form of relationships. Here are some concepts to explore that help us work backwards. 
-
-# Outline 2 - principles implicit in our literature
-
-* We care about process inferences.
-* There are a variety of process notions and assumptions that sometimes go unnoticed -- they are implied by the theoretical explanation or the statistical model applied to the data. 
-* They become explicit when you try to implement the theory in a comp model.
-* They become explicit when you consider some statistical properties of repeated measures. 
-
-* Comp model principle.
-
-  + Here it is (implicitly) acknowledged in the literature during a theoretical discussion. 
-  
-    + Here are the implications. 
+    + No distinction between observed data and dgp like we spoke about last time. If I do:
+        
+        + Process in the observed data
+        
+              * Trend, magnitude, periodicity, stationary, growth, change, cointegration, granger causality
+        
+        + Process in the dgp - math
+        
+              * difference equations and stochastics
+              
+        + Process in the dgp - comp
+        
+              * as is
+              * would people argue that the simon model is not a dgp?
+              
+        + where would equilibrium or feedback loops go?
     
-     
-     
-* Statistical principle.
+    + As I read the paper this idea was the only thing on my mind...but that is because we discuss it so much. Would it be on others?
+              
+              
+# Question 2
 
-  + Here it is (implicitly) acknowledged in the literature through the model they applied.
-  
-      + Here are the implications.
-      
-## But organizing the principles is harder here
+* Examples at end of each section rather than within each principle
 
-* I'm constrained by finding literature examples
-* Is action selection an assumption? Is the environment an assumption? 
+# Question 3
+
+* How to beef up each principle section without pointing to examples
+
+# Some thoughts about intro
+
+* Positive emphasis on all of the things we can do
+
+    + Science is not about devising hugely complex descriptions of the world. It is about devising descriptions that illuminate the world and make it comprehensible (life's other secret)
+    
+* Funness in explaining at different points of emphasis
+
+    + This is an approach I have elsewhere called 'long zoom' history: the attempt to explain historical chnage by simultaneously examining multiple scales of experience -- from the vibrations of sound waves on the eardrum all the way out to mass political movements (six innovations). We wouldn't make this argument -- but a "you can do this stuff from different angles and it can be helpful" argument.
+    
+* Process is more than mediation.
+
+    + BTW, do we need to discuss mediation?
+    
 
 

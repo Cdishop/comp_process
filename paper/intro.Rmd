@@ -29,21 +29,14 @@ PLoyhart and Vandenberg. "Longitudinal research emphasizes the study of change a
 
 Notice that ployhart tends to align with the growth modeling literature, where the modes of exploration are:
 
-Baltes and nesselraode 1979
-*identify intra-individual change
-  + how *i* changes over time
-*identify interindividual differences in intra-individual change
-  + how Julie changes over time is different from how Tom changes over time
-*interrelationships of change
-  + similarities and differences in change on two or more variables
-*determinants of intra-individual change
-  + predicting intercepts and slopes
-*determinants of inter-individual differences in intra-invididual change
-  + predict individual differences in intercepts and slopes
+* intra-individual change
+* interindividual differences in intra-individual change
+* interrelationships of change
+* determinants of intra-individual change
+* determinants of inter-individual differences in intra-individual change
 
-"The study of phenomena in their time-related constancy and change is the aim of longitudinal methodology" baltes and nesselroade 1979
+\noindent "The study of phenomena in their time-related constancy and change is the aim of longitudinal methodology" baltes and nesselroade 1979.
 
 ## Process
 
-things that happen over time. Mememory may or may not matter...but it usually does. Change -- and by change I mean non-stationary -- may or may not happen.
-Process is about sequences of events and trajectories. What is the behavior of the variables and the system over time? What happens? Explain how things happen over time. Causal or non causal. 
+Things that happen over time. Mememory may or may not matter...but it usually does. Change -- and by change I mean non-stationary -- may or may not happen. Process is about sequences of events and trajectories. What is the behavior of the variables and the system over time? What happens? Explain how things happen over time. Causal or non causal. 

@@ -3,14 +3,13 @@ title: "princ_comp"
 output: pdf_document
 ---
 
-In our prior discussions we cared about describing and explaining behavior over time. The emphasis was on what people are used to: verbal descriptions, plots, and math. There has recently been a push to comp model. These people are trying to do the same thing, but represent their process in a computer. 
+# Computational Principles
 
-Think of it this way. Above, we were representing process on graphs, through equations, and through terms. To do so required certain principles. When we want to describe something in a computer language we also need certain principles: certain requirements about how we explain the process. 
+Above, we described and explained behavior over time by using representations most people are familiar with: verbal descriptions, plots, and math. There has recently been a push to comp model. These people are trying to do the same thing, but represent their process in a computer. 
+
+Think of it this way. Above, we represented process on graphs, through equations, and through terms. To do so required certain principles. When we want to describe something in a computer language we also need certain principles: certain requirements or fundamentals about how we explain the process. 
 
 Vancouver has pointed out some of these. He framed them as difficult pieces to putting stuff into code.
-
-
-# Computational Principles
 
 ## Key States
 
@@ -42,20 +41,22 @@ How long does the process operate for? How many iterations does my for loop go f
 
 ## Example: Simon 1956
 
-key states:
+### key states:
 
 * hunger and thirst
 * It is easier to think of these as stocks: food and water.
 
-State dynamics:
+### State dynamics:
 
 * The body requires energy, so the food and water stocks decrease over time (i.e., hunger and thirst increase)
 
-Actions used to satisfy those states:
+### Actions
 
-* resting, exploration, goal striving
+* these actions satisfy the state dynamics
 
-Action selection
+    + resting, exploration, goal striving
+
+### Action selection
 
 * If the food and water stocks are above threshold, the agent rests
 * When the stock of any need dips below threshold, the agent explores
@@ -66,18 +67,12 @@ Action selection
         * compare energy required to meet the need (M) to the storage capacity with respect to the need (S)
         * or the effort required to get the object to how large the stock for this need is. Super large stocks take precedence
         
-Environment
+### Environment
 
 * a space with goals within which the entity moves
 * the individual is located in an environment that contains spatially distributed goal-relevant objects such as sources of food and water (239).
 * the size of the food and water stocks are determined by the availability of the resources in the environment. Water is easier to come by than food and so food storage requirements are greater. Similarly, breathable air is easier to obtain than water and so its storage requirements are less than both food and water (239). 
 
-
-Key
-* Dynamics of the environment
-  + position of goal-relevant objects in the environments changes and new goal objects appear as the agent moves
-* Internal dynamics
-  + internal states change and decay over time
-* To understand behavior you need to know internal agent dynamics and the distribution of goal-relevant objects in the environment
-
 ## Summary
+
+

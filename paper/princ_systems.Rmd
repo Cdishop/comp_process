@@ -101,7 +101,7 @@ Systems theory uses stocks and flows as general labels for each of the things in
 
 ```{r, echo = F, fig.cap = 'something else\\label{monge}'}
 
-knitr::include_graphics('figs/fig_monge1.png')
+knitr::include_graphics('figs/fig_monge1.png', size = 5)
 
 ```
 
@@ -146,7 +146,7 @@ Once the effect happens, how long does it last?
 
 ## Feedback Loops
 
-Systems theory researchers often convey process by using feedback loops. This idea is also becomming common in our own litearture. Feedback loops describe processes where a variable eventually relates back to itself. For example, EXAMPLE HERE.
+Systems theory researchers often convey process by using feedback loops. Feedback loops describe processes where a variable eventually relates back to itself.
 
 There are two common ways to describe the behavior of a focal variable within a feedback loop. When feedback causes the variable to move in the opposite direction than it initially moved, this is known as negative feedback, deviation counteraction, or a balancing feedback loop [@monge; @meadows]. Here, an initial increase in $x$ leads to subsequent changes in the system that, through time, eventually cause $x$ to decrease. Now that $x$ has gone down, more changes happen in the system that, through time, eventually cause $x$ to increase. 
 
@@ -154,7 +154,7 @@ When feedback, instead, causes the variable to move in the same direction that i
 
 ## Example
 
-Literature example of someone using these terms to explain something.
+People from our literature using these terms and principles to explain something. 
 
 ## Summary
 

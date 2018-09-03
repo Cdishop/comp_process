@@ -115,18 +115,15 @@ Insert Figure \ref{dynamics_plot} Here
 
 ## Equilibrium
 
-Equilibrium, then, describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems. In these contexts, equilibrium again means that the state remains constant unless disturbed by an outside force, but here it refers to the state of the entire system (i.e., all of the variables). In *static* equalibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
+Equilibrium, then, describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems. In these contexts, equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equalibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
 
 Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. This back and forth oscillating pattern between variables describes a dynamic equilibrium. The variables change and there may be random disturbances to the system across time, but the net dynamics of the system remain stable. 
 
 ## System of Equations
 
-To incorporate effects I can use a system of equations. Note that this gets me lags as well.
+A difference equation with X influencing Y -- now I have lags represented in math. A difference equation with X influencing Y and Y influencing X -- now I have a feedback loop represented in a difference equation. I may also get priodicity, trend, and equilibrium -- we could work that out analytically but it is easier just to graph it. 
 
-EquationY
-EquationX
-
-Our route so far has been deterministic. That is, the mathematical representations do not contain error. Conveying that the underlying process -- the data generating mechanism -- contains error presents us with a host of additional principles.
+Our route so far has been deterministic -- the mathematical representations do not contain error. When we want to convey that the underlying process -- the data generating mechanism -- contains error we can consider a host of additional principles. 
 
 ## Stochastics
 
@@ -137,7 +134,7 @@ Stochastics, stated simply, refers to processes with error. Consider our simple 
 y_{t} = a y_{t-1} + c + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but $e_{t}$ represents an error component that is incorporated into $y$ at each time point. Errors cause $y$ to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push $y$ to a higher value, and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors, and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
+\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into $y$ at each time point. Errors cause $y$ to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push $y$ to a higher value, and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors, and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
 
 It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs." An aggregation of randomness is a normal distribution.
 
@@ -171,7 +168,7 @@ c &= 0
 
 Random walks and white noise are error processes over time. White noise processes fluctuate randomly, whereas random walks fluctuate randomly while retaining some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. 
 
-```{r, echo = F, fig.cap='another\\label{noise}'}
+```{r, echo = F, fig.cap='this one will be a white noise process and a random walk\\label{noise}'}
 
 set.seed(5)
 
@@ -181,43 +178,15 @@ plot(rnorm(10,0,1) ~ rnorm(10,0,1))
 
 Now that we have added the conept of error our focus changes from the exact values of variables over time to their distributions.  
 
-## Stationarity
+## Stationary
 
-Stationary is a term that describes the properties of a process. If a process is stationary, its mean and variance are stable -- they are similar across all $t$. 
-
-Modeling techniques make assumptions about the data generating process they attempt to capture, and a key assumption in dynamic models is stationarity, or the stability of properties in a time series. Stationarity subsumes two requirements: mean stationarity, which refers to a series with a constant mean, and variance stationary, which refers to a series with a constant variance. Almost all dynamic models used in the organizational literature are stationary models and assume the data they model are realizations of a stationary process. In simple terms, this means that we expect the properties (mean and variance) of a time series at time $t$ to be the same at time $t+1$. 
-
-In general, we are interested in the relationships between one or more time series or panel trajectories. Acknowleding stationarity is critical for analyzing these relationships because two series that are non-stationary will be related regardless of the data generating process [@kuljanin2010; @braun2010]. That is, two (or more) independent variables that share no causal relationship will appear related in the observed data when they have trend. The first step in a dynamic analysis, then, is to check whether there is evidence of trend (i.e., non-stationarity).
-
-The most common method for checking stationarity is the Dickey-Fuller (ADF) test [@dickey1979] in which the null hypothesis is that the time series contains a time-*dependent* error term. If the series is stationary, it will contain a time-*invariant* error term and thus the ADF significance test will be rejected. This test was designed in the econometrics literature where single time-series are more prevalent than panel data (repeated measures designs with many *N*), but equivalent tests are now available for data structures more consistent with those found in the organizational literature. 
-
-Complete explanations of stationarity tests for both time-series and panel data are available in @jebb2017 and @braun2010. Because our interest here, consistent with the organizational literature, is on panel data and not single time-series relationships we use a panel version of the Dickey-Fuller test. 
+Stationary is a term that describes the properties of a process. If a process is stationary, its mean and variance are stable -- they are similar across all $t$. In simple terms, this means that we expect the properties (mean and variance) of a time series at time $t$ to be the same at time $t+1$. 
 
 ## Cointegration and Granger Causality
 
-## Cointegration
+## Example: Dishop (maybe); Denrell
 
-In the current paper we assessed stationarity before moving to formal data modeling because Granger and Newbold [-@granger1974] demonstrated that regressions between independent non-stationary series will likely produce significant coefficient estimates and large $R^2$ values. Analyzing series with independent (i.e., unrelated/not causal) trends, random walks, or uneven variance across time, therefore, will likely result in spurious inference. It is also possible, however, that two non-stationary processes are related. We then need a way to assess that relationship without biasing our results in the manner presented by Granger and Newbold (1974). In a later paper, Granger [-@granger1986] showed that, under very specific circumstances, we can garner evidence for a relationship between two non-stationary series. Formally, two series, $x$ and $y$ are said to be cointegrated if 1) both are integrated of the same order, $I(d)$, and 2) they share a linear combination that is $I(0)$. In other words, there is a linear combination of $x$ and $y$ that is stationary (requirement #2) and they both require the same number of steps to make them stationary (requirement #1). 
-
-The basis for cointegration is simple: do we have evidence for a relationship between series in a situation where we know spurious relationships are likely (i.e., non-stationarity)? Implementing cointegration techniques, however, is much more difficult. The analyst needs to be sensitive to the type of non-stationarity present in the series: trends or random walks. A random walk is defined as 
-
-\begin{equation}
-y_{t} = 1*y_{(t-1)} + e_{t}
-\end{equation}
-
-\noindent where the variable is exactly what it was at the prior time point but also accumulates error across time. These series may increase, decrease, or change directions at any instant. A series with trend is simply one that increases or decreases over time. Again, the steps required to demonstrate cointegration change if the analyst is dealing with trends or random walks. The analysis also changes if the variables are single-units or panels. Cointegration was developed for time-series data but panel techniques are also available now [@kao1999]. At this point we recommend ensuring data are stationary. Cointegration merits another paper entirely. 
-
-## Granger Causality
-
-X granger causes Y if Y can be better predicted by the histories of both X and Y than the history of Y alone. If lagged values of X help predict current values of Y in a forecast formed from lagged values of both X and Y, then X is said to Granger cause Y. We implement this notion by regressing eggs on lagged eggs and lagged chickens; if the coefficients on lagged chickens are significant as a group, then chickens cause eggs. A symetric regression tests the reverse causality. We perform the Granger causality tests using one to four lags. The number of lags in each equation is the same for eggs and chickens. To conclude that one of the two "came first," we must find unidirectional causality from one to the other. In other words, we must reject the noncausality of the one to the other and at the same time fail to reject the noncausality of the other to the one. If either both cause each other or neigher causes the other, the question will remain unanswered. Results reject that eggs do not Granger cause chickens. They provide no such reject of the hypothesis that chickens do not Granger cause eggs. Therefore, we conclude that eggs cause chickens. A better phrasing might be "temporally related" (Granger & Newbold, p. 225) -- Thurman and Fisher 1988 call it temporally ordered. 
-
-## Example: Dishop (maybe)
-
-Goal sampling over time. 
-
-* Difference equations
-* Autoregression
-* Error terms
+People from our literature using these principles to explain something. 
 
 ## Summary
 

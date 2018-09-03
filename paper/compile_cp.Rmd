@@ -64,6 +64,12 @@ knitr::opts_chunk$set(fig.path = 'figs/',echo = FALSE, warning = FALSE, message 
 
 ```
 
+```{r child = "princ_comp.Rmd"}
+
+```
+
+
+
 
 \newpage
 

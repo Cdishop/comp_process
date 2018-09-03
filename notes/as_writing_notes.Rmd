@@ -3,4 +3,45 @@ title: "notes"
 output: pdf_document
 ---
 
+# stocks and flows
+
 Many organizational phenomena can be viewed as combinations of stocks and flows. Stocks: Affect [@sonnentag], helping behaviors, depletion, number of customers, justice perceptions, work-family conflict. Flows: turnover, stressful events, goal assignments. Sometimes the same thing can be expressed as both a stock and a flow, depending on how the researcher abstracts the situation. For example, the number of work tasks could be a stock, where it increases when we are given more assignments and decreases when we finish them. Or it could be a flow that leads into something like stress.
+
+# stationarity
+
+Modeling techniques make assumptions about the data generating process they attempt to capture, and a key assumption in dynamic models is stationarity, or the stability of properties in a time series. Stationarity subsumes two requirements: mean stationarity, which refers to a series with a constant mean, and variance stationary, which refers to a series with a constant variance. Almost all dynamic models used in the organizational literature are stationary models and assume the data they model are realizations of a stationary process. In simple terms, this means that we expect the properties (mean and variance) of a time series at time $t$ to be the same at time $t+1$. 
+
+In general, we are interested in the relationships between one or more time series or panel trajectories. Acknowleding stationarity is critical for analyzing these relationships because two series that are non-stationary will be related regardless of the data generating process [@kuljanin2010; @braun2010]. That is, two (or more) independent variables that share no causal relationship will appear related in the observed data when they have trend. The first step in a dynamic analysis, then, is to check whether there is evidence of trend (i.e., non-stationarity).
+
+The most common method for checking stationarity is the Dickey-Fuller (ADF) test [@dickey1979] in which the null hypothesis is that the time series contains a time-*dependent* error term. If the series is stationary, it will contain a time-*invariant* error term and thus the ADF significance test will be rejected. This test was designed in the econometrics literature where single time-series are more prevalent than panel data (repeated measures designs with many *N*), but equivalent tests are now available for data structures more consistent with those found in the organizational literature. 
+
+Complete explanations of stationarity tests for both time-series and panel data are available in @jebb2017 and @braun2010. Because our interest here, consistent with the organizational literature, is on panel data and not single time-series relationships we use a panel version of the Dickey-Fuller test. 
+
+
+# cointegration
+
+In the current paper we assessed stationarity before moving to formal data modeling because Granger and Newbold [-@granger1974] demonstrated that regressions between independent non-stationary series will likely produce significant coefficient estimates and large $R^2$ values. Analyzing series with independent (i.e., unrelated/not causal) trends, random walks, or uneven variance across time, therefore, will likely result in spurious inference. It is also possible, however, that two non-stationary processes are related. We then need a way to assess that relationship without biasing our results in the manner presented by Granger and Newbold (1974). In a later paper, Granger [-@granger1986] showed that, under very specific circumstances, we can garner evidence for a relationship between two non-stationary series. Formally, two series, $x$ and $y$ are said to be cointegrated if 1) both are integrated of the same order, $I(d)$, and 2) they share a linear combination that is $I(0)$. In other words, there is a linear combination of $x$ and $y$ that is stationary (requirement #2) and they both require the same number of steps to make them stationary (requirement #1). 
+
+The basis for cointegration is simple: do we have evidence for a relationship between series in a situation where we know spurious relationships are likely (i.e., non-stationarity)? Implementing cointegration techniques, however, is much more difficult. The analyst needs to be sensitive to the type of non-stationarity present in the series: trends or random walks. A random walk is defined as 
+
+\begin{equation}
+y_{t} = 1*y_{(t-1)} + e_{t}
+\end{equation}
+
+\noindent where the variable is exactly what it was at the prior time point but also accumulates error across time. These series may increase, decrease, or change directions at any instant. A series with trend is simply one that increases or decreases over time. Again, the steps required to demonstrate cointegration change if the analyst is dealing with trends or random walks. The analysis also changes if the variables are single-units or panels. Cointegration was developed for time-series data but panel techniques are also available now [@kao1999]. At this point we recommend ensuring data are stationary. Cointegration merits another paper entirely. 
+
+
+
+## Granger Causality
+
+X granger causes Y if Y can be better predicted by the histories of both X and Y than the history of Y alone. If lagged values of X help predict current values of Y in a forecast formed from lagged values of both X and Y, then X is said to Granger cause Y. We implement this notion by regressing eggs on lagged eggs and lagged chickens; if the coefficients on lagged chickens are significant as a group, then chickens cause eggs. A symetric regression tests the reverse causality. We perform the Granger causality tests using one to four lags. The number of lags in each equation is the same for eggs and chickens. To conclude that one of the two "came first," we must find unidirectional causality from one to the other. In other words, we must reject the noncausality of the one to the other and at the same time fail to reject the noncausality of the other to the one. If either both cause each other or neigher causes the other, the question will remain unanswered. Results reject that eggs do not Granger cause chickens. They provide no such reject of the hypothesis that chickens do not Granger cause eggs. Therefore, we conclude that eggs cause chickens. A better phrasing might be "temporally related" (Granger & Newbold, p. 225) -- Thurman and Fisher 1988 call it temporally ordered. 
+
+
+# Simon example
+
+Key
+* Dynamics of the environment
+  + position of goal-relevant objects in the environments changes and new goal objects appear as the agent moves
+* Internal dynamics
+  + internal states change and decay over time
+* To understand behavior you need to know internal agent dynamics and the distribution of goal-relevant objects in the environment

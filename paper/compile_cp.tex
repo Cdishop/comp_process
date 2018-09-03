@@ -74,15 +74,9 @@
     \date{}
   
 \shorttitle{PROCESS PRINCIPLES}
-\authornote{....
-
-
-Correspondence concerning this article should be addressed to ..., .... E-mail: ...}
 \affiliation{
 \vspace{0.5cm}
 \textsuperscript{1} ...}
-\abstract{Begin here...
-}
 \keywords{....\newline\indent Word count: 95}
 \usepackage{csquotes}
 \usepackage{upgreek}
@@ -114,6 +108,17 @@ Correspondence concerning this article should be addressed to ..., .... E-mail: 
 
 \linenumbers
 
+\authornote{\ldots{}.
+
+Correspondence concerning this article should be addressed to \ldots{},
+\ldots{}. E-mail: \ldots{}}
+
+\abstract{
+Begin here\ldots{}
+
+
+}
+
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}{Lemma}[section]
@@ -130,14 +135,6 @@ Correspondence concerning this article should be addressed to ..., .... E-mail: 
 \newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
-
-sys theory math
-
-comp models in computer I could just put these things into the computer.
-direct code like a difference equation. but there are other properties
-that become apparent when you do so. here they are.
-
-SHOULD WE SAY SOMETHING LIKE, THERE IS MORE TO PROCESS THAN MEDIATION?
 
 We -- organizational psychologists -- are increasingly interested in
 process and dynamic phenomena. Longitudinal studies are becoming more
@@ -310,16 +307,6 @@ time. We speak about stocks by both referring to what they contain right
 now but also how they have developed and where they are likely to go.
 Also note that stocks do not have to change.
 
-Many organizational phenomena can be viewed as combinations of stocks
-and flows. Stocks: Affect ({\textbf{???}}), helping behaviors,
-depletion, number of customers, justice perceptions, work-family
-conflict. Flows: turnover, stressful events, goal assignments. Sometimes
-the same thing can be expressed as both a stock and a flow, depending on
-how the researcher abstracts the situation. For example, the number of
-work tasks could be a stock, where it increases when we are given more
-assignments and decreases when we finish them. Or it could be a flow
-that leads into something like stress.
-
 The behavior of a stock -- whether it rises, falls, or remains the same
 -- depends on the nature of flows. We can learn about stock behavior by
 subtracting outflows from inflows. Doing so leads to three general
@@ -357,8 +344,8 @@ Insert Figure \ref{stocks} Here
 
 \begin{figure}
 \centering
-\includegraphics{figs/unnamed-chunk-4-1.pdf}
-\caption{\label{fig:unnamed-chunk-4}something\label{stocks}}
+\includegraphics{figs/unnamed-chunk-5-1.pdf}
+\caption{\label{fig:unnamed-chunk-5}something\label{stocks}}
 \end{figure}
 
 \noindent Beginning at the first time point, inflows are equal to
@@ -380,7 +367,7 @@ of change, and periodicity. These are shown respectively in figure
 \ref{monge}.
 
 \begin{figure}
-\includegraphics[width=3.42in]{figs/fig_monge1} \caption{something else\label{monge}}\label{fig:unnamed-chunk-5}
+\includegraphics[width=3.42in]{figs/fig_monge1} \caption{something else\label{monge}}\label{fig:unnamed-chunk-6}
 \end{figure}
 
 \begin{center}
@@ -478,6 +465,11 @@ exponential, explosive, or amplifying behavior. Of course, we can also
 identify whether there is positive or negative feedback for every
 variable in the system.
 
+\hypertarget{example}{%
+\subsection{Example}\label{example}}
+
+Literature example of someone using these terms to explain something.
+
 \hypertarget{summary}{%
 \subsection{Summary}\label{summary}}
 
@@ -562,8 +554,8 @@ it converges there smoothly (when \(a\) is positive).
 
 \begin{figure}
 \centering
-\includegraphics{figs/unnamed-chunk-6-1.pdf}
-\caption{\label{fig:unnamed-chunk-6}something here\label{dynamics_plot}}
+\includegraphics{figs/unnamed-chunk-7-1.pdf}
+\caption{\label{fig:unnamed-chunk-7}something here\label{dynamics_plot}}
 \end{figure}
 
 \begin{center}
@@ -583,9 +575,9 @@ Equilibrium, then, describes the state of a variable that no longer
 changes unless disturbed by an outside force. It can also be used to
 describe multiple variable systems. In these contexts, equilibrium again
 means that the state remains constant unless disturbed by an outside
-force, but here it refers to the state of the entire system (i.e., all
-of the variables). In \emph{static} equalibriums, the system has reached
-a point of stability with no change, whereas \emph{dynamic} equilibrium
+force, but here state refers to the the entire system (i.e., all of the
+variables). In \emph{static} equalibriums, the system has reached a
+point of stability with no change, whereas \emph{dynamic} equilibrium
 refers to systems with changes and fluctuations but no net change. That
 is, the variables fluctuate across time in periodic ways but the general
 state of the system does not diverge so as to change the behavior of the
@@ -603,10 +595,19 @@ describes a dynamic equilibrium. The variables change and there may be
 random disturbances to the system across time, but the net dynamics of
 the system remain stable.
 
-Our route so far has been deterministic. That is, the mathematical
-representations do not contain error. Conveying that the underlying
-process -- the data generating mechanism -- contains error presents us
-with a host of additional principles.
+\hypertarget{system-of-equations}{%
+\subsection{System of Equations}\label{system-of-equations}}
+
+A difference equation with X influencing Y -- now I have lags
+represented in math. A difference equation with X influencing Y and Y
+influencing X -- now I have a feedback loop represented in a difference
+equation. I may also get priodicity, trend, and equilibrium -- we could
+work that out analytically but it is easier just to graph it.
+
+Our route so far has been deterministic -- the mathematical
+representations do not contain error. When we want to convey that the
+underlying process -- the data generating mechanism -- contains error we
+can consider a host of additional principles.
 
 \hypertarget{stochastics}{%
 \subsection{Stochastics}\label{stochastics}}
@@ -621,12 +622,12 @@ y_{t} = a y_{t-1} + c + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but \(e_{t}\) represents an
-error component that is incorporated into \(y\) at each time point.
-Errors cause \(y\) to be higher or lower at specific points in time than
-we would have expected given a deterministic process. For example, at
-time \(t\) the error might push \(y\) to a higher value, and at \(t+1\)
-to a lower value. Errors are therefore said to be random because we
-cannot predict their value at any specific \(t\). In aggregation (i.e.,
+error term that is incorporated into \(y\) at each time point. Errors
+cause \(y\) to be higher or lower at specific points in time than we
+would have expected given a deterministic process. For example, at time
+\(t\) the error might push \(y\) to a higher value, and at \(t+1\) to a
+lower value. Errors are therefore said to be random because we cannot
+predict their value at any specific \(t\). In aggregation (i.e.,
 averaged across time), however, positive errors cancel negative errors,
 and large errors are less likely than small errors. Any time we have an
 accumulation of random error we get a normal distribution
@@ -636,7 +637,8 @@ any specific \(t\) but distributed with certain constraints across time.
 
 It can also be helpful to think about what error is not. Anything that
 is systematic, predictable, or common (using those in layman's terms)
-cannot be error.
+cannot be error -- leaving error to be the random \enquote{left overs.}
+An aggregation of randomness is a normal distribution.
 
 \hypertarget{white-noise-and-random-walks}{%
 \subsection{White Noise and Random
@@ -684,49 +686,26 @@ investigating something that is not a random walk or white noise.
 
 \begin{figure}
 \centering
-\includegraphics{figs/unnamed-chunk-7-1.pdf}
-\caption{\label{fig:unnamed-chunk-7}another\label{noise}}
+\includegraphics{figs/unnamed-chunk-8-1.pdf}
+\caption{\label{fig:unnamed-chunk-8}this one will be a white noise process
+and a random walk\label{noise}}
 \end{figure}
+
+Now that we have added the conept of error our focus changes from the
+exact values of variables over time to their distributions.
 
 \hypertarget{stationarity}{%
 \subsection{Stationarity}\label{stationarity}}
 
-Modeling techniques make assumptions about the data generating process
-they attempt to capture, and a key assumption in dynamic models is
-stationarity, or the stability of properties in a time series.
-Stationarity subsumes two requirements: mean stationarity, which refers
-to a series with a constant mean, and variance stationary, which refers
-to a series with a constant variance. Almost all dynamic models used in
-the organizational literature are stationary models and assume the data
-they model are realizations of a stationary process. In simple terms,
-this means that we expect the properties (mean and variance) of a time
-series at time \(t\) to be the same at time \(t+1\).
+Stationary is a term that describes the properties of a process. If a
+process is stationary, its mean and variance are stable -- they are
+similar across all \(t\). In simple terms, this means that we expect the
+properties (mean and variance) of a time series at time \(t\) to be the
+same at time \(t+1\).
 
-In general, we are interested in the relationships between one or more
-time series or panel trajectories. Acknowleding stationarity is critical
-for analyzing these relationships because two series that are
-non-stationary will be related regardless of the data generating process
-({\textbf{???}}; {\textbf{???}}). That is, two (or more) independent
-variables that share no causal relationship will appear related in the
-observed data when they have trend. The first step in a dynamic
-analysis, then, is to check whether there is evidence of trend (i.e.,
-non-stationarity).
-
-The most common method for checking stationarity is the Dickey-Fuller
-(ADF) test ({\textbf{???}}) in which the null hypothesis is that the
-time series contains a time-\emph{dependent} error term. If the series
-is stationary, it will contain a time-\emph{invariant} error term and
-thus the ADF significance test will be rejected. This test was designed
-in the econometrics literature where single time-series are more
-prevalent than panel data (repeated measures designs with many
-\emph{N}), but equivalent tests are now available for data structures
-more consistent with those found in the organizational literature.
-
-Complete explanations of stationarity tests for both time-series and
-panel data are available in ({\textbf{???}}) and ({\textbf{???}}).
-Because our interest here, consistent with the organizational
-literature, is on panel data and not single time-series relationships we
-use a panel version of the Dickey-Fuller test.
+\hypertarget{cointegration-and-granger-causality}{%
+\subsection{Cointegration and Granger
+Causality}\label{cointegration-and-granger-causality}}
 
 \hypertarget{cointegration}{%
 \subsection{Cointegration}\label{cointegration}}
@@ -772,9 +751,8 @@ data but panel techniques are also available now ({\textbf{???}}). At
 this point we recommend ensuring data are stationary. Cointegration
 merits another paper entirely.
 
-\hypertarget{granger-causality-and-directionality}{%
-\subsection{Granger Causality and
-Directionality}\label{granger-causality-and-directionality}}
+\hypertarget{granger-causality}{%
+\subsection{Granger Causality}\label{granger-causality}}
 
 X granger causes Y if Y can be better predicted by the histories of both
 X and Y than the history of Y alone. If lagged values of X help predict
@@ -796,14 +774,181 @@ conclude that eggs cause chickens. A better phrasing might be
 \enquote{temporally related} (Granger \& Newbold, p.~225) -- Thurman and
 Fisher 1988 call it temporally ordered.
 
-\hypertarget{diffusion}{%
-\subsection{Diffusion}\label{diffusion}}
+\hypertarget{example-dishop-maybe-denrell}{%
+\subsection{Example: Dishop (maybe)
+Denrell}\label{example-dishop-maybe-denrell}}
 
-\hypertarget{damping}{%
-\subsection{Damping}\label{damping}}
+Goal sampling over time.
 
-\hypertarget{markov-process}{%
-\subsection{Markov Process}\label{markov-process}}
+\begin{itemize}
+\tightlist
+\item
+  Difference equations
+\item
+  Autoregression
+\item
+  Error terms
+\end{itemize}
+
+\hypertarget{summary-1}{%
+\subsection{Summary}\label{summary-1}}
+
+In our prior discussions we cared about describing and explaining
+behavior over time. The emphasis was on what people are used to: verbal
+descriptions, plots, and math. There has recently been a push to comp
+model. These people are trying to do the same thing, but represent their
+process in a computer.
+
+Think of it this way. Above, we were representing process on graphs,
+through equations, and through terms. To do so required certain
+principles. When we want to describe something in a computer language we
+also need certain principles: certain requirements about how we explain
+the process.
+
+Vancouver has pointed out some of these. He framed them as difficult
+pieces to putting stuff into code.
+
+\hypertarget{computational-principles}{%
+\section{Computational Principles}\label{computational-principles}}
+
+\hypertarget{key-states}{%
+\subsection{Key States}\label{key-states}}
+
+What are the important states? A variable is an entity that can take
+different values at one point in time. A state is a variable that
+fluctuates over time. In information technology and computer science, a
+program is described as stateful if it is designed to remember preceding
+events or user interactions; the remembered information is called the
+state of the system.
+
+We can also talk about the global state of the system as a whole -- its
+cumulative form. The state of the \emph{system} describes enough about
+the system to determine its future behavior in the absence of any
+external forces affecting the system. The set of possible combinations
+of state variables is called the state space of a system.
+
+\hypertarget{state-dynamics}{%
+\subsection{State Dynamics}\label{state-dynamics}}
+
+\hypertarget{constants}{%
+\subsection{Constants}\label{constants}}
+
+Values that do not change over time. Usually constants occur in the
+coefficients, or the weights. Vancouver's comp model 2018 included a
+weight relating assigned goal difficulty and goal specificity to
+self-efficacy that did not change over time.
+
+\hypertarget{actions}{%
+\subsection{Actions}\label{actions}}
+
+\hypertarget{action-selection}{%
+\subsection{Action selection}\label{action-selection}}
+
+\hypertarget{contextenvironment}{%
+\subsection{Context/Environment}\label{contextenvironment}}
+
+How is the process situated? Simon's mouse behavior environment. He
+defines the context in which it can move around. Things happen with
+respect to the environment.
+
+\hypertarget{noise}{%
+\subsection{Noise}\label{noise}}
+
+Is there error in the system, if so, where?
+
+\hypertarget{time-scale}{%
+\subsection{Time Scale}\label{time-scale}}
+
+How long does the process operate for? How many iterations does my for
+loop go for?
+
+\hypertarget{example-simon-1956}{%
+\subsection{Example: Simon 1956}\label{example-simon-1956}}
+
+key states:
+
+\begin{itemize}
+\tightlist
+\item
+  hunger and thirst
+\item
+  It is easier to think of these as stocks: food and water.
+\end{itemize}
+
+State dynamics:
+
+\begin{itemize}
+\tightlist
+\item
+  The body requires energy, so the food and water stocks decrease over
+  time (i.e., hunger and thirst increase)
+\end{itemize}
+
+Actions used to satisfy those states:
+
+\begin{itemize}
+\tightlist
+\item
+  resting, exploration, goal striving
+\end{itemize}
+
+Action selection
+
+\begin{itemize}
+\item
+  If the food and water stocks are above threshold, the agent rests
+\item
+  When the stock of any need dips below threshold, the agent explores
+\item
+  During exploration
+
+  \begin{itemize}
+  \tightlist
+  \item
+    agent randomly runs into objects. If they encounter a single object
+    relevant to one of the needs, the agent acquires it
+  \item
+    If the agent encounters two or more need-relevant objects, they
+    evoke a simple ratio to make a decision
+
+    \begin{itemize}
+    \tightlist
+    \item
+      compare energy required to meet the need (M) to the storage
+      capacity with respect to the need (S)
+    \item
+      or the effort required to get the object to how large the stock
+      for this need is. Super large stocks take precedence
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+Environment
+
+\begin{itemize}
+\tightlist
+\item
+  a space with goals within which the entity moves
+\item
+  the individual is located in an environment that contains spatially
+  distributed goal-relevant objects such as sources of food and water
+  (239).
+\item
+  the size of the food and water stocks are determined by the
+  availability of the resources in the environment. Water is easier to
+  come by than food and so food storage requirements are greater.
+  Similarly, breathable air is easier to obtain than water and so its
+  storage requirements are less than both food and water (239).
+\end{itemize}
+
+Key * Dynamics of the environment + position of goal-relevant objects in
+the environments changes and new goal objects appear as the agent moves
+* Internal dynamics + internal states change and decay over time * To
+understand behavior you need to know internal agent dynamics and the
+distribution of goal-relevant objects in the environment
+
+\hypertarget{summary-2}{%
+\subsection{Summary}\label{summary-2}}
 
 \newpage
 
