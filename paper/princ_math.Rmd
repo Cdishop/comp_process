@@ -44,7 +44,7 @@ a &= 0.5
 
 There are fundamental behaviors of dynamic variables based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of variables with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and oscillating chaos when $a$ is negative. When the autoregressive term falls between zero and one in absolute value, conversely, the variable converges to equilibrium -- shown in the bottom two panels. Either the variable oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). 
 
-```{r, echo = F, fig.cap = "something here\\label{dynamics_plot}", cache = T}
+```{r, echo = F, fig.cap = "dynamic equilibrium fig\\label{dynamics_plot}", cache = T}
 
 time <- 20
 df_mat <- matrix(, ncol = 5, nrow = time)

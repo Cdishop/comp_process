@@ -3,19 +3,22 @@
 
 \centering
 \includegraphics{figs/unnamed-chunk-5-1.pdf}
-\caption{\label{fig:unnamed-chunk-5}something\label{stocks}}
+\caption{\label{fig:unnamed-chunk-5}the ol stock system\label{stocks}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
-\includegraphics[width=3.42in]{figs/fig_monge1} \caption{something else\label{monge}}\label{fig:unnamed-chunk-6}
+\centering
+\includegraphics{figs/unnamed-chunk-6-1.pdf}
+\caption{\label{fig:unnamed-chunk-6}monge image\label{monge}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
 \centering
 \includegraphics{figs/unnamed-chunk-7-1.pdf}
-\caption{\label{fig:unnamed-chunk-7}something here\label{dynamics_plot}}
+\caption{\label{fig:unnamed-chunk-7}dynamic equilibrium
+fig\label{dynamics_plot}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}

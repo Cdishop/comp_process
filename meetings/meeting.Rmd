@@ -13,14 +13,16 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 * Feeling good about principles. 
 
-* Today: writing structure and questions.
+# Today
+
+* Writing structure and questions.
 
 
 # Question 1
 
-* Current form: systems theory, math, comp. 
+* Need to make a better distinction between describing observed data vs describing dgp?
 
-    + No distinction between observed data and dgp like we spoke about last time. If I do:
+* Current form: systems theory, math, comp -- no distinction between observed data and dgp. I could do:
         
         + Process in the observed data
         
@@ -38,6 +40,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
         + where would equilibrium or feedback loops go?
     
     + As I read the paper this idea was the only thing on my mind...but that is because we discuss it so much. Would it be on others?
+        + Update 09/05: As I read through it with a fresh mind this didn't bug me... 
               
               
 # Question 2
@@ -50,17 +53,11 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 # Some thoughts about intro
 
-* Positive emphasis on all of the things we can do
+* Need to be more positive?
 
-    + Science is not about devising hugely complex descriptions of the world. It is about devising descriptions that illuminate the world and make it comprehensible (life's other secret)
-    
-* Funness in explaining at different points of emphasis
-
-    + This is an approach I have elsewhere called 'long zoom' history: the attempt to explain historical chnage by simultaneously examining multiple scales of experience -- from the vibrations of sound waves on the eardrum all the way out to mass political movements (six innovations). We wouldn't make this argument -- but a "you can do this stuff from different angles and it can be helpful" argument.
-    
-* Process is more than mediation.
+* "There is a lot more to process than mediation"
 
     + BTW, do we need to discuss mediation?
-    
+
 
 

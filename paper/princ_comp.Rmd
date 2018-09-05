@@ -7,7 +7,7 @@ output: pdf_document
 
 Above, we described and explained behavior over time by using representations most people are familiar with: verbal descriptions, plots, and math. There has recently been a push to comp model. These people are trying to do the same thing, but represent their process in a computer. 
 
-Think of it this way. Above, we represented process on graphs, through equations, and through terms. To do so required certain principles. When we want to describe something in a computer language we also need certain principles: certain requirements or fundamentals about how we explain the process. 
+Think of it this way. Above, we represented process with graphs, equations, and terms. To do so required certain principles. When we want to describe something in a computer language we also need certain principles: certain requirements or fundamentals about how we explain the process. 
 
 Vancouver has pointed out some of these. He framed them as difficult pieces to putting stuff into code.
 

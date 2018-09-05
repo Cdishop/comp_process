@@ -5,6 +5,8 @@ output: pdf_document
 
 # Systems Theory Principles
 
+We start with some principles from systems theory -- they have some overlapping terms with the growth modeling literature and should be somewhat familiar to most in our field.
+
 ## Stocks and Flows
 
 One common approach to explaining how things happen over time is to identify stocks and flows. Meadows [@meadows2009] defines both with the following:
@@ -36,7 +38,7 @@ Insert Figure \ref{stocks} Here
 \end{center}
 
 
-```{r, echo = F, fig.cap = 'something\\label{stocks}'}
+```{r, echo = F, fig.cap = 'the ol stock system\\label{stocks}'}
 set.seed(4)
 
 time <- 20
@@ -99,9 +101,14 @@ plot1
 
 Systems theory uses stocks and flows as general labels for each of the things in the system. Above, we described the behavior of the stocks and flows with simple terms -- increasing, decreasing, or constant. Systems theory also provides a more systematic way of describing trajectories and explaining behavior over time. These are unpacked in an excellent paper by Monge (1990), and the framework includes trend, magnitude, rate of change, and periodicity. These are shown respectively in figure \ref{monge}. 
 
-```{r, echo = F, fig.cap = 'something else\\label{monge}'}
+```{r, echo = F, fig.cap = 'monge image\\label{monge}', fig.height = 9, fig.width= 8}
+library(png)
+library(grid)
 
-knitr::include_graphics('figs/fig_monge1.png', size = 5)
+img <- readPNG("figs/fig_monge1.png")
+grid.raster(img)
+
+#knitr::include_graphics('figs/fig_monge1.png')
 
 ```
 

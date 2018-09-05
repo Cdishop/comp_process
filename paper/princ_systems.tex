@@ -88,6 +88,10 @@
 \hypertarget{systems-theory-principles}{%
 \section{Systems Theory Principles}\label{systems-theory-principles}}
 
+We start with some principles from systems theory -- they have some
+overlapping terms with the growth modeling literature and should be
+somewhat familiar to most in our field.
+
 \hypertarget{stocks-and-flows}{%
 \subsection{Stocks and Flows}\label{stocks-and-flows}}
 
@@ -116,16 +120,6 @@ time. We speak about stocks by both referring to what they contain right
 now but also how they have developed and where they are likely to go.
 Also note that stocks do not have to change.
 
-Many organizational phenomena can be viewed as combinations of stocks
-and flows. Stocks: Affect {[}@sonnentag{]}, helping behaviors,
-depletion, number of customers, justice perceptions, work-family
-conflict. Flows: turnover, stressful events, goal assignments. Sometimes
-the same thing can be expressed as both a stock and a flow, depending on
-how the researcher abstracts the situation. For example, the number of
-work tasks could be a stock, where it increases when we are given more
-assignments and decreases when we finish them. Or it could be a flow
-that leads into something like stress.
-
 The behavior of a stock -- whether it rises, falls, or remains the same
 -- depends on the nature of flows. We can learn about stock behavior by
 subtracting outflows from inflows. Doing so leads to three general
@@ -143,9 +137,10 @@ principles about stocks. They will {[}@cronin2008{]}:
 \end{enumerate}
 
 \noindent In other words, stocks change with respect to the summative
-properties of their flows. Stocks also set the pace for the dynamics of
-the system. Even when flows are changing rapidly, the stock may change
-slowly because accumulation occurred over a long period of time.
+properties of their flows. Stocks also set the pace for the cumulative
+rhythm of the system. Even when flows are changing rapidly, the stock
+may change slowly because accumulation occurred over a long period of
+time.
 
 Figure \ref{stocks} plots a simple stock and flow system over 20 time
 periods.
@@ -161,7 +156,7 @@ Insert Figure \ref{stocks} Here
 \end{center}
 
 \begin{verbatim}
-## -- Attaching packages ----------------------------------------------------------------------------------------- tidyverse 1.2.1 --
+## -- Attaching packages ------------------------------------------------------------------------------------------------------------ tidyverse 1.2.1 --
 \end{verbatim}
 
 \begin{verbatim}
@@ -172,7 +167,7 @@ Insert Figure \ref{stocks} Here
 \end{verbatim}
 
 \begin{verbatim}
-## -- Conflicts -------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## -- Conflicts --------------------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 \end{verbatim}
@@ -189,8 +184,8 @@ points, however, outflows remain the same whereas inflows increase. With
 inflows exceeding outflows the stock also increases up until time point
 ten. At this time, inflows drop back down to five whereas outflows
 increase -- leading to a large reduction in the stock. As outflows
-continue to rise over time with no counterbalancing movement from the
-inflow, the stock ultimately decreases.
+continue to rise over time -- with no counterbalancing movement from the
+inflow -- the stock ultimately decreases.
 
 Systems theory uses stocks and flows as general labels for each of the
 things in the system. Above, we described the behavior of the stocks and
@@ -198,8 +193,8 @@ flows with simple terms -- increasing, decreasing, or constant. Systems
 theory also provides a more systematic way of describing trajectories
 and explaining behavior over time. These are unpacked in an excellent
 paper by Monge (1990), and the framework includes trend, magnitude, rate
-of change, and periodicity. Each of these is shown respectively in
-figure \ref{monge}.
+of change, and periodicity. These are shown respectively in figure
+\ref{monge}.
 
 \begin{figure}
 \includegraphics[width=14.25in]{figs/fig_monge1} \caption{something else\label{monge}}\label{fig:unnamed-chunk-2}
@@ -218,9 +213,9 @@ Insert Figure \ref{monge} Here
 \hypertarget{trend}{%
 \subsection{Trend}\label{trend}}
 
-Dividing figure two into two portions -- the top and bottom -- reveals
-differences in trend. All of the panels on the top of figure two have
-trend, whereas those on the bottom do not. Trend is the systematic
+Dividing figure \ref{monge} into two portions -- the top and bottom --
+reveals differences in trend. All of the panels on the top of the figure
+have trend, whereas those on the bottom do not. Trend is the systematic
 increase or decrease of a variable over time.
 
 \hypertarget{magnitude}{%
@@ -242,16 +237,14 @@ Monge refers to rate of change as ``How fast the magnitude increases or
 decreases per one unit of time.'' Panels \emph{G} and \emph{H} reveal
 differences in rates of change.
 
-\hypertarget{periodicity-cycles-oscillations}{%
-\subsection{Periodicity; Cycles;
-Oscillations}\label{periodicity-cycles-oscillations}}
+\hypertarget{periodicity}{%
+\subsection{Periodicity}\label{periodicity}}
 
 Periodicity is the amount of time before a pattern repeats itself, and
-it is equivalent to terms like cycles or oscillations. The most
-important piece about periodicity is that it must be couched with
-``controlling for trend.'' Notice that panel \emph{A} is periodic
-because, after controlling for trend, there are repeated patterns over
-time.
+it is equivalent to the term cycle. The most important piece about
+periodicity is that it must be couched with ``controlling for trend.''
+Notice that panel \emph{A} is periodic because, after controlling for
+trend, there are repeated patterns over time.
 
 \hypertarget{now-two-variables}{%
 \subsection{Now two variables}\label{now-two-variables}}
@@ -278,27 +271,33 @@ Once the effect happens, how long does it last?
 \hypertarget{feedback-loops}{%
 \subsection{Feedback Loops}\label{feedback-loops}}
 
-Systems theory researchers often put feedback loops as a central
-component to their discussion or analysis. This idea is also a common
-explanation in our own literature. Feedback loops describe processes
-where a variable eventually relates back to itself. For example, EXAMPLE
-HERE.
+Systems theory researchers often convey process by using feedback loops.
+Feedback loops describe processes where a variable eventually relates
+back to itself.
 
-Researchers often focus on the behavior that results as a function of
-this feedback. When feedback causes the variable to move in the opposite
-direction than it initially moved, this is known as negative feedback,
-deviation counteraction, or a balancing feedback loop {[}@monge;
-@meadows{]}. Here, an initial increase in \(x\) leads to subsequent
-changes in the system that, through time, eventually cause \(x\) to
-decrease. Now that \(x\) has gone down, more changes happen in the
-system that, through time, eventually cause \(x\) to increase.
+There are two common ways to describe the behavior of a focal variable
+within a feedback loop. When feedback causes the variable to move in the
+opposite direction than it initially moved, this is known as negative
+feedback, deviation counteraction, or a balancing feedback loop
+{[}@monge; @meadows{]}. Here, an initial increase in \(x\) leads to
+subsequent changes in the system that, through time, eventually cause
+\(x\) to decrease. Now that \(x\) has gone down, more changes happen in
+the system that, through time, eventually cause \(x\) to increase.
 
 When feedback, instead, causes the variable to move in the same
 direction that it initially moved, this is known as postive feedback,
 deviation ampliciation, or a reinforcing feedback loop {[}@monge;
 @meadows{]}. Here, changes in \(x\) in one direction lead to eventual
 changes in \(x\) in the same direction and thus produce exponential,
-explosive, or amplifying behavior.
+explosive, or amplifying behavior. Of course, we can also identify
+whether there is positive or negative feedback for every variable in the
+system.
+
+\hypertarget{example}{%
+\subsection{Example}\label{example}}
+
+People from our literature using these terms and principles to explain
+something.
 
 \hypertarget{summary}{%
 \subsection{Summary}\label{summary}}
