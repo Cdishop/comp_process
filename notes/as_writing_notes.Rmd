@@ -45,3 +45,35 @@ Key
 * Internal dynamics
   + internal states change and decay over time
 * To understand behavior you need to know internal agent dynamics and the distribution of goal-relevant objects in the environment
+
+# Process definition
+
+Van de Ven (1992) defines process as "a sequence of events that describe how things change over time" (p. 169) or "the sequence of incidents, activities, and stages that unfold over the duration of a central subject's [unit's] existence" (p. 170). 
+
+
+# option 2 Process
+
+
+# What is Process?
+
+Process is a complex term, and it is helpful to first mention longitudinal designs and then contrast points of emphasis with other, related concepts. 
+
+### Longitudinal
+
+Longitudinal is a term that is used to describe a study's design or data structure. Longitudinal designs collect repeated observations across time, whereas cross-sectional studies do not. Longitudinal data are repeated observations on multiple units, whereas panel data or time series are repeated observations on one unit -- and are the most common data structure in economics. 
+
+### Process
+
+Process refers to the phenomena researchers are exploring when they employ a longitudinal design. Pettigrey (1997) "a sequence of individual and collective events, actions, and activities unfolding over time in context" (p. 2). Van de Ven (1992) "a sequence of events that describes how things change over time" (p. 169). "the sequences of incidents, activities, and stages that unfold over the duration of a central subject's existence" (p. 170). Moreoever, a process may or may not be dynamic and it may or may not contain change.
+
+#### Dynamics
+
+Dynamics refers to a specific branch of mathematics, but the term is used in different ways throughout our literature. It is used informally to mean "change", "fluctuating," "volatile," "longitudinal," or "over time" (among others), whereas formal definitions in our literature are presented within certain contexts. Wang defines a dynamic *model* as a "representation of a system that evolves over time. In particular it describes how the system evolves from a given state at time *t* to another state at time *t + 1* as governed by the transition rules and potential external inputs" (p. 242). Vancouver states that dynamic *variables* "behave as if they have memory; that is, their value at any one time depends somewhat on their previous value" (p. 604). Finally, Monge states that in dynamic *analyses*, "it is essential to know how variables depend upon their own past history" (p. 409). 
+
+The crucial notion to take from dynamics, then, is memory. When the past matters, and future states are constrained by where they were at prior points in time, dynamics are at play. In longitudinal studies that emphasize dynamics, they focus on memory.
+
+#### Change
+
+It is common to emphasis change in longitudinal studies, and some have stated that that is the only point of emphasis. Ployhart and Vandenberg state that "longitudinal research emphasizes the study of change and contains at minimum three repeated observations on at least one of the substantive constructs of interest" (p. 97). Similarly, Baltes and Nesselroade note, "the study of phenomena in their time-related constancy and change is the aim of a longitudinal methodology" (p ?).
+
+But again, process is about sequences of events with or without memory and with or without change. 
