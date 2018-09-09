@@ -143,6 +143,8 @@ The other distinction surrounding longitudinal studies is what they can be used 
 
 We presented the notions above to help pinpoint what process refers to. Dynamics refers to systems with memory, where current states are driven to future states by transition rules and external inputs. Longitudinal studies collect data on multiple units across time, and some suggest that they ought to emphasize change. Process is about sequences of events with or without memory and with or without change. Pettigrey (1997) provides a formal definition: process is "a sequence of individual and collective events, actions, and activities unfolding over time in context" (p. 2). 
 
+Similar to roberts and hulin (teams week 1 1978 with rousseau). "Most research in our field is static. Most studies are fleeting glances (analogous to stop-action photographs) at organizations" (70). "They fail to indicate the ordered sequence of events...Frozen moments do not capture...a process, nor do statistical interactions make a sequence" (71). 
+
 # Explanations versus Descriptions
 
 Introduce as a lead in to below. Below, we present fundamentals for describing process, and fundamentals for explaining process. 
