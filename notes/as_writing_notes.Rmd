@@ -77,3 +77,8 @@ The crucial notion to take from dynamics, then, is memory. When the past matters
 It is common to emphasis change in longitudinal studies, and some have stated that that is the only point of emphasis. Ployhart and Vandenberg state that "longitudinal research emphasizes the study of change and contains at minimum three repeated observations on at least one of the substantive constructs of interest" (p. 97). Similarly, Baltes and Nesselroade note, "the study of phenomena in their time-related constancy and change is the aim of a longitudinal methodology" (p ?).
 
 But again, process is about sequences of events with or without memory and with or without change. 
+
+# Intro Hype
+
+including emotional labor [@bono2007; @beal2015; @gabriel2015], workplace stress and well-being [@ritter2016; @wang2014], organizatiional performance [@short2006], self-regulation [@hardy2018], newcomer adjustment [@kammeyer-meuller2013], justice and trust [@kaltianinen2017], leadership [@farh2018; @schaubroeck2016; @kalish2016], decision-making [@huang2012], team performance [@humphrey2017], counterproductive work behaviors [@meier2013], work-family conflict [@matthews2014], job satisfaction [@zablah2016], and team emergent states [@kozlowski2012]. In summary, explaining how a process functions appears to be of great interest to current organizational science. 
+

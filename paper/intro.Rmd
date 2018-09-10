@@ -38,7 +38,7 @@ The many representations of process. Consensus build
 
 # Begin
 
-We -- organizational psychologists -- are increasingly interested in process and dynamic phenomena. Longitudinal studies are becoming more prevalent in our literature and the number of time points they employ appears to be growing [@xu2018]. The empirical literature uses the term "dynamics" at exponentially larger rates in recent years [@deshon2012]. A majority of published methods literature now focuses on longitudinal data analysis [@aguinis2009], and there are now many great reviews on the conceptual and methodological issues related to dynamic and within-person models [@wang2016; @beal2015; @shipp2015; @mitchell2001]. Moreover, this interest covers many content areas, including emotional labor [@bono2007; @beal2015; @gabriel2015], workplace stress and well-being [@ritter2016; @wang2014], organizatiional performance [@short2006], self-regulation [@hardy2018], newcomer adjustment [@kammeyer-meuller2013], justice and trust [@kaltianinen2017], leadership [@farh2018; @schaubroeck2016; @kalish2016], decision-making [@huang2012], team performance [@humphrey2017], counterproductive work behaviors [@meier2013], work-family conflict [@matthews2014], job satisfaction [@zablah2016], and team emergent states [@kozlowski2012]. In summary, explaining how a process functions appears to be of great interest to current organizational science. 
+We -- organizational psychologists -- are increasingly interested in process and dynamic phenomena. Longitudinal studies are becoming more prevalent in our literature and the number of time points they employ appears to be growing [@xu2018]. The empirical literature uses the term "dynamics" at exponentially larger rates in recent years [@deshon2012]. A majority of published methods literature now focuses on longitudinal data analysis [@aguinis2009], and there are now many great reviews on the conceptual and methodological issues related to dynamic and within-person models [@wang2016; @beal2015; @shipp2015; @mitchell2001]. Moreover, this interest covers many content areas, including self-regulation [@hardy2018], leadership [@schaubroeck201], and team performance [@humphrey2017], among others. 
 
 Consider a few examples. Example 1 process interest statement and then what their study describes/explains. Example 2 process interest statement and then what their study describes/explains. Example 3 process interest statement and then what their study describes/explains. 
 
@@ -48,9 +48,7 @@ Here is another example to pinpoint the dilemma. Imagine that we are interested 
 
 **Option B**. In the first, we model weight over time, find a significant, positive trend, and suggest that the average male gains one pound every year for the rest of his life. In the second, we model weight and the number of consumed calories over time, find a significant, positive relationship between them, and suggest an effect of caloric intake and weight. In the third, we model initial weight, weight, and the number of consumed and expended calories over time and suggest that weight is a function of prior weight and difference between caloric intake and expenditure.
 
-Which of these is a process study? Where is the line between explaining the process versus describing its emergent properties?
-
-In this paper, we try to build consensus around these issues. What do we mean by process? What are the different ways that we can represent it? We approach them in two parts.
+Which of these is a process study? Where is the line between explaining the process versus describing its emergent properties? In this paper, we try to build consensus around these issues. What do we mean by process? And what are the different ways that we can represent it? We approach these questions in two parts.
 
 In the first section we contrast process with other, "over time" concepts. There are loose and formal ways to use terms and notions about behavior over time, and we point out the differences to locate process within that concept map. We then provide a definition drawn from @vanden and @pettigrey. Although the term is used in a variety of ways in the literature -- including, for example, as a construct when something like "team process" is placed in a box with an arrow directed at "team performance" -- we present a definition that describes what researchers look for when they unpack that "team process" box. Finally, we distinguish explaining versus describing it. Both are valuable, but...
 
@@ -123,7 +121,7 @@ or
 
 
 
-# What is process
+# What is Process?
 
 Before jumping to a definition of process it is helpful to consider other, related concepts.
 
@@ -141,11 +139,17 @@ The other distinction surrounding longitudinal studies is what they can be used 
 
 ### Process
 
-We presented the notions above to help pinpoint what process refers to. Dynamics refers to systems with memory, where current states are driven to future states by transition rules and external inputs. Longitudinal studies collect data on multiple units across time, and some suggest that they ought to emphasize change. Process is about sequences of events with or without memory and with or without change. Pettigrey (1997) provides a formal definition: process is "a sequence of individual and collective events, actions, and activities unfolding over time in context" (p. 2). 
+We presented the notions above to help pinpoint what process refers to. Dynamics systems have memory, where current states are driven to future states by transition rules and external inputs. Longitudinal studies collect data on multiple units across time, and some suggest that they ought to emphasize change. Process is about sequences of events with or without memory and with or without change. Pettigrey (1997) provides a formal definition: process is "a sequence of individual and collective events, actions, and activities unfolding over time in context" (p. 2). 
 
-Similar to roberts and hulin (teams week 1 1978 with rousseau). "Most research in our field is static. Most studies are fleeting glances (analogous to stop-action photographs) at organizations" (70). "They fail to indicate the ordered sequence of events...Frozen moments do not capture...a process, nor do statistical interactions make a sequence" (71). 
+This definition is consistent with sentiments found in @hulinhubert1978 and @hulincompmodel. In these sources, the authors indirectly define process by describing their dissatisfaction with static research. They compare (some) OP/OB research to individual snapshots of behavior that -- even if compiled and aggregated to form a longitudinal study -- only reveal fleeting glances of the flow of the system. "Frozen moments do not capture...a process, nor do statistical interactions make a sequence" (71). Process, then, seems to entail sequences of events that, as stated above, must be couched in context.
+
+Another point we want to reiterate is how words like "dynamics," "change," and "process" tend to be coupled. It is common to pair two or more of these terms with a phrase like "the dynamic process." But each of these words has a precise meaning. Dynamics is used for systems or variables with memory. Growth describes the systematic increase or decrease of a variable or system over time. Change has been used in two ways. It is sometimes used synonymously with growth: systematic increase or decrease. At other times, researchers partial prior observations of their dependent variable and in a regression model to emphasize the effect of an IV on the change in the DV. In this second way, change means "how this variable is different from the last point in time." 
+
+Process is distinct from each of these terms, and it does not need to be paired with any. Processes can grow, or they can not grow; they can contain change or no change; they can contain dynamics or no dynamics. Stated differently, just because something does not change or grow does not mean there is no process to be found. But this does not mean that every longitudinal study captures process in the same way. To differentiate here, we need an additional category: explanation versus description. 
 
 # Explanations versus Descriptions
+
+
 
 Introduce as a lead in to below. Below, we present fundamentals for describing process, and fundamentals for explaining process. 
 
