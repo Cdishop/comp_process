@@ -1,7 +1,7 @@
 ---
 # https://crsh.github.io/papaja_man/index.html
 
-title             : "Process Principles"
+title             : "Principles for Describing or Explaining Process"
 shorttitle        : "PROCESS PRINCIPLES"
 
 author: 
@@ -53,18 +53,18 @@ knitr::opts_chunk$set(fig.path = 'figs/',echo = FALSE, warning = FALSE, message 
 ```
 
 
-```{r child = 'intro.Rmd'}
+```{r child = 'pp_intro.Rmd'}
 ```
 
-```{r child = 'princ_systems.Rmd'}
-
-```
-
-```{r child = 'princ_math.Rmd'}
+```{r child = 'pp_systems.Rmd'}
 
 ```
 
-```{r child = "princ_comp.Rmd"}
+```{r child = 'pp_math.Rmd'}
+
+```
+
+```{r child = "pp_comp.Rmd"}
 
 ```
 

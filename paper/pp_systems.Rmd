@@ -17,13 +17,7 @@ One common approach to explaining how things happen over time is to identify sto
 
 \noindent That last sentence is what makes a stock imply behavior over time. We speak about stocks by both referring to what they contain right now but also how they have developed and where they are likely to go. Also note that stocks do not have to change.
 
-The behavior of a stock -- whether it rises, falls, or remains the same -- depends on the nature of flows. We can learn about stock behavior by subtracting outflows from inflows. Doing so leads to three general principles about stocks. They will [@cronin2008]:
-
-1. rise when inflows exceed outflows
-2. fall when outflows exceed inflows
-3. remain the same when inflows equal outflows.
-
-\noindent In other words, stocks change with respect to the summative properties of their flows. Stocks also set the pace for the cumulative rhythm of the system. Even when flows are changing rapidly, the stock may change slowly because accumulation occurred over a long period of time. 
+The behavior of a stock -- whether it rises, falls, or remains the same -- depends on the nature of flows. We can learn about stock behavior by subtracting outflows from inflows. Doing so leads to three general principles about stocks. They will [@cronin2008]: (1) rise when inflows exceed outflows, (2) fall when outflows exceed inflows, and (3) remain the same when inflows equal outflows. In other words, stocks change with respect to the summative properties of their flows. Stocks also set the pace for the cumulative rhythm of the system. Even when flows are changing rapidly, the stock may change slowly because accumulation occurred over a long period of time. 
 
 Figure \ref{stocks} plots a simple stock and flow system over 20 time periods. 
 
@@ -139,9 +133,9 @@ Monge refers to rate of change as "How fast the magnitude increases or decreases
 
 Periodicity is the amount of time before a pattern repeats itself, and it is equivalent to the term cycle. The most important piece about periodicity is that it must be couched with "controlling for trend." Notice that panel *A* is periodic because, after controlling for trend, there are repeated patterns over time.
 
-## Now two variables
+## Two Variables
 
-It is of course possible to combine these notions when researchers are studying processes with more than one variable. For example, a researcher might describe the magnitude in their presumed dependent variable with respect to the magnitude of their independent variable, or the rates of change across the system of variables. When we turn to the behavior and relationships among a system of variables a few additional principles are available. 
+It is of course possible to combine these notions when researchers are studying processes with more than one variable. For example, a researcher might describe the magnitude in their presumed dependent variable with respect to the magnitude of their independent variable, or the rates of change across the system of variables. When we turn to the behavior and relationships among two or more variables -- i.e., a system of variables -- a few additional principles are available. 
 
 ## Lags
 
@@ -165,5 +159,5 @@ People from our literature using these terms and principles to explain something
 
 ## Summary
 
-These systems theory notions are valuable tools to explain and describe process. Note that we did not cover everything to keep the reading concise and consistent. For example, @monge also covers discontinuous systems, so please refer to his excellent paper for an even deeper discussion. Now we turn to mathematics and statistics and describe principles from these domains that are used to explain process.
+These systems theory notions are valuable tools to explain and describe process. Note that we did not cover everything to keep the reading concise and consistent. For example, @monge also covers discontinuous systems, so please refer to his excellent paper for an even deeper discussion. Now we turn to mathematics and statistics and describe principles from these domains that are used to explain or describe process.
 

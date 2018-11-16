@@ -1,4 +1,10 @@
 base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
 papaja
 tidyverse
 ggplot2
@@ -9,5 +15,6 @@ purrr
 dplyr
 stringr
 forcats
-bindrcpp
 png
+grid
+bindrcpp
