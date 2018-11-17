@@ -3,7 +3,7 @@ title: "princ_math"
 output: pdf_document
 ---
 
-# Mathematical, Statistical and Dynamics Principles
+# Mathematics and Dynamics Principles
 
 ## Difference Equations
 
@@ -30,7 +30,7 @@ c &= -4
 
 \noindent produces a line that decreases by four units at each time point. 
 
-The next level of complexity comes from autoregressive terms, which represent the extent to which the variable relates to itself over time. Here:
+The next level of complexity comes from autoregressive terms, which represent the extent to which the variable relates to itself over time. Here,
 
 \begin{equation}
 \begin{split}
@@ -117,7 +117,7 @@ Insert Figure \ref{dynamics_plot} Here
 
 Notice that we introduced a new term in our description above: equilibrium. Equilibrium describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems -- where equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equalibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
 
-Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. This back and forth oscillating pattern between variables describes a dynamic equilibrium. The variables change and there may be random disturbances to the system across time, but the net dynamics of the system remain stable -- and therefore this situation is still called **equilibrium**. 
+Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. This back and forth oscillating pattern between variables describes a dynamic equilibrium. The variables change and there may be random disturbances to the system across time, but the net dynamics of the system remain stable -- and therefore this situation is still called "equilibrium."
 
 ## Stochastics
 
@@ -128,7 +128,7 @@ Our route so far has been deterministic -- the mathematical representations do n
 y_{t} = a y_{t-1} + c + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into $y$ at each time point. Errors cause $y$ to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push $y$ to a higher value, and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors, and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
+\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into $y$ at each time point. Errors cause $y$ to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push $y$ to a higher value, and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors, and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath_statistical_2016]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
 
 It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs." An aggregation of randomness is a normal distribution.
 
@@ -200,18 +200,37 @@ x_{t} = a x_{t - 1} + e_{t}
 
 \noindent where all terms are defined above but now the equation for $y$ also includes $x_{t}$, the value of $x$ and time $t$, and $b$, the coefficient relating $x$ to $y$. This set of equations says that $x$ is simply a product of itself over time (with error), whereas $y$ is a function of itself and also $x$ at the immediate time point. 
 
-Feedback
+What if there is a lag between when $x$ causes $y$? That is, perhaps we posit that $x$ does not immediately cause $y$ but instead causes $y$ after some period of time. If the lag effect were 2, that would mean that $x_t$ causes $y_{t + 2}$, and to express the "lag 2 effect" mathematically we would use the following.
 
-Cross lags
+\begin{equation}
+\label{sysy3}
+y_{t} = a y_{t - 1} + b x_{t - 2} + e_{t}
+\end{equation}
+\begin{equation}
+\label{sysx3}
+x_{t} = a x_{t - 1} + e_{t}
+\end{equation}
 
-you can extend this to whatever you want
+\noindent Here, all terms are nearly identical to what we saw above but now there is a lag-two effect from $x$ to $y$. $y$ is now a function of both its immediately prior self and the value of $x$ from two time points ago. 
 
+What if we want to convey feedback, or a reciprocal relationship between $x$ and $y$? That is, now we posit that both $x$ causes $y$ and $y$ causes $x$. To do so we update our equations with a simple change:
 
-A difference equation with X influencing Y -- now I have lags represented in math. A difference equation with X influencing Y and Y influencing X -- now I have a feedback loop represented in a difference equation. I may also get priodicity, trend, and equilibrium -- we could work that out analytically but it is easier just to graph it. 
+\begin{equation}
+\label{sysy3}
+y_{t} = a y_{t - 1} + b x_{t - 2} + e_{t}
+\end{equation}
+\begin{equation}
+\label{sysx3}
+x_{t} = a x_{t - 1} + b y_{t - 2} + e_{t}
+\end{equation}
+
+\noindent where all terms are defined above but now $x$ and $y$ are reciprocally related. Both are determined by themselves at the immediately prior time point and the other variable two time points in the past. $x$ happens, and two moments later this influences $y$, and two moments later this influences $x$, and so on throughout time. All the while, both variables retain self-similarity -- they change and develop but only under the constraints afforded by the autoregressive terms. 
+
+We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey a process over time. If we were to plug values into the coefficients and variables we would produce trajectories over time, and to describe those trajectories we could then use terms like "trend," "periodicity," or "feedback" like we saw in the systems theory section. 
 
 ## Examples
 
-People from our literature using these principles to explain something. 
+People from our literature using these principles to explain something. Study 1 argued for random walk behavior in X. Study 2 measured X and Y and posited an equation.
 
 ## Summary
 

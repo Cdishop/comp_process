@@ -4,6 +4,41 @@ output: pdf_document
 ---
 
 
+# comp principles
+
+
+## Key States
+
+What are the important states? A variable is an entity that can take different values at one point in time. A state is a variable that fluctuates over time. In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
+
+We can also talk about the global state of the system as a whole -- its cumulative form. The state of the *system* describes enough about the system to determine its future behavior in the absence of any external forces affecting the system. The set of possible combinations of state variables is called the state space of a system.
+
+## State Dynamics
+
+## Constants
+
+Values that do not change over time. Usually constants occur in the coefficients, or the weights. Vancouver's comp model 2018 included a weight relating assigned goal difficulty and goal specificity to self-efficacy that did not change over time.  
+
+## Actions
+
+## Action selection
+
+## Context/Environment
+
+How is the process situated? Simon's mouse behavior environment. He defines the context in which it can move around. Things happen with respect to the environment. 
+
+## Noise
+
+Is there error in the system, if so, where?
+
+## Time Scale
+
+How long does the process operate for? How many iterations does my for loop go for?
+
+
+
+
+
 # On Modeling
 
 A theory is an explanation, a model is an instantiation of that theory.

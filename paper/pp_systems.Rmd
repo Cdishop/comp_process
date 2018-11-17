@@ -5,11 +5,11 @@ output: pdf_document
 
 # Systems Theory Principles
 
-We start with some principles from systems theory -- they have some overlapping terms with the growth modeling literature and should be somewhat familiar to most in our field.
+We start with principles from systems theory -- a gentle place to begin given that some of the terms will overlap with the growth modeling literature.
 
 ## Stocks and Flows
 
-One common approach to explaining how things happen over time is to identify stocks and flows. Meadows [@meadows2009] defines both with the following:
+One common approach to explaining how things happen over time is to identify stocks and flows. @meadows2008thinking defines both with the following:
 
 > A stock is a store, a quantity, an accumulation of material or information that has built up over time. It may be the water in a bathtub, a population, the books in a bookstore, the wood in a tree, the money in a bank, your own self confidence. A stock does not have to be physical. Your reserve of good will toward others or your supply of hope that the world can be better are both stocks. 
 
@@ -17,7 +17,7 @@ One common approach to explaining how things happen over time is to identify sto
 
 \noindent That last sentence is what makes a stock imply behavior over time. We speak about stocks by both referring to what they contain right now but also how they have developed and where they are likely to go. Also note that stocks do not have to change.
 
-The behavior of a stock -- whether it rises, falls, or remains the same -- depends on the nature of flows. We can learn about stock behavior by subtracting outflows from inflows. Doing so leads to three general principles about stocks. They will [@cronin2008]: (1) rise when inflows exceed outflows, (2) fall when outflows exceed inflows, and (3) remain the same when inflows equal outflows. In other words, stocks change with respect to the summative properties of their flows. Stocks also set the pace for the cumulative rhythm of the system. Even when flows are changing rapidly, the stock may change slowly because accumulation occurred over a long period of time. 
+The behavior of a stock -- whether it rises, falls, or remains the same -- depends on the nature of flows. We can learn about stock behavior by subtracting outflows from inflows. Doing so leads to three general principles about stocks. They will [@cronin2009don]: (1) rise when inflows exceed outflows, (2) fall when outflows exceed inflows, and (3) remain the same when inflows equal outflows. In other words, stocks change with respect to the summative properties of their flows. Stocks also set the pace for the cumulative rhythm of the system. Even when flows are changing rapidly, the stock may change slowly because accumulation occurred over a long period of time. 
 
 Figure \ref{stocks} plots a simple stock and flow system over 20 time periods. 
 
@@ -127,7 +127,7 @@ Magnitude is the level, value, or amount of the variable at each time point -- t
 
 ## Rate of Change
 
-Monge refers to rate of change as "How fast the magnitude increases or decreases per one unit of time." Panels *G* and *H* reveal differences in rates of change. 
+Monge (1990) refers to rate of change as "How fast the magnitude increases or decreases per one unit of time." Panels *G* and *H* reveal differences in rates of change. 
 
 ## Periodicity
 
@@ -143,21 +143,21 @@ How long does it take for the presumed independent variable to produce an effect
 
 ## Permanence
 
-Once the effect happens, how long does it last?
+Once the effect happens, how long does it last? That is, if the independent variable causes the dependent variable to change to a new value, does the dependent value remain at that new value indefinitely?
 
 ## Feedback Loops
 
 Systems theory researchers often convey process by using feedback loops. Feedback loops describe processes where a variable eventually relates back to itself.
 
-There are two common ways to describe the behavior of a focal variable within a feedback loop. When feedback causes the variable to move in the opposite direction than it initially moved, this is known as negative feedback, deviation counteraction, or a balancing feedback loop [@monge; @meadows]. Here, an initial increase in $x$ leads to subsequent changes in the system that, through time, eventually cause $x$ to decrease. Now that $x$ has gone down, more changes happen in the system that, through time, eventually cause $x$ to increase. 
+There are two common ways to describe the behavior of a focal variable within a feedback loop. When feedback causes the variable to move in the opposite direction than it initially moved, this is known as negative feedback, deviation counteraction, or a balancing feedback loop [@monge_theoretical_1990; @meadows2008thinking]. Here, an initial increase in $x$ leads to subsequent changes in the system that, through time, eventually cause $x$ to decrease. Now that $x$ has gone down, more changes happen in the system that, through time, eventually cause $x$ to increase. 
 
-When feedback, instead, causes the variable to move in the same direction that it initially moved, this is known as postive feedback, deviation ampliciation, or a reinforcing feedback loop [@monge; @meadows]. Here, changes in $x$ in one direction lead to eventual changes in $x$ in the same direction and thus produce exponential, explosive, or amplifying behavior. Of course, we can also identify whether there is positive or negative feedback for every variable in the system.
+When feedback, instead, causes the variable to move in the same direction that it initially moved, this is known as postive feedback, deviation ampliciation, or a reinforcing feedback loop [@monge_theoretical_1990; @meadows2008thinking]. Here, changes in $x$ in one direction lead to eventual changes in $x$ in the same direction and thus produce exponential, explosive, or amplifying behavior. Of course, we can also identify whether there is positive or negative feedback for every variable in the system.
 
-## Example
+## Examples
 
-People from our literature using these terms and principles to explain something. 
+People from our literature using these terms and principles to explain something. Study 1 measured X and Y and described trend. Study 2 measured X and Y and talked about cycles. Study 3 measured X and Y and reported lags. 
 
 ## Summary
 
-These systems theory notions are valuable tools to explain and describe process. Note that we did not cover everything to keep the reading concise and consistent. For example, @monge also covers discontinuous systems, so please refer to his excellent paper for an even deeper discussion. Now we turn to mathematics and statistics and describe principles from these domains that are used to explain or describe process.
+These systems theory notions are valuable tools to explain and describe process. Note that we did not cover everything to keep the reading concise and consistent. For example, @monge also covers discontinuous systems, so please refer to his excellent paper for an even deeper discussion. Now we turn to mathematics and dynamics and describe principles from these domains that are used to explain or describe process.
 

@@ -5,73 +5,31 @@ output: pdf_document
 
 # Computational Principles
 
-Above, we described and explained behavior over time by using representations most people are familiar with: verbal descriptions, plots, and math. There has recently been a push to comp model. These people are trying to do the same thing, but represent their process in a computer. 
+Above, we unpacked representations most people are familiar with: verbal descriptions, plots, and math. There has recently been a push to use computational models -- where the goal is still to convey process but in computer code. In this section we discuss several principles that researchers can use when they are explaining a process and expect that explanation to eventually be evaluated with a computational model. We are not going to show code or a set of scripts or "if statements" (although doing so would be a valuable paper on its own). Instead, the principles below are pieces that should be incoporated into an explanation if the researcher hopes to eventually evaluate it in a computer simulation. This section will also be different from the sections above because we will use a running example throughout, and the example comes from @simon1956rational.
 
-Think of it this way. Above, we represented process with graphs, equations, and terms. To do so required certain principles. When we want to describe something in a computer language we also need certain principles: certain requirements or fundamentals about how we explain the process. 
-
-Vancouver has pointed out some of these. He framed them as difficult pieces to putting stuff into code.
+While developing his notion of satisficing Simon wrote a paper exploring simple rules that could yield adaptive behavior. His paper was not framed as a "computational model," but his writing is a great example of how authors can write verbal explanations that lend themselves to computer simulations. Writing equations is of course preferred, but the concepts below are tools/criteria for researchers without a strong mathematical background. 
 
 ## Key States
 
-What are the important states? A variable is an entity that can take different values at one point in time. A state is a variable that fluctuates over time. In information technology and computer science, a program is described as stateful if it is designed to remember preceding events or user interactions; the remembered information is called the state of the system.
+Simon's (1956) paper is about how agents move through an environment and choose among multiple goals -- it is about multiple goal self-regulation. He begins by arguing that agents choose among multiple goals to satisfy needs, and need satisfaction is the core driver of behavior. There are of course other causes, but everything is done with respect to the need requirements. The two needs he includes are food and water.
 
-We can also talk about the global state of the system as a whole -- its cumulative form. The state of the *system* describes enough about the system to determine its future behavior in the absence of any external forces affecting the system. The set of possible combinations of state variables is called the state space of a system.
+Simon begins his explanation with needs, and although there are other causes of behavior he makes the assumption that needs are the lowest level of abstraction required to explain his model. They can be thought of as the "foundation" variables to build from. Researchers should be clear about the core variables that drive all other behavior in their models. Variables are called "states" when we talk about them over time, so the first principle is to adequately identify and describe the key states.
 
 ## State Dynamics
 
-## Constants
-
-Values that do not change over time. Usually constants occur in the coefficients, or the weights. Vancouver's comp model 2018 included a weight relating assigned goal difficulty and goal specificity to self-efficacy that did not change over time.  
+Once we identify the states we need to describe their behavior over time. Again, Simon's (1956) key states are food and water, and he then goes on to describe how they unfold as time progresses. He posits that an agent's food and water states decrease over time because his or her body requires energy. The body is constantly using food and water in its stores, so as time passes the key states naturally decrease. 
 
 ## Actions
 
-## Action selection
+The key states are the assumed "proximate" causes of behavior, and we have now explained how they unfold over time. Next, we need to explain the list of possible behaviors that the causes lead to. In other words, we need actions that result given the set of states and their current dynamics. In Simon's model he lists three agent actions: resting, exploring, and goal striving. These actions satisfy the internal state dynamics. How so? That is the next criteria.
 
-## Context/Environment
+## Action Selection
 
-How is the process situated? Simon's mouse behavior environment. He defines the context in which it can move around. Things happen with respect to the environment. 
-
-## Noise
-
-Is there error in the system, if so, where?
-
-## Time Scale
-
-How long does the process operate for? How many iterations does my for loop go for?
-
-## Example: Simon 1956
-
-### key states:
-
-* hunger and thirst
-* It is easier to think of these as stocks: food and water.
-
-### State dynamics:
-
-* The body requires energy, so the food and water stocks decrease over time (i.e., hunger and thirst increase)
-
-### Actions
-
-* these actions satisfy the state dynamics
-
-    + resting, exploration, goal striving
-
-### Action selection
-
-* If the food and water stocks are above threshold, the agent rests
-* When the stock of any need dips below threshold, the agent explores
-
-* During exploration
-    + agent randomly runs into objects. If they encounter a single object relevant to one of the needs, the agent acquires it
-    + If the agent encounters two or more need-relevant objects, they evoke a simple ratio to make a decision 
-        * compare energy required to meet the need (M) to the storage capacity with respect to the need (S)
-        * or the effort required to get the object to how large the stock for this need is. Super large stocks take precedence
+Assuming a set of actions, how does the agent select among them? Action selection is the principle for explaining how one of the actions actually occurs given the states and their dynamics. Simon argues that if the food and water states are above threshold then the agent rests. That is, he suggests that the food and water states act like stores (although they constantly decrease) and only produce action when some negative discrepancy exists. When one of the states dips below threshold the agent explores its environment. During exploration the agent randomly runs into objects, and if he or she encounters a single object relevant to one of the needs the agent acquires it. If instead the agent encounters two or more need-relevant objects he or she makes a decision based on the ratio of effort required to get the object versus the size of the state discrepancy. In summary, action selection is about how behavior occurs given the states and their dynamics, whereas actions are simply the names of the behaviors themselves. 
         
-### Environment
+## Environment
 
-* a space with goals within which the entity moves
-* the individual is located in an environment that contains spatially distributed goal-relevant objects such as sources of food and water (239).
-* the size of the food and water stocks are determined by the availability of the resources in the environment. Water is easier to come by than food and so food storage requirements are greater. Similarly, breathable air is easier to obtain than water and so its storage requirements are less than both food and water (239). 
+Finally, computer simulations require a structure or environment for agents to operate within. The environment could be a lattice, a well-mixed population, or any number of network arrangements, but the core idea is that context shapes what ultimately happens. Simon explains his simple rules model within a grid that contains spatially distributed sources of food and water. The size of the food and water stocks are determined by the availability of the resources in the environment. Water is easier to come by than food and so food requirements are greater. 
 
 ## Summary
 
