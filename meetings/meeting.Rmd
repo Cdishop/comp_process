@@ -11,11 +11,36 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 # Take aways from last time
 
-* Feeling good about principles. 
+* Wrote a paper on different ways to represent and describe process. 
 
 # Today
 
-* Writing structure and questions.
+1) What is the connect between your manifest relationship and your process?
+
+The paper as is is a set of principles to talk about. But we don't talk at all about the decisions people have to make when they decide which variables to measure. Let's change emphasis:
+
+Paper one:
+
+Alternative ways to think about things over time
+
+Grandey affect. Ego depletion. Here is this really cool theory with lots of stuff over time. 
+Here is how people explore and test it. TVC model. Growth model. They find relationships. To what extent do these relationships connect to what Grandey was talking about? There is an entire domain we have yet to explore: dynamics.
+
+difference equations
+stationarity
+equilibrium
+reciprocal dynamics
+seriel correlation
+
+pay attention to these things. Model these things. they are another way to represent the ideas in the theory. The theory is a process-oriented, dynamic theory. Current people explore trend or growth, that tells them that things can grow, or that things relate to growth, but there are other necessary concepts.
+
+Paper two:
+
+What is the connection between your manifest relationship and the process?
+
+There seems to be a disconnect. On the one hand we talk about processes like performance. Then we go and we model relationships. What does that manifest coeffficient mean? How is it related to the process? 
+
+You have to make decisions on what you are going to be focusing on. we don't see people talking about the extent to which their observed relationship falls back into the underlying process. Where is it situated?
 
 
 # Question 1
