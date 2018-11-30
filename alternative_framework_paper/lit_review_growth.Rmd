@@ -1,0 +1,112 @@
+---
+title: "lit review"
+output: html_document
+---
+
+
+
+latent growth curves
+the theory might be the dynamics of well being by sonnentag (annual review 2014)
+fatigue and recovery: hulsheger: sleep quality, psych detachment, fatigue; Kramer: hours, BMI growth, children; dunford burnout; 
+garst, frese, molenaar 2000 stressor-strain relationships
+
+
+# Hulsheger
+
+Examining patterns in fatigue over time. 
+
+"The fundamental presumption underlying most of these studies is that recovery is a process rather than a state and can be described as the continuous cycle of depletion and replenishment of resources" (p. 905). 
+
+"Given that the idea of recovery as a cyclical process lies at the heart of recovery theory (Meijman & Mulder, 1998), it is all the more suprising that little is known about the process of recovery itself, the daily cycle of expending and restoring mental and energetic resources as it unfolds over time." (p. 905). 
+
+"Traditional experience sampling methodologies have provided valuable insights into which factors are positively or negatively related to recovery-related states, such as vigor, fatigue, or need for recovery at a certain time of the day, typically in the morning or at the end of the day...These studies explain within-person day-to-day variation in morning fatigue with psychological detachment and sleep quality. They have thus adopted a differential approach, which focuses on explaining how variation in variable A relates to variation in variable B. Notably, the differential approach does not inform about the temporal characteristics of fatigue, about the continuous ebb and flow of fatigue over the course of teh day and about the factors that influence this temporal ebb and flow. Does fatigue linearly increase during work and then start to decrease after work when individuals recover? Or does it initially decrease until midday while employees are still refreshed and become active at work and then start to increase in the afternoon?" (p. 905-906). 
+
+"The goal of the present study is therefore to shed light on the recovery process by studying energy depletion and replenishment as it unfolds over time. I will do so by adopting a temporal reseaerch approach and by studying individual-level change trajectories in fatigue over time." (p. 906).
+
+"Doing so responds to recent calls to empirically address the dynamic process of recovery and thereby helps refine recovery theory." (p. 906).
+
+"The study will reveal the typical daily time course of fatigue, informing about the level of fatigue at different times during the work day and when critical changes occur. Furthermore, it sheds light on the conditions that shape this time course and lead to deviations from the typical change pattern." (p. 906). 
+
+H1: Fatigue systematically changes over the course of the work day, following a U-shaped pattern that is characterized by an initial decline and a positive quadratic trend.
+H2: Psychological detachment (a) and sleep quality (b) predict starting values of fatigue (intercept differences), such that morning fatigue is higher when previous evening/night psychological detachment and sleep quality was low than when it was high.
+H3: When sleep quality is high, next day fatigue initially declines and then increases again (initial decline and positive quadratic trend). When sleep quality is low, fatigue remains relatively stable at a high level (i.e., weaker initial decline and weaker positive quadratic trend). 
+H4a: When psychological detachment is low, next day fatigue initially declines and then increases again (i.e., initial decline and positive quadratic trend). When psychological detachment is high, there is a weaker initial decline in fatigue, after which fatigue linearly increases until bedtime (i.e., weaker initial decline and weaker positive quadratic trend).
+H4b: When sleep quality is low, next day fatigue initially declines and then increases again (initial decline and positive quadratic trend). When sleep quality is high, there is a weaker initial decline in fatigue, after which fatigue linearly increases until bedtime (i.e., weaker initial decline and weaker positive quadratic trend). 
+
+N = 133 of various dutch employees
+4 questionnaries per day for 5 consecutive work days
+morning, work break, end of work, evening
+
+Variables
+* fatigue
+* sleep quality
+* psych detachment
+
+Morning
+* fatigue
+* sleep quality
+
+work break
+* fatigue
+
+end of work
+* fatigue
+
+evening
+* fatigue
+* psych detachment
+
+Growth curves
+* unconditional model with first time point intercept and slopes
+* conditional models where predictors are added to correlates with either intercepts or slopes (or both)
+* Fatigue demonstrated a linear and quadratic trend over time
+* Morning sleep quality correlated with the fatigue intercept
+* Psych detachment was not correlated with fatigue intercept
+* Morning sleep quality correlated with fatigue trend
+* Psych detachment did not correlate with the fatigue trend
+
+Hulsheger examines fatigue trends. He motivates his study by stating that his examination of the "temporal characteristics of fatigue, about the continuous ebb and flow of fatigue over the course of the day and about the factors that influence this temporal ebb and flow" responds to calls 
+to "empirically address the dynamic process of recovery and thereby helps refine recovery theory" (p. 906). For 5 consecutive workdays he employes fatigue surveys -- one in the morning, another at the first work break, a third at the end of work, and the last in the evening -- among a sample of Dutch employees. The morning survey also assessses sleep quality and the fourth daily survey measures psychological detachment. He estimates growth curves for fatigue across his sample, and correlates sleep quality and psychological detachment with the fatigue intercept and slope estimates, respectively. 
+
+# Kramer & Chung, 2015
+
+The relationship between work/family demands and health (BMI) over the course of many years.
+
+Don't use the words dynamic. But interested in over time stuff.
+
+# Dunford et al., 2012
+
+Examine burnout trajectories.
+
+"Theoretically, much of the burnout literature generally suggests that burnout should be progressive and dynamic, yet most empirical research has focused on explaining and testing the antecedents of static levels of burnout." (p. 637). 
+
+Static between person models are useful but incomplete.
+
+"Knowing for whom burnout changes and when this pattern of change occurs leads to a more realistic view of the dynamism of human experience and better manageriel prescriptions for addressing burnout" (p. 637). 
+
+H1: Burnout dimensions will be dynamic for organizational newcomers such that they will exhibit a positive linear trend and a negative quadratic trend (i.e., increasing after entry and then leveling off over time).
+H2: Burnout dimensions will be dynamic for internal job changes such that they will exhibit a positive linear trend and a negative quadratic trend (i.e., increasing after entry and then leveling off over time). 
+H2B: The positive linear trend in burnout trajectories will be significantly greater for organizational newcomers than for internal job changes.
+H3: Burnout dimensions will be relatively stable for organizational insiders such that the trajectory will be relatively flat but exhibit a slightly negative linear trend.
+H4: Career transition type (newcomer, internal job changer, or insider) will have a significantly greater impact on emotional exhaustion and depersonalization trajectories than it will on the trajectory of reduced personal accomplishment.
+
+N = 3,713 healthcare employees
+2 years, 5 measurements separated by about 6 months
+
+Variables
+* Burnout
+* Between person career related transitions:
+- newcomers (entered no more than 3 months before start)
+- org insiders (no change in last 3 montsh)
+- internal job changes (change within last 3 months of start)
+
+Statistical model:
+* Growth model using a random coefficient approach
+* Estimate intercept, linear, and quadratic slopes for all three burnout dimensions
+* Conclude that all data contain autoregressive error structure
+* Covary transition type (dummy coded) with intercepts and trends. Transition type correlated with intercept (initial burnout) and trends.
+
+Dunford et al. examine burnout trajectories over two years. They motivate their study by stating that, "theoretically, much of the burnout literature suggests that burnout should be progressive and dynamic, yet most empirical research has focused on explaining and testing the antecedents of static levels of burnout," therefore "knowing for whom burnout changes and when this pattern of change occurs leads to a more realistic view of the dynamism of human experience and better managerial prescriptions for addressing burnout" (p. 637). Over two years they assess healthcare workers with five measurements, each separated by six months. All surveys measure burnout (all dimensions), and the researchers also collect between person assessments of job transitions (a categorical variable indicating whether an employee is a newcomer, recently underwent an internal job change, or remained at the same position throughout). They estimate a sequence of growth curves and examine intercept and linear and quadratic slope terms for all three burnout dimensions. They also covary the dummy coded job transition type with the intercept and slope terms. 
+
+# 
+

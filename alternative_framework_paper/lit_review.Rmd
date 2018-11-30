@@ -1,0 +1,227 @@
+---
+title: "lit_review"
+output: html_document
+---
+
+Uncharted principles for empirical studies focusing on dynamics
+
+What are the common themes?
+* behaviors vary day to day...they are dynamic. 
+++ It is a contribution to run an HLM model and show that 40% of the variance is within person
+++ It is a contribution to adopt a dynamic within-person persective rather than a between person perspective
+* Koopman propose hypotheses about relationships with the same language, but they are tested either with concurrent (H1) or lag (H2) relationships. 
+
+Put things into a difference equation. Notice johnson thing measures stuff at different times and it makes the difference equation strange.
+
+These guys are not wrong. But clearly they are interested in dynamics. We want to highlight some dynamic principles. Some are new ways of thinking. Some clarify what people mean. Some require attention otherwise inferential errors are likely.
+
+They motivate their study by stating, ""
+
+# Gabriel et al., 2017
+
+The dark side of OCB's: OCB is depleting and therefore lowers subseuqent helping and increases self-serving political acts.
+
+"In this study we conceptualize OCB as daily helping behaviors, given that helping represents an activity that is 'ongoing, dynamic, and time-dependent' (Bolino, Harvey, & Bachrach, 2012, p. 127), and varies on a day-to-day basis as employees navigate the complexity of their work environment" p. 2. 
+
+They criticize between person OCB research because it only considers distal consequences of OCBs between employees who engage in more versus fewer OCBs on average over relatively long or unspecified time frames. 
+
+"This is problematic, given that changes in resources are transient and occur daily. Thus, a more appropriate empirical test of this process requires an intraindividual lens that allows researchers to consider how OCBs, resources, and subsequent behaviors vary daily. That is, not assessing the dynamic relations between helping behaviors and related constructs poentially misaligns the theoretical underpinnings of the construct and the level of analysis used to assess their relationships (i.e., taking dynamic processes and assessing them with static, 'in general' assessments of constructs; Klein & Kozlowski, 2000)." p. 2
+
+
+"Despite the value of these between-person examinations, OCB research has shifted toward intraindividual assessments, given that 'there are substantial and systematic fluctuations in employees' episodic, or momentary levels of OCB (Scott, Matta, & Koopman, in press, p. 2) and, often, the theoretical lenses used to examine this intraindividual variability have dynamic underpinnings warranting episodic assessments." (p. 3).
+
+H1: Daily helping acts at work will be related to an increase in depletion
+H2: The daily positive relation of helping acts with depletion will be stronger when chronic prevention focus is higher (vs. lower)
+H3: Daily depletion will be related to a decrease in subsequent helping acts
+H4: Daily depletion will be related to an increase in subsequent political acts
+
+"The amount of within-person variance in political acts ranged from 32% to 43%, supporting our assertion that political acts do operate as a dynamic, intraindividual phenomenon." (p. 10).
+
+N = 91, nonacademic staff from northern university in US
+Two surveys a day for 10 consecutive workdays.
+Variables:
+* helping acts
+* depletion
+* political acts
+
+T1 Survey
+* helping acts
+* depletion
+* political acts
+
+T2 Survey
+* helping acts
+* depletion
+* political acts
+
+Statistical model
+* included controls like sleep quality, and sin and cosine and day of week of each DV (given that individuals experience cyclical variation)
+
+Three main statistical models
+* regress afternoon depletion on afternoon helping acts and morning depletion
+* regress afternoon political acts on afternoon depletion and morning political acts
+* regress afternoon helping acts on afternoon depletion and morning helping acts
+
+(include between person moderators like prevention/promotion focus and political skill).
+
+Gabriel et al., study the association among helping acts, depletion, and self-serving political acts. They motivate their study by highlighting the limitations of between-person research and then stating that "a more appropriate empirical test of this process requires an intraindividual lens that allows researchers to consider how OCBs, resources, and subsequent behaviors vary daily. That is, not assessing the dynamic relations between helping behaviors and related constructs potentially misaligns the theoretical underpinnings of the construct and the level of analysis used to assess their relationships (i.e., taking dynamic processes and assessing them with static, 'in general' assessments of constructs; Klein & Kozlowski, 2000)" (p. 2). For ten work days they collect surveys twice a day (morning and afternoon). Both the morning and afternoon surveys assess helping acts, depletion, and political acts. They regress afternoon depletion on afternoon helping acts and morning depletion. They regress afternoon political acts on afternoon depletion and morning political acts. They regress afternoon helping acts on afternoon depletion and morning helping acts.
+
+# Johnson et al., 2014
+
+The dark side of being fair: procedural justice behaviors are draining, and that depletion adversely impacts OCBs.
+
+"...much of our knowledge of justice experiences derives from cross-sectional studies examining between-person differences in justice-based perceptions and reactions. However, many justice experiences are products of discrete daily events and encounters that shape employees' momentary cognition and behavior in situ (Cropanzano et al., 2001). Thus, there is a need for longitudinal, daily investigations of justice experiences that take a dynamic person-centric view of how justice experiences evolve over time and across circumstances (cites)." (p. 1). 
+
+H1: Within individuals, exhibiting daily  procedural justice bahavior is associated with an increase in resource depletion
+H2: Within individuals, exhibiting daily interpersonal justice behavior is associated with a decrease in resource depletion
+H3: The within-individual positive relation between procedural justice behavior and next-day resource depletion is less positive when extraversion is high (vs. low).
+H4: The within-individual positive relation between procedural justice behavior and next-day resource depletion is more positive when neuroticism is high (vs. low).
+H5 and 6 same as above but with interpersonal justice behavior
+H7: within individuals, depletion of self-regulatory resources is associated with a decrease in OCB
+H8: depletion mediates the relations of (a) procedural justice and (b) interpersonal justice with OCB
+
+N = 82, managers in MBA program
+twice daily surveys for 10 work days
+
+Variables
+* sleep quantity
+* justice behavior
+* resource depletion
+* OCB
+* workload
+
+Morning survey
+* sleep quantity
+
+Afternoon survey
+* justice behavior
+* resource depletion
+* OCB
+* workload
+
+Statistical models
+* regress afternoon depletion on prior day afternoon justice behavior (procedural and interpersonal) and afternoon workload and morning sleep and prior day afternoon depletion
+Depletion_{t} ~ justice_{t-2} + workload_{t} + sleep_{t-1}
+
+* "H7, to test we regressed next-day OCB on next-day depletion of self-regulatory resources controlling for daily workload because daily workload is likely to affect both depletion of resources as well as frequency of OCB" (p. 8). 
+* regress afternoon OCB on afternoon depletion and afternoon workload
+OCB_{t} ~ depletion_{t} + workload_{t}
+
+"Justice is dynamic: the frequency of actors' justice behaviors varies day to day." (p. 10). 
+
+"Our research design enabled us to examine dynamic, within-person effects. By collecting multiple observations per participants, we were able to test our model via a more granular approach to time than previous justice research." (p. 11). 
+
+
+Johnson et al., study the relationship between justice behaviors, depletion, and OCBs -- they argue that exhibiting procedural justice behaviors is depleting and can negatively influence OCBs. They motivate their study by stating that our current justice knowledge comes from "cross-sectional studies examining between-person differences," but "there is a need for longitudinal, daily investigations of justice experiences that take a dynamic person-centric view" (p. 1). Ultimately they argue that their research design enabled them to "examine dynamic, within-person effects" and test a model "via a more granular approach to time" (p. 11). Their participants responded to surveys twice a day for 10 working days (morning and afternoon). The morning survey measured sleep quantity, whereas the afternoon survey measured justice behaviors, depletion, and OCBs. They regress afternoon depletion on the morning sleep quantity, the prior day's afternoon justice behavior, and the prior day's afternoon depletion. 
+
+# Rosen et al., 2016
+
+Experiencing incivility reduces self control, and therefore I subsequently become more incivil.
+
+"Although examinations of incivility have gained momentum in organizational research, theory and empirical tests involving dynamic, within-person processes associated with this negative interpersonal behavior are limited." (p. 1 abstract).
+
+"The central aim of our study is, thus, to broaden theory on workplace incivility by developing and testing a conceptual model that explains how dynamic ego depletion processes link experienced incivility to instigated incivility, turning victims of incivility into perpetrators." (p. 2).
+
+"...previous studies have focused almost exclusively on chronic forms of incivility that occur on average during unspecified periods of time, which overlooks the dynamic and temporal nature of incivility and its effects. Consistent with ego depletion theory, we consider a dynamic process that explains why employees become more uncivil after experiencing incivility from others." (p 2).
+
+"we use experience sampling methodology to (a) assess proximal effects of experienced incivility, (b) capture the dynamic nature of incivility as it unfolds across brief cycles, and (c) directly test momentary ebbs and flows in self-control as posited by ego depletion theory." (p 2). 
+
+H1: On a daily basis, experiencing incivility at work will be positively related to a decrease in self-control.
+H2: The daily positive relation of experiencing incivility with diminished self-control will be stronger for employees who perceive high (vs. low) levels of politics.
+H3: On a daily basis, experiencing decreased self-control will be positively related to an increase in instigated incivility.
+H4: The daily positive relation of diminished self-control with instigated incivility will be weaker for employees who have a high (vs. low) construal level.
+
+N = 70, university employees
+three surveys a day for 10 consecutive workdays
+
+Variables:
+* self control
+* experienced incivility
+* instigated incivility
+
+Morning survey
+* self control
+
+Afternoon survey
+* self control
+* experienced incivility
+* instigated incivility
+
+evening survey
+* experienced incivility
+* instigated incivility
+
+Controlled for day of week, sine and cosine because people exhibit linear and cyclical fluctuations in their daily states
+
+Statistical models
+* regress afternoon self control afternoon instigated incivility and experienced incivility and morning self control
+SC_{t} ~ II_{t} + EI_{t} + SC_{t-1}
+* regress evening instigated incivility on evening experienced incivility and instigated incivility and afternoon self control
+II_{t} ~ EI_{t} + SC_{t - 1}
+
+"Organizational scholars must consider dynamic models that can account for antecedent and consequent based processes that unfold from one episode to the next, which differ from static content models at the between persons level, and even within-person studies that examine all effects at the same measurement period." (p. 10).
+
+"This study provided insight into this phenomenon, indicating that a dynamic ego depletion process explains how experiencing incivility can spread to instigating incivility." (p. 12). 
+
+
+Rosen explore the relationship between incivility and self-control. They motivate their research by stating that "although examinations of incivility have gained momentum in organizational research, theory and empirical tests involving dynamic, within-person processes associated with this negative interpersonal behavior are limited" (p. 1). They also argue that "previous studies focused almost exclusively on chronic forms of incivility that occur on average during unspecified periods of time, which overlooks the dynamic and temporal nature of incivility and its effects. Consistent with ego depletion theory, we consider a dynamic process that explains why employees become more uncivil." (p. 2). Their participants respond to three surveys a day (morning, afternoon, and evening) for 10 workdays. The morning survey assesses self-control, the afternoon survey assesses self-control, experienced incivlity, and instigated incivility, and the evening survey measures experienced incivility and instigated incivility. They regress afternoon self-control on afternoon incivility and morning self-control. Another model regresses evening incivility on afternoon self-control.
+
+
+# Koopman et al., 2016
+
+Simultaneously examine the costs and benefits of OCBs for actors. OCB is associated with positive affect. OCB reduces perceptions of work goal progress. (cognitive affective processing system; conservation of resources; basically another resource theory).
+
+"We focus on the daily, within-individual consequences of OCB given the 'ongoing, dynamic, and time-dependent' nature of this behavior (Bolino, Harvey, & Bachrach, 2012: 127)." (414). 
+
+"Overall, our investigation, which responds to calls in the literature to examine the consequences of OCB on a more dynamic basis" (p. 415). 
+
+"Despite being inherently dynamic, studies using COR as a theoretical lens have tended to be static in design and have generally focused only on either resource generation or resource consumption" (415). 
+
+H1: On a daily basis, engaging in organizational citizenship behaviors is positively related to positive affect
+H2: Positive affect mediates the relationship between daily OCB and well-being, specifically (a) emotional exhaustion, (b) job satisfaction, and (c) affective commitment
+H3: On a daily basis, engaging in organizational citizenship behaviors is negatively related to perceptions of work goal progress.
+H4: Perceptions of work goal progress mediate the relationship between daily OCB and well-being, specifically (a) emotional exhaustion, (b) job satisfaction, and (c) affective commitment.
+H5: The daily relationship between engaging in organizational citizenship behaviors and positive affect is more positive for individuals who are high (vs low) in promotion focus.
+H6: The daily relationship between engaging in organizational citizenship behaviors and work goal progress is more negative for individuals who are high (vs low) in prevention focus.
+
+N = 82 across many job types (e.g., administrative, clerical, technical). 
+three surveys a day for 10 workdays
+
+Variables:
+* OCB
+* perceived work goal progress
+* task performance
+* emotional exhaustion
+* affect
+* affective commitment
+
+Morning survey
+* OCB
+* Positive affect
+* Negative affect
+* Work goal progress
+* task performance
+
+Afternoon survey
+* Work goal progress
+* emotional exhaustion
+* task performance
+
+Evening survey
+* Job satisfaction
+* Affective commitment
+
+Statistical models
+* morning positive affect regressed on morning OCB, morning task performance, and morning negative affect
+pAffect_{t} ~ OCB_{t} + performance_{t} + nAffect_{t} (H1)
+* afternoon work goal progress regressed on morning OCB, morning task performance, and morning work goal progress
+wgp_{t} ~ OCB_{t-1} + performance_{t-1} + wgp_{t-1}
+* evening job satisfaction regressed on afternoon work goal progress
+
+Koopman examine the costs and benefits of OCBs on behalf of the actor -- specifically how OCBs relate to positive affect and work goal progress. They motivate their study by stating that they study "respond to calls in the literature to examine the consequences of OCB on a more dynamic basis" (p. 415). Their respondents fill out three surveys (morning, afternoon, and evening) for ten workdays. The morning survey assesses OCBs, positive affect, and work goal progress. The afternoon survey measures work goal progress, and the evening survey assesses outcome variables irrelevant to the discussion here. They examine the relationship between OCBs and positive affect by regressing afternoon positive affect on morning OCB and morning work goal progress. They examine the relationship between OCBs and work goal progress by regressing afternoon work goal progress on morning OCB and morning work goal progress. 
+
+# What do these studies have in common?
+
+They are longitudinal. They examine concurrent or lagged relationships. They test for within-person variance.
+Clearly these studies are interested in dynamics. There is more to it than this.
+There are many more principles missing here. We want to point researchers to them.
