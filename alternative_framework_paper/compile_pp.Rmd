@@ -1,20 +1,26 @@
 ---
 # https://crsh.github.io/papaja_man/index.html
 
-title             : "Principles for Describing or Explaining Process"
-shorttitle        : "PROCESS PRINCIPLES"
+title             : "The Unsung Principles of Dynamics"
+shorttitle        : "DYNAMICS PRINCIPLES"
 
 author: 
-  - name          : "..."
+  - name          : "Christopher R. Dishop"
     affiliation   : "1"
     corresponding : yes    # Define only one corresponding author
-    address       : "..."
-    email         : "..."
+    address       : "316 Physics Rd, Psychology Building Room 348, East Lansing, MI 48823"
+    email         : "dishopch@msu.edu"
+    
+  - name          : "Jeffrey Olenick"
+    affiliation   : "1"
+
+  - name          : "Richard. P DeShon"
+    affiliation   : "1"
 
 
 affiliation:
   - id            : "1"
-    institution   : "..."
+    institution   : "Michigan State University"
 
 
 author_note: |
@@ -56,21 +62,15 @@ knitr::opts_chunk$set(fig.path = 'figs/',echo = FALSE, warning = FALSE, message 
 ```{r child = 'pp_intro.Rmd'}
 ```
 
-```{r child = 'pp_systems.Rmd'}
-
+```{r child = 'pp_growth.Rmd'}
 ```
 
-```{r child = 'pp_math.Rmd'}
-
+```{r child = 'pp_relationships.Rmd'}
 ```
 
-```{r child = "pp_comp.Rmd"}
-
+```{r child = 'pp_dynamics.Rmd'}
 ```
 
-```{r child = "pp_discussion.Rmd"}
-
-```
 
 
 

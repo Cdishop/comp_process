@@ -2,29 +2,29 @@
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{figs/unnamed-chunk-6-1.pdf}
-\caption{\label{fig:unnamed-chunk-6}the ol stock system\label{stocks}}
+\includegraphics{figs/unnamed-chunk-9-1.pdf}
+\caption{\label{fig:unnamed-chunk-9}the ol stock system\label{stocks}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{figs/unnamed-chunk-7-1.pdf}
-\caption{\label{fig:unnamed-chunk-7}monge image\label{monge}}
+\includegraphics{figs/unnamed-chunk-10-1.pdf}
+\caption{\label{fig:unnamed-chunk-10}monge image\label{monge}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{figs/unnamed-chunk-8-1.pdf}
-\caption{\label{fig:unnamed-chunk-8}dynamic equilibrium
+\includegraphics{figs/unnamed-chunk-11-1.pdf}
+\caption{\label{fig:unnamed-chunk-11}dynamic equilibrium
 fig\label{dynamics_plot}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{figs/unnamed-chunk-9-1.pdf}
-\caption{\label{fig:unnamed-chunk-9}this one will be a white noise process
+\includegraphics{figs/unnamed-chunk-12-1.pdf}
+\caption{\label{fig:unnamed-chunk-12}this one will be a white noise process
 and a random walk\label{noise}}
 \end{figure*}

@@ -1,0 +1,82 @@
+---
+title: "intro"
+output: pdf_document
+---
+
+# The theory is dynamic, but currently assesssments are growth or tvc based. Turn to dynamic framework to help
+
+Turning to dynamics as an alternative way to think about, describe, and model process.
+
+increasingly interested in how things happen over time, in process. 
+we witness people thinking and describing their phenomenon with respect to a certain class of models. 
+People talk about trend, growth, and relationships across time. 
+
+There is another framework: dynamics
+
+In this paper we use grandey emotional labor as an example.
+Here is the theory, it is dynamic and process oriented.
+
+Here is how people evaluate it empirically.
+Measure this
+Model this
+Report this
+
+These things are couched in growth curves and time-varying covariates analyses. Growth curves are great for takling about trends. Time-varying covariates analyses are great for talking about between person correlations at each respective time point. But there is more to the theory, what about memory? Equilibrium? Constraints? We describe a number of principles for people to be aware of
+
+# People are stating that they are doing dynamics. They are certainly doing some of the fundamental aspects of dynamics. But there are more. 
+
+The unsung principles of dynamics.
+
+People care so much about dynamics. We are doing so well, but there are other principles that we have not seen discussed. Some are concepts that we ought to be thinking about, others are statistical properties that, if ignored, could result in biased inferences. 
+
+growth
+
+relationships
+
+review of dynamics
+
+Other principles we need to talk about. If you think the past matters, you must attend to these principles. If you think within-person, you must attend to these principles.
+If we are doing this, why didn't we review all of dynamics? Latent profiles, bivariate growth curves, etc.?
+
+
+# Lit review - they say they have dynamics
+# Ignored principles in the exploration of dynamics
+
+These guys say that they are doing dynamics and process. If you say that, there are other principles to take into account.
+
+change emphasis
+ego depletion
+lanaj and change
+
+
+
+
+
+
+latent growth curves
+the theory might be the dynamics of well being by sonnentag (annual review 2014)
+fatigue and recovery: hulsheger: sleep quality, psych detachment, fatigue; Kramer: hours, BMI growth, children; dunford burnout; 
+garst, frese, molenaar 2000 stressor-strain relationships
+
+# Lit review - the theory has more
+
+Here is a cool theory.
+
+Here is how it is evaluated. To appreciate the full theory we have to attend to some of these dynamic principles.
+
+
+We want to reorient this litearture to dynamics? They focus on predicting change in their DV. What we want to reorient is that variables usually depend on their own prior history. In a sense, people are already doing what we want, but they are focusing on the wrong thing.
+
+The stuff I am finding is from ego depletion. They are using lags. They are using partials of past behavior.
+If you think the past matters, you must attend to these princples
+
+stationarity
+random walks
+white noise
+seriel correlation
+
+
+could also look at bivariate dual change models.
+
+
+
