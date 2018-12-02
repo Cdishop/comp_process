@@ -4,26 +4,8 @@ output: pdf_document
 
 # Dynamics
 
-Both frameworks above get things moving toward dynamics. They bring up great notions like within-person trajectories and lag relationships, but there are many more principles left to appreciate, and we want to expose our field to them so that researchers have an even greater number of tools to explore this domain.
+Both frameworks above get things moving toward dynamics. They bring up great notions like within-person trajectories and lag relationships, but there are many more principles left to appreciate and we want to expose our field to them so that researchers have an even greater number of tools to explore this domain. Moreover, there are a number of statistical properties that arise in dynamic modeling that have received almost no attention but can produce inferential errors if left unchecked.
 
 Dynamics refers to a specific branch of mathematics/mechanics, but the term is used in different ways throughout our literature. It is used informally to mean "change", "fluctuating," "volatile," "longitudinal," or "over time" (among others), whereas formal definitions in our literature are presented within certain contexts. Wang (2016) defines a dynamic *model* as a "representation of a system that evolves over time. In particular it describes how the system evolves from a given state at time *t* to another state at time $t + 1$ as governed by the transition rules and potential external inputs" (p. 242). @vancouver_translating_2018 state that dynamic *variables* "behave as if they have memory; that is, their value at any one time depends somewhat on their previous value" (p. 604). Finally, @monge_theoretical_1990 suggests that in dynamic *analyses*, "it is essential to know how variables depend upon their own past history" (p. 409). 
 
 The crucial notion to take from dynamics, then, is memory. When the past matters, and future states are constrained by where they were at prior points in time, dynamics are at play. Below, we unpack a number of important principles couched in this simple idea.
-
-## Concepts
-
-states vs. variables
-memory
-self-similarity
-constraints
-boundary space on the system
-reciprocal
-ando and simon timing. within person dynamics vs. entire room temperature
-
-## Statistics
-
-lags
-equilibrium
-random walks
-white noise
-stationarity

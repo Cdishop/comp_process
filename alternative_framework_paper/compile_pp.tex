@@ -179,22 +179,21 @@ inferences.
 Below, we first discuss two broad classes of \enquote{thinking with
 respect to a statistical model} that have done the hard work -- they are
 sets of empirical studies taking initial steps towards dynamics. The
-first we refer to as \enquote{growth,} and the second as
-\enquote{relationships,} and we discuss example studies in each to
-briefly show our field's interest in dynamics and how some researchers
-approach it. This first section is not exhaustive, we are simply
-sampling a few of the common ways researchers currently think about
-dynamics to motivate the core of the paper. There, we will unpack a
-variety of dynamics principles that must be incorporated as we enter
-this domain.
+first we call \enquote{growth,} and the second \enquote{relationships,}
+and we discuss example studies in each to briefly show our field's
+interest in dynamics and how some researchers approach it. These first
+two sections are not exhaustive, we are simply sampling a few of the
+common ways researchers currently think about dynamics to motivate the
+core of the paper. There, we unpack a variety of dynamics principles
+that must be incorporated as we enter this domain.
 
 \hypertarget{stepping-toward-dynamics-growth}{%
 \section{Stepping Toward Dynamics --
 Growth}\label{stepping-toward-dynamics-growth}}
 
 It is becoming increasingly popular to examine whether something goes up
-or down over time -- its trend or growth pattern. Sometimes this idea is
-also called \enquote{change.}
+or down over time -- its trend or growth pattern. Some also call this
+notion \enquote{change.}
 
 Hülsheger (2016) examines fatigue trends. He motivates his study by
 stating that his examination of the \enquote{the continuous ebb and flow
@@ -320,17 +319,20 @@ These authors are also interested in dynamics. All test for
 within-person variance and motivate their studies by stating that
 \enquote{the good stuff} resides in the within-person relationships.
 They examine concurrent or lagged relationships across their variables
-over time, and they are able to examine many observations due to their
-frequent sampling designs.
+over time, and they are able to collect many observations due to their
+frequent sampling.
 
 \hypertarget{dynamics}{%
 \section{Dynamics}\label{dynamics}}
 
 Both frameworks above get things moving toward dynamics. They bring up
 great notions like within-person trajectories and lag relationships, but
-there are many more principles left to appreciate, and we want to expose
+there are many more principles left to appreciate and we want to expose
 our field to them so that researchers have an even greater number of
-tools to explore this domain.
+tools to explore this domain. Moreover, there are a number of
+statistical properties that arise in dynamic modeling that have received
+almost no attention but can produce inferential errors if left
+unchecked.
 
 Dynamics refers to a specific branch of mathematics/mechanics, but the
 term is used in different ways throughout our literature. It is used
@@ -353,299 +355,203 @@ matters, and future states are constrained by where they were at prior
 points in time, dynamics are at play. Below, we unpack a number of
 important principles couched in this simple idea.
 
-\hypertarget{concepts}{%
-\subsection{Concepts}\label{concepts}}
+\hypertarget{concepts-and-conventions}{%
+\subsection{Concepts and Conventions}\label{concepts-and-conventions}}
 
-states vs.~variables memory self-similarity constraints boundary space
-on the system reciprocal ando and simon timing. within person dynamics
-vs.~entire room temperature
+The first set of principles are concepts. Ways of thinking.
 
-\hypertarget{statistics}{%
-\subsection{Statistics}\label{statistics}}
+\hypertarget{states}{%
+\subsubsection{States}\label{states}}
 
-lags equilibrium random walks white noise stationarity
+In organizational science we typically use the term \enquote{variable}
+to describe a measured construct, and our lens is usually across people.
+Burnout, depletion, fatigue, OCBs, performance, job satisfaction --
+these are all variables; they are quantities with values that fluctuate
+across people. When we instead focus on how values fluctuate across time
+we call them \enquote{states.} Performance as a variable, therefore,
+focuses on the set of values across people, whereas performance as a
+state focuses on its values across time.
 
-\hypertarget{systems-theory-principles}{%
-\section{Systems Theory Principles}\label{systems-theory-principles}}
+The convention to label states is to use what is called a state vector.
+A state vector for depletion, fatigue, and performance would be:
+\((depletion, fatigue, burnout)\) and its mathematical equivalent is,
+\((x_1, x_2, x_3)\) or \((x_1 ...x_n)\). We will use this notation later
+after introducing more concepts.
 
-We start with principles from systems theory -- a gentle place to begin
-given that some of the terms will overlap with the growth modeling
-literature.
+\hypertarget{memory-and-self-similarity}{%
+\subsubsection{Memory and
+Self-similarity}\label{memory-and-self-similarity}}
 
-\hypertarget{stocks-and-flows}{%
-\subsection{Stocks and Flows}\label{stocks-and-flows}}
+Arguably the most fundamental concept in dynamics is that states often
+have memory -- they are self-similar across time. Performance may vary
+or fluctuate over time, but it retains self-similarity from one moment
+to the next. Job satisfaction now is some function of what it was just
+prior to now. My conscientiousness tomorrow will have carry over from
+what it was today, as will the number of people I communicate with.
+Researchers of course may argue that some states have no memory, but the
+point here is that states tend to retain something about what they are
+from moment to moment.
 
-One common approach to explaining how things happen over time is to
-identify stocks and flows. ({\textbf{???}}) defines both with the
-following:
+\hypertarget{constraints}{%
+\subsubsection{Constraints}\label{constraints}}
 
-\begin{quote}
-A stock is a store, a quantity, an accumulation of material or
-information that has built up over time. It may be the water in a
-bathtub, a population, the books in a bookstore, the wood in a tree, the
-money in a bank, your own self confidence. A stock does not have to be
-physical. Your reserve of good will toward others or your supply of hope
-that the world can be better are both stocks.
-\end{quote}
+When a state has memory or self-similarity it can still fluctuate or
+change over time -- to say that Rachel's job satisfaction will predict
+itself over time does not mean that we expect her job satisfaction to be
+identical every day. Instead, it will fluctuate or vary but under the
+constraints of where it was in the past. Imagine we argue that job
+satisfaction has no memory. If we grant that statement, then Rachel's
+job satisfaction from moment to moment is unconstrained and it can swing
+(potentially) to positive or negative infinity based the states that
+cause it. But if it does have memory then it is constrained, it cannot
+swing explosively. When she experiences something negative at work --
+like ridicule -- her job satisfaction will certainly decrease in the
+moment, but what is her job satisfaction decreasing from? The answer is
+its prior level -- the negative experience is pushing against her prior
+level of job satisfaction, job satisfaction is not created from scratch
+just after ridicule. States vary over time, but where they go is
+constrained by their history.
 
-\begin{quote}
-Stocks change over time through the actions of flows. Flows are filling
-and draining, births and deaths, purchases and sales, growth and decay,
-deposits and withdrawals, successes and failures. A stock, then, is the
-present memory of the history of changing flows within the system (18).
-\end{quote}
-
-\noindent That last sentence is what makes a stock imply behavior over
-time. We speak about stocks by both referring to what they contain right
-now but also how they have developed and where they are likely to go.
-Also note that stocks do not have to change.
-
-The behavior of a stock -- whether it rises, falls, or remains the same
--- depends on the nature of flows. We can learn about stock behavior by
-subtracting outflows from inflows. Doing so leads to three general
-principles about stocks. They will ({\textbf{???}}): (1) rise when
-inflows exceed outflows, (2) fall when outflows exceed inflows, and (3)
-remain the same when inflows equal outflows. In other words, stocks
-change with respect to the summative properties of their flows. Stocks
-also set the pace for the cumulative rhythm of the system. Even when
-flows are changing rapidly, the stock may change slowly because
-accumulation occurred over a long period of time.
-
-Figure \ref{stocks} plots a simple stock and flow system over 20 time
-periods.
-
-\begin{center}
-
----------------
-
-Insert Figure \ref{stocks} Here
-
----------------
-
-\end{center}
-
-\begin{figure}
-\centering
-\includegraphics{figs/unnamed-chunk-9-1.pdf}
-\caption{\label{fig:unnamed-chunk-9}the ol stock system\label{stocks}}
-\end{figure}
-
-\noindent Beginning at the first time point, inflows are equal to
-outflows and the stock therefore sits at zero. Over the first ten time
-points, however, outflows remain the same whereas inflows increase. With
-inflows exceeding outflows the stock also increases up until time point
-ten. At this time, inflows drop back down to five whereas outflows
-increase -- leading to a large reduction in the stock. As outflows
-continue to rise over time -- with no counterbalancing movement from the
-inflow -- the stock ultimately decreases.
-
-Systems theory uses stocks and flows as general labels for each of the
-things in the system. Above, we described the behavior of the stocks and
-flows with simple terms -- increasing, decreasing, or constant. Systems
-theory also provides a more systematic way of describing trajectories
-and explaining behavior over time. These are unpacked in an excellent
-paper by Monge (1990), and the framework includes trend, magnitude, rate
-of change, and periodicity. These are shown respectively in figure
-\ref{monge}.
-
-\begin{figure}
-\centering
-\includegraphics{figs/unnamed-chunk-10-1.pdf}
-\caption{\label{fig:unnamed-chunk-10}monge image\label{monge}}
-\end{figure}
-
-\begin{center}
-
----------------
-
-Insert Figure \ref{monge} Here
-
----------------
-
-\end{center}
-
-\hypertarget{trend}{%
-\subsection{Trend}\label{trend}}
-
-Dividing figure \ref{monge} into two portions -- the top and bottom --
-reveals differences in trend. All of the panels on the top of the figure
-have trend, whereas those on the bottom do not. Trend is the systematic
-increase or decrease of a variable over time.
-
-\hypertarget{magnitude}{%
-\subsection{Magnitude}\label{magnitude}}
-
-Magnitude is the level, value, or amount of the variable at each time
-point -- the number on the \(y\) axis at each respective point in time.
-For example, in panel \emph{C} of figure two the magnitude is low at
-times 1, 2, and 3, but is high at later points in time. Additionally,
-panel \emph{E} and \emph{F} have the same magnitude if we average their
-values over time, but panel \emph{E} contains both high and low
-magnitude, whereas the magnitude for the trajectory in panel \emph{F}
-remains relatively constant.
-
-\hypertarget{rate-of-change}{%
-\subsection{Rate of Change}\label{rate-of-change}}
-
-Monge (1990) refers to rate of change as \enquote{How fast the magnitude
-increases or decreases per one unit of time.} Panels \emph{G} and
-\emph{H} reveal differences in rates of change.
-
-\hypertarget{periodicity}{%
-\subsection{Periodicity}\label{periodicity}}
-
-Periodicity is the amount of time before a pattern repeats itself, and
-it is equivalent to the term cycle. The most important piece about
-periodicity is that it must be couched with \enquote{controlling for
-trend.} Notice that panel \emph{A} is periodic because, after
-controlling for trend, there are repeated patterns over time.
-
-\hypertarget{two-variables}{%
-\subsection{Two Variables}\label{two-variables}}
-
-It is of course possible to combine these notions when researchers are
-studying processes with more than one variable. For example, a
-researcher might describe the magnitude in their presumed dependent
-variable with respect to the magnitude of their independent variable, or
-the rates of change across the system of variables. When we turn to the
-behavior and relationships among two or more variables -- i.e., a system
-of variables -- a few additional principles are available.
+It is also helpful to consider what would happen if we vary the strength
+of Rachel's job satisfaction memory. First imagine that her job
+satisfaction is only weakly self-similar. Now when she experiences
+ridicule we would expect her job satisfaction to fluctuate to a large
+extent, whereas when her job satisfaction is self-similar we would
+expect the fluctuation to be smaller.
 
 \hypertarget{lags}{%
-\subsection{Lags}\label{lags}}
+\subsubsection{Lags}\label{lags}}
 
-How long does it take for the presumed independent variable to produce
-an effect on the outcome? This is the notion of lag.
+Memory is not limited to a single variable. Job satisfaction may also be
+influenced by the prior history of other states, like depletion or
+fatigue. Imagine that we believe that fatigue has a lag effect on
+performance. This means that we expect some amount of time to pass
+before fatigue influences performance. Said another way, the influence
+of fatigue on performance does not happen immediately. Despite
+collecting longitudinal data many researchers still examine concurrent
+relationships by regressing DVs on IVs at the same moment. That is, they
+regress performance at time four on fatigue at time four and performance
+at time six on fatigue at time six, despite having the possibility to
+explore lag effects. What these concurrent models imply is that the
+researcher expects fatigue to immediately influence performance. With
+some states immediate cause makes sense, but as our \enquote{over time}
+thinking progresses there will be many opportunities to explore lags.
 
-\hypertarget{permanence}{%
-\subsection{Permanence}\label{permanence}}
+\hypertarget{reciprocal-influence}{%
+\subsubsection{Reciprocal Influence}\label{reciprocal-influence}}
 
-Once the effect happens, how long does it last? That is, if the
-independent variable causes the dependent variable to change to a new
-value, does the dependent value remain at that new value indefinitely?
+Many research questions can be boiled down to trying to find antecedents
+and outcomes, but when we focus on dynamics and start thinking about
+memory, constraints, and lags across multiple states we focus less on
+\enquote{true causes} or antecendents and more on reciprocal influence.
+This kind of thinking often takes the form, \enquote{and then this
+happens.} Consider the (example) reciprocal relationships between
+performance, superior support, and fatigue. I performed my assignment
+well so my boss sent me a nice email letting me know that she
+appreciated my work. I subsequently increased my performance and again
+performed well on my second assignment. Having increased my performance,
+however, I was now more fatigued and on my third assignment I performed
+poorly. After performing poorly I did not receive the congratulatory
+email. In this simple example, performance, fatigue, and superior
+support fluctuate across time. We are not necessarily interested in
+finding the \enquote{true} cause, direction of effects, or the exact
+coefficient between one state and another, but we are interested in the
+pattern of reciprocal relationships across time.
 
-\hypertarget{feedback-loops}{%
-\subsection{Feedback Loops}\label{feedback-loops}}
+\hypertarget{time-scales}{%
+\subsubsection{Time Scales}\label{time-scales}}
 
-Systems theory researchers often convey process by using feedback loops.
-Feedback loops describe processes where a variable eventually relates
-back to itself.
+Researchers can gain valuable insights by considering the timescales of
+dynamics. Consider the temperature of a building and each of its
+interior rooms. The quick dynamics occur from room to room. Air
+molecules pass between them until they are all roughly the same
+temperature. But the weather outside also influences the temperature of
+the building as a whole -- it just takes longer to occur. When the sun
+comes up it does not immediately change the room-to-room dynamics.
 
-There are two common ways to describe the behavior of a focal variable
-within a feedback loop. When feedback causes the variable to move in the
-opposite direction than it initially moved, this is known as negative
-feedback, deviation counteraction, or a balancing feedback loop
-({\textbf{???}}; Monge, 1990). Here, an initial increase in \(x\) leads
-to subsequent changes in the system that, through time, eventually cause
-\(x\) to decrease. Now that \(x\) has gone down, more changes happen in
-the system that, through time, eventually cause \(x\) to increase.
+\hypertarget{boundary-space}{%
+\subsubsection{Boundary Space}\label{boundary-space}}
 
-When feedback, instead, causes the variable to move in the same
-direction that it initially moved, this is known as postive feedback,
-deviation ampliciation, or a reinforcing feedback loop ({\textbf{???}};
-Monge, 1990). Here, changes in \(x\) in one direction lead to eventual
-changes in \(x\) in the same direction and thus produce exponential,
-explosive, or amplifying behavior. Of course, we can also identify
-whether there is positive or negative feedback for every variable in the
-system.
+When researchers estimate a growth curve and argue for a positive linear
+trend what they are implying is that the trajectory increases forever.
+Job satisfaction continually increases; OCBs go down forever. In dynamic
+systems with reciprocal influence and constraints there are boundaries
+on where processes can go.
 
-\hypertarget{examples}{%
-\subsection{Examples}\label{examples}}
+\hypertarget{describing-trajectories.}{%
+\subsubsection{Describing
+Trajectories.}\label{describing-trajectories.}}
 
-People from our literature using these terms and principles to explain
-something. Study 1 measured X and Y and described trend. Study 2
-measured X and Y and talked about cycles. Study 3 measured X and Y and
-reported lags.
+We want to close this section by pointing readers to a wonderful paper
+by Monge (1990) that provides vocabulary for describing trajectories. In
+this paper we are introducing concepts and statistical properties that
+will need to be accounted for as we approach dynamics. Monge's paper
+will provide readers with terms to describe trajectories over time, and
+we feel that it should be required reading for anyone interested in
+dynamics.
 
-\hypertarget{summary-2}{%
-\subsection{Summary}\label{summary-2}}
+\hypertarget{mathematics-and-statistics}{%
+\subsection{Mathematics and
+Statistics}\label{mathematics-and-statistics}}
 
-These systems theory notions are valuable tools to explain and describe
-process. Note that we did not cover everything to keep the reading
-concise and consistent. For example, ({\textbf{???}}) also covers
-discontinuous systems, so please refer to his excellent paper for an
-even deeper discussion. Now we turn to mathematics and dynamics and
-describe principles from these domains that are used to explain or
-describe process.
+We are now going to translate some of the concepts into math. Doing so
+will (a) reiterate the principles and (b) make it easier to talk about
+some of the more complicated statistical properties.
 
-\hypertarget{mathematics-and-dynamics-principles}{%
-\section{Mathematics and Dynamics
-Principles}\label{mathematics-and-dynamics-principles}}
+\hypertarget{basic-concepts-in-equations}{%
+\subsubsection{Basic Concepts In
+Equations}\label{basic-concepts-in-equations}}
 
-\hypertarget{difference-equations}{%
-\subsection{Difference Equations}\label{difference-equations}}
-
-In mathematics, a basic representation of a process over time is a
-difference equation:
-
-\begin{equation}
-\label{basicD}
-y_{t} = y_{t - 1}
-\end{equation}
-
-\noindent where \(y_{t}\) represents \(y\) now and \(y_{t-1}\) is the
-variable at the prior time point. Here, the value of \(y\) is the same
-at each \(t\), and the emergent behavior would be a flat line across
-time. In systems theory terms, there would be no trend.
-
-Although equation \ref{basicD} seems simple, it introduces a fundamental
-concept in dynamics: memory. The variable now depends on where it was in
-the past. It is constrained, there are boundaries on where it can go.
-
-As we add terms to this basic difference equation the behavior of the
-variable becomes more complex. Adding a forcing constant, \emph{c} in
-equation \ref{basicD} produces positive or negative trend depending on
-whether \emph{c} is, respectively, positive or negative. For example,
-the following equation:
-
-\begin{equation}
-\begin{split}
-\label{diffC}
-y_{t} &= y_{t-1} + c \\ 
-c &= -4
-\end{split}
-\end{equation}
-
-\noindent produces a line that decreases by four units at each time
-point.
-
-The next level of complexity comes from autoregressive terms, which
-represent the extent to which the variable relates to itself over time.
-Here,
+Remember that in dynamics we are focused on memory, self-similarity, and
+constraints as states move across time. Imagine that we are interested
+in performance over time. What we are going to do here is begin to
+capture those ideas with equations. First, consider performance across
+time:
 
 \begin{equation}
-\begin{split}
-\label{diffA}
-y_{t} &= a y_{t-1} \\ 
-a &= 0.5
-\end{split}
+\textrm{Performance}_{t} = \textrm{Performance}_{t-1}
 \end{equation}
 
-\noindent the variable is described over time but it does not retain the
-same value at each \(t\). Instead, the variable is \emph{similar} over
-time and the autoregressive term, \(a\), describes the extent of that
-similarity. In equation \ref{diffA}, \(a\) is 0.5, meaning that the
-relationship between the variable now and itself at the next time point
-will be 0.5.
+\noindent where performance at time \(t\) is exactly identical to what
+it was at \(t-1\). This equation says that performance does not
+fluctuate, change, move, or grow across time -- there is zero trend.
+Performance is, say, four at time one, and four at time two, and four at
+time three, and so on. This type of equation is called a difference
+equation, and it is the foundation of dynamic analysis.
 
-There are fundamental behaviors of dynamic variables based on their
+Although this first equation seems disceptively simple, we have already
+captured memory. Performance, in this case, is perfectly self-similar.
+What if performance is similar, but not perfectly self-similar across
+time? To capture this idea we need a new term:
+
+\begin{equation}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t-1}
+\end{equation}
+
+\noindent where \(a\) is the extent to which performance is self-similar
+and all other terms are defined above. \(a\) is a coeffient relating
+performance now to performance at the next moment, and when you estimate
+that term in a statistical model it is called an autoregressive term.
+When the autoregressive term is large performance is highly
+self-similar, whereas when \(a\) is close to zero performance has less
+self-similarity.
+
+\hypertarget{fundamental-autoregressive-behaviors}{%
+\subsubsection{Fundamental Autoregressive
+Behaviors}\label{fundamental-autoregressive-behaviors}}
+
+There are fundamental behaviors of dynamic states based on their
 autoregressive terms, and these are shown in figure \ref{dynamics_plot}.
-The top row of figure \ref{dynamics_plot} shows the trajectory of
-variables with autoregressive terms that are greater than one in
-absolute value. These large terms produce explosive behavior --
-exponential growth when \(a\) is positive and oscillating chaos when
-\(a\) is negative. When the autoregressive term falls between zero and
-one in absolute value, conversely, the variable converges to equilibrium
--- shown in the bottom two panels. Either the variable oscillates at a
-decreasing rate until it reaches equilibrium (when \(a\) is negative) or
-it converges there smoothly (when \(a\) is positive).
-
-\begin{figure}
-\centering
-\includegraphics{figs/unnamed-chunk-11-1.pdf}
-\caption{\label{fig:unnamed-chunk-11}dynamic equilibrium
-fig\label{dynamics_plot}}
-\end{figure}
+The top row of figure \ref{dynamics_plot} shows the trajectory of states
+with autoregressive terms that are greater than one in absolute value.
+These large terms produce explosive behavior -- exponential growth when
+\(a\) is positive and oscillating chaos when \(a\) is negative. When the
+autoregressive term falls between zero and one in absolute value,
+conversely, the state converges to equilibrium -- shown in the bottom
+two panels. Either the state oscillates at a decreasing rate until it
+reaches equilibrium (when \(a\) is negative) or it converges there
+smoothly (when \(a\) is positive). Again, these behaviors hold for all
+states with the given autoregressive terms.
 
 \begin{center}
 
@@ -658,7 +564,7 @@ Insert Figure \ref{dynamics_plot} Here
 \end{center}
 
 \hypertarget{equilibrium}{%
-\subsection{Equilibrium}\label{equilibrium}}
+\subsubsection{Equilibrium}\label{equilibrium}}
 
 Notice that we introduced a new term in our description above:
 equilibrium. Equilibrium describes the state of a variable that no
@@ -680,14 +586,14 @@ available food for the bobcats goes up. Over time, this raises the
 population of the bobcats as well. Now with a greater bobcat population,
 the rabbit population decreases because more are being killed. Over
 time, this reduction in food opportunity decreases the bobcat
-population. This back and forth oscillating pattern between variables
-describes a dynamic equilibrium. The variables change and there may be
+population. This back and forth oscillating pattern between states
+describes a dynamic equilibrium. The states change and there may be
 random disturbances to the system across time, but the net dynamics of
 the system remain stable -- and therefore this situation is still called
 \enquote{equilibrium.}
 
 \hypertarget{stochastics}{%
-\subsection{Stochastics}\label{stochastics}}
+\subsubsection{Stochastics}\label{stochastics}}
 
 Our route so far has been deterministic -- the mathematical
 representations do not contain error. When we want to convey a process
@@ -697,22 +603,23 @@ difference equation from above, adding an error component produces:
 
 \begin{equation}
 \label{diffE}
-y_{t} = a y_{t-1} + c + e_{t}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t-1} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but \(e_{t}\) represents an
-error term that is incorporated into \(y\) at each time point. Errors
-cause \(y\) to be higher or lower at specific points in time than we
-would have expected given a deterministic process. For example, at time
-\(t\) the error might push \(y\) to a higher value, and at \(t+1\) to a
-lower value. Errors are therefore said to be random because we cannot
-predict their value at any specific \(t\). In aggregation (i.e.,
-averaged across time), however, positive errors cancel negative errors,
-and large errors are less likely than small errors. Any time we have an
-accumulation of random error we get a normal distribution (McElreath,
-2016). In stochastic systems, therefore, the errors are said to be
-distributed \(N(0, 1)\) -- that is, random and unpredictable at any
-specific \(t\) but distributed with certain constraints across time.
+error term that is incorporated into performance at each time point.
+Errors cause performance to be higher or lower at specific points in
+time than we would have expected given a deterministic process. For
+example, at time \(t\) the error might push performance to a higher
+value, and at \(t+1\) to a lower value. Errors are therefore said to be
+random because we cannot predict their value at any specific \(t\). In
+aggregation (i.e., averaged across time), however, positive errors
+cancel negative errors, and large errors are less likely than small
+errors. Any time we have an accumulation of random error we get a normal
+distribution (McElreath, 2016). In stochastic systems, therefore, the
+errors are said to be distributed \(N(0, 1)\) -- that is, random and
+unpredictable at any specific \(t\) but distributed with certain
+constraints across time.
 
 It can also be helpful to think about what error is not. Anything that
 is systematic, predictable, or common (using those in layman's terms)
@@ -720,33 +627,30 @@ cannot be error -- leaving error to be the random \enquote{left overs.}
 An aggregation of randomness is a normal distribution.
 
 \hypertarget{white-noise-and-random-walks}{%
-\subsection{White Noise and Random
+\subsubsection{White Noise and Random
 Walks}\label{white-noise-and-random-walks}}
 
 There are two fundamental stochastic processes: white noise and random
-walks. White noise is a process that only has error. Setting \emph{c}
-and \emph{a} to zero in equation \ref{diffE} produces a white noise
-process.
+walks. White noise is a process that only has error. Setting \(a\) to
+zero in equation \ref{diffE} produces a white noise process.
 
 \begin{equation}
 \begin{split}
 \label{whitenoise}
-y_{t} &= a y_{t-1} + c + e_{t} \\
-a &= 0 \\
-c &= 0
+\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\
+a &= 0
 \end{split}
 \end{equation}
 
 \noindent Here, all we have is error over time. Panel \enquote{A} of
 figure \ref{noise} shows the behavior of a white noise process over
-time. Random walks are similar, but \emph{a} is now equal to one.
+time. Random walks are similar, but \(a\) is now equal to one.
 
 \begin{equation}
 \begin{split}
 \label{rw}
-y_{t} &= a y_{t-1} + c + e_{t} \\ 
+\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\ 
 a &= 1 \\ 
-c &= 0
 \end{split}
 \end{equation}
 
@@ -763,235 +667,232 @@ are the null hypotheses of time-series analysis in econometrics -- where
 the first task in a longitudinal study is to demonstrate that you are
 investigating something that is not a random walk or white noise.
 
-\begin{figure}
-\centering
-\includegraphics{figs/unnamed-chunk-12-1.pdf}
-\caption{\label{fig:unnamed-chunk-12}this one will be a white noise process
-and a random walk\label{noise}}
-\end{figure}
+Using our performance equation example, that would mean that if a
+researcher wanted to show the effect of IVs on performance across time
+they would first need to demonstrate that performance is not a random
+walk or white noise process. This step is currently absent in our
+literature but, again, is the essential starting place in econometrics.
+
+\begin{center}
+
+---------------
+
+Insert Figure \ref{dynamics_plot} Here
+
+---------------
+
+\end{center}
 
 \hypertarget{system-of-equations}{%
-\subsection{System of Equations}\label{system-of-equations}}
+\subsubsection{System of Equations}\label{system-of-equations}}
 
-Our discussion so far has focused on one variable. Before moving to two
-or more variables we want to pause and highlight how much researchers
-can explore with single variables. It is of course interesting and fun
-to ask how two or more variables are related, or posit a complex
-sequence among a set of variables. But understanding whether or not one
-variable exhibits white noise or random walk behavior across time is a
-valuable study in itself. We feel that our field could substantially
-benefit from spending more time plotting and analyzing the individual
-trajctories of every measured variable in a study.
+Our discussion so far has focused on performance, a single state.
+Remember that in dynamics we are also interested in reciprocal
+influence, but before moving to two or more state equations we want to
+pause and highlight how much researchers can explore with single states.
+It is of course interesting and fun to ask how two or more states are
+related, or posit a complex sequence among a set of states. But
+understanding whether or not one state exhibits white noise or random
+walk behavior across time is a valuable study in itself. We feel that
+our field could substantially benefit from spending more time plotting
+and analyzing the individual trajctories of every measured variable in a
+study.
 
 With multivariate systems we need multiple equations -- one for each
-variable. Before, we demonstrated a simple difference equation for
-\(y\). In a multivariate system with two variables, \(x\) and \(y\), we
-need one equation for each:
+state. Before, we demonstrated a simple difference equation for
+performance. In a multivariate system with two states, performance and
+effort, we need one equation for each.
 
 \begin{equation}
 \label{sysy}
-y_{t} = a y_{t - 1} + e_{t}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx}
-x_{t} = a x_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
-\noindent where both equations posit that their variable is a function
-of its prior self to the extent of the autoregressive term (\(a\)).
-Notice that there are no cross-relationships, we are simply representing
-a system with two independent variables across time. It is of course
-also possible to introduce relationships among the different variables
-with more terms.
+\noindent Here, both equations posit that their state is a function of
+its prior self to the extent of the autoregressive term (\(a\)). Notice
+that there are no cross-relationships, we are simply representing a
+system with two independent variables across time. It is of course also
+possible to introduce relationships among the different states with more
+terms.
 
-First, consider a system where \(x\) concurrently causes \(y\). A more
-appropriate way to say this would be that \(x_t\) causes \(y_t\):
+First, consider a system where effort concurrently causes performance.
+Another way to say this is that effort\(_t\) causes performance\(_t\):
 
 \begin{equation}
 \label{sysy2}
-y_{t} = a y_{t - 1} + b x_{t} + e_{t}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx2}
-x_{t} = a x_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but now the equation for
-\(y\) also includes \(x_{t}\), the value of \(x\) and time \(t\), and
-\(b\), the coefficient relating \(x\) to \(y\). This set of equations
-says that \(x\) is simply a product of itself over time (with error),
-whereas \(y\) is a function of itself and also \(x\) at the immediate
-time point.
+performance also includes Effort\(_t\) -- which is the value of effort
+at time \(t\) -- and \(b\), the coefficient relating effort to
+performance. This set of equations says that effort is simply a product
+of itself over time (with error), whereas performance is a function of
+itself and also effort at the immediate time point.
 
-What if there is a lag between when \(x\) causes \(y\)? That is, perhaps
-we posit that \(x\) does not immediately cause \(y\) but instead causes
-\(y\) after some period of time. If the lag effect were 2, that would
-mean that \(x_t\) causes \(y_{t + 2}\), and to express the \enquote{lag
-2 effect} mathematically we would use the following.
+What if there is a lag between when effort causes performance? That is,
+perhaps we posit that effort does not immediately cause performance but
+instead causes performance after some period of time. If the lag effect
+were 2, that would mean that Effort\(_t\) causes Performance\(_{t+2}\),
+and to express the \enquote{lag 2 effect} mathematically we would use
+the following.
 
 \begin{equation}
 \label{sysy3}
-y_{t} = a y_{t - 1} + b x_{t - 2} + e_{t}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx3}
-x_{t} = a x_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent Here, all terms are nearly identical to what we saw above but
-now there is a lag-two effect from \(x\) to \(y\). \(y\) is now a
-function of both its immediately prior self and the value of \(x\) from
-two time points ago.
+now there is a lag-two effect from effort to performance. Performance is
+now a function of both its immediately prior self and the value of
+effort from two time points ago.
 
 What if we want to convey feedback, or a reciprocal relationship between
-\(x\) and \(y\)? That is, now we posit that both \(x\) causes \(y\) and
-\(y\) causes \(x\). To do so we update our equations with a simple
-change:
+effort and performance? That is, now we posit that both effort causes
+performance and performance causes effort. To do so we update our
+equations with a simple change:
 
 \begin{equation}
 \label{sysy3}
-y_{t} = a y_{t - 1} + b x_{t - 2} + e_{t}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx3}
-x_{t} = a x_{t - 1} + b y_{t - 2} + e_{t}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + b \textrm{Performance}_{t - 2} + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but now \(x\) and \(y\) are
-reciprocally related. Both are determined by themselves at the
-immediately prior time point and the other variable two time points in
-the past. \(x\) happens, and two moments later this influences \(y\),
-and two moments later this influences \(x\), and so on throughout time.
-All the while, both variables retain self-similarity -- they change and
-develop but only under the constraints afforded by the autoregressive
-terms.
+\noindent where all terms are defined above but now effort and
+performance are reciprocally related. Both are determined by themselves
+at the immediately prior time point and the other state two time points
+in the past. Effort happens, and two moments later this influences
+performance, and two moments later this goes back to influence effort,
+and so on throughout time. All the while, both states retain
+self-similarity -- they fluctuate and develop but only under the
+constraints afforded by the autoregressive terms.
 
 We can make the equations more complicated by continuing to add
 variables or longer/shorter lag effects, but the beauty of math is its
 freedom to capture whatever the researcher desires. These equations are
-language tools to help researchers convey a process over time. If we
-were to plug values into the coefficients and variables we would produce
-trajectories over time, and to describe those trajectories we could then
-use terms like \enquote{trend,} \enquote{periodicity,} or
-\enquote{feedback} like we saw in the systems theory section.
+language tools to help researchers convey a process over time.
 
-\hypertarget{examples-1}{%
-\subsection{Examples}\label{examples-1}}
+\begin{figure}
+\centering
+\includegraphics{figs/unnamed-chunk-9-1.pdf}
+\caption{\label{fig:unnamed-chunk-9}dynamic equilibrium
+fig\label{dynamics_plot}}
+\end{figure}
 
-People from our literature using these principles to explain something.
-Study 1 argued for random walk behavior in X. Study 2 measured X and Y
-and posited an equation.
+\begin{figure}
+\centering
+\includegraphics{figs/unnamed-chunk-10-1.pdf}
+\caption{\label{fig:unnamed-chunk-10}this one will be a white noise process
+and a random walk\label{noise}}
+\end{figure}
 
-\hypertarget{summary-3}{%
-\subsection{Summary}\label{summary-3}}
+\hypertarget{dynamic-modeling}{%
+\subsection{Dynamic Modeling}\label{dynamic-modeling}}
 
-\hypertarget{computational-principles}{%
-\section{Computational Principles}\label{computational-principles}}
+We have introduced some fundemental concepts for dynamics. Memory,
+constraints, random walks, equilibrium -- these are core ideas for
+researchers to grapple with as they consider dynamic phenomenon. When
+researchers then collect longitudinal data and estimate models (with
+these ideas in mind) there are a host of challenges that must be
+considered. In this section we are going to describe two: stationarity
+and dynamic panel bias.
 
-Above, we unpacked representations most people are familiar with: verbal
-descriptions, plots, and math. There has recently been a push to use
-computational models -- where the goal is still to convey process but in
-computer code. In this section we discuss several principles that
-researchers can use when they are explaining a process and expect that
-explanation to eventually be evaluated with a computational model. We
-are not going to show code or a set of scripts or \enquote{if
-statements} (although doing so would be a valuable paper on its own).
-Instead, the principles below are pieces that should be incoporated into
-an explanation if the researcher hopes to eventually evaluate it in a
-computer simulation. This section will also be different from the
-sections above because we will use a running example throughout, and the
-example comes from ({\textbf{???}}).
+\hypertarget{stationarity}{%
+\subsubsection{Stationarity}\label{stationarity}}
 
-While developing his notion of satisficing Simon wrote a paper exploring
-simple rules that could yield adaptive behavior. His paper was not
-framed as a \enquote{computational model,} but his writing is a great
-example of how authors can write verbal explanations that lend
-themselves to computer simulations. Writing equations is of course
-preferred, but the concepts below are tools/criteria for researchers
-without a strong mathematical background.
+Stationarity is about the stability of the properties of a process.
+Rachel's performance score across time is called a time-series -- it is
+the trajectory of performance for a single unit (Rachel) over time. That
+trajectory has properties: it has a mean and a variance. If the mean is
+unstable then Rachel's performance either grows or decreases
+unconditionally over time. If instead the mean is stable, then Rachel's
+performance across time fluctuates but within the constraints of its
+memory and bounds on the system. Almost all models used to estimate
+coefficients in the organizational literature are stationary models that
+assume the data they are modeling are realizations of a stationary
+process. That is, they assume that the process they are trying to
+estimate paramters for have properties at time \(t\) that are the same
+as the properties at time \(t + 1\).
 
-\hypertarget{key-states}{%
-\subsection{Key States}\label{key-states}}
+In simple terms, a stationary process has stable properties across time
+-- data that demonstrate trend, growth, or random walk behavior are
+(almost certainly) non-stationary. Here is the hard part: two
+independent time-series will appear related if both are non-stationary
+(kukljan; braun; granger). That is, if we measure Rachel's performance
+and it is consistent with a random walk and we also measure rainfall at
+Rachel's mother's house across the state and it demonstrates increasing
+trend for the day, even though these two things are completely unrelated
+we will more than likely find a relationship between them in a
+regression-based analysis like those presented at the start of this
+paper. There are many other papers that describe how to test for
+stationarity (e.g., CITES), all we are trying to do here is convey how
+important this notion is. Our literature is not paying attention to
+random walks, we are not checking for memory, or seriel correlation, or
+stationarity; we should be.
 
-Simon's (1956) paper is about how agents move through an environment and
-choose among multiple goals -- it is about multiple goal
-self-regulation. He begins by arguing that agents choose among multiple
-goals to satisfy needs, and need satisfaction is the core driver of
-behavior. There are of course other causes, but everything is done with
-respect to the need requirements. The two needs he includes are food and
-water.
+\hypertarget{dynamic-panel-bias}{%
+\subsubsection{Dynamic Panel Bias}\label{dynamic-panel-bias}}
 
-Simon begins his explanation with needs, and although there are other
-causes of behavior he makes the assumption that needs are the lowest
-level of abstraction required to explain his model. They can be thought
-of as the \enquote{foundation} variables to build from. Researchers
-should be clear about the core variables that drive all other behavior
-in their models. Variables are called \enquote{states} when we talk
-about them over time, so the first principle is to adequately identify
-and describe the key states.
+Another challenge for dynamic modeling is a congregation of effects
+known as dynamic panel bias. First, in dynamics we pay attention to
+memory, and our equations above took the form:
 
-\hypertarget{state-dynamics}{%
-\subsection{State Dynamics}\label{state-dynamics}}
+\begin{equation}
+y_{t} = a y_{t-1} + e_{t}
+\end{equation}
 
-Once we identify the states we need to describe their behavior over
-time. Again, Simon's (1956) key states are food and water, and he then
-goes on to describe how they unfold as time progresses. He posits that
-an agent's food and water states decrease over time because his or her
-body requires energy. The body is constantly using food and water in its
-stores, so as time passes the key states naturally decrease.
+\noindent where the only change is that we replaced performance with a
+generic \(y\). Again, these equations appropriately represent underlying
+systems with memory, but when a researcher estimates a statistical model
+and includes a lagged DV the errors become correlated with the
+predictors and the well-known independence of errors assumption is
+violated. This issue therefore has to do with estimating relationships
+for a single unit when we want to incoporate lagged DVs.
 
-\hypertarget{actions}{%
-\subsection{Actions}\label{actions}}
+The second issue arises when we are interested in relationships with a
+multiple-unit sample across time. Almost all organizational studies are
+multiple-unit, they collect data on more than one participant. If the
+people in the sample are not perfectly exchangeable -- which means that
+I can learn the same thing about performance and fatigue by studying Bob
+as I did with Rachel, I gain no information by studying one over the
+other, or I lose no information by restricting my analysis to one of
+them -- then the parameter estimates are influenced by what is known as
+unobserved heterogeneity. Unobserved heterogeneity are aggregate, stable
+individual differences. They are all of the unmeasured things that make
+Rachel's trajectory different from Bob's trajectory. Every study misses
+some variables, those stable effect that those variables in aggregate
+have on each unique person is unobserved heterogeneity. In dynamic
+models unobserved heterogeneity must be modeled correctly: if is is
+modeled as independent but in fact correlates with the model predictors
+then ommitted variables bias is introduced into the estimates, and if
+unobserved heterogeneity is ignored then seriel correlation will be
+introduced into the errors.
 
-The key states are the assumed \enquote{proximate} causes of behavior,
-and we have now explained how they unfold over time. Next, we need to
-explain the list of possible behaviors that the causes lead to. In other
-words, we need actions that result given the set of states and their
-current dynamics. In Simon's model he lists three agent actions:
-resting, exploring, and goal striving. These actions satisfy the
-internal state dynamics. How so? That is the next criteria.
-
-\hypertarget{action-selection}{%
-\subsection{Action Selection}\label{action-selection}}
-
-Assuming a set of actions, how does the agent select among them? Action
-selection is the principle for explaining how one of the actions
-actually occurs given the states and their dynamics. Simon argues that
-if the food and water states are above threshold then the agent rests.
-That is, he suggests that the food and water states act like stores
-(although they constantly decrease) and only produce action when some
-negative discrepancy exists. When one of the states dips below threshold
-the agent explores its environment. During exploration the agent
-randomly runs into objects, and if he or she encounters a single object
-relevant to one of the needs the agent acquires it. If instead the agent
-encounters two or more need-relevant objects he or she makes a decision
-based on the ratio of effort required to get the object versus the size
-of the state discrepancy. In summary, action selection is about how
-behavior occurs given the states and their dynamics, whereas actions are
-simply the names of the behaviors themselves.
-
-\hypertarget{environment}{%
-\subsection{Environment}\label{environment}}
-
-Finally, computer simulations require a structure or environment for
-agents to operate within. The environment could be a lattice, a
-well-mixed population, or any number of network arrangements, but the
-core idea is that context shapes what ultimately happens. Simon explains
-his simple rules model within a grid that contains spatially distributed
-sources of food and water. The size of the food and water stocks are
-determined by the availability of the resources in the environment.
-Water is easier to come by than food and so food requirements are
-greater.
-
-\hypertarget{summary-4}{%
-\subsection{Summary}\label{summary-4}}
+Dyanamic panel bias is the combined effect of these two biases. Lagged
+DVs help us convey a dynamic process but they create estimation
+problems, and unobserved heterogeneity must be accounted for.
+Hierarchical linear models (or random-coefficient, multi level, random
+effects) do not handle these biases appropriately (CITES).
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
-Having presented the principles and terms like process, longitudinal,
-and dynamics, we close with our opinion about how the term
-\enquote{process} should be used. In our view, only explanations about
-the proposed \enquote{true} mechanism should be called
-\enquote{process.} If a researcher, instead, simply observes and
-describes manifest behavior like trend or correlates of trend then they
-are not explaining process -- but it is still a useful study!
+CLOSE WITH THE DIFFERNCE BETWEEN A STATIC AND DYNAMIC EQUATION. All we
+did was change the lags, but the differences between how the two
+equations see the world is gigantic. One is about concurrent
+relationships in cross sections of time. The other is dynamic -- how
+relationships span and evolve across time.
 
 \newpage
 

@@ -1,0 +1,44 @@
+---
+output: pdf_document
+---
+
+## Concepts and Conventions
+
+The first set of principles are concepts. Ways of thinking.
+
+### States
+
+In organizational science we typically use the term "variable" to describe a measured construct, and our lens is usually across people. Burnout, depletion, fatigue, OCBs, performance, job satisfaction -- these are all variables; they are quantities with values that fluctuate across people. When we instead focus on how values fluctuate across time we call them "states." Performance as a variable, therefore, focuses on the set of values across people, whereas performance as a state focuses on its values across time. 
+
+The convention to label states is to use what is called a state vector. A state vector for depletion, fatigue, and performance would be: $(depletion, fatigue, burnout)$ and its mathematical equivalent is, $(x_1, x_2, x_3)$ or $(x_1 ...x_n)$. We will use this notation later after introducing more concepts.
+
+### Memory and Self-similarity
+
+Arguably the most fundamental concept in dynamics is that states often have memory -- they are self-similar across time. Performance may vary or fluctuate over time, but it retains self-similarity from one moment to the next. Job satisfaction now is some function of what it was just prior to now. My conscientiousness tomorrow will have carry over from what it was today, as will the number of people I communicate with. Researchers of course may argue that some states have no memory, but the point here is that states tend to retain something about what they are from moment to moment. 
+
+### Constraints
+
+When a state has memory or self-similarity it can still fluctuate or change over time -- to say that Rachel's job satisfaction will predict itself over time does not mean that we expect her job satisfaction to be identical every day. Instead, it will fluctuate or vary but under the constraints of where it was in the past. Imagine we argue that job satisfaction has no memory. If we grant that statement, then Rachel's job satisfaction from moment to moment is unconstrained and it can swing (potentially) to positive or negative infinity based the states that cause it. But if it does have memory then it is constrained, it cannot swing explosively. When she experiences something negative at work -- like ridicule -- her job satisfaction will certainly decrease in the moment, but what is her job satisfaction decreasing from? The answer is its prior level -- the negative experience is pushing against her prior level of job satisfaction, job satisfaction is not created from scratch just after ridicule. States vary over time, but where they go is constrained by their history.
+
+It is also helpful to consider what would happen if we vary the strength of Rachel's job satisfaction memory. First imagine that her job satisfaction is only weakly self-similar. Now when she experiences ridicule we would expect her job satisfaction to fluctuate to a large extent, whereas when her job satisfaction is self-similar we would expect the fluctuation to be smaller. 
+
+### Lags
+
+Memory is not limited to a single variable. Job satisfaction may also be influenced by the prior history of other states, like depletion or fatigue. Imagine that we believe that fatigue has a lag effect on performance. This means that we expect some amount of time to pass before fatigue influences performance. Said another way, the influence of fatigue on performance does not happen immediately. Despite collecting longitudinal data many researchers still examine concurrent relationships by regressing DVs on IVs at the same moment. That is, they regress performance at time four on fatigue at time four and performance at time six on fatigue at time six, despite having the possibility to explore lag effects. What these concurrent models imply is that the researcher expects fatigue to immediately influence performance. With some states immediate cause makes sense, but as our "over time" thinking progresses there will be many opportunities to explore lags. 
+
+### Reciprocal Influence
+
+Many research questions can be boiled down to trying to find antecedents and outcomes, but when we focus on dynamics and start thinking about memory, constraints, and lags across multiple states we focus less on "true causes" or antecendents and more on reciprocal influence. This kind of thinking often takes the form, "and then this happens." Consider the (example) reciprocal relationships between performance, superior support, and fatigue. I performed my assignment well so my boss sent me a nice email letting me know that she appreciated my work. I subsequently increased my performance and again performed well on my second assignment. Having increased my performance, however, I was now more fatigued and on my third assignment I performed poorly. After performing poorly I did not receive the congratulatory email. In this simple example, performance, fatigue, and superior support fluctuate across time. We are not necessarily interested in finding the "true" cause, direction of effects, or the exact coefficient between one state and another, but we are interested in the pattern of reciprocal relationships across time. 
+
+### Time Scales
+
+Researchers can gain valuable insights by considering the timescales of dynamics. Consider the temperature of a building and each of its interior rooms. The quick dynamics occur from room to room. Air molecules pass between them until they are all roughly the same temperature. But the weather outside also influences the temperature of the building as a whole -- it just takes longer to occur. When the sun comes up it does not immediately change the room-to-room dynamics. 
+
+### Boundary Space
+
+When researchers estimate a growth curve and argue for a positive linear trend what they are implying is that the trajectory increases forever. Job satisfaction continually increases; OCBs go down forever. In dynamic systems with reciprocal influence and constraints there are boundaries on where processes can go. 
+
+### Describing Trajectories. 
+
+We want to close this section by pointing readers to a wonderful paper by Monge (1990) that provides vocabulary for describing trajectories. In this paper we are introducing concepts and statistical properties that will need to be accounted for as we approach dynamics. Monge's paper will provide readers with terms to describe trajectories over time, and we feel that it should be required reading for anyone interested in dynamics.
+

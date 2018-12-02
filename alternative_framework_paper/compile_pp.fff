@@ -3,28 +3,14 @@
 
 \centering
 \includegraphics{figs/unnamed-chunk-9-1.pdf}
-\caption{\label{fig:unnamed-chunk-9}the ol stock system\label{stocks}}
-\end{figure*}
-\begin{figure*}[hbt]
-\ifnextchar[{\eatarg}{}
-
-\centering
-\includegraphics{figs/unnamed-chunk-10-1.pdf}
-\caption{\label{fig:unnamed-chunk-10}monge image\label{monge}}
-\end{figure*}
-\begin{figure*}[hbt]
-\ifnextchar[{\eatarg}{}
-
-\centering
-\includegraphics{figs/unnamed-chunk-11-1.pdf}
-\caption{\label{fig:unnamed-chunk-11}dynamic equilibrium
+\caption{\label{fig:unnamed-chunk-9}dynamic equilibrium
 fig\label{dynamics_plot}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
 \centering
-\includegraphics{figs/unnamed-chunk-12-1.pdf}
-\caption{\label{fig:unnamed-chunk-12}this one will be a white noise process
+\includegraphics{figs/unnamed-chunk-10-1.pdf}
+\caption{\label{fig:unnamed-chunk-10}this one will be a white noise process
 and a random walk\label{noise}}
 \end{figure*}

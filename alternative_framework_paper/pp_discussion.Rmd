@@ -4,5 +4,4 @@ output: pdf_document
 
 # Discussion
 
-Having presented the principles and terms like process, longitudinal, and dynamics, we close with our opinion about how the term "process" should be used. In our view, only explanations about the proposed "true" mechanism should be called "process." If a researcher, instead, simply observes and describes manifest behavior like trend or correlates of trend then they are not explaining process -- but it is still a useful study! 
-
+CLOSE WITH THE DIFFERNCE BETWEEN A STATIC AND DYNAMIC EQUATION. All we did was change the lags, but the differences between how the two equations see the world is gigantic. One is about concurrent relationships in cross sections of time. The other is dynamic -- how relationships span and evolve across time. 

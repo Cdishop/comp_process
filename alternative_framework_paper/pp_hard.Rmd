@@ -1,0 +1,28 @@
+---
+output: pdf_document
+---
+
+## Dynamic Modeling
+
+We have introduced some fundemental concepts for dynamics. Memory, constraints, random walks, equilibrium -- these are core ideas for researchers to grapple with as they consider dynamic phenomenon. When researchers then collect longitudinal data and estimate models (with these ideas in mind) there are a host of challenges that must be considered. In this section we are going to describe two: stationarity and dynamic panel bias.
+
+### Stationarity
+
+Stationarity is about the stability of the properties of a process. Rachel's performance score across time is called a time-series -- it is the trajectory of performance for a single unit (Rachel) over time. That trajectory has properties: it has a mean and a variance. If the mean is unstable then Rachel's performance either grows or decreases unconditionally over time. If instead the mean is stable, then Rachel's performance across time fluctuates but within the constraints of its memory and bounds on the system. Almost all models used to estimate coefficients in the organizational literature are stationary models that assume the data they are modeling are realizations of a stationary process. That is, they assume that the process they are trying to estimate paramters for have properties at time $t$ that are the same as the properties at time $t + 1$. 
+
+In simple terms, a stationary process has stable properties across time -- data that demonstrate trend, growth, or random walk behavior are (almost certainly) non-stationary. Here is the hard part: two independent time-series will appear related if both are non-stationary (kukljan; braun; granger). That is, if we measure Rachel's performance and it is consistent with a random walk and we also measure rainfall at Rachel's mother's house across the state and it demonstrates increasing trend for the day, even though these two things are completely unrelated we will more than likely find a relationship between them in a regression-based analysis like those presented at the start of this paper. There are many other papers that describe how to test for stationarity (e.g., CITES), all we are trying to do here is convey how important this notion is. Our literature is not paying attention to random walks, we are not checking for memory, or seriel correlation, or stationarity; we should be. 
+
+### Dynamic Panel Bias
+
+Another challenge for dynamic modeling is a congregation of effects known as dynamic panel bias. First, in dynamics we pay attention to memory, and our equations above took the form:
+
+\begin{equation}
+y_{t} = a y_{t-1} + e_{t}
+\end{equation}
+
+\noindent where the only change is that we replaced performance with a generic $y$. Again, these equations appropriately represent underlying systems with memory, but when a researcher estimates a statistical model and includes a lagged DV the errors become correlated with the predictors and the well-known independence of errors assumption is violated. This issue therefore has to do with estimating relationships for a single unit when we want to incoporate lagged DVs.
+
+The second issue arises when we are interested in relationships with a multiple-unit sample across time. Almost all organizational studies are multiple-unit, they collect data on more than one participant. If the people in the sample are not perfectly exchangeable -- which means that I can learn the same thing about performance and fatigue by studying Bob as I did with Rachel, I gain no information by studying one over the other, or I lose no information by restricting my analysis to one of them -- then the parameter estimates are influenced by what is known as unobserved heterogeneity. Unobserved heterogeneity are aggregate, stable individual differences. They are all of the unmeasured things that make Rachel's trajectory different from Bob's trajectory. Every study misses some variables, those stable effect that those variables in aggregate have on each unique person is unobserved heterogeneity. In dynamic models unobserved heterogeneity must be modeled correctly: if is is modeled as independent but in fact correlates with the model predictors then ommitted variables bias is introduced into the estimates, and if unobserved heterogeneity is ignored then seriel correlation will be introduced into the errors. 
+
+Dyanamic panel bias is the combined effect of these two biases. Lagged DVs help us convey a dynamic process but they create estimation problems, and unobserved heterogeneity must be accounted for. Hierarchical linear models (or random-coefficient, multi level, random effects) do not handle these biases appropriately (CITES). 
+
