@@ -24,7 +24,7 @@ It is also helpful to consider what would happen if we vary the strength of Rach
 
 ### Lags
 
-Memory is not limited to a single variable. Job satisfaction may also be influenced by the prior history of other states, like depletion or fatigue. Imagine that we believe that fatigue has a lag effect on performance. This means that we expect some amount of time to pass before fatigue influences performance. Said another way, the influence of fatigue on performance does not happen immediately. Despite collecting longitudinal data many researchers still examine concurrent relationships by regressing DVs on IVs at the same moment. That is, they regress performance at time four on fatigue at time four and performance at time six on fatigue at time six, despite having the possibility to explore lag effects. What these concurrent models imply is that the researcher expects fatigue to immediately influence performance. With some states immediate cause makes sense, but as our "over time" thinking progresses there will be many opportunities to explore lags. 
+Memory is not limited to a single variable. Job satisfaction may also be influenced by the prior history of other states, like depletion or fatigue. Imagine that we believe that fatigue has a lag effect on performance. This means that we expect some amount of time to pass before fatigue influences performance. Said another way, the influence of fatigue on performance does not happen immediately. Despite collecting longitudinal data many researchers still examine concurrent relationships by regressing DVs on IVs at the same moment. That is, they regress performance at time four on fatigue at time four and performance at time six on fatigue at time six, despite having the possibility to explore lag effects. What these concurrent models imply is that the researcher expects fatigue to instantaneously influence performance. With some states immediate cause makes sense, but as our "over time" thinking progresses there will be many opportunities to explore lags. 
 
 ### Reciprocal Influence
 
@@ -37,6 +37,10 @@ Researchers can gain valuable insights by considering the timescales of dynamics
 ### Boundary Space
 
 When researchers estimate a growth curve and argue for a positive linear trend what they are implying is that the trajectory increases forever. Job satisfaction continually increases; OCBs go down forever. In dynamic systems with reciprocal influence and constraints there are boundaries on where processes can go. 
+
+### Initial Conditions
+
+The last core concept is that initial conditions may or may not influence the overall dynamics. 
 
 ### Describing Trajectories. 
 
