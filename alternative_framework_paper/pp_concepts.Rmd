@@ -4,7 +4,7 @@ output: pdf_document
 
 ## Concepts and Conventions
 
-The first set of principles are concepts. Ways of thinking.
+These first principles are concepts -- they are ways of thinking.
 
 ### States
 
@@ -32,7 +32,7 @@ Many research questions can be boiled down to trying to find antecedents and out
 
 ### Time Scales
 
-Researchers can gain valuable insights by considering the timescales of dynamics. Consider the temperature of a building and each of its interior rooms. The quick dynamics occur from room to room. Air molecules pass between them until they are all roughly the same temperature. But the weather outside also influences the temperature of the building as a whole -- it just takes longer to occur. When the sun comes up it does not immediately change the room-to-room dynamics. 
+Researchers can gain valuable insights by considering the timescales of dynamics. Consider the temperature of a building and each of its interior rooms. The quick dynamics occur from room to room. Air molecules pass between them until they are all roughly the same temperature. But the weather outside also influences the temperature of the building as a whole -- it just takes longer to occur. When the sun comes up it does not immediately change the room-to-room dynamics. The room to room dynamic influences have short lags, whereas the influence of the outside temperature on any specific room has a much longer lag.
 
 ### Boundary Space
 
@@ -40,9 +40,9 @@ When researchers estimate a growth curve and argue for a positive linear trend w
 
 ### Initial Conditions
 
-The last core concept is that initial conditions may or may not influence the overall dynamics. 
+The last concept is that initial conditions may or may not influence the overall dynamics. 
 
-### Describing Trajectories. 
+### Describing Trajectories
 
-We want to close this section by pointing readers to a wonderful paper by Monge (1990) that provides vocabulary for describing trajectories. In this paper we are introducing concepts and statistical properties that will need to be accounted for as we approach dynamics. Monge's paper will provide readers with terms to describe trajectories over time, and we feel that it should be required reading for anyone interested in dynamics.
+In this paper we are introducing concepts and statistical properties that merit attention as we approach dynamics. We want to close this section by pointing readers to a wonderful paper by Monge (1990) that provides basic vocabularly for describing trajectories. He discusses terms like trend, periodicity, and cycles -- lexicon for patterns over time rather than key concepts that are emphasized here. We feel that his paper should be required reading for anyone interested in dynamics. 
 

@@ -2,6 +2,6 @@
 output: pdf_document
 ---
 
-# Discussion
+# Discussion - A Dynamic Perspective
 
-CLOSE WITH THE DIFFERNCE BETWEEN A STATIC AND DYNAMIC EQUATION. All we did was change the lags, but the differences between how the two equations see the world is gigantic. One is about concurrent relationships in cross sections of time. The other is dynamic -- how relationships span and evolve across time. 
+We opened this paper by talking about how researchers are beginning to approach dynamics. We pointed to two frameworks -- growth and relationships -- as example empirical research doing the hard work of getting our thinking beyond static, cross-sectional relationships. They were appropriate first steps toward dynamics given our field's history with random coefficient models and recent introduction to growth curve modeling, but there are many principles of dynamics outside the context of a specific longitudinal model -- we broached them here. Taking a dynamic perspective means focusing on memory, constraints, timescales, reciprocal influence, initial conditions, and exploring an array of satistical properties like serial correlation and stationarity. 

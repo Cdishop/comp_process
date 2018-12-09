@@ -2,9 +2,11 @@
 output: pdf_document
 ---
 
-# Dynamics
+# Opening the Door to Dynamics
 
-Both frameworks above get things moving toward dynamics. They bring up great notions like within-person trajectories and lag relationships, but there are many more principles left to appreciate and we want to expose our field to them so that researchers have an even greater number of tools to explore this domain. Moreover, there are a number of statistical properties that arise in dynamic modeling that have received almost no attention but can produce inferential errors if left unchecked.
+Both frameworks above get things moving toward dynamics. They consider great notions like within-person trajectories, patterns over time, and lag relationships, and they are clearly exploring domains where prior research was limited. What we want to do is expose researchers to principles outside of the toolkit they are currently familiar with, outside of frameworks that are couched in statistical models like growth curves and relationship patterns with random coefficient models. There are a host of dynamic principles to cover. Some are concepts, ways of thinking that are necessary to appreciate as researchers and theorists explore dynamic phenomona. Others are statistical properties that arise when researchers apply models to longitudinal data structures -- they are statistical issues that produce inferential errors if left unchecked, and they are important across all types of longitudinal models. 
+
+# Dynamics
 
 Dynamics refers to a specific branch of mathematics/mechanics, but the term is used in different ways throughout our literature. It is used informally to mean "change", "fluctuating," "volatile," "longitudinal," or "over time" (among others), whereas formal definitions in our literature are presented within certain contexts. Wang (2016) defines a dynamic *model* as a "representation of a system that evolves over time. In particular it describes how the system evolves from a given state at time *t* to another state at time $t + 1$ as governed by the transition rules and potential external inputs" (p. 242). @vancouver_translating_2018 state that dynamic *variables* "behave as if they have memory; that is, their value at any one time depends somewhat on their previous value" (p. 604). Finally, @monge_theoretical_1990 suggests that in dynamic *analyses*, "it is essential to know how variables depend upon their own past history" (p. 409). 
 
