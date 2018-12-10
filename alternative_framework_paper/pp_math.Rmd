@@ -1,48 +1,157 @@
 ---
-title: "princ_math"
 output: pdf_document
 ---
 
-# Mathematics and Dynamics Principles
+## Mathematics and Statistics
 
-## Difference Equations
+We are now going to translate some of the concepts into math. Doing so will (a) reiterate the principles above, (b) introduce new dynamic principles, and (c) make it easier to talk about some of the more complicated statistical properties of dynamic modeling that we turn to in the final section.
 
-In mathematics, a basic representation of a process over time is a difference equation: 
+### Basic Concepts In Equations
+
+Remember that in dynamics we are focused on memory, self-similarity, and constraints as states move across time. What we are going to do here is begin to capture those ideas with equations using performance as an example. First, consider performance across time:
 
 \begin{equation}
-\label{basicD}
-y_{t} = y_{t - 1}
+\textrm{Performance}_{t} = \textrm{Performance}_{t-1}
 \end{equation}
 
-\noindent where $y_{t}$ represents $y$ now and $y_{t-1}$ is the variable at the prior time point. Here, the value of $y$ is the same at each $t$, and the emergent behavior would be a flat line across time. In systems theory terms, there would be no trend. 
+\noindent where performance at time $t$ is exactly identical to what it was at $t-1$. This equation says that performance does not fluctuate, change, move, or grow across time -- there is zero trend. Performance is, say, four at time one, four at time two, four at time three, and so on. This type of equation is called a difference equation, and it is a foundational tool in dynamics. 
 
-Although equation \ref{basicD} seems simple, it introduces a fundamental concept in dynamics: memory. The variable now depends on where it was in the past. It is constrained, there are boundaries on where it can go.
+Although this first equation seems disceptively simple, we have already captured memory. Performance, in this case, is perfectly self-similar. What if, instead, performance is similar but not perfectly self-similar across time? To capture this idea we need a new term:
 
-As we add terms to this basic difference equation the behavior of the variable becomes more complex. Adding a forcing constant, *c* in equation \ref{basicD} produces positive or negative trend depending on whether *c* is, respectively, positive or negative. For example, the following equation:
+\begin{equation}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t-1}
+\end{equation}
+
+\noindent where $a$ is the extent to which performance is self-similar and all other terms are defined above. $a$ is a coeffient relating performance now to performance at the next moment, and when you estimate that term in a statistical model it is called an autoregressive term. When the autoregressive term is large performance is highly self-similar, whereas when $a$ is close to zero performance has less self-similarity. Two other statistical terms for self-similarity you may come across include autocorrelation and serial correlation -- both refer to the correlation a state has with itself over time. 
+
+### Fundamental Autoregressive Behaviors
+
+There are fundamental behaviors of dynamic states based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of states with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and extreme oscillations when $a$ is negative. When the autoregressive term falls between zero and one in absolute value, conversely, the state converges to equilibrium -- shown in the bottom two panels. Either the state oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). Again, these behaviors hold for all states with the given autoregressive terms. 
+
+\begin{center}
+
+---------------
+
+Insert Figure \ref{dynamics_plot} Here
+
+---------------
+
+\end{center}
+
+### Equilibrium
+
+Notice that we introduced a new term in our description above: equilibrium. Equilibrium describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems -- where equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equilibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
+
+Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. This back and forth oscillating pattern between states describes a dynamic equilibrium. The states change and there may be random disturbances to the system across time, but the net dynamics of the system remain stable -- and therefore this situation is still called "equilibrium."
+
+### Stochastics
+
+Our route so far has been deterministic -- the mathematical representations do not contain error. When we want to convey a process with error we can consider a host of additional principles. Stochastics, stated simply, refers to processes with error. Consider our simple difference equation from above, adding an error component produces:
+
+\begin{equation}
+\label{diffE}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t-1} + e_{t}
+\end{equation}
+
+\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into performance at each time point. Errors cause performance to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push performance to a higher value, and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors, and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath_statistical_2016]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
+
+It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs." An aggregation of randomness is a normal distribution.
+
+### White Noise and Random Walks
+
+There are two fundamental stochastic processes: white noise and random walks. White noise is a process that only has error. Setting $a$ to zero in equation \ref{diffE} produces a white noise process.
 
 \begin{equation}
 \begin{split}
-\label{diffC}
-y_{t} &= y_{t-1} + c \\ 
-c &= -4
+\label{whitenoise}
+\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\
+a &= 0
 \end{split}
 \end{equation}
 
-\noindent produces a line that decreases by four units at each time point. 
-
-The next level of complexity comes from autoregressive terms, which represent the extent to which the variable relates to itself over time. Here,
+\noindent Here, all we have is error over time. Panel "A" of figure \ref{noise} shows the behavior of a white noise process over time. Random walks are similar, but $a$ is now equal to one.
 
 \begin{equation}
 \begin{split}
-\label{diffA}
-y_{t} &= a y_{t-1} \\ 
-a &= 0.5
+\label{rw}
+\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\ 
+a &= 1 \\ 
 \end{split}
 \end{equation}
 
-\noindent the variable is described over time but it does not retain the same value at each $t$. Instead, the variable is *similar* over time and the autoregressive term, $a$, describes the extent of that similarity. In equation \ref{diffA}, $a$ is 0.5, meaning that the relationship between the variable now and itself at the next time point will be 0.5.
 
-There are fundamental behaviors of dynamic variables based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of variables with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and oscillating chaos when $a$ is negative. When the autoregressive term falls between zero and one in absolute value, conversely, the variable converges to equilibrium -- shown in the bottom two panels. Either the variable oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). 
+\noindent This representation is also an error process, but there is performance self-similarity across time. Panel "B" of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpreditable: they could go up or down at any moment. 
+
+Random walks and white noise are error processes over time. White noise processes fluctuate randomly, whereas random walks fluctuate randomly while retaining some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. This demonstration, with respect to our performance example, would mean that if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. This step is currently absent in our literature but, again, is the essential starting place in econometrics. 
+
+
+\begin{center}
+
+---------------
+
+Insert Figure \ref{noise} Here
+
+---------------
+
+\end{center}
+
+### System of Equations
+
+Up to this point we have focused on a single state, performance. Remember that in dynamics we are also interested in reciprocal influence, but before moving to two or more state equations we want to pause and highlight how much researchers can explore with single states. It is of course interesting and fun to ask how two or more states are related, or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. We feel that our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
+
+With multivariate systems we need multiple equations -- one for each state. Before, we demonstrated a simple difference equation for performance. In a multivariate system with two states, performance and effort, we need one equation for each.
+
+\begin{equation}
+\label{sysy}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + e_{t}
+\end{equation}
+\begin{equation}
+\label{sysx}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\end{equation}
+
+\noindent Here, both equations posit that their state is a function of its prior self to the extent of the autoregressive term ($a$). Notice that there are no cross-relationships, we are simply representing a system with two independent variables across time. It is of course also possible to introduce relationships among the different states with more terms.
+
+First, consider a system where effort concurrently causes performance. Another way to say this is that effort$_t$ causes performance$_t$:
+
+\begin{equation}
+\label{sysy2}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t} + e_{t}
+\end{equation}
+\begin{equation}
+\label{sysx2}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\end{equation}
+
+\noindent where all terms are defined above but now the equation for performance also includes Effort$_t$ -- which is the value of effort at time $t$ -- and $b$, the coefficient relating effort to performance. This set of equations says that effort is simply a product of itself over time (with error), whereas performance is a function of itself and also effort at the immediate time point.
+
+What if there is a lag between when effort causes performance? That is, perhaps we posit that effort does not immediately cause performance but instead causes performance after some period of time. If the lag effect were 2, that would mean that Effort$_t$ causes Performance$_{t+2}$, and to express the "lag 2 effect" mathematically we would use the following:
+
+\begin{equation}
+\label{sysy3}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
+\end{equation}
+\begin{equation}
+\label{sysx3}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\end{equation}
+
+\noindent Here, all terms are nearly identical to what we saw above but now there is a lag-two effect from effort to performance. Performance is now a function of both its immediately prior self and the value of effort from two time points ago. 
+
+What if we want to convey feedback, or a reciprocal relationship between effort and performance? That is, now we posit that both effort causes performance and performance causes effort. To do so we update our equations with a simple change:
+
+\begin{equation}
+\label{sysy3}
+\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
+\end{equation}
+\begin{equation}
+\label{sysx3}
+\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + b \textrm{Performance}_{t - 2} + e_{t}
+\end{equation}
+
+\noindent where all terms are defined above but now effort and performance are reciprocally related. Both are determined by themselves at the immediately prior time point and the other state two time points in the past. Effort happens, and two moments later this influences performance, and two moments later this goes back to influence effort, and so on throughout time. All the while, both states retain self-similarity -- they fluctuate and develop but only under the constraints afforded by the autoregressive terms. 
+
+We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey a process over time. 
 
 ```{r, echo = F, fig.cap = "dynamic equilibrium fig\\label{dynamics_plot}", cache = T}
 
@@ -103,63 +212,8 @@ ggplot(df, aes(x = Time, y = value)) +
 
 ```
 
-\begin{center}
-
----------------
-
-Insert Figure \ref{dynamics_plot} Here
-
----------------
-
-\end{center}
-
-## Equilibrium
-
-Notice that we introduced a new term in our description above: equilibrium. Equilibrium describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems -- where equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equalibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
-
-Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. This back and forth oscillating pattern between variables describes a dynamic equilibrium. The variables change and there may be random disturbances to the system across time, but the net dynamics of the system remain stable -- and therefore this situation is still called "equilibrium."
-
-## Stochastics
-
-Our route so far has been deterministic -- the mathematical representations do not contain error. When we want to convey a process with error we can consider a host of additional principles. Stochastics, stated simply, refers to processes with error. Consider our simple difference equation from above, adding an error component produces:
-
-\begin{equation}
-\label{diffE}
-y_{t} = a y_{t-1} + c + e_{t}
-\end{equation}
-
-\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into $y$ at each time point. Errors cause $y$ to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push $y$ to a higher value, and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors, and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath_statistical_2016]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
-
-It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs." An aggregation of randomness is a normal distribution.
-
-## White Noise and Random Walks
-
-There are two fundamental stochastic processes: white noise and random walks. White noise is a process that only has error. Setting *c* and *a* to zero in equation \ref{diffE} produces a white noise process.
-
-\begin{equation}
-\begin{split}
-\label{whitenoise}
-y_{t} &= a y_{t-1} + c + e_{t} \\
-a &= 0 \\
-c &= 0
-\end{split}
-\end{equation}
-
-\noindent Here, all we have is error over time. Panel "A" of figure \ref{noise} shows the behavior of a white noise process over time. Random walks are similar, but *a* is now equal to one.
-
-\begin{equation}
-\begin{split}
-\label{rw}
-y_{t} &= a y_{t-1} + c + e_{t} \\ 
-a &= 1 \\ 
-c &= 0
-\end{split}
-\end{equation}
 
 
-\noindent This representation is also an error process, but there is self-similarity across time. Panel "B" of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpreditable: they could go up or down at any moment. 
-
-Random walks and white noise are error processes over time. White noise processes fluctuate randomly, whereas random walks fluctuate randomly while retaining some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. 
 
 ```{r, echo = F, fig.cap='this one will be a white noise process and a random walk\\label{noise}'}
 
@@ -168,69 +222,3 @@ set.seed(5)
 plot(rnorm(10,0,1) ~ rnorm(10,0,1))
 
 ```
-
-
-## System of Equations
-
-Our discussion so far has focused on one variable. Before moving to two or more variables we want to pause and highlight how much researchers can explore with single variables. It is of course interesting and fun to ask how two or more variables are related, or posit a complex sequence among a set of variables. But understanding whether or not one variable exhibits white noise or random walk behavior across time is a valuable study in itself. We feel that our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
-
-With multivariate systems we need multiple equations -- one for each variable. Before, we demonstrated a simple difference equation for $y$. In a multivariate system with two variables, $x$ and $y$, we need one equation for each:
-
-\begin{equation}
-\label{sysy}
-y_{t} = a y_{t - 1} + e_{t}
-\end{equation}
-\begin{equation}
-\label{sysx}
-x_{t} = a x_{t - 1} + e_{t}
-\end{equation}
-
-\noindent where both equations posit that their variable is a function of its prior self to the extent of the autoregressive term ($a$). Notice that there are no cross-relationships, we are simply representing a system with two independent variables across time. It is of course also possible to introduce relationships among the different variables with more terms.
-
-First, consider a system where $x$ concurrently causes $y$. A more appropriate way to say this would be that $x_t$ causes $y_t$:
-
-\begin{equation}
-\label{sysy2}
-y_{t} = a y_{t - 1} + b x_{t} + e_{t}
-\end{equation}
-\begin{equation}
-\label{sysx2}
-x_{t} = a x_{t - 1} + e_{t}
-\end{equation}
-
-\noindent where all terms are defined above but now the equation for $y$ also includes $x_{t}$, the value of $x$ and time $t$, and $b$, the coefficient relating $x$ to $y$. This set of equations says that $x$ is simply a product of itself over time (with error), whereas $y$ is a function of itself and also $x$ at the immediate time point. 
-
-What if there is a lag between when $x$ causes $y$? That is, perhaps we posit that $x$ does not immediately cause $y$ but instead causes $y$ after some period of time. If the lag effect were 2, that would mean that $x_t$ causes $y_{t + 2}$, and to express the "lag 2 effect" mathematically we would use the following.
-
-\begin{equation}
-\label{sysy3}
-y_{t} = a y_{t - 1} + b x_{t - 2} + e_{t}
-\end{equation}
-\begin{equation}
-\label{sysx3}
-x_{t} = a x_{t - 1} + e_{t}
-\end{equation}
-
-\noindent Here, all terms are nearly identical to what we saw above but now there is a lag-two effect from $x$ to $y$. $y$ is now a function of both its immediately prior self and the value of $x$ from two time points ago. 
-
-What if we want to convey feedback, or a reciprocal relationship between $x$ and $y$? That is, now we posit that both $x$ causes $y$ and $y$ causes $x$. To do so we update our equations with a simple change:
-
-\begin{equation}
-\label{sysy3}
-y_{t} = a y_{t - 1} + b x_{t - 2} + e_{t}
-\end{equation}
-\begin{equation}
-\label{sysx3}
-x_{t} = a x_{t - 1} + b y_{t - 2} + e_{t}
-\end{equation}
-
-\noindent where all terms are defined above but now $x$ and $y$ are reciprocally related. Both are determined by themselves at the immediately prior time point and the other variable two time points in the past. $x$ happens, and two moments later this influences $y$, and two moments later this influences $x$, and so on throughout time. All the while, both variables retain self-similarity -- they change and develop but only under the constraints afforded by the autoregressive terms. 
-
-We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey a process over time. If we were to plug values into the coefficients and variables we would produce trajectories over time, and to describe those trajectories we could then use terms like "trend," "periodicity," or "feedback" like we saw in the systems theory section. 
-
-## Examples
-
-People from our literature using these principles to explain something. Study 1 argued for random walk behavior in X. Study 2 measured X and Y and posited an equation.
-
-## Summary
-

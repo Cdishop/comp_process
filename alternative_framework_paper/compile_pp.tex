@@ -493,13 +493,13 @@ without bound forever.
 \subsubsection{Initial Conditions}\label{initial-conditions}}
 
 The last concept is that initial conditions may or may not influence the
-overall dynamics. An employee's climate perceptions may vary over time,
-and they are reciprocally related to a number of important states. But
-the dynamics of his climate perceptions may depend on his first
-encounters with the company -- his initial perceptions. Perhaps his
-initial perceptions were positive and over time showed reciprocal
-patterns with performance, dyadic social exchanges, burnout, and
-leadership perceptions. A researcher paying attention to initial
+overall dynamics. Imagine an employee's climate perceptions fluctuating
+over time, and showing a reciprocal pattern with a number of other
+important states. The dynamics of his climate perceptions may depend on
+his first encounters with the company -- his initial perceptions.
+Perhaps his initial perceptions were positive and over time showed
+reciprocal patterns with performance, dyadic social exchanges, burnout,
+and leadership perceptions. A researcher paying attention to initial
 conditions would examine if those same reciprocal patterns emerge under
 different starting conditions, like a bad first encounter.
 
@@ -508,11 +508,12 @@ explanation and model of conflict and cooperation between two actors.
 Their explanation takes into account several states for a two-person
 situation, including (1) each individual's general affective state, (2)
 feedback from one person to the other, and (3) each individual's general
-tendency to change based on the feedback. They explain and argue that
-the patterns of conflict and cooperation that two individuals
-demonstrate over time differ dramatically if both individuals start with
-the same affective tone (positive and positive or negative and negative)
-versus opposing tones.
+tendency to change based on the feedback. They argue that the patterns
+of conflict and cooperation that two individuals demonstrate over time
+differ dramatically if both individuals start with the same affective
+tone (positive and positive or negative and negative) versus opposing
+tones -- that is, the dynamics of conflict and cooperation are sensitive
+to the initial conditions of the actors involved.
 
 \hypertarget{describing-trajectories}{%
 \subsubsection{Describing Trajectories}\label{describing-trajectories}}
@@ -540,10 +541,9 @@ in the final section.
 Equations}\label{basic-concepts-in-equations}}
 
 Remember that in dynamics we are focused on memory, self-similarity, and
-constraints as states move across time. Imagine that we are interested
-in performance over time. What we are going to do here is begin to
-capture those ideas with equations. First, consider performance across
-time:
+constraints as states move across time. What we are going to do here is
+begin to capture those ideas with equations using performance as an
+example. First, consider performance across time:
 
 \begin{equation}
 \textrm{Performance}_{t} = \textrm{Performance}_{t-1}
@@ -554,12 +554,12 @@ it was at \(t-1\). This equation says that performance does not
 fluctuate, change, move, or grow across time -- there is zero trend.
 Performance is, say, four at time one, four at time two, four at time
 three, and so on. This type of equation is called a difference equation,
-and it is a foundation in dynamics.
+and it is a foundational tool in dynamics.
 
 Although this first equation seems disceptively simple, we have already
 captured memory. Performance, in this case, is perfectly self-similar.
-What if performance is similar, but not perfectly self-similar across
-time? To capture this idea we need a new term:
+What if, instead, performance is similar but not perfectly self-similar
+across time? To capture this idea we need a new term:
 
 \begin{equation}
 \textrm{Performance}_{t} = a \textrm{Performance}_{t-1}
@@ -571,7 +571,9 @@ performance now to performance at the next moment, and when you estimate
 that term in a statistical model it is called an autoregressive term.
 When the autoregressive term is large performance is highly
 self-similar, whereas when \(a\) is close to zero performance has less
-self-similarity.
+self-similarity. Two other statistical terms for self-similarity you may
+come across include autocorrelation and serial correlation -- both refer
+to the correlation a state has with itself over time.
 
 \hypertarget{fundamental-autoregressive-behaviors}{%
 \subsubsection{Fundamental Autoregressive
@@ -609,7 +611,7 @@ longer changes unless disturbed by an outside force. It can also be used
 to describe multiple variable systems -- where equilibrium again means
 that the state remains constant unless disturbed by an outside force,
 but here state refers to the the entire system (i.e., all of the
-variables). In \emph{static} equalibriums, the system has reached a
+variables). In \emph{static} equilibriums, the system has reached a
 point of stability with no change, whereas \emph{dynamic} equilibrium
 refers to systems with changes and fluctuations but no net change. That
 is, the variables fluctuate across time in periodic ways but the general
@@ -692,22 +694,21 @@ a &= 1 \\
 \end{equation}
 
 \noindent This representation is also an error process, but there is
-self-similarity across time. Panel \enquote{B} of figure \ref{noise}
-presents a random walk. Although random walks can sometimes appear to be
-moving in a systematic direction, ultimately their behavior is
-unpreditable: they could go up or down at any moment.
+performance self-similarity across time. Panel \enquote{B} of figure
+\ref{noise} presents a random walk. Although random walks can sometimes
+appear to be moving in a systematic direction, ultimately their behavior
+is unpreditable: they could go up or down at any moment.
 
 Random walks and white noise are error processes over time. White noise
 processes fluctuate randomly, whereas random walks fluctuate randomly
 while retaining some self-similarity through time. These two principles
 are the null hypotheses of time-series analysis in econometrics -- where
 the first task in a longitudinal study is to demonstrate that you are
-investigating something that is not a random walk or white noise.
-
-Using our performance equation example, that would mean that if a
-researcher wanted to show the effect of IVs on performance across time
-they would first need to demonstrate that performance and all of their
-IVs are not random walks or white noise processes. This step is
+investigating something that is not a random walk or white noise. This
+demonstration, with respect to our performance example, would mean that
+if a researcher wanted to show the effect of IVs on performance across
+time they would first need to demonstrate that performance and all of
+their IVs are not random walks or white noise processes. This step is
 currently absent in our literature but, again, is the essential starting
 place in econometrics.
 
@@ -724,7 +725,7 @@ Insert Figure \ref{noise} Here
 \hypertarget{system-of-equations}{%
 \subsubsection{System of Equations}\label{system-of-equations}}
 
-Our discussion so far has focused on performance, a single state.
+Up to this point we have focused on a single state, performance.
 Remember that in dynamics we are also interested in reciprocal
 influence, but before moving to two or more state equations we want to
 pause and highlight how much researchers can explore with single states.
@@ -779,7 +780,7 @@ perhaps we posit that effort does not immediately cause performance but
 instead causes performance after some period of time. If the lag effect
 were 2, that would mean that Effort\(_t\) causes Performance\(_{t+2}\),
 and to express the \enquote{lag 2 effect} mathematically we would use
-the following.
+the following:
 
 \begin{equation}
 \label{sysy3}
@@ -849,19 +850,20 @@ dynamic panel bias.
 \hypertarget{stationarity}{%
 \subsubsection{Stationarity}\label{stationarity}}
 
-Stationarity is about the stability of the properties of a process.
-Rachel's performance score across time is called a time-series -- it is
-the trajectory of performance for a single unit (Rachel) over time. That
-trajectory has properties: it has a mean and a variance. If the mean is
-unstable then Rachel's performance either grows or decreases
+States and systems have statistical properties, stationarity is about
+the stability of those properties. Rachel's performance score across
+time is called a time-series -- it is the trajectory of performance for
+a single unit (Rachel) over time. That trajectory has properties: it has
+a mean and a variance (and autocorrelation or serial correlation). If
+the mean is unstable then Rachel's performance either grows or decreases
 unconditionally over time. If instead the mean is stable, then Rachel's
 performance across time fluctuates but within the constraints of its
 memory and bounds on the system. Almost all models used to estimate
 coefficients in the organizational literature are stationary models that
 assume the data they are modeling are realizations of a stationary
-process. That is, they assume that the process they are trying to
-estimate paramters for have properties at time \(t\) that are the same
-as the properties at time \(t + 1\).
+process. That is, they assume that the states and systems they are
+trying to estimate parameters for have properties at time \(t\) that are
+the same as the properties at time \(t + 1\).
 
 In simple terms, a stationary process has stable properties across time
 -- data that demonstrate trend, growth, or random walk behavior are
@@ -876,7 +878,7 @@ regression-based analysis like those presented at the start of this
 paper. There are many other papers that describe how to test for
 stationarity (e.g., CITES), all we are trying to do here is convey how
 important this notion is. Our literature is not paying attention to
-random walks, we are not checking for memory, or seriel correlation, or
+random walks, we are not checking for memory, or serial correlation, or
 stationarity; we should be.
 
 \hypertarget{dynamic-panel-bias}{%
@@ -891,12 +893,11 @@ y_{t} = a y_{t-1} + e_{t}
 \end{equation}
 
 \noindent where the only change is that we replaced performance with a
-generic \(y\). Again, these equations appropriately represent underlying
-systems with memory, but when a researcher estimates a statistical model
-and includes a lagged DV the errors become correlated with the
-predictors and the well-known independence of errors assumption is
-violated. This issue therefore has to do with estimating relationships
-for a single unit when we want to incoporate lagged DVs.
+generic \(y\). When a researcher estimates a statistical model and
+includes a lagged DV the errors become correlated with the predictors
+and the well-known independence of errors assumption is violated. This
+issue therefore has to do with estimating relationships for a single
+unit when we want to incoporate lagged DVs.
 
 The second issue arises when we are interested in relationships with a
 multiple-unit sample across time. Almost all organizational studies are

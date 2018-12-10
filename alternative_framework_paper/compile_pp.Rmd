@@ -74,10 +74,10 @@ knitr::opts_chunk$set(fig.path = 'figs/',echo = FALSE, warning = FALSE, message 
 ```{r child = 'pp_concepts.Rmd'}
 ```
 
-```{r child = 'pp_stats.Rmd'}
+```{r child = 'pp_math.Rmd'}
 ```
 
-```{r child = 'pp_hard.Rmd'}
+```{r child = 'pp_modeling.Rmd'}
 ```
 
 ```{r child = 'pp_discussion.Rmd'}
