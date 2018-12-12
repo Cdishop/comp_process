@@ -95,7 +95,7 @@ Insert Figure \ref{noise} Here
 
 \end{center}
 
-### System of Equations
+### Dynamic Systems
 
 Up to this point we have focused on a single state, performance. Remember that in dynamics we are also interested in reciprocal influence, but before moving to two or more state equations we want to pause and highlight how much researchers can explore with single states. It is of course interesting and fun to ask how two or more states are related, or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. We feel that our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
 

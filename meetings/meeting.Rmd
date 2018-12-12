@@ -11,78 +11,32 @@ knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
 # Take aways from last time
 
-* Wrote a paper on different ways to represent and describe process. 
+* Intro is about "everybody says dynamics" -- paper is now about taking a dynamic perspective.
 
 # Today
 
-1) What is the connect between your manifest relationship and your process?
+1) Linear dynamic systems model
 
-The paper as is is a set of principles to talk about. But we don't talk at all about the decisions people have to make when they decide which variables to measure. Let's change emphasis:
+the basic y equation in matrix form. Our past research were subsumed in the general linear model. As we approach dynamics our investigations will be subsumed in this general model. This equation embodies the principles we discussed above, and it will be the core model of our dynamic investigations.
 
-Paper one:
+2) Highlight our opportunities and a mini lit review.
 
-Alternative ways to think about things over time
+No extra data needed, they are doing great things and covering really cool principles.
 
-Grandey affect. Ego depletion. Here is this really cool theory with lots of stuff over time. 
-Here is how people explore and test it. TVC model. Growth model. They find relationships. To what extent do these relationships connect to what Grandey was talking about? There is an entire domain we have yet to explore: dynamics.
+3) Replace "system of equations" with dynamic systems
 
-difference equations
-stationarity
-equilibrium
-reciprocal dynamics
-seriel correlation
+Put in 5 member teams, etc.
 
-pay attention to these things. Model these things. they are another way to represent the ideas in the theory. The theory is a process-oriented, dynamic theory. Current people explore trend or growth, that tells them that things can grow, or that things relate to growth, but there are other necessary concepts.
+4) Cointegration after stationarity.
 
-Paper two:
+There are models that you can use to examine relationships that don't assume stationarity, these are called cointegration models.
 
-What is the connection between your manifest relationship and the process?
+5) Stationarity: equlibrium is the main concept. A system in equilibrium results in stationarity.
 
-There seems to be a disconnect. On the one hand we talk about processes like performance. Then we go and we model relationships. What does that manifest coeffficient mean? How is it related to the process? 
+6) Ergodicity
 
-You have to make decisions on what you are going to be focusing on. we don't see people talking about the extent to which their observed relationship falls back into the underlying process. Where is it situated?
+when is it reasonable to pool? Homogeneity of dynamics
 
-
-# Question 1
-
-* Need to make a better distinction between describing observed data vs describing dgp?
-
-* Current form: systems theory, math, comp -- no distinction between observed data and dgp. I could do:
-        
-        + Process in the observed data
-        
-              * Trend, magnitude, periodicity, stationary, growth, change, cointegration, granger causality
-        
-        + Process in the dgp - math
-        
-              * difference equations and stochastics
-              
-        + Process in the dgp - comp
-        
-              * as is
-              * would people argue that the simon model is not a dgp?
-              
-        + where would equilibrium or feedback loops go?
-    
-    + As I read the paper this idea was the only thing on my mind...but that is because we discuss it so much. Would it be on others?
-        + Update 09/05: As I read through it with a fresh mind this didn't bug me... 
-              
-              
-# Question 2
-
-* Examples at end of each section rather than within each principle
-
-# Question 3
-
-* How to beef up each principle section without pointing to examples
-
-# Some thoughts about intro
-
-* Need to be more positive?
-
-* "There is a lot more to process than mediation"
-
-    + BTW, do we need to discuss mediation?
-
+Unobserved heterogeneity is heterogenteity of unit effects, of individual differences. 
 
 

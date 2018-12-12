@@ -4,7 +4,7 @@ output: pdf_document
 
 ## Dynamic Modeling
 
-We have introduced some fundemental concepts for dynamics. Memory, constraints, random walks, equilibrium -- these are core ideas for researchers to grapple with as they consider dynamic phenomenon. When researchers then collect longitudinal data and estimate models (with these ideas in mind) there are a host of challenges that must be considered. In this section we are going to describe stationarity and dynamic panel bias.
+We have introduced some fundemental concepts for dynamics. Memory, constraints, random walks, equilibrium -- these are core ideas for researchers to grapple with as they consider dynamic phenomenon. When researchers then collect longitudinal data and estimate models (with these ideas in mind) there are a host of challenges that must be considered. In this section we are going to describe stationarity, ergodicity, and dynamic panel bias.
 
 ### Stationarity
 
