@@ -39,4 +39,10 @@ when is it reasonable to pool? Homogeneity of dynamics
 
 Unobserved heterogeneity is heterogenteity of unit effects, of individual differences. 
 
+# Also
+
+At the end: What dynamics is not
+
+Don't put time as a moderator
+Don't make a static box and arrow diagram
 

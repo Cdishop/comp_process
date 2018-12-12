@@ -1,8 +1,23 @@
 Dynamics, dynamic in the title
-Excluded ethnography or when people use the term "dynamics" to mean a changing environment rather than a "dynamic process."
+
+Excluded ethnography
+
+Excluded when people use the term "dynamics" to mean a changing environment rather than a "dynamic process."
+
+Excluded cross-sectional studies
+
+Mentioned at least one of the concepts we discussed here. So, we excluded studies that just examined growth or just relationships (in a manner similar to those studies outlined at the beginning of the paper).
 
 Last 5 years
 
 Journal of applied psychology
 Journal of management
 Academy of management journal
+
+
+Looked at but excluded:
+Grand et al., 2016 JAP - computational model
+Da Motta Veiga et al., 2016 JAP - put time as a moderator. Really just a growth curve.
+Kaltianinen et al., 2017 JAP - just relationships across time
+Farh Chen 2018 JAP - Kind of longitudinal but they use "phases"
+Ferris et al., 2018 JAP - not longitudinal

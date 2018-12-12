@@ -3,14 +3,15 @@
 
 \centering
 \includegraphics{figs/unnamed-chunk-9-1.pdf}
-\caption{\label{fig:unnamed-chunk-9}dynamic equilibrium
-fig\label{dynamics_plot}}
+\caption{\label{fig:unnamed-chunk-9}Trajectories driving toward equilibrium
+or explosive behavior based on their autoregressive
+coefficient.\label{dynamics_plot}}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
 
 \centering
 \includegraphics{figs/unnamed-chunk-10-1.pdf}
-\caption{\label{fig:unnamed-chunk-10}this one will be a white noise process
-and a random walk\label{noise}}
+\caption{\label{fig:unnamed-chunk-10}Two fundamental stochastic processes:
+white noise and a random walk.\label{noise}}
 \end{figure*}

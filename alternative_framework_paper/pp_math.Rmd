@@ -153,7 +153,7 @@ What if we want to convey feedback, or a reciprocal relationship between effort 
 
 We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey a process over time. 
 
-```{r, echo = F, fig.cap = "dynamic equilibrium fig\\label{dynamics_plot}", cache = T}
+```{r, echo = F, fig.cap = "Trajectories driving toward equilibrium or explosive behavior based on their autoregressive coefficient. When the coefficient is greater than one (in absolute value) the trajectory oscillates explosively or grows exponentially. When the coefficient is between zero and one (in absolute value) the trajectory converges to equilibrium.\\label{dynamics_plot}", cache = T}
 
 time <- 20
 df_mat <- matrix(, ncol = 5, nrow = time)
@@ -213,12 +213,43 @@ ggplot(df, aes(x = Time, y = value)) +
 ```
 
 
-
-
-```{r, echo = F, fig.cap='this one will be a white noise process and a random walk\\label{noise}'}
+```{r, echo = F, fig.cap='Two fundamental stochastic processes: white noise and a random walk.\\label{noise}'}
 
 set.seed(5)
+timer <- 100
 
-plot(rnorm(10,0,1) ~ rnorm(10,0,1))
+wn <- numeric(timer)
+wn[1] <- 2
+rw <- numeric(timer)
+rw[1] <- 2
+
+for(i in 2:timer){
+  
+  wn[i] <- rnorm(1, 0, 1)
+  rw[i] <- 1* rw[i - 1] + rnorm(1,0,1)
+  
+}
+
+stoch_df <- data.frame(
+  'time' = c(c(1:timer), c(1:timer)),
+  'label' = c(rep('random_walk', timer), rep('white_noise', timer)),
+  'value' = c(rw, wn)
+)
+
+stoch_df$label <- factor(stoch_df$label,
+                         labels = c('Random Walk',
+                                    'White Noise'))
+
+
+library(ggplot2)
+rwwn <- ggplot(stoch_df, aes(x = time, y = value)) + 
+  geom_point() + 
+  geom_line() + 
+  facet_wrap(~label, ncol = 1, scales = 'free_y') + 
+  theme_classic() + 
+  ylab('Value') + 
+  xlab('Time')
+
+rwwn
 
 ```
