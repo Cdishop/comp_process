@@ -1,0 +1,84 @@
+---
+title: "lit_review"
+output: html_document
+---
+
+# Berrone 2016
+
+245 US communities across 7 years.
+
+DV is community income inequality: gini index (a zero means all households have equal income). IVs were welfare nonprofit density (number of welfare nonprofits and their size), elite nonprofit density, and government envorcement capability (number of government enforcement actions like fines). Also considered things like demographic heterogeneity, racial diversity, and conservative political ideology.
+
+They use a fixed-effects regression model to capture unobserved, time-invariant factors that affect community poverty (Wooldridge, 2012). They used a Hausman test to determine if a fixed or random effects model was more appropriate. 
+
+They check lag one and lag two relationships of their main predictor on their DV.
+
+Relationship between community income inequality and welfare nonprofit density, elite nonprofit density, and government enforcement (fines). They are arguing that community level things like demographic heterogeneity and diversity and government regulations influence the ability of nonprofits to diminish income inequality. So the relationship between income inequality and nonprofit density is the big dog, and then the other factors are demographic things and diversity things.
+
+They say they have panel data, but they don't report how much.
+
+## Dynamic notions:
+
+unobserved heterogeneity (hausman test)
+lags
+
+## Opportunities:
+
+Initial conditions
+Memory
+Timescales
+Boundary Conditions
+Reciprocal relationships
+Random Walks and White Noise
+Stationarity
+Endogeneity
+
+
+# Call 2015
+
+5 time point data spanning over 15 months. Not discussion of data separation.
+
+Measures: unit performance, turnover rate (not of the same people, just of that area), turnover rate change: subtracting previous quarters turnover rate from current rate. Quality of turnover was who left -- individual service orientation (individual difference measure) of each of the people who left. 
+
+Their model regresses unit performance on prior turnover rate, turnover rate change, and other things.
+
+Ran a Hausman test to determine if fixed or random effects are better (they found that the unique errors were not correlated with the regressors). 
+
+## Dynamic notions:
+
+Unobserved heterogeneity (hausman test)
+Lags
+Timescales
+Serial Correlation
+
+## Opportunities:
+
+Initial conditions
+Boundary Conditions
+Reciprocal relationships
+Random Walks and White Noise
+Stationarity
+Endogeneity
+
+
+# Drescher 2014
+
+Teams played an online simulation game (Trivian, groups of 23 individuals), they waited until the teams got used to each other before collecting data. Then measured three times each separated by 8 weeks. 
+
+Looked at autocorrelation, slopes, and changes in each variable over time. Correlated performance change and trust change with shared leadership.
+
+## Dynamic notions
+
+autocorrelation
+lags
+
+## Opportunities
+
+Initial conditions
+Memory
+Timescales
+Boundary Conditions
+Reciprocal relationships
+Random Walks and White Noise
+Stationarity
+Endogeneity
