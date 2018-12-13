@@ -29,6 +29,7 @@ Memory
 Timescales
 Boundary Conditions
 Reciprocal relationships
+Equilibrium
 Random Walks and White Noise
 Stationarity
 Endogeneity
@@ -36,7 +37,7 @@ Endogeneity
 
 # Call 2015
 
-5 time point data spanning over 15 months. Not discussion of data separation.
+5 time point data spanning over 15 months. No discussion of data separation.
 
 Measures: unit performance, turnover rate (not of the same people, just of that area), turnover rate change: subtracting previous quarters turnover rate from current rate. Quality of turnover was who left -- individual service orientation (individual difference measure) of each of the people who left. 
 
@@ -56,6 +57,7 @@ Serial Correlation
 Initial conditions
 Boundary Conditions
 Reciprocal relationships
+Equilibrium
 Random Walks and White Noise
 Stationarity
 Endogeneity
@@ -75,10 +77,176 @@ lags
 ## Opportunities
 
 Initial conditions
-Memory
 Timescales
 Boundary Conditions
 Reciprocal relationships
+Equilibrium
 Random Walks and White Noise
 Stationarity
 Endogeneity
+
+# Gabriel diefendorff
+
+Looking at emotions, surface acting, and deep acting on a momentary basis. Expecting them to fluctuate across time. In response to customer incivility, emotions become more negative and surface acting increaeses (within person). 
+
+84 students in 90 minute call center simulation. Opening and closing script, but the remainder of their dialogue was left open to them. All confederates follow same script (the caller). Participants then listen back to the recording and rate continuous emotions and surface/deep acting. A couple of different conditions concerning recovery.
+
+## Dynamic notions
+
+Lags
+Autocorrelation
+Reciprocal relationships (although emphasized as "reverse causal paths" so really they are interested in a single t to t+1 rather than what it is across time)
+Timescales
+
+## Opportunities
+
+Initial conditions
+Boundary Conditions
+Equilibrium
+Random Walks and White Noise
+Stationarity
+Endogeneity
+
+# Hardy 2018
+
+SELF REGULATORY LEARNING
+
+How cognitive, motivational, and behavioral regulatory processes conspire to promote or inhibit learning outcomes. 
+Self regulation and learning are dynamic processes that occur at the within person level and unfold over time and across multiple levels of analysis. 
+Examine the nature and directionality of interrelationships among commonly studied cognitive, motivational, and behavioral self-regulated learning variables in the context of a technology-mediated, learner controlled training environment. 
+	- Self efficacy
+	- Meta cognition
+	- Exploratory behavior
+
+
+Hypotheses
+	- Prior self efficacy negatively related to subsequent exploratory behavior
+	- Prior self efficacy negatively related to subsequent meta cognition
+	- Prior exploratory behavior positively related to subsequent metacognition
+	- Prior metacognition negatively related to subsequent exploratory behavior
+	- Prior exploration positively related to subsequent self efficacy
+	- Prior meta cognition positively related to subsequent self efficacy
+Method
+	- Lab students played a first person shooter game
+	- 2 baseline trials
+	- 20 3 minute practice trials for the practice learning phase
+		○ Divided into five sessions
+		○ After each session people responded to surveys
+			§ Self efficacy
+			§ Meta
+			§ Goals
+	- Exploratory behavior coded by people watching them play
+	- Bivariate cross-lagged latent growth models
+		○ Cross-lagged regression
+			§ Teasing apart issues of directionality in relationships
+		○ Latent growth modeling
+			§ Modeling covariation between each repeated variable's latent intercept and growth terms, thus addresssing the potential confounding influences of slope covariation (i.e., spurious positive relationships that may emerge due to similarities in the trajectories of two variables). 
+	- Compared 4 models
+		○ Univariate latent growth (independence model)
+		○ Unidirectional model (B to A)
+		○ Unidirectional model (A to B)
+		○ Bidirectional model
+	- Trends in all variables except self efficacy 
+No stationarity check
+
+## Dynamic Notions
+
+Lags
+Reciprocal relationships
+
+## Opportunities
+
+Initial conditions
+Memory
+Timescales
+Boundary Conditions
+Equilibrium
+Random Walks and White Noise
+Unobserved heterogeneity
+Stationarity
+Endogeneity
+
+# Jones et al., 2016
+
+	• Method
+		○ Pregnant participants
+		○ Initial survey
+			§ Demographics
+			§ Perceived supervisor support
+			§ Work family culture
+		○ Weekly survey
+			§ Identity management
+				□ Revealing, concealing, and signaling pregnant behaviors
+					® Concealing = hiding pregnancy
+					® Revealing = revealing pregnancy
+			§ Physical health symptoms
+	• Findings
+		○ Concealing = improved physical health
+		○ Revealing reciprocal influence with physical health. Revealing = declines in physical health and declines in physical health = decreases in revealing.
+		○ Women in supportive work contexts reported lower levels of concealing, higher levels of revealing, and less frequent physical health symptoms early. But these early benefits may be undermined via progressive decreases in concealing and increases in revealing, which lead to declines in physical health
+	• Issues
+		○ Stationarity?
+		○ Intitial conditions?
+		○ Reciprocal decrease forever?
+
+## Dynamic notions
+
+Reciprocal relationships
+Lags
+Autocorrelation
+Memory
+
+## Opportunities
+
+Initial conditions
+Timescales
+Boundary conditions
+Equilibrium
+Random walks and white noise
+Unobserved heterogeneity
+Stationarity
+Endogeneity
+
+# Taylor et al., 2014
+
+workplace incivility and its relationship to burnout, which leads to changes in turnover cognitions. Their hypotheses are consistent with a bivariate change model. Employees complete paper and pencil test every friday for 6 weeks. Used a latent change score model.
+
+## Dynamic notions
+
+Lags
+Reciprocal relationships
+Autocorrelation
+
+## Opportunities
+
+Initial conditions
+Timescales
+Boundary conditions
+Equilibrium
+Random walks and white noise
+unobserved heterogeneity
+stationarity
+endogeneity
+
+# Tepper 2018
+
+Relationships between positive affect, transformational leadership, and transformational leadership need on behalf of the follower.
+
+## Dynamic notions
+
+Autoregression
+Lags
+
+## Opportunities
+
+Initial conditions
+Timescales
+Boundary conditions
+Equilibrium
+Reciprocal relationships
+Random walks and white noise
+unobserved heterogeneity
+stationarity
+endogeneity
+
+

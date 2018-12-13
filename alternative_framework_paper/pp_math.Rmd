@@ -213,7 +213,7 @@ ggplot(df, aes(x = Time, y = value)) +
 ```
 
 
-```{r, echo = F, fig.cap='Two fundamental stochastic processes: white noise and a random walk.\\label{noise}'}
+```{r, echo = F, fig.cap='Two fundamental stochastic processes: a random walk and white noise.\\label{noise}'}
 
 set.seed(5)
 timer <- 100

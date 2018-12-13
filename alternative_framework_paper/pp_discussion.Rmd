@@ -5,3 +5,72 @@ output: pdf_document
 # Discussion - A Dynamic Perspective
 
 We opened this paper by talking about how researchers are beginning to approach dynamics. We pointed to two frameworks -- growth and relationships -- as example empirical research doing the hard work of getting our thinking beyond static, cross-sectional relationships. They were appropriate first steps toward dynamics given our field's history with random coefficient models and recent introduction to growth curve modeling, but there are many principles of dynamics outside the context of a specific longitudinal model -- we broached them here. Taking a dynamic perspective means focusing on memory, constraints, timescales, reciprocal influence, initial conditions, and exploring an array of satistical properties like serial correlation and stationarity. 
+
+## Recent Perspectives
+
+
+
+## What Dynamics Is Not
+
+Time as a moderator.
+
+Static equations versus dynamic equations. Equation 1 equation 2. They are similar, but they represent vastly different worlds. One explores instantaneous relationships with no constraints; essentially a congregation of cross-sectional slices. The other is interested in the flow across time. Exploring relationships over time is useful, but it is not dynamics. 
+
+
+## The Linear Dynamic Systems Model
+
+
+
+```{r, echo = F}
+library(xtable)
+library(knitr)
+library(kableExtra)
+library(tidyverse)
+
+
+
+
+highlight_df <- data.frame(
+ "A" = c("Berrone, Gelabert, Massa-Saluzzo, and Rousseau, 2016",
+	       "Call, Nyberg, Ployhart, and Weekley, 2015",
+	       "Drescher, Korsgaard, Welpe, Picot, and Wigand, 2014",
+	       "Gabriel and Diefendorff, 2015",
+	       "Hardy, Day, and Steele, 2018",
+	       "Jones, King, Gilrane, McCausland, Cortina, and Grimm, 2013",
+	       "Taylor, Bedeian, Cole, and Zhang, 2014",
+	       "Tepper, Dimotakis, Lambert, Koopman, Matta, Park, and Goo, 2018"),
+ 
+ "D" = c(linebreak("Unobserved heterogeneity\nLags"),
+	       linebreak("Unobserved heterogeneity\nLags\nSerial correlation\nTimescales"),
+	       linebreak("Lags\nAutocorrelation"),
+	       linebreak("Lags\nAutocorrelation\nReciprocal relationships\nTimescales"),
+	       linebreak("Lags\nReciprocal relationships"),
+	       linebreak("Lags\nAutocorrelation\nReciprocal relationships"),
+	       linebreak("Lags\nAutocorrelation\nReciprocal relationships"),
+	       linebreak("Lags\nAutoregression")),
+ 
+ "C" = c(linebreak("Initial conditions\nMemory\nTimescales\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nMemory\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nReciprocal relationships\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity")))
+
+
+
+
+
+names(highlight_df) <- c("Article", "Dynamic Notions", "Opportunities")
+
+
+highlight_df %>%
+  kable('latex', booktabs = T, escape = F, align = 'l', longtable = T, caption = '\\label{highlight}Recent studies exploring dynamic notions.') %>%
+  kable_styling(latex_options = c("repeat_header")) %>%
+    column_spec(1, width = '10em') %>%
+    column_spec(2, width = '11em') %>%
+    column_spec(3, width = '20em') %>%
+  row_spec(1:8, font_size = 12) %>%
+  row_spec(1:7, hline_after = T)
+```
