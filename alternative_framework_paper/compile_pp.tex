@@ -363,7 +363,7 @@ important principles couched in this simple idea.
 \hypertarget{concepts-and-conventions}{%
 \subsection{Concepts and Conventions}\label{concepts-and-conventions}}
 
-These first principles are concepts -- they are ways of thinking.
+These first principles are concepts -- ways of thinking.
 
 \hypertarget{states}{%
 \subsubsection{States}\label{states}}
@@ -503,9 +503,9 @@ and leadership perceptions. A researcher paying attention to initial
 conditions would examine if those same reciprocal patterns emerge under
 different starting conditions, like a bad first encounter.
 
-An empirical example is in Liebovitch, Vallacher, and Michaels (2010)
-explanation and model of conflict and cooperation between two actors.
-Their explanation takes into account several states for a two-person
+An example is in Liebovitch, Vallacher, and Michaels (2010) explanation
+and model of conflict and cooperation between two actors. Their
+explanation takes into account several states for a two-person
 situation, including (1) each individual's general affective state, (2)
 feedback from one person to the other, and (3) each individual's general
 tendency to change based on the feedback. They argue that the patterns
@@ -681,7 +681,7 @@ a &= 0
 \end{split}
 \end{equation}
 
-\noindent Here, all we have is error over time. Panel \enquote{A} of
+\noindent Here, all we have is error over time. The lower panel of
 figure \ref{noise} shows the behavior of a white noise process over
 time. Random walks are similar, but \(a\) is now equal to one.
 
@@ -694,7 +694,7 @@ a &= 1 \\
 \end{equation}
 
 \noindent This representation is also an error process, but there is
-performance self-similarity across time. Panel \enquote{B} of figure
+performance self-similarity across time. The upper panel of figure
 \ref{noise} presents a random walk. Although random walks can sometimes
 appear to be moving in a systematic direction, ultimately their behavior
 is unpreditable: they could go up or down at any moment.
@@ -704,13 +704,12 @@ processes fluctuate randomly, whereas random walks fluctuate randomly
 while retaining some self-similarity through time. These two principles
 are the null hypotheses of time-series analysis in econometrics -- where
 the first task in a longitudinal study is to demonstrate that you are
-investigating something that is not a random walk or white noise. This
-demonstration, with respect to our performance example, would mean that
-if a researcher wanted to show the effect of IVs on performance across
-time they would first need to demonstrate that performance and all of
-their IVs are not random walks or white noise processes. This step is
-currently absent in our literature but, again, is the essential starting
-place in econometrics.
+investigating something that is not a random walk or white noise. That
+is, if a researcher wanted to show the effect of IVs on performance
+across time they would first need to demonstrate that performance and
+all of their IVs are not random walks or white noise processes. This
+step is currently absent in our literature but, again, is the essential
+starting place in econometrics.
 
 \begin{center}
 
@@ -775,12 +774,12 @@ performance. This set of equations says that effort is simply a product
 of itself over time (with error), whereas performance is a function of
 itself and also effort at the immediate time point.
 
-What if there is a lag between when effort causes performance? That is,
-perhaps we posit that effort does not immediately cause performance but
-instead causes performance after some period of time. If the lag effect
-were 2, that would mean that Effort\(_t\) causes Performance\(_{t+2}\),
-and to express the \enquote{lag 2 effect} mathematically we would use
-the following:
+What if effort causes performance after some lag? That is, perhaps we
+posit that effort does not immediately cause performance but instead
+causes performance after some period of time. If the lag effect were 2,
+that would mean that Effort\(_t\) causes Performance\(_{t+2}\), and to
+express the \enquote{lag 2 effect} mathematically we would use the
+following:
 
 \begin{equation}
 \label{sysy3}
@@ -844,22 +843,29 @@ random walk and white noise.\label{noise}}
 \subsection{Dynamic Modeling}\label{dynamic-modeling}}
 
 We have introduced some fundemental concepts for dynamics. Memory,
-constraints, random walks, equilibrium -- these are core ideas for
-researchers to grapple with as they consider dynamic phenomenon. When
-researchers then collect longitudinal data and estimate models (with
-these ideas in mind) there are a host of challenges that must be
-considered. In this section we are going to describe stationarity,
-ergodicity, and dynamic panel bias.
+constraints, initial conditions, equilibrium, reciprocal influence --
+these elements constitute the underlying dynamics, embody the true
+mechanism, are ingredients to grapple with as researchers consider
+dynamic phenomenon. Dynamic mechanisms give rise to observed data,
+distributions, and statistical properties for us to witness, and it is
+those observed data that we apply models to. In a perfect world
+researchers could put a magnifying glass up to their observed data, and
+its statistical properties, and clearly identify the underlying
+dynamics. Unfortunately we do not live in that world. Instead, there are
+a host of challenges that must be considered when researchers collect
+longitudinal data and estimate models to make inferences about dynamics.
+In this section we are going to describe stationarity, dynamic panel
+bias, and ergodicity.
 
 \hypertarget{stationarity}{%
 \subsubsection{Stationarity}\label{stationarity}}
 
 States and systems have statistical properties, stationarity is about
-the stability of those properties. Rachel's performance score across
-time is called a time-series -- it is the trajectory of performance for
-a single unit (Rachel) over time. That trajectory has properties: it has
-a mean and a variance (and autocorrelation or serial correlation). If
-the mean is unstable then Rachel's performance either grows or decreases
+the stability of those properties. Rachel's performance across time is
+called a time-series -- it is the trajectory of performance for a single
+unit (Rachel) over time. That trajectory has properties: it has a mean
+and a variance (and autocorrelation or serial correlation). If the mean
+is unstable then Rachel's performance either grows or decreases
 unconditionally over time. If instead the mean is stable, then Rachel's
 performance across time fluctuates but within the constraints of its
 memory and bounds on the system. Almost all models used to estimate
@@ -885,6 +891,24 @@ important this notion is. Our literature is not paying attention to
 random walks, we are not checking for memory, or serial correlation, or
 stationarity; we should be.
 
+That said, there is a class of models known as cointegration models that
+can be used to evaluate relationships in a non-stationary system. These
+are an entirely different animal and they require a deep understanding
+of mathematics and econometric modeling, but interested readers can see
+Engle and Granger (1987), Johansen (1991), Phillips (1991), Phillips and
+Hansen (1990) and Phillips and Loretan (1991).
+
+Again, keep in mind that stationarity describes statistical properties
+that result from the underlying dynamics. States may or may not have
+memory, they may or may not have lag relationships, or reciprocal
+influence, and may or may not be constrained by their initial
+conditions. These aspects are the underlying dynamics, and the
+distributions that they give rise to have properties; stationarity is
+about those emergent statistical properties. Any system in equilibrium
+will be stationary, whereas unstable systems will be non-stationarity.
+The dynamics lead to distributions and statistical properties, and those
+statistical properties create challenges for models.
+
 \hypertarget{dynamic-panel-bias}{%
 \subsubsection{Dynamic Panel Bias}\label{dynamic-panel-bias}}
 
@@ -897,11 +921,14 @@ y_{t} = a y_{t-1} + e_{t}
 \end{equation}
 
 \noindent where the only change is that we replaced performance with a
-generic \(y\). When a researcher estimates a statistical model and
-includes a lagged DV the errors become correlated with the predictors
-and the well-known independence of errors assumption is violated. This
-issue therefore has to do with estimating relationships for a single
-unit when we want to incoporate lagged DVs.
+generic \(y\). The equation above has what is called a \enquote{lagged
+DV,} where \(y_{t}\) is predicted by the lagged DV: \(y_{t-1}\).
+Including lagged DVs helps us \emph{conceptually} represent dynamics
+(keele), but including a lagged DV in a \emph{model} applied to data
+with actual statistical properties causes the errors to correlate with
+the predictors and ultimately violate the well-known independence of
+errors assumption. This issue applies even when we are only considering
+a single unit (like Rachel) across time.
 
 The second issue arises when we are interested in relationships with a
 multiple-unit sample across time. Almost all organizational studies are
@@ -924,13 +951,27 @@ In dynamic modeling unobserved heterogeneity must be handled
 appropriately: if is is modeled as independent but in fact correlates
 with the model predictors then ommitted variables bias is introduced
 into the estimates, and if unobserved heterogeneity is ignored then
-seriel correlation will be introduced into the errors.
+serial correlation will be introduced into the errors.
 
 Dynamic panel bias is the combined effect of these two biases. Lagged
 DVs help us convey a dynamic process but they create estimation
 problems, and unobserved heterogeneity must be accounted for.
-Hierarchical linear models (or random-coefficient, multi level, random
-effects) do not handle these biases appropriately (CITES).
+Unfortunately the current workhorse in our literature to examine dynamic
+phenomena (the hierarchical linear, random-coefficient, or multi level
+model) is not well suited to handle dynamic panel bias. See Xu and
+DeShon (current) for a greater discussion of the issue and a recommended
+model.
+
+\hypertarget{ergodicity}{%
+\subsubsection{Ergodicity}\label{ergodicity}}
+
+In the last section we spoke about unobserved heterogeneity, which can
+be thought of as heterogeneity in individual differences or unit
+effects. That is, there are unmeasured differences that result in
+Rachel's trajectory being different from Bob's. An appropriate next
+question is, when is it reasonable to pool Rachel and Bob's data? When
+can we be confident that there is homogeneity of dynamics? This is the
+notion of ergodicity. \emph{WHAT ELSE}?
 
 \hypertarget{discussion---a-dynamic-perspective}{%
 \section{Discussion - A Dynamic
@@ -963,67 +1004,109 @@ fundamental framework for dynamic investigations.
 There are a variety of great studies already exploring some of the key
 dynamic properties. To get a sense for this literature and to highlight
 the principles that they capture we searched for empirical studies that
-were (1) published in the last five years (2) in the \textbf{Journal of
-Management}, \textbf{Journal of Applied Psychology}, or \textbf{Academy
-of Management Journal} and (3) contained \enquote{dynamic} or
+were (1) published in the last five years (2) in the \emph{Journal of
+Management}, \emph{Journal of Applied Psychology}, or \emph{Academy of
+Management Journal} and (3) contained \enquote{dynamic} or
 \enquote{dynamics} in the title. We exclude research that is
 cross-sectional, ethnographic, or focuses only on growth/covariates of
 growth. The articles and the dynamic notions that they emphasize are
 listed in table one.
 
-Every study emphasizes lags -- they evaluate associations, influence,
+The studies as a whole explore a number of dynamic principles. First,
+every study emphasizes lags -- they evaluate associations, influence,
 and patterns from current states to subsequent states, or prior states
 to current states. For example, ({\textbf{???}}) examine the
-relationship between self-efficacy and subsequent exploratory behavior
-(and they examine lag effects across all of their variables).
-({\textbf{???}}) study the relationship between revealing behaviors
-among pregnant women and subsequent physical health symptoms. Many also
-discuss serial correlation, autocorrelation, or autoregression.
-({\textbf{???}}) assess autocorrelations ranging from T-1 to T-20
-seconds, and their table one demonstrates how autocorrelation
-coefficients decrease in size over longer lags (i.e., emotions show
-stronger self-similarity when they are related to \(t-1\) emotions
-versus \(t-20\) emotions). Autocorrelation and seral correlation,
-however, are always discussed with respect to statistical models. That
-is, authors are not making arguments about memory, self-similarity, or
-constraints in their explanations, but focusing on autocorrelation
-because the models they use incorporate it. Finally, a number of studies
-explore reciprocal patterns over time and a few discuss unobserved
-heterogeneity indirectly by using a statistical test to determine if
-they should employ a fixed or random effects model (i.e., a Hausman
-test). These are recent, exciting dynamic perspectives that our
-literature is beginning to expose.
+relationship between self-efficacy and subsequent exploratory behavior,
+the relationship between prior exploratory behavior and subsequent
+metacognition, and the relationship between self-efficacy and subsequent
+exploratory behavior (among others). ({\textbf{???}}) study the
+relationship between revealing behaviors among pregnant women and
+subsequent physical health symptoms. Many also discuss serial
+correlation, autocorrelation, or autoregression. ({\textbf{???}}) assess
+autocorrelations ranging from T-1 to T-20 seconds, and their table one
+demonstrates how autocorrelation coefficients for emotion decrease in
+size over longer lags (i.e., emotions show stronger self-similarity when
+they are related to \(t-1\) emotions versus \(t-20\) emotions). Finally,
+a number of studies explore reciprocal patterns over time and a few
+discuss unobserved heterogeneity indirectly by using a statistical test
+to determine if they should employ a fixed or random effects model
+(i.e., a Hausman test). These are recent, exciting dynamic perspectives
+that our literature is beginning to expose.
 
 Notice, however, that we also included an \enquote{opportunities} column
 that highlights the principles not discussed in each article. Although
 researchers are thinking about lags and autocorrelation, there are other
-principles like random walks, equilibrium, stationarity, endogeneity,
-timescales, and initial conditions that have yet to be explored and are
-great opportunities for researchers to discover even more dynamics. Many
-of the principles we draw attention to do not require any further data,
-they are points to consider to (a) deter inferential errors and (b)
-learn more about the system -- they do not require cumbersome new data
-collection, just a different point of view. We hope this paper will
-ignite more study into the principles we described.
+principles like initial conditions, equilibrium, timescales, random
+walks, stationarity, and endogeneity that have yet to be explored and
+are great opportunities to discover even more dynamics. We also noticed
+that many of the studies that assess autocorrelation do not have
+conceptual discussions about memory or self-similarity or constraints,
+but instead assess autocorrelation as a statistical hurdle to overcome
+before discussing the lag relationship of interest. It is certainly
+appropriate to assess -- especially to avoid inferential errors -- but
+we would like to reiterate that finding evidence of memory in a state is
+useful knowledge on its own and helps build theoretical understanding.
+
+Finally, many of the principles that we highlight as opportunities do
+not require grueling extra work. Rather, they are simple points to
+consider to (a) deter inferential errors and (b) learn more about the
+system without requiring any new cumbersome data collection, just a
+different point of view. We hope this paper will ignite more study into
+the principles we described.
 
 \hypertarget{what-dynamics-is-not}{%
 \subsection{What Dynamics Is Not}\label{what-dynamics-is-not}}
 
-It is often helpful to consider what something is not to fully grasp its
-content. In this section we present a few notions that do not constitute
-dynamics.
+During a time when authors were discussing what constitues theory,
+Stutton and Staw (1995) produced a useful article describing what theory
+is not -- and this paper is a cornerstone for management and
+organizational psychology programs across the country. A similar
+approach may be useful here, where addressing what dynamics is not could
+help researchers fully grasp its content. In this section we consider
+several notions that do not constitute dynamics.
 
-\hypertarget{time-is-not-causal.}{%
-\paragraph{Time is not causal.}\label{time-is-not-causal.}}
+\hypertarget{time-as-a-predictor-is-not-dynamics.}{%
+\paragraph{Time as a predictor is not
+dynamics.}\label{time-as-a-predictor-is-not-dynamics.}}
 
-Time as a moderator.
+Our field has a number of great papers discussing the idea that time
+cannot be causal. Ployhart and colleagues have probably said it best:
+\enquote{constructs do not change, evolve, or develop because of time;
+rather they do so over time. For example, time does not cause children
+to grow into adults. Even though time is highly related to physical
+growth, the causes of growth are genetics and environment.} (P V,
+p.~98). Moreover, our theories do not specify time as a causal variable
+but instead specify that changes will happen over time due to other
+causes (p P).
 
-Static equations versus dynamic equations. Equation 1 equation 2. They
-are similar, but they represent vastly different worlds. One explores
-instantaneous relationships with no constraints; essentially a
-congregation of cross-sectional slices. The other is interested in the
-flow across time. Exploring relationships over time is useful, but it is
-not dynamics.
+We agree with these statements and what to extent them slightly to
+encompass a dynamic perspective. Imagine a study that evokes time as a
+moderator and then makes a conclusion like, \enquote{early on A happens,
+whereas later on B happens.} They do not discuss time as the cause, but
+they do state that they are studying dynamics because they identified
+change and a volatile state. We want to emphasize that such a study is
+not exploring dynamics. Identifying that states or relationships are
+different at one moment compared to another is useful, but it is not
+dynamic, it is not characterizing how those states or relationships
+unfold through time, or how states from one moment reach others at
+subsequent moments. In concrete terms, finding that job satisfaction is
+high for newcomers and low for old-timers is not dynamics, but studying
+how job satisfaction unfolds through time based on its self-similarity,
+initial conditions, and reciprocal sources of influence is.
+
+\hypertarget{static-relationships-across-time-are-not-dynamics.}{%
+\paragraph{Static relationships across time are not
+dynamics.}\label{static-relationships-across-time-are-not-dynamics.}}
+
+Collecting longitudinal data and then correlating
+
+These equations see the world in fundamentally different ways.
+
+\hypertarget{dynamics-is-not-synonymous-with-growth.}{%
+\paragraph{Dynamics is not synonymous with
+growth.}\label{dynamics-is-not-synonymous-with-growth.}}
+
+It doesn't have to grow to be dynamic.
 
 \hypertarget{the-linear-dynamic-systems-model}{%
 \subsection{The Linear Dynamic Systems

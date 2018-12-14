@@ -10,26 +10,51 @@ We are going to close this paper with three short, unique sections to solidify t
 
 ## Recent Work
 
-There are a variety of great studies already exploring some of the key dynamic properties. To get a sense for this literature and to highlight the principles that they capture we searched for empirical studies that were (1) published in the last five years (2) in the **Journal of Management**, **Journal of Applied Psychology**, or **Academy of Management Journal** and (3) contained "dynamic" or "dynamics" in the title. We exclude research that is cross-sectional, ethnographic, or focuses only on growth/covariates of growth. The articles and the dynamic notions that they emphasize are listed in table one. 
+There are a variety of great studies already exploring some of the key dynamic properties. To get a sense for this literature and to highlight the principles that they capture we searched for empirical studies that were (1) published in the last five years (2) in the *Journal of Management*, *Journal of Applied Psychology*, or *Academy of Management Journal* and (3) contained "dynamic" or "dynamics" in the title. We exclude research that is cross-sectional, ethnographic, or focuses only on growth/covariates of growth. The articles and the dynamic notions that they emphasize are listed in table one.
 
-Every study emphasizes lags -- they evaluate associations, influence, and patterns from current states to subsequent states, or prior states to current states. For example, @hardy examine the relationship between self-efficacy and subsequent exploratory behavior (and they examine lag effects across all of their variables). @jones study the relationship between revealing behaviors among pregnant women and subsequent physical health symptoms. Many also discuss serial correlation, autocorrelation, or autoregression. @gabriel assess autocorrelations ranging from T-1 to T-20 seconds, and their table one demonstrates how autocorrelation coefficients decrease in size over longer lags (i.e., emotions show stronger self-similarity when they are related to $t-1$ emotions versus $t-20$ emotions). Autocorrelation and seral correlation, however, are always discussed with respect to statistical models. That is, authors are not making arguments about memory, self-similarity, or constraints in their explanations, but focusing on autocorrelation because the models they use incorporate it. Finally, a number of studies explore reciprocal patterns over time and a few discuss unobserved heterogeneity indirectly by using a statistical test to determine if they should employ a fixed or random effects model (i.e., a Hausman test). These are recent, exciting dynamic perspectives that our literature is beginning to expose. 
+The studies as a whole explore a number of dynamic principles. First, every study emphasizes lags -- they evaluate associations, influence, and patterns from current states to subsequent states, or prior states to current states. For example, @hardy examine the relationship between self-efficacy and subsequent exploratory behavior, the relationship between prior exploratory behavior and subsequent metacognition, and the relationship between self-efficacy and subsequent exploratory behavior (among others). @jones study the relationship between revealing behaviors among pregnant women and subsequent physical health symptoms. Many also discuss serial correlation, autocorrelation, or autoregression. @gabriel assess autocorrelations ranging from T-1 to T-20 seconds, and their table one demonstrates how autocorrelation coefficients for emotion decrease in size over longer lags (i.e., emotions show stronger self-similarity when they are related to $t-1$ emotions versus $t-20$ emotions). Finally, a number of studies explore reciprocal patterns over time and a few discuss unobserved heterogeneity indirectly by using a statistical test to determine if they should employ a fixed or random effects model (i.e., a Hausman test). These are recent, exciting dynamic perspectives that our literature is beginning to expose. 
 
-Notice, however, that we also included an "opportunities" column that highlights the principles not discussed in each article. Although researchers are thinking about lags and autocorrelation, there are other principles like random walks, equilibrium, stationarity, endogeneity, timescales, and initial conditions that have yet to be explored and are great opportunities for researchers to discover even more dynamics. Many of the principles we draw attention to do not require any further data, they are points to consider to (a) deter inferential errors and (b) learn more about the system -- they do not require cumbersome new data collection, just a different point of view. We hope this paper will ignite more study into the principles we described. 
+Notice, however, that we also included an "opportunities" column that highlights the principles not discussed in each article. Although researchers are thinking about lags and autocorrelation, there are other principles like initial conditions, equilibrium, timescales, random walks, stationarity, and endogeneity that have yet to be explored and are great opportunities to discover even more dynamics. We also noticed that many of the studies that assess autocorrelation do not have conceptual discussions about memory or self-similarity or constraints, but instead assess autocorrelation as a statistical hurdle to overcome before discussing the lag relationship of interest. It is certainly appropriate to assess -- especially to avoid inferential errors -- but we would like to reiterate that finding evidence of memory in a state is useful knowledge on its own and helps build theoretical understanding. 
+
+Finally, many of the principles that we highlight as opportunities do not require grueling extra work. Rather, they are simple points to consider to (a) deter inferential errors and (b) learn more about the system without requiring any new cumbersome data collection, just a different point of view. We hope this paper will ignite more study into the principles we described. 
 
 ## What Dynamics Is Not
 
-It is often helpful to consider what something is not to fully grasp its content. In this section we present a few notions that do not constitute dynamics.
+During a time when authors were discussing what constitues theory, Stutton and Staw (1995) produced a useful article describing what theory is not -- and this paper is a cornerstone for management and organizational psychology programs across the country. A similar approach may be useful here, where addressing what dynamics is not could help researchers fully grasp its content. In this section we consider several notions that do not constitute dynamics. 
 
-#### Time as a predictor is not dynamics.
+### Time as a predictor is not dynamics.
 
-Time as a moderator.
+Our field has a number of great papers discussing the idea that time cannot be causal. Ployhart and colleagues have probably said it best: "constructs do not change, evolve, or develop because of time; rather they do so over time. For example, time does not cause children to grow into adults. Even though time is highly related to physical growth, the causes of growth are genetics and environment." (P V, p. 98). Moreover, our theories do not specify time as a causal variable but instead specify that changes will happen over time due to other causes (p P).
 
-Static equations versus dynamic equations. Equation 1 equation 2. They are similar, but they represent vastly different worlds. One explores instantaneous relationships with no constraints; essentially a congregation of cross-sectional slices. The other is interested in the flow across time. Exploring relationships over time is useful, but it is not dynamics.
+We agree with these statements and what to extent them slightly to encompass a dynamic perspective. Imagine a study that evokes time as a moderator and then makes a conclusion like, "early on A happens, whereas later on B happens." They do not discuss time as the cause, but they do state that they are studying dynamics because they identified change and a volatile state. We want to emphasize that such a study is not exploring dynamics. Identifying that states or relationships are different at one moment compared to another is useful, but it is not dynamic, it is not characterizing how those states or relationships unfold through time, or how states from one moment reach others at subsequent moments. In concrete terms, finding that job satisfaction is high for newcomers and low for old-timers is not dynamics, but studying how job satisfaction unfolds through time based on its self-similarity, initial conditions, and reciprocal sources of influence is. 
 
-#### Dynamics is not synonymous with growth.
+### Static relationships across time are not dynamics.
 
-#### Relationships across time is not dynamics.
+Longitudinal data do not automatically make the focus of a study dynamics. Many studies that collect longitudinal data examine static relationships across time rather than dynamics, and to see this consider two simple (mock) examples of studies on burnout and job satisfaction. 
 
+The first study collects self reports of burnout and job satisfaction everyday for three weeks. The researchers regress burnout at time $t$ on satisfaction on time $t$ and report the relationship. Their analysis, therefore, considers the following relationship:
+
+\begin{equation}
+\textrm{Satisfaction}_{t} = a \textrm{Burnout}_{t} + e_{t}
+\end{equation}
+
+\noindent where satisfaction at time 1 is related to burnout at time 1, satisfaction at time 2 is related to burnout at time 2, and so on.
+
+Now consider a slight change. The researchers instead examine self-similarity in satisfaction and a lag effect from burnout Mathematically, that is:
+
+\begin{equation}
+\textrm{Satisfaction}_{t} = a \textrm{Satisfaction}_{t - 1} + b \textrm{Burnout}_{t - 1} e_{t}
+\end{equation}
+
+\noindent where satisfaction at time 5 is related to its prior self and burnout at time 4, satisfaction at time 6 is related to satisfaction and burnout at time 5, and so on. 
+
+The only difference between the aforementioned studies is that one acknowledges memory and lags whereas the other does not, but those aspects represent and imply fundamentally different things about the world. The first considers the world as a sequence of cross-sectional slices, a perspective that Hulin and Ilgen call "multiple snapshots." It also implies that any behavior among the states or relationship between them happens, is wiped out, and then is potentially replaced by completely new behavior and relationship patterns at the next moment. Finally, it represents a world where burnout instantaneously causes satisfaction.
+
+The second, dynamic perspective represents a fundamentally different structure. Satisfaction is constrained by where it was in the past, the effect from burnout takes time to occur, and some sort of equilibrium behavior will emerge after some period of time. A study of relationship patterns over time is useful, but it does not represent dynamics.
+
+### Dynamics is not synonymous with growth.
+
+Our last point in this section is simple: a dynamic phenomenon does not have to grow or exhibit increasing/decreasing trend. It doesn't have to grow to be dynamic.
 
 ## The Linear Dynamic Systems Model
 
