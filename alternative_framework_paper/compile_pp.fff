@@ -15,6 +15,6 @@ equilibrium.\label{dynamics_plot}}
 
 \centering
 \includegraphics{figs/unnamed-chunk-10-1.pdf}
-\caption{\label{fig:unnamed-chunk-10}Two fundamental stochastic processes:
-white noise and a random walk.\label{noise}}
+\caption{\label{fig:unnamed-chunk-10}Two fundamental stochastic processes: a
+random walk and white noise.\label{noise}}
 \end{figure*}
