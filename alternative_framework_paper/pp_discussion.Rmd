@@ -4,7 +4,7 @@ output: pdf_document
 
 # Discussion - A Dynamic Perspective
 
-We opened this paper by talking about how researchers are beginning to approach dynamics. We pointed to two frameworks -- growth and relationships -- as example empirical research doing the hard work of getting our thinking beyond static, cross-sectional associations. They were appropriate first steps toward dynamics given our field's history with random coefficient models and recent introduction to growth curve modeling, but there are many dynamic principles outside the context of a specific longitudinal model -- we broached them here. Taking a dynamic perspective means focusing on memory, constraints, timescales, reciprocal influence, initial conditions, and exploring an array of satistical properties like serial correlation and stationarity. Taking a dynamic perspective means being seriously concerned that your trajectory is not simply a random walk or white noise process.
+We opened this paper by discussing how researchers are beginning to approach dynamics. We pointed to two frameworks -- growth and relationships -- as example empirical research doing the hard work of getting our thinking beyond static, cross-sectional associations. They were appropriate first steps toward dynamics given our field's history with random coefficient models and recent introduction to growth curve modeling, but there are many dynamic principles outside the context of a specific longitudinal model -- we broached them here. Taking a dynamic perspective means focusing on memory, constraints, timescales, reciprocal influence, initial conditions, and exploring an array of satistical properties like serial correlation and stationarity. Taking a dynamic perspective means being seriously concerned that your trajectory is not simply a random walk or white noise process.
 
 We are going to close this paper with three short, unique sections to solidify the principles and what we mean by a dynamic perspective. In the first section we highlight recent dynamic studies that explore some of the principles discussed here. Then, we consider what dynamics is not. We conclude by presenting the linear dynamic systems model as the fundamental framework for dynamic investigations. 
 
@@ -26,7 +26,7 @@ During a time when authors were discussing what constitues theory, Stutton and S
 
 Our field has a number of great papers discussing the idea that time cannot be causal. Ployhart and colleagues have probably said it best: "constructs do not change, evolve, or develop because of time; rather they do so over time. For example, time does not cause children to grow into adults. Even though time is highly related to physical growth, the causes of growth are genetics and environment." (P V, p. 98). Moreover, our theories do not specify time as a causal variable but instead specify that changes will happen over time due to other causes (p P).
 
-We agree with these statements and what to extent them slightly to encompass a dynamic perspective. Imagine a study that evokes time as a moderator and then makes a conclusion like, "early on A happens, whereas later on B happens." They do not discuss time as the cause, but they do state that they are studying dynamics because they identified change and a volatile state. We want to emphasize that such a study is not exploring dynamics. Identifying that states or relationships are different at one moment compared to another is useful, but it is not dynamic, it is not characterizing how those states or relationships unfold through time, or how states from one moment reach others at subsequent moments. In concrete terms, finding that job satisfaction is high for newcomers and low for old-timers is not dynamics, but studying how job satisfaction unfolds through time based on its self-similarity, initial conditions, and reciprocal sources of influence is. 
+We agree with these statements but want to extend them slightly to encompass a dynamic perspective. Imagine a study that evokes time as a moderator and then makes a conclusion like, "early on A happens, whereas later on B happens." They do not discuss time as the cause, but they do state that they are studying dynamics because they identified change and a volatile state. We want to emphasize that such a study is not exploring dynamics. Identifying that states or relationships are different at one moment compared to another is useful, but it is not dynamics, it is not characterizing how those states or relationships unfold through time, or how states from one moment reach others at subsequent moments. In concrete terms, finding that job satisfaction is high for newcomers and low for old-timers is not dynamics, but studying how job satisfaction unfolds through time based on its self-similarity, initial conditions, and reciprocal sources of influence is. 
 
 ### Static relationships across time are not dynamics.
 
@@ -40,7 +40,7 @@ The first study collects self reports of burnout and job satisfaction everyday f
 
 \noindent where satisfaction at time 1 is related to burnout at time 1, satisfaction at time 2 is related to burnout at time 2, and so on.
 
-Now consider a slight change. The researchers instead examine self-similarity in satisfaction and a lag effect from burnout Mathematically, that is:
+Now consider a slight change. The researchers instead examine self-similarity in satisfaction and a lag effect from burnout. That is:
 
 \begin{equation}
 \textrm{Satisfaction}_{t} = a \textrm{Satisfaction}_{t - 1} + b \textrm{Burnout}_{t - 1} e_{t}
@@ -48,15 +48,26 @@ Now consider a slight change. The researchers instead examine self-similarity in
 
 \noindent where satisfaction at time 5 is related to its prior self and burnout at time 4, satisfaction at time 6 is related to satisfaction and burnout at time 5, and so on. 
 
-The only difference between the aforementioned studies is that one acknowledges memory and lags whereas the other does not, but those aspects represent and imply fundamentally different things about the world. The first considers the world as a sequence of cross-sectional slices, a perspective that Hulin and Ilgen call "multiple snapshots." It also implies that any behavior among the states or relationship between them happens, is wiped out, and then is potentially replaced by completely new behavior and relationship patterns at the next moment. Finally, it represents a world where burnout instantaneously causes satisfaction.
+The only difference between the aforementioned studies is that one acknowledges memory and lags whereas the other does not, but those aspects represent and imply fundamentally different things about the world. The first considers the world as a sequence of cross-sectional slices, a perspective that Hulin and Ilgen call "multiple snapshots," where static associations are compiled across time. It also implies that any state behaviors or relationships among the states follow a seemingly odd sequence: relationships happen at one moment and then are wiped out and replaced by completely new behavior and relationship patterns at the next. Finally, it represents a world where burnout instantaneously causes satisfaction.
 
-The second, dynamic perspective represents a fundamentally different structure. Satisfaction is constrained by where it was in the past, the effect from burnout takes time to occur, and some sort of equilibrium behavior will emerge after some period of time. A study of relationship patterns over time is useful, but it does not represent dynamics.
+The second, dynamic perspective represents a fundamentally different structure. Satisfaction is constrained by where it was in the past. It cannot bounce to extreme levels without first moving from its prior state. Moreover, the effect from burnout takes time to occur and aligns with intuitive and theoretical notions of causality. Finally, the patterns between satisfaction and burnout will ultimately drive toward equilibrium over time. A study of relationship patterns over time is useful, but it does not represent dynamics.
 
 ### Dynamics is not synonymous with growth.
 
-Our last point in this section is simple: a dynamic phenomenon does not have to grow or exhibit increasing/decreasing trend. It doesn't have to grow to be dynamic.
+A dynamic phenomenon does not have to grow or exhibit increasing/decreasing trend. The underlying dynamics may or may not produce trend, but when researchers state that a phenomenon is dynamic that does not mean that it grows. Dynamics is about the fundamental properties described in this paper, growth is not one of them. Similarly, observing growth or correlates of growth in an empirical study is not dynamics. It is useful and we hope researchers continue to explore growth patterns in their content areas, but a study that "unpacks dynamics" is much different from a study that estimates trend and predictors of trend. 
 
 ## The Linear Dynamic Systems Model
+
+Much of the historical research in our field studied cross-sectional relationships, and the principles of this view are embodied in the general linear model. As we incorporate dynamics there are a number of additional principles to consider, and we discussed them in this paper. The principles of dynamics are all represented in a different fundamental model: the linear dynamic systems model. Just as historical research was subsumed in the general linear model, the linear dynamic systems model will embody our upcoming dynamic investigations. In its simplest form, the linear dynamic sytems model is:
+
+\begin{equation}
+\textbf{y}_t = \textbf{A} \textbf{y}_{t-1} + \textbf{b}
+\end{equation}
+
+\noindent where \textbf{y_t} is a vector of states at time $t$. The vector is just like the state vector we presented in the concepts section (depletion, fatigue, burnout), but we are using a generic term to capture any state of interest. The equation also captures the states at the prior time point $t-1$, and those states are multiplied by \textbf{A}, a matrix of transition weights. The transition weights capture memory, constraints, lags, and reciprocal influence within the system -- the diagonal elements represent self-similarity and the off-diagonal elements are cross-state influence. \textbf{b} is a vector of constant values (time-invariant) that are commonly referred to as forcing terms. Finally, recognize that the linear dynamic systems model is an abstraction, to specify or identify particular trajectories it is necessary to provide the initial condititions of the system. 
+
+The linear dynamic systems model embodies the core principles and will be the underlying model in upcoming dynamic investigations. The principles discussed in this paper should give researchers a new perspective on how to approach this exciting domain. 
+
 
 
 

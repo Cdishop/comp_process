@@ -16,7 +16,7 @@ Remember that in dynamics we are focused on memory, self-similarity, and constra
 
 \noindent where performance at time $t$ is exactly identical to what it was at $t-1$. This equation says that performance does not fluctuate, change, move, or grow across time -- there is zero trend. Performance is, say, four at time one, four at time two, four at time three, and so on. This type of equation is called a difference equation, and it is a foundational tool in dynamics. 
 
-Although this first equation seems disceptively simple, we have already captured memory. Performance, in this case, is perfectly self-similar. What if, instead, performance is similar but not perfectly self-similar across time? To capture this idea we need a new term:
+Although this first equation seems disceptively simple, we have already captured memory. Performance in this case is perfectly self-similar. What if, instead, performance is similar but not perfectly self-similar across time? To capture this idea we need a new term:
 
 \begin{equation}
 \textrm{Performance}_{t} = a \textrm{Performance}_{t-1}

@@ -557,7 +557,7 @@ three, and so on. This type of equation is called a difference equation,
 and it is a foundational tool in dynamics.
 
 Although this first equation seems disceptively simple, we have already
-captured memory. Performance, in this case, is perfectly self-similar.
+captured memory. Performance in this case is perfectly self-similar.
 What if, instead, performance is similar but not perfectly self-similar
 across time? To capture this idea we need a new term:
 
@@ -844,18 +844,17 @@ random walk and white noise.\label{noise}}
 
 We have introduced some fundemental concepts for dynamics. Memory,
 constraints, initial conditions, equilibrium, reciprocal influence --
-these elements constitute the underlying dynamics, embody the true
-mechanism, are ingredients to grapple with as researchers consider
-dynamic phenomenon. Dynamic mechanisms give rise to observed data,
-distributions, and statistical properties for us to witness, and it is
-those observed data that we apply models to. In a perfect world
-researchers could put a magnifying glass up to their observed data, and
-its statistical properties, and clearly identify the underlying
-dynamics. Unfortunately we do not live in that world. Instead, there are
-a host of challenges that must be considered when researchers collect
-longitudinal data and estimate models to make inferences about dynamics.
-In this section we are going to describe stationarity, dynamic panel
-bias, and ergodicity.
+these elements constitute the underlying dynamics and are ingredients to
+grapple with as researchers consider dynamic phenomenon. Dynamic
+mechanisms give rise to observed data, distributions, and statistical
+properties for us to witness, and it is those observed data that we
+apply models to. In a perfect world researchers could put a magnifying
+glass up to their observed data and its statistical properties and
+clearly identify the underlying dynamics. Unfortunately we do not live
+in that world. Instead, there are a host of challenges that must be
+considered when researchers collect longitudinal data and estimate
+models to make inferences about dynamics. In this section we are going
+to describe stationarity, dynamic panel bias, and ergodicity.
 
 \hypertarget{stationarity}{%
 \subsubsection{Stationarity}\label{stationarity}}
@@ -948,7 +947,7 @@ unmeasured things that make Rachel's trajectory different from Bob's
 trajectory.
 
 In dynamic modeling unobserved heterogeneity must be handled
-appropriately: if is is modeled as independent but in fact correlates
+appropriately: if it is modeled as independent but in fact correlates
 with the model predictors then ommitted variables bias is introduced
 into the estimates, and if unobserved heterogeneity is ignored then
 serial correlation will be introduced into the errors.
@@ -971,13 +970,15 @@ effects. That is, there are unmeasured differences that result in
 Rachel's trajectory being different from Bob's. An appropriate next
 question is, when is it reasonable to pool Rachel and Bob's data? When
 can we be confident that there is homogeneity of dynamics? This is the
-notion of ergodicity. \emph{WHAT ELSE}?
+notion of ergodicity.
+
+\emph{One more paragraph about it. HELP.}
 
 \hypertarget{discussion---a-dynamic-perspective}{%
 \section{Discussion - A Dynamic
 Perspective}\label{discussion---a-dynamic-perspective}}
 
-We opened this paper by talking about how researchers are beginning to
+We opened this paper by discussing how researchers are beginning to
 approach dynamics. We pointed to two frameworks -- growth and
 relationships -- as example empirical research doing the hard work of
 getting our thinking beyond static, cross-sectional associations. They
@@ -1066,7 +1067,7 @@ help researchers fully grasp its content. In this section we consider
 several notions that do not constitute dynamics.
 
 \hypertarget{time-as-a-predictor-is-not-dynamics.}{%
-\paragraph{Time as a predictor is not
+\subsubsection{Time as a predictor is not
 dynamics.}\label{time-as-a-predictor-is-not-dynamics.}}
 
 Our field has a number of great papers discussing the idea that time
@@ -1079,7 +1080,7 @@ p.~98). Moreover, our theories do not specify time as a causal variable
 but instead specify that changes will happen over time due to other
 causes (p P).
 
-We agree with these statements and what to extent them slightly to
+We agree with these statements but want to extend them slightly to
 encompass a dynamic perspective. Imagine a study that evokes time as a
 moderator and then makes a conclusion like, \enquote{early on A happens,
 whereas later on B happens.} They do not discuss time as the cause, but
@@ -1087,7 +1088,7 @@ they do state that they are studying dynamics because they identified
 change and a volatile state. We want to emphasize that such a study is
 not exploring dynamics. Identifying that states or relationships are
 different at one moment compared to another is useful, but it is not
-dynamic, it is not characterizing how those states or relationships
+dynamics, it is not characterizing how those states or relationships
 unfold through time, or how states from one moment reach others at
 subsequent moments. In concrete terms, finding that job satisfaction is
 high for newcomers and low for old-timers is not dynamics, but studying
@@ -1095,22 +1096,110 @@ how job satisfaction unfolds through time based on its self-similarity,
 initial conditions, and reciprocal sources of influence is.
 
 \hypertarget{static-relationships-across-time-are-not-dynamics.}{%
-\paragraph{Static relationships across time are not
+\subsubsection{Static relationships across time are not
 dynamics.}\label{static-relationships-across-time-are-not-dynamics.}}
 
-Collecting longitudinal data and then correlating
+Longitudinal data do not automatically make the focus of a study
+dynamics. Many studies that collect longitudinal data examine static
+relationships across time rather than dynamics, and to see this consider
+two simple (mock) examples of studies on burnout and job satisfaction.
 
-These equations see the world in fundamentally different ways.
+The first study collects self reports of burnout and job satisfaction
+everyday for three weeks. The researchers regress burnout at time \(t\)
+on satisfaction on time \(t\) and report the relationship. Their
+analysis, therefore, considers the following relationship:
+
+\begin{equation}
+\textrm{Satisfaction}_{t} = a \textrm{Burnout}_{t} + e_{t}
+\end{equation}
+
+\noindent where satisfaction at time 1 is related to burnout at time 1,
+satisfaction at time 2 is related to burnout at time 2, and so on.
+
+Now consider a slight change. The researchers instead examine
+self-similarity in satisfaction and a lag effect from burnout. That is:
+
+\begin{equation}
+\textrm{Satisfaction}_{t} = a \textrm{Satisfaction}_{t - 1} + b \textrm{Burnout}_{t - 1} e_{t}
+\end{equation}
+
+\noindent where satisfaction at time 5 is related to its prior self and
+burnout at time 4, satisfaction at time 6 is related to satisfaction and
+burnout at time 5, and so on.
+
+The only difference between the aforementioned studies is that one
+acknowledges memory and lags whereas the other does not, but those
+aspects represent and imply fundamentally different things about the
+world. The first considers the world as a sequence of cross-sectional
+slices, a perspective that Hulin and Ilgen call \enquote{multiple
+snapshots,} where static associations are compiled across time. It also
+implies that any state behaviors or relationships among the states
+follow a seemingly odd sequence: relationships happen at one moment and
+then are wiped out and replaced by completely new behavior and
+relationship patterns at the next. Finally, it represents a world where
+burnout instantaneously causes satisfaction.
+
+The second, dynamic perspective represents a fundamentally different
+structure. Satisfaction is constrained by where it was in the past. It
+cannot bounce to extreme levels without first moving from its prior
+state. Moreover, the effect from burnout takes time to occur and aligns
+with intuitive and theoretical notions of causality. Finally, the
+patterns between satisfaction and burnout will ultimately drive toward
+equilibrium over time. A study of relationship patterns over time is
+useful, but it does not represent dynamics.
 
 \hypertarget{dynamics-is-not-synonymous-with-growth.}{%
-\paragraph{Dynamics is not synonymous with
+\subsubsection{Dynamics is not synonymous with
 growth.}\label{dynamics-is-not-synonymous-with-growth.}}
 
-It doesn't have to grow to be dynamic.
+A dynamic phenomenon does not have to grow or exhibit
+increasing/decreasing trend. The underlying dynamics may or may not
+produce trend, but when researchers state that a phenomenon is dynamic
+that does not mean that it grows. Dynamics is about the fundamental
+properties described in this paper, growth is not one of them.
+Similarly, observing growth or correlates of growth in an empirical
+study is not dynamics. It is useful and we hope researchers continue to
+explore growth patterns in their content areas, but a study that
+\enquote{unpacks dynamics} is much different from a study that estimates
+trend and predictors of trend.
 
 \hypertarget{the-linear-dynamic-systems-model}{%
 \subsection{The Linear Dynamic Systems
 Model}\label{the-linear-dynamic-systems-model}}
+
+Much of the historical research in our field studied cross-sectional
+relationships, and the principles of this view are embodied in the
+general linear model. As we incorporate dynamics there are a number of
+additional principles to consider, and we discussed them in this paper.
+The principles of dynamics are all represented in a different
+fundamental model: the linear dynamic systems model. Just as historical
+research was subsumed in the general linear model, the linear dynamic
+systems model will embody our upcoming dynamic investigations. In its
+simplest form, the linear dynamic sytems model is:
+
+\begin{equation}
+\textbf{y}_t = \textbf{A} \textbf{y}_{t-1} + \textbf{b}
+\end{equation}
+
+\noindent where \textbackslash{}textbf\{y\_t\} is a vector of states at
+time \(t\). The vector is just like the state vector we presented in the
+concepts section (depletion, fatigue, burnout), but we are using a
+generic term to capture any state of interest. The equation also
+captures the states at the prior time point \(t-1\), and those states
+are multiplied by \textbf{A}, a matrix of transition weights. The
+transition weights capture memory, constraints, lags, and reciprocal
+influence within the system -- the diagonal elements represent
+self-similarity and the off-diagonal elements are cross-state influence.
+\textbf{b} is a vector of constant values (time-invariant) that are
+commonly referred to as forcing terms. Finally, recognize that the
+linear dynamic systems model is an abstraction, to specify or identify
+particular trajectories it is necessary to provide the initial
+condititions of the system.
+
+The linear dynamic systems model embodies the core principles and will
+be the underlying model in upcoming dynamic investigations. The
+principles discussed in this paper should give researchers a new
+perspective on how to approach this exciting domain.
 
 \begin{longtable}[t]{>{\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{11em}>{\raggedright\arraybackslash}p{20em}}
 \caption{\label{tab:unnamed-chunk-11}\label{highlight}Recent studies exploring dynamic notions.}\\
