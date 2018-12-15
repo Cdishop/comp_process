@@ -80,7 +80,7 @@ a &= 1 \\
 \end{equation}
 
 
-\noindent This representation is also an error process, but there is performance self-similarity across time. The upper panel of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpreditable: they could go up or down at any moment. 
+\noindent This representation is also an error process, but there is performance self-similarity across time. The upper panel of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
 
 Random walks and white noise are error processes over time. White noise processes fluctuate randomly, whereas random walks fluctuate randomly while retaining some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. This step is currently absent in our literature but, again, is the essential starting place in econometrics. 
 
@@ -151,7 +151,7 @@ What if we want to convey feedback, or a reciprocal relationship between effort 
 
 \noindent where all terms are defined above but now effort and performance are reciprocally related. Both are determined by themselves at the immediately prior time point and the other state two time points in the past. Effort happens, and two moments later this influences performance, and two moments later this goes back to influence effort, and so on throughout time. All the while, both states retain self-similarity -- they fluctuate and develop but only under the constraints afforded by the autoregressive terms. 
 
-We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey a process over time. 
+We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey dynamics. *More here to summarize and conclude this section*. *HELP*.
 
 ```{r, echo = F, fig.cap = "Trajectories driving toward equilibrium or explosive behavior based on their autoregressive coefficient. When the coefficient is greater than one (in absolute value) the trajectory oscillates explosively or grows exponentially. When the coefficient is between zero and one (in absolute value) the trajectory converges to equilibrium.\\label{dynamics_plot}", cache = T}
 

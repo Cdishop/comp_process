@@ -358,7 +358,8 @@ know how variables depend upon their own past history} (p.~409).
 The crucial notion to take from dynamics, then, is memory. When the past
 matters, and future states are constrained by where they were at prior
 points in time, dynamics are at play. Below, we unpack a number of
-important principles couched in this simple idea.
+important principles couched in this simple idea (Boulding, 1955;
+Flytzanis, 1976; Simon, 1991).
 
 \hypertarget{concepts-and-conventions}{%
 \subsection{Concepts and Conventions}\label{concepts-and-conventions}}
@@ -452,17 +453,17 @@ memory, constraints, and lags across multiple states we focus less on
 \enquote{true causes} or antecendents and more on reciprocal influence.
 This kind of thinking often takes the form, \enquote{and then this
 happens.} Consider the (example) reciprocal relationships between
-performance, superior support, and fatigue. I performed my assignment
-well so my boss sent me a nice email letting me know that she
-appreciated my work. I subsequently increased my performance and again
-performed well on my second assignment. Having increased my performance,
+performance, superior support, and fatigue. I perform my assignment well
+so my boss sends a nice email letting me know that she appreciates my
+work. Feeling inspired, I subsequently increase my performance and again
+perform well on my second assignment. Having increased my performance,
 however, I am now more fatigued and on my third assignment I perform
-poorly. After performing poorly I do not receive the congratulatory
-email. In this simple example, performance, fatigue, and superior
-support fluctuate across time. We are not necessarily interested in
-finding the \enquote{true} cause, direction of effects, or the exact
-coefficient between one state and another, but we are interested in the
-pattern of reciprocal relationships across time.
+poorly -- and this poor performance is not followed by another
+congratulatory email. In this simple example, performance, fatigue, and
+superior support fluctuate across time. We are not necessarily
+interested in finding the \enquote{true} cause, direction of effects, or
+the exact coefficient between one state and another, but we are
+interested in the pattern of reciprocal relationships across time.
 
 \hypertarget{time-scales}{%
 \subsubsection{Time Scales}\label{time-scales}}
@@ -697,7 +698,7 @@ a &= 1 \\
 performance self-similarity across time. The upper panel of figure
 \ref{noise} presents a random walk. Although random walks can sometimes
 appear to be moving in a systematic direction, ultimately their behavior
-is unpreditable: they could go up or down at any moment.
+is unpredictable: they could go up or down at any moment.
 
 Random walks and white noise are error processes over time. White noise
 processes fluctuate randomly, whereas random walks fluctuate randomly
@@ -819,7 +820,8 @@ constraints afforded by the autoregressive terms.
 We can make the equations more complicated by continuing to add
 variables or longer/shorter lag effects, but the beauty of math is its
 freedom to capture whatever the researcher desires. These equations are
-language tools to help researchers convey a process over time.
+language tools to help researchers convey dynamics. \emph{More here to
+summarize and conclude this section}. \emph{HELP}.
 
 \begin{figure}
 \centering
@@ -878,15 +880,16 @@ In simple terms, a stationary process has stable properties across time
 -- data that demonstrate trend, growth, or random walk behavior are
 (almost certainly) non-stationary. Here is the hard part: two
 independent time-series will appear related if both are non-stationary
-(kukljan; braun; granger). That is, if we measure Rachel's performance
-and it is consistent with a random walk and we also measure rainfall at
-Rachel's mother's house across the state and it demonstrates increasing
-trend for the day, even though these two things are completely unrelated
-we will more than likely find a relationship between them in a
-regression-based analysis like those presented at the start of this
-paper. There are many other papers that describe how to test for
-stationarity (e.g., CITES), all we are trying to do here is convey how
-important this notion is. Our literature is not paying attention to
+(Granger \& Newbold, 1974; Kuljanin, Braun, \& DeShon, 2011). That is,
+if we measure Rachel's performance and it is consistent with a random
+walk and we also measure rainfall at Rachel's mother's house across the
+state and it demonstrates increasing trend for the day, even though
+these two things are completely unrelated we will more than likely find
+a relationship between them in a regression-based analysis like those
+presented at the start of this paper. There are many other papers that
+describe how to test for stationarity (Braun, Kuljanin, \& DeShon, 2013;
+Jebb, Tay, Wang, \& Huang, 2015), all we are trying to do here is convey
+how important this notion is. Our literature is not paying attention to
 random walks, we are not checking for memory, or serial correlation, or
 stationarity; we should be.
 
@@ -895,7 +898,7 @@ can be used to evaluate relationships in a non-stationary system. These
 are an entirely different animal and they require a deep understanding
 of mathematics and econometric modeling, but interested readers can see
 Engle and Granger (1987), Johansen (1991), Phillips (1991), Phillips and
-Hansen (1990) and Phillips and Loretan (1991).
+Hansen (1990), and Phillips and Durlauf (1986).
 
 Again, keep in mind that stationarity describes statistical properties
 that result from the underlying dynamics. States may or may not have
@@ -912,8 +915,9 @@ statistical properties create challenges for models.
 \subsubsection{Dynamic Panel Bias}\label{dynamic-panel-bias}}
 
 Another challenge for dynamic modeling is a congregation of effects
-known as dynamic panel bias. First, in dynamics we pay attention to
-memory, and our equations above took the form:
+known as dynamic panel bias. The first issue has to do with
+statistically accounting for memory. Remember that in dynamics we pay
+attention to memory, and our equations above took the form:
 
 \begin{equation}
 y_{t} = a y_{t-1} + e_{t}
@@ -923,11 +927,11 @@ y_{t} = a y_{t-1} + e_{t}
 generic \(y\). The equation above has what is called a \enquote{lagged
 DV,} where \(y_{t}\) is predicted by the lagged DV: \(y_{t-1}\).
 Including lagged DVs helps us \emph{conceptually} represent dynamics
-(keele), but including a lagged DV in a \emph{model} applied to data
-with actual statistical properties causes the errors to correlate with
-the predictors and ultimately violate the well-known independence of
-errors assumption. This issue applies even when we are only considering
-a single unit (like Rachel) across time.
+(Keele \& Kelly, 2006), but including a lagged DV in a \emph{model}
+applied to data with actual statistical properties causes the errors to
+correlate with the predictors and ultimately violate the well-known
+independence of errors assumption. This issue applies even when we are
+only considering a single unit (like Rachel) across time.
 
 The second issue arises when we are interested in relationships with a
 multiple-unit sample across time. Almost all organizational studies are
@@ -1016,23 +1020,24 @@ listed in table one.
 The studies as a whole explore a number of dynamic principles. First,
 every study emphasizes lags -- they evaluate associations, influence,
 and patterns from current states to subsequent states, or prior states
-to current states. For example, ({\textbf{???}}) examine the
-relationship between self-efficacy and subsequent exploratory behavior,
-the relationship between prior exploratory behavior and subsequent
-metacognition, and the relationship between self-efficacy and subsequent
-exploratory behavior (among others). ({\textbf{???}}) study the
-relationship between revealing behaviors among pregnant women and
-subsequent physical health symptoms. Many also discuss serial
-correlation, autocorrelation, or autoregression. ({\textbf{???}}) assess
-autocorrelations ranging from T-1 to T-20 seconds, and their table one
-demonstrates how autocorrelation coefficients for emotion decrease in
-size over longer lags (i.e., emotions show stronger self-similarity when
-they are related to \(t-1\) emotions versus \(t-20\) emotions). Finally,
-a number of studies explore reciprocal patterns over time and a few
-discuss unobserved heterogeneity indirectly by using a statistical test
-to determine if they should employ a fixed or random effects model
-(i.e., a Hausman test). These are recent, exciting dynamic perspectives
-that our literature is beginning to expose.
+to current states. For example, Hardy, Day, and Steele (2018) examine
+the relationship between self-efficacy and subsequent exploratory
+behavior, the relationship between prior exploratory behavior and
+subsequent metacognition, and the relationship between self-efficacy and
+subsequent exploratory behavior (among others). Jones et al. (2016)
+study the relationship between revealing behaviors among pregnant women
+and subsequent physical health symptoms. Many also discuss serial
+correlation, autocorrelation, or autoregression. Gabriel and Diefendorff
+(2015) assess autocorrelations ranging from T-1 to T-20 seconds, and
+their table one demonstrates how autocorrelation coefficients for
+emotion decrease in size over longer lags (i.e., emotions show stronger
+self-similarity when they are related to \(t-1\) emotions versus
+\(t-20\) emotions). Finally, a number of studies explore reciprocal
+patterns over time and a few discuss unobserved heterogeneity indirectly
+by using a statistical test to determine if they should employ a fixed
+or random effects model (i.e., a Hausman test). These are recent,
+exciting dynamic perspectives that our literature is beginning to
+expose.
 
 Notice, however, that we also included an \enquote{opportunities} column
 that highlights the principles not discussed in each article. Although
@@ -1059,12 +1064,13 @@ the principles we described.
 \subsection{What Dynamics Is Not}\label{what-dynamics-is-not}}
 
 During a time when authors were discussing what constitues theory,
-Stutton and Staw (1995) produced a useful article describing what theory
-is not -- and this paper is a cornerstone for management and
-organizational psychology programs across the country. A similar
-approach may be useful here, where addressing what dynamics is not could
-help researchers fully grasp its content. In this section we consider
-several notions that do not constitute dynamics.
+Sutton and Staw (1995) produced a useful article describing what theory
+is not -- and this paper is a cornerstone for management, organizational
+behavior, human resources, and organizational psychology programs across
+the country. A similar approach may be useful here, where addressing
+what dynamics is not could help researchers fully grasp its content. In
+this section we consider several notions that do not constitute
+dynamics.
 
 \hypertarget{time-as-a-predictor-is-not-dynamics.}{%
 \subsubsection{Time as a predictor is not
@@ -1075,25 +1081,25 @@ cannot be causal. Ployhart and colleagues have probably said it best:
 \enquote{constructs do not change, evolve, or develop because of time;
 rather they do so over time. For example, time does not cause children
 to grow into adults. Even though time is highly related to physical
-growth, the causes of growth are genetics and environment.} (P V,
-p.~98). Moreover, our theories do not specify time as a causal variable
-but instead specify that changes will happen over time due to other
-causes (p P).
+growth, the causes of growth are genetics and environment} (Ployhart \&
+Vandenberg, 2010, p. 98). Moreover, our theories do not specify time as
+a causal variable but instead specify that changes will happen over time
+due to other causes (Pitariu \& Ployhart, 2010).
 
 We agree with these statements but want to extend them slightly to
 encompass a dynamic perspective. Imagine a study that evokes time as a
 moderator and then makes a conclusion like, \enquote{early on A happens,
 whereas later on B happens.} They do not discuss time as the cause, but
-they do state that they are studying dynamics because they identified
-change and a volatile state. We want to emphasize that such a study is
-not exploring dynamics. Identifying that states or relationships are
-different at one moment compared to another is useful, but it is not
-dynamics, it is not characterizing how those states or relationships
-unfold through time, or how states from one moment reach others at
-subsequent moments. In concrete terms, finding that job satisfaction is
-high for newcomers and low for old-timers is not dynamics, but studying
-how job satisfaction unfolds through time based on its self-similarity,
-initial conditions, and reciprocal sources of influence is.
+they do argue that they are studying dynamics because they identify
+state behavior/relationships among states that differ at time 3 compared
+to time 2. Identifying that states or relationships are different at one
+moment compared to another is useful, but it is not dynamics, it is not
+characterizing how those states or relationships unfold through time, or
+how states from one moment reach others at subsequent moments. In
+concrete terms, finding that job satisfaction is high for newcomers and
+low for old-timers is not dynamics, but studying how job satisfaction
+unfolds through time based on its self-similarity, initial conditions,
+and reciprocal sources of influence is.
 
 \hypertarget{static-relationships-across-time-are-not-dynamics.}{%
 \subsubsection{Static relationships across time are not
@@ -1139,14 +1145,14 @@ then are wiped out and replaced by completely new behavior and
 relationship patterns at the next. Finally, it represents a world where
 burnout instantaneously causes satisfaction.
 
-The second, dynamic perspective represents a fundamentally different
-structure. Satisfaction is constrained by where it was in the past. It
-cannot bounce to extreme levels without first moving from its prior
-state. Moreover, the effect from burnout takes time to occur and aligns
-with intuitive and theoretical notions of causality. Finally, the
-patterns between satisfaction and burnout will ultimately drive toward
-equilibrium over time. A study of relationship patterns over time is
-useful, but it does not represent dynamics.
+The second, dynamic perspective represents a much different structure.
+Satisfaction is constrained by where it was in the past, it cannot
+bounce to extreme levels without first moving from its prior state.
+Moreover, the effect from burnout takes time to occur and aligns with
+intuitive and theoretical notions of causality. Finally, the patterns
+between satisfaction and burnout will ultimately drive toward
+equilibrium. A study of relationship patterns over time is useful, but
+it does not represent dynamics.
 
 \hypertarget{dynamics-is-not-synonymous-with-growth.}{%
 \subsubsection{Dynamics is not synonymous with
@@ -1154,18 +1160,16 @@ growth.}\label{dynamics-is-not-synonymous-with-growth.}}
 
 A dynamic phenomenon does not have to grow or exhibit
 increasing/decreasing trend. The underlying dynamics may or may not
-produce trend, but when researchers state that a phenomenon is dynamic
-that does not mean that it grows. Dynamics is about the fundamental
-properties described in this paper, growth is not one of them.
+produce trend, but growth is not a fundamental concept in dynamics.
 Similarly, observing growth or correlates of growth in an empirical
 study is not dynamics. It is useful and we hope researchers continue to
 explore growth patterns in their content areas, but a study that
 \enquote{unpacks dynamics} is much different from a study that estimates
 trend and predictors of trend.
 
-\hypertarget{the-linear-dynamic-systems-model}{%
-\subsection{The Linear Dynamic Systems
-Model}\label{the-linear-dynamic-systems-model}}
+\hypertarget{conclusion---the-linear-dynamic-systems-model}{%
+\subsection{Conclusion - The Linear Dynamic Systems
+Model}\label{conclusion---the-linear-dynamic-systems-model}}
 
 Much of the historical research in our field studied cross-sectional
 relationships, and the principles of this view are embodied in the
@@ -1178,28 +1182,25 @@ systems model will embody our upcoming dynamic investigations. In its
 simplest form, the linear dynamic sytems model is:
 
 \begin{equation}
-\textbf{y}_t = \textbf{A} \textbf{y}_{t-1} + \textbf{b}
+\textbf{x}_t = \textbf{A} \textbf{x}_{t-1} + \textbf{b}
 \end{equation}
 
-\noindent where \textbackslash{}textbf\{y\_t\} is a vector of states at
-time \(t\). The vector is just like the state vector we presented in the
-concepts section (depletion, fatigue, burnout), but we are using a
-generic term to capture any state of interest. The equation also
-captures the states at the prior time point \(t-1\), and those states
-are multiplied by \textbf{A}, a matrix of transition weights. The
-transition weights capture memory, constraints, lags, and reciprocal
-influence within the system -- the diagonal elements represent
-self-similarity and the off-diagonal elements are cross-state influence.
-\textbf{b} is a vector of constant values (time-invariant) that are
-commonly referred to as forcing terms. Finally, recognize that the
-linear dynamic systems model is an abstraction, to specify or identify
-particular trajectories it is necessary to provide the initial
-condititions of the system.
-
-The linear dynamic systems model embodies the core principles and will
-be the underlying model in upcoming dynamic investigations. The
-principles discussed in this paper should give researchers a new
-perspective on how to approach this exciting domain.
+\noindent where \textbf{x}\(_t\) is a vector of states at time \(t\).
+The vector is just like the state vector we presented in the concepts
+section (depletion, fatigue, burnout), but we are using a generic term
+to capture any state of interest. The equation also captures the states
+at the prior time point \textbf{x}\(_{t-1}\), and those states are
+multiplied by \textbf{A}, a matrix of transition weights. The transition
+weights capture memory, constraints, lags, and reciprocal influence
+within the system -- the diagonal elements represent self-similarity and
+the off-diagonal elements are cross-state influence. \textbf{b} is a
+vector of constant values (time-invariant) that are commonly referred to
+as forcing terms. Although they do not receive a term in the equation,
+initial conditions are also inherent to the linear dynamic systems model
+because specifying or identifying a trajectory or system requires
+starting values. The principles described in this paper are embodied in
+the linear dynamic systems model, and it will serve as the underlying
+model as we enter the exciting domain of dynamics.
 
 \begin{longtable}[t]{>{\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{11em}>{\raggedright\arraybackslash}p{20em}}
 \caption{\label{tab:unnamed-chunk-11}\label{highlight}Recent studies exploring dynamic notions.}\\
@@ -1243,6 +1244,16 @@ Article & Dynamic Notions & Opportunities\\
 \setlength{\leftskip}{0.5in}
 
 \hypertarget{refs}{}
+\leavevmode\hypertarget{ref-boulding1955defense}{}%
+Boulding, K. E. (1955). In defense of statics. \emph{The Quarterly
+Journal of Economics}, \emph{69}(4), 485--502.
+
+\leavevmode\hypertarget{ref-braun_spurious_2013}{}%
+Braun, M. T., Kuljanin, G., \& DeShon, R. P. (2013). Spurious Results in
+the Analysis of Longitudinal Data in Organizational Research.
+\emph{Organizational Research Methods}, \emph{16}(2), 302--330.
+doi:\href{https://doi.org/10.1177/1094428112469668}{10.1177/1094428112469668}
+
 \leavevmode\hypertarget{ref-dunford_is_2012}{}%
 Dunford, B. B., Shipp, A. J., Boss, R. W., Angermeier, I., \& Boss, A.
 D. (2012). Is burnout static or dynamic? A career transition perspective
@@ -1250,11 +1261,36 @@ of employee burnout trajectories. \emph{Journal of Applied Psychology},
 \emph{97}(3), 637--650.
 doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0027060}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0027060}
 
+\leavevmode\hypertarget{ref-engle_co-integration_1987}{}%
+Engle, R. F., \& Granger, C. W. (1987). Co-integration and error
+correction: Representation, estimation, and testing. \emph{Econometrica:
+Journal of the Econometric Society}, 251--276.
+
+\leavevmode\hypertarget{ref-flytzanis1976linear}{}%
+Flytzanis, E. (1976). Linear dynamical systems. \emph{Proceedings of the
+American Mathematical Society}, \emph{55}(2), 367--370.
+
+\leavevmode\hypertarget{ref-gabriel_emotional_2015}{}%
+Gabriel, A. S., \& Diefendorff, J. M. (2015). Emotional labor dynamics:
+A momentary approach. \emph{Academy of Management Journal},
+\emph{58}(6), 1804--1825.
+
 \leavevmode\hypertarget{ref-gabriel_helping_2018}{}%
 Gabriel, A. S., Koopman, J., Rosen, C. C., \& Johnson, R. E. (2018).
 Helping others or helping oneself? An episodic examination of the
 behavioral consequences of helping at work. \emph{Personnel Psychology},
 \emph{71}(1), 85--107.
+
+\leavevmode\hypertarget{ref-granger_spurious_1974}{}%
+Granger, C. W., \& Newbold, P. (1974). Spurious regressions in
+econometrics. \emph{Journal of Econometrics}, \emph{2}(2), 111--120.
+
+\leavevmode\hypertarget{ref-hardy_interrelationships_2018}{}%
+Hardy, J. H., Day, E. A., \& Steele, L. M. (2018). Interrelationships
+Among Self-Regulated Learning Processes: Toward a Dynamic Process-Based
+Model of Self-Regulated Learning. \emph{Journal of Management},
+0149206318780440.
+doi:\href{https://doi.org/10.1177/0149206318780440}{10.1177/0149206318780440}
 
 \leavevmode\hypertarget{ref-hulsheger_dawn_2016}{}%
 Hülsheger, U. R. (2016). From dawn till dusk: Shedding light on the
@@ -1262,11 +1298,31 @@ recovery process by investigating daily change patterns in fatigue.
 \emph{Journal of Applied Psychology}, \emph{101}(6), 905--914.
 doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000104}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000104}
 
+\leavevmode\hypertarget{ref-jebb_time_2015}{}%
+Jebb, A. T., Tay, L., Wang, W., \& Huang, Q. (2015). Time series
+analysis for psychological research: Examining and forecasting change.
+\emph{Frontiers in Psychology}, \emph{6}, 727.
+
+\leavevmode\hypertarget{ref-johansen_estimation_1991}{}%
+Johansen, S. (1991). Estimation and hypothesis testing of cointegration
+vectors in Gaussian vector autoregressive models. \emph{Econometrica:
+Journal of the Econometric Society}, 1551--1580.
+
 \leavevmode\hypertarget{ref-johnson_good_2014}{}%
 Johnson, R. E., Lanaj, K., \& Barnes, C. M. (2014). The good and bad of
 being fair: Effects of procedural and interpersonal justice behaviors on
 regulatory resources. \emph{Journal of Applied Psychology},
 \emph{99}(4), 635.
+
+\leavevmode\hypertarget{ref-jones_baby_2016}{}%
+Jones, K. P., King, E. B., Gilrane, V. L., McCausland, T. C., Cortina,
+J. M., \& Grimm, K. J. (2016). The baby bump: Managing a dynamic stigma
+over time. \emph{Journal of Management}, \emph{42}(6), 1530--1556.
+
+\leavevmode\hypertarget{ref-keele_dynamic_2006}{}%
+Keele, L., \& Kelly, N. J. (2006). Dynamic models for dynamic theories:
+The ins and outs of lagged dependent variables. \emph{Political
+Analysis}, \emph{14}(2), 186--205.
 
 \leavevmode\hypertarget{ref-koopman_integrating_2016}{}%
 Koopman, J., Lanaj, K., \& Scott, B. A. (2016). Integrating the Bright
@@ -1274,6 +1330,12 @@ and Dark Sides of OCB: A Daily Investigation of the Benefits and Costs
 of Helping Others. \emph{Academy of Management Journal}, \emph{59}(2),
 414--435.
 doi:\href{https://doi.org/10.5465/amj.2014.0262}{10.5465/amj.2014.0262}
+
+\leavevmode\hypertarget{ref-kuljanin_cautionary_2011}{}%
+Kuljanin, G., Braun, M. T., \& DeShon, R. P. (2011). A cautionary note
+on modeling growth trends in longitudinal data. \emph{Psychological
+Methods}, \emph{16}(3), 249--264.
+doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}
 
 \leavevmode\hypertarget{ref-liebovitch2010dynamics}{}%
 Liebovitch, L. S., Vallacher, R. R., \& Michaels, J. (2010). Dynamics of
@@ -1289,10 +1351,42 @@ Monge, P. R. (1990). Theoretical and analytical issues in studying
 organizational processes. \emph{Organization Science}, \emph{1}(4),
 406--430.
 
+\leavevmode\hypertarget{ref-phillips_optimal_1991}{}%
+Phillips, P. C. (1991). Optimal inference in cointegrated systems.
+\emph{Econometrica: Journal of the Econometric Society}, 283--306.
+
+\leavevmode\hypertarget{ref-phillips_multiple_1986}{}%
+Phillips, P. C., \& Durlauf, S. N. (1986). Multiple time series
+regression with integrated processes. \emph{The Review of Economic
+Studies}, \emph{53}(4), 473--495.
+
+\leavevmode\hypertarget{ref-phillips_statistical_1990}{}%
+Phillips, P. C., \& Hansen, B. E. (1990). Statistical inference in
+instrumental variables regression with I (1) processes. \emph{The Review
+of Economic Studies}, \emph{57}(1), 99--125.
+
+\leavevmode\hypertarget{ref-pitariu_explaining_2010}{}%
+Pitariu, A. H., \& Ployhart, R. E. (2010). Explaining change: Theorizing
+and testing dynamic mediated longitudinal relationships. \emph{Journal
+of Management}, \emph{36}(2), 405--429.
+
+\leavevmode\hypertarget{ref-ployhart_longitudinal_2010}{}%
+Ployhart, R. E., \& Vandenberg, R. J. (2010). Longitudinal research: The
+theory, design, and analysis of change. \emph{Journal of Management},
+\emph{36}(1), 94--120.
+
 \leavevmode\hypertarget{ref-rosen_who_2016}{}%
 Rosen, C. C., Koopman, J., Gabriel, A. S., \& Johnson, R. E. (2016). Who
 strikes back? A daily investigation of when and why incivility begets
 incivility. \emph{Journal of Applied Psychology}, \emph{101}(11), 1620.
+
+\leavevmode\hypertarget{ref-simon1991architecture}{}%
+Simon, H. A. (1991). The architecture of complexity. In \emph{Facets of
+systems science} (pp. 457--476). Springer.
+
+\leavevmode\hypertarget{ref-sutton1995theory}{}%
+Sutton, R. I., \& Staw, B. M. (1995). What theory is not.
+\emph{Administrative Science Quarterly}, 371--384.
 
 \leavevmode\hypertarget{ref-vancouver_translating_2018}{}%
 Vancouver, J. B., Wang, M., \& Li, X. (2018). Translating Informal
