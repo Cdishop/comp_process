@@ -26,7 +26,7 @@ Although this first equation seems disceptively simple, we have already captured
 
 ### Fundamental Autoregressive Behaviors
 
-There are fundamental behaviors of dynamic states based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of states with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and extreme oscillations when $a$ is negative. When the autoregressive term falls between zero and one in absolute value, conversely, the state converges to equilibrium -- shown in the bottom two panels. Either the state oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). Again, these behaviors hold for all states with the given autoregressive terms. 
+There are fundamental behaviors of dynamic states based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of states with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and extreme oscillations when $a$ is negative. When the autoregressive term falls between zero and one in absolute value, conversely, the state converges to equilibrium -- shown in the bottom two panels. Either the state oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). Again, these behaviors hold for all states given the respective self-similarity terms shown in the figure. 
 
 \begin{center}
 
@@ -40,9 +40,9 @@ Insert Figure \ref{dynamics_plot} Here
 
 ### Equilibrium
 
-Notice that we introduced a new term in our description above: equilibrium. Equilibrium describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems -- where equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equilibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
+Notice that we introduced a new word in our description above: equilibrium. Equilibrium describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems -- where equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equilibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
 
-Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food opportunity decreases the bobcat population. The back and forth oscillating pattern is the outcome of a state system in dynamic equilibrium, where despite random disturbances across time the net dynamics of the states remain stable.
+Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food decreases the bobcat population. The back and forth oscillating pattern is the outcome of a state system in dynamic equilibrium, where despite random disturbances across time the net dynamics of the states remain stable.
 
 ### Stochastics
 
@@ -69,7 +69,7 @@ a &= 0
 \end{split}
 \end{equation}
 
-\noindent Here, all we have is error over time. The lower panel of figure \ref{noise} shows the behavior of a white noise process over time. Random walks are similar, but $a$ is now equal to one.
+\noindent Here, all we have is error over time; the lower panel of figure \ref{noise} shows the behavior of a white noise process. Random walks are similar, but $a$ is now equal to one.
 
 \begin{equation}
 \begin{split}
@@ -80,9 +80,9 @@ a &= 1 \\
 \end{equation}
 
 
-\noindent This representation is also an error process, but now error is not the only operator, performance retains self-similarity across time as well. The upper panel of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
+\noindent This representation is also an error process but now error is not the only operator, performance retains self-similarity across time as well. The upper panel of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
 
-Random walks and white noise are error processes over time. White noise processes fluctuate randomly, whereas random walks fluctuate randomly while retaining some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. This step is currently absent in our literature but, again, is the essential starting place in econometrics. 
+Random walks and white noise are error processes over time. Both flucutate randomly, but random walks retain some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. This step is currently absent in our literature but, again, is the essential starting place in econometrics. 
 
 
 \begin{center}
@@ -99,7 +99,7 @@ Insert Figure \ref{noise} Here
 
 Up to this point we have focused on a single state, performance. Remember that in dynamics we are also interested in reciprocal influence, but before moving to two or more state equations we want to pause and highlight how much researchers can explore with single states. It is of course interesting and fun to ask how two or more states are related, or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. We feel that our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
 
-With multivariate systems we need multiple equations -- one for each state. Before, we demonstrated a simple difference equation for performance. In a multivariate system with two states, performance and effort, we need one equation for each.
+With multivariate systems we need multiple equations -- one for each state. Before, we demonstrated a simple difference equation for performance. In a multivariate system with two states, such as performance and effort, we need one equation for each.
 
 \begin{equation}
 \label{sysy}
@@ -110,7 +110,7 @@ With multivariate systems we need multiple equations -- one for each state. Befo
 \textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
-\noindent Here, both equations posit that their state is a function of its prior self to the extent of the autoregressive term ($a$). Notice that there are no cross-relationships, we are simply representing a system with two independent variables across time. It is of course also possible to introduce relationships among the different states with more terms.
+\noindent Here, both equations posit that their state is a function of its prior self to the extent of the autoregressive term ($a$). Notice that there are no cross-relationships, we are simply representing a system with two independent variables over time. It is of course also possible to introduce relationships among the different states with more terms.
 
 First, consider a system where effort concurrently causes performance. Another way to say this is that effort$_t$ causes performance$_t$:
 
@@ -123,7 +123,7 @@ First, consider a system where effort concurrently causes performance. Another w
 \textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but now the equation for performance also includes Effort$_t$ -- which is the value of effort at time $t$ -- and $b$, the coefficient relating effort to performance. This set of equations says that effort is simply a product of itself over time (with error), whereas performance is a function of itself and also effort at the immediate time point.
+\noindent where all terms are defined above but now the equation for performance also includes Effort$_t$, which is the value of effort at time $t$, and $b$, the coefficient relating effort to performance. This set of equations says that effort is simply a product of itself over time (with error), whereas performance is a function of itself and also effort at the immediate time point.
 
 What if effort causes performance after some lag? That is, perhaps we posit that effort does not immediately cause performance but instead causes performance after some period of time. If the lag effect were 2, that would mean that Effort$_t$ causes Performance$_{t+2}$, and to express the "lag 2 effect" mathematically we would use the following:
 
