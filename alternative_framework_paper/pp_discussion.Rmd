@@ -16,6 +16,16 @@ The studies as a whole explore a number of dynamic principles. First, every stud
 
 Notice, however, that we also included an "opportunities" column in table one that highlights the principles not discussed in each article. Although researchers are thinking about lags and autocorrelation, there are other principles like initial conditions, equilibrium, timescales, random walks, stationarity, and endogeneity that have yet to be explored and are great opportunities to discover even more dynamics. We also noticed that many of the studies that assess autocorrelation do not have conceptual discussions about memory or self-similarity or constraints, but instead assess autocorrelation as a statistical hurdle to overcome before discussing the lag relationship of interest. It is certainly appropriate to assess -- especially to avoid inferential errors -- but we would like to reiterate that finding evidence of memory in a state is useful knowledge on its own and helps build theoretical understanding. 
 
+\begin{center}
+
+---------------
+
+Insert Table 1 Here
+
+---------------
+
+\end{center}
+
 Finally, many of the principles that we highlight as opportunities do not require grueling extra work. Rather, they are simple points to consider to (a) deter inferential errors and (b) learn more about the system without requiring any new cumbersome data collection, just a different point of view. We hope this paper will ignite more study into the principles we described. 
 
 ## What Dynamics Is Not

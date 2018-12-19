@@ -46,5 +46,5 @@ An example is in @liebovitch2010dynamics explanation and model of conflict and c
 
 ### Describing Trajectories
 
-In this paper we are introducing concepts and statistical properties that merit attention as we approach dynamics. We want to close this section by pointing readers to a wonderful paper by Monge (1990) that provides basic vocabularly for describing trajectories. He discusses terms like trend, periodicity, and cycles -- lexicon for patterns over time rather than key concepts that are emphasized here. We feel that his paper should be required reading for anyone interested in dynamics. 
+In this paper we are introducing concepts and statistical properties that merit attention as we approach dynamics. We want to close this section by pointing readers to a paper by Monge (1990) that provides basic vocabularly for describing trajectories. He discusses terms like trend, periodicity, and cycles -- lexicon for patterns over time rather than key concepts that are emphasized here. We feel that his paper should be required reading for anyone interested in dynamics. 
 
