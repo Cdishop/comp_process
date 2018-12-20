@@ -4,11 +4,11 @@ output: pdf_document
 
 ## Mathematics and Statistics
 
-We are now going to translate some of the concepts into math. Doing so will (a) reiterate the principles above, (b) introduce new dynamic principles, and (c) make it easier to talk about some of the more complicated statistical properties of dynamic modeling that we turn to in the final section.
+We now translate some of the concepts into math. Doing so will (a) reiterate the principles above, (b) introduce new dynamic principles, and (c) make it easier to talk about some of the more complicated statistical properties of dynamic modeling that we turn to in the final section.
 
 ### Basic Concepts In Equations
 
-Remember that in dynamics we are focused on memory, self-similarity, and constraints as states move across time. What we are going to do here is begin to capture those ideas with equations using performance as an example. First, consider performance across time:
+Remember that in dynamics we focus on memory, self-similarity, and constraints as states move across time. Here, we capture those ideas with equations using performance as an example. First, consider performance across time:
 
 \begin{equation}
 \textrm{Performance}_{t} = \textrm{Performance}_{t-1}
@@ -19,14 +19,14 @@ Remember that in dynamics we are focused on memory, self-similarity, and constra
 Although this first equation seems disceptively simple, we have already captured memory. Performance in this case is perfectly self-similar. What if, instead, performance is similar but not perfectly self-similar across time? To capture this idea we need a new term:
 
 \begin{equation}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t-1}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t-1}
 \end{equation}
 
-\noindent where $a$ is the extent to which performance is self-similar and all other terms are defined above. $a$ is a coeffient relating performance now to performance at the next moment, and when you estimate that term in a statistical model it is called an autoregressive term. When the autoregressive term is large performance is highly self-similar, whereas when $a$ is close to zero performance has less self-similarity. Two other statistical terms for self-similarity you may come across include autocorrelation and serial correlation -- both refer to the correlation a state has with itself over time. 
+\noindent where $a$ is the extent to which performance is self-similar and all other terms are defined above.
 
-### Fundamental Autoregressive Behaviors
+### Fundamental Behaviors
 
-There are fundamental behaviors of dynamic states based on their autoregressive terms, and these are shown in figure \ref{dynamics_plot}. The top row of figure \ref{dynamics_plot} shows the trajectory of states with autoregressive terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and extreme oscillations when $a$ is negative. When the autoregressive term falls between zero and one in absolute value, conversely, the state converges to equilibrium -- shown in the bottom two panels. Either the state oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). Again, these behaviors hold for all states given the respective self-similarity terms shown in the figure. 
+There are fundamental behaviors of dynamic states based on their self-similarity or memory terms and these are shown in Figure \ref{dynamics_plot}. The top row of Figure \ref{dynamics_plot} shows the trajectory of states with terms that are greater than one in absolute value. These large terms produce explosive behavior -- exponential growth when $a$ is positive and extreme oscillations when $a$ is negative. When the term falls between zero and one in absolute value, conversely, the state converges to equilibrium -- shown in the bottom two panels. Either the state oscillates at a decreasing rate until it reaches equilibrium (when $a$ is negative) or it converges there smoothly (when $a$ is positive). Again, these behaviors hold for all states given the respective self-similarity terms shown in the Figure. 
 
 \begin{center}
 
@@ -46,16 +46,14 @@ Predator-prey relationships are a typical example of a system in dynamic equilib
 
 ### Stochastics
 
-Our route so far has been deterministic -- the mathematical representations do not contain error. Stochastics, stated simply, refers to processes with error, and there are a host of additional principles to consider once error enters the conceptual space. Consider our simple difference equation from above, adding an error component produces:
+Our route so far has been deterministic -- the mathematical representations do not contain error. Stochastics, stated simply, refers to processes with error and there are a host of additional principles to consider once error enters the conceptual space. Consider our simple difference equation from above, adding an error component produces:
 
 \begin{equation}
 \label{diffE}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t-1} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t-1} + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into performance at each time point. Errors cause performance to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push performance to a higher value and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors and large errors are less likely than small errors. Any time we have an accumulation of random error we get a normal distribution [@mcelreath_statistical_2016]. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time.
-
-It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs." An aggregation of randomness is a normal distribution.
+\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into performance at each time point. Errors cause performance to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push performance to a higher value and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors and large errors are less likely than small errors. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time. It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs."
 
 ### White Noise and Random Walks
 
@@ -64,23 +62,23 @@ There are two fundamental stochastic processes: white noise and random walks. Wh
 \begin{equation}
 \begin{split}
 \label{whitenoise}
-\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\
+\textrm{Performance}_{t} &= a * \textrm{Performance}_{t-1} + e_{t} \\
 a &= 0
 \end{split}
 \end{equation}
 
-\noindent Here, all we have is error over time; the lower panel of figure \ref{noise} shows the behavior of a white noise process. Random walks are similar, but $a$ is now equal to one.
+\noindent Here, all we have is error over time; the lower panel of Figure \ref{noise} shows the behavior of a white noise process. Random walks are similar, but $a$ is now equal to one.
 
 \begin{equation}
 \begin{split}
 \label{rw}
-\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\ 
+\textrm{Performance}_{t} &= a * \textrm{Performance}_{t-1} + e_{t} \\ 
 a &= 1 \\ 
 \end{split}
 \end{equation}
 
 
-\noindent This representation is also an error process but now error is not the only operator, performance retains self-similarity across time as well. The upper panel of figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
+\noindent This representation is also an error process but now error is not the only operator, performance retains self-similarity across time as well. The upper panel of Figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
 
 Random walks and white noise are error processes over time. Both flucutate randomly, but random walks retain some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. This step is currently absent in our literature but, again, is the essential starting place in econometrics. 
 
@@ -103,11 +101,11 @@ With multivariate systems we need multiple equations -- one for each state. Befo
 
 \begin{equation}
 \label{sysy}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + e_{t}
 \end{equation}
 \begin{equation}
 \label{sysx}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent Here, both equations posit that their state is a function of its prior self to the extent of the autoregressive term ($a$). Notice that there are no cross-relationships, we are simply representing a system with two independent variables over time. It is of course also possible to introduce relationships among the different states with more terms.
@@ -116,11 +114,11 @@ First, consider a system where effort concurrently causes performance. Another w
 
 \begin{equation}
 \label{sysy2}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + b * \textrm{Effort}_{t} + e_{t}
 \end{equation}
 \begin{equation}
 \label{sysx2}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but now the equation for performance also includes Effort$_t$, which is the value of effort at time $t$, and $b$, the coefficient relating effort to performance. This set of equations says that effort is simply a product of itself over time (with error), whereas performance is a function of itself and also effort at the immediate time point.
@@ -129,11 +127,11 @@ What if effort causes performance after some lag? That is, perhaps we posit that
 
 \begin{equation}
 \label{sysy3}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + b * \textrm{Effort}_{t - 2} + e_{t}
 \end{equation}
 \begin{equation}
 \label{sysx3}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent Here, all terms are nearly identical to what we saw above but now there is a lag-two effect from effort to performance. Performance is now a function of both its immediately prior self and the value of effort from two time points ago. 
@@ -142,11 +140,11 @@ What if we want to convey feedback, or a reciprocal relationship between effort 
 
 \begin{equation}
 \label{sysy3}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + b * \textrm{Effort}_{t - 2} + e_{t}
 \end{equation}
 \begin{equation}
 \label{sysx3}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + b \textrm{Performance}_{t - 2} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + b * \textrm{Performance}_{t - 2} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but now effort and performance are reciprocally related. Both are determined by themselves at the immediately prior time point and the other state two time points in the past. Effort happens, and two moments later this influences performance, and two moments later this goes back to influence effort, and so on throughout time. All the while, both states retain self-similarity -- they fluctuate and develop but only under the constraints afforded by the autoregressive terms. 

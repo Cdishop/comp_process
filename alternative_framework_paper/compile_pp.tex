@@ -213,9 +213,10 @@ assesses fatigue with self-report surveys -- one in the morning, another
 at the first work break, a third at the end of work, and the last in the
 evening -- among a sample of Dutch employees. All surveys measure
 fatigue, and the morning survey also assessses sleep quality whereas the
-fourth measures psychological detachment. He estimates fatigue growth
-curves and correlates sleep quality and psychological detachment with
-both the fatigue intercept and slope, respectively.
+fourth measures psychological detachment. He examines his questions via
+growth-curve modeling, estimates fatigue growth curves, and correlates
+sleep quality and psychological detachment with both the fatigue
+intercept and slope, respectively.
 
 Dunford et al. (2012) examine burnout trajectories over two years. They
 motivate their study by stating that, \enquote{theoretically, much of
@@ -334,19 +335,19 @@ frequent sampling.
 Dynamics}\label{opening-the-door-to-dynamics}}
 
 Both frameworks above get things moving toward dynamics. They consider
-great notions like within-person trajectories, patterns over time, and
-lag relationships, and they are clearly exploring domains where prior
-research was limited. What we want to do is expose researchers to
-principles outside of the toolkit they are currently familiar with,
-outside of frameworks that are couched in statistical models like growth
-curves and relationship patterns with random coefficient models. There
-are a host of dynamic principles to cover. Some are concepts, ways of
-thinking that are necessary to appreciate as researchers and theorists
-explore dynamic phenomona. Others are statistical properties that arise
-when researchers apply models to longitudinal data structures -- they
-are statistical issues that produce inferential errors if left
-unchecked, and they are important across all types of longitudinal
-models.
+great notions like inter-individual differences in intra-individual
+trend, patterns over time, and lag relationships, and they are clearly
+exploring domains where prior research was limited. We want to expose
+researchers to principles outside of the toolkit they are currently
+familiar with, outside of frameworks that are couched in statistical
+models like growth curves and relationship patterns with random
+coefficient models. There are a host of dynamic principles to cover.
+Some are concepts, ways of thinking that are necessary to appreciate as
+researchers and theorists explore dynamic phenomona. Others are
+statistical properties that arise when researchers apply models to
+longitudinal data structures -- they are statistical issues that produce
+inferential errors if left unchecked, and they are important across all
+types of longitudinal models.
 
 \hypertarget{dynamics}{%
 \section{Dynamics}\label{dynamics}}
@@ -389,6 +390,13 @@ across people. When we instead focus on how values fluctuate across time
 we call them \enquote{states.} Performance as a variable, therefore,
 focuses on the set of values across people, whereas performance as a
 state focuses on its values across time.
+
+Researchers have indirectly called attention to the dynamic notion of
+states by distinguishing traits, or stable individual differences, from
+states. This distinction is prevalent in personality resarch (e.g.,
+Dalal et al., 2015 ; Hamaker, Nesselroade, \& Molenaar, 2007 ), but also
+emerges in motivation (e.g., Beck \& Schmidt, 2013; Dragoni, 2005) and
+emotion (e.g., Miner \& Glomb, 2010) research, among others.
 
 The convention to label states is to use what is called a state vector.
 A state vector for depletion, fatigue, and performance would be:
@@ -477,18 +485,29 @@ interested in finding the \enquote{true} cause, direction of effects, or
 the exact coefficient between one state and another, but we are
 interested in the pattern of reciprocal relationships across time.
 
-\hypertarget{time-scales}{%
-\subsubsection{Time Scales}\label{time-scales}}
+\hypertarget{timescales}{%
+\subsubsection{Timescales}\label{timescales}}
 
-Researchers can gain valuable insights by considering the timescales of
-dynamics. Consider the temperature of a building and each of its
-interior rooms. The quick dynamics occur from room to room. Air
-molecules pass between them until they are all roughly the same
-temperature. But the weather outside also influences the temperature of
-the building as a whole -- it just takes longer to occur. When the sun
-comes up it does not immediately change the room-to-room dynamics. The
-room to room dynamic influences have short lags, whereas the influence
-of the outside temperature on any specific room has a much longer lag.
+Timescales are an important concept in systems with lags, memory,
+constraints, and reciprocal influence. Consider the temperature of a
+building. The quick dynamics occur from room to room, where air
+molecules pass between rooms until all are roughly the same temperature.
+The exterior weather, conversely, influences the building under a
+different, delayed timescale. Heat confronts the exterior walls, warms
+them, and ultimately influences the entire building only after a much
+longer period of time than the interior air-flow.
+
+Mathieu and Taylor (2006) provide another timescales example with
+respect to employee motivation. \enquote{Consider a work redesign effort
+intended to empower employees and thereby to enhance their work
+motivation with the aim of increasing customer satisfaction. How long
+does it take to establish the new work design? If employees are indeed
+more motivated to perform, how long will it take for customers to notice
+and for them to become more satisfied?} (p.~1035). Note that we are
+emphasizing the timescales of the underlying phenomena, not measurement
+timing. Measurement timing is of course an important issue but it has
+received attention elsewhere (James, Mulaik, \& Brett, 1982; Kenny,
+1979).
 
 \hypertarget{boundary-space}{%
 \subsubsection{Boundary Space}\label{boundary-space}}
@@ -500,7 +519,11 @@ systems with reciprocal influence and constraints there are boundaries
 on where processes can go. Communication may fluctuate day to day, and
 it may even increase steadily as an employee transitions into a new
 role, but it is unlikely that it will continue to increase or decrease
-without bound forever.
+without bound forever. Estimating a quadratic term does not resolve this
+issue. A predicted quadratic line can appear to level-off, but it
+appears so because the prediction line is cut-off by the number of
+observed time points in the study -- a quadratic term implies a full
+U-shaped trajectory.
 
 \hypertarget{initial-conditions}{%
 \subsubsection{Initial Conditions}\label{initial-conditions}}
@@ -531,13 +554,13 @@ the initial conditions of the actors involved.
 \hypertarget{describing-trajectories}{%
 \subsubsection{Describing Trajectories}\label{describing-trajectories}}
 
-In this paper we are introducing concepts and statistical properties
-that merit attention as we approach dynamics. We want to close this
-section by pointing readers to a paper by Monge (1990) that provides
-basic vocabularly for describing trajectories. He discusses terms like
-trend, periodicity, and cycles -- lexicon for patterns over time rather
-than key concepts that are emphasized here. We feel that his paper
-should be required reading for anyone interested in dynamics.
+In this paper we introduce concepts and statistical properties that
+merit attention as we approach dynamics. We want to close this section
+by pointing readers to a paper by Monge (1990) that provides basic
+vocabularly for describing trajectories. He discusses terms like trend,
+periodicity, and cycles -- lexicon for patterns over time rather than
+key concepts that are emphasized here. We feel that his paper should be
+required reading for anyone interested in dynamics.
 
 \hypertarget{mathematics-and-statistics}{%
 \subsection{Mathematics and
@@ -554,9 +577,9 @@ in the final section.
 Equations}\label{basic-concepts-in-equations}}
 
 Remember that in dynamics we are focused on memory, self-similarity, and
-constraints as states move across time. What we are going to do here is
-begin to capture those ideas with equations using performance as an
-example. First, consider performance across time:
+constraints as states move across time. Here, we begin to capture those
+ideas with equations using performance as an example. First, consider
+performance across time:
 
 \begin{equation}
 \textrm{Performance}_{t} = \textrm{Performance}_{t-1}
@@ -575,35 +598,27 @@ What if, instead, performance is similar but not perfectly self-similar
 across time? To capture this idea we need a new term:
 
 \begin{equation}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t-1}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t-1}
 \end{equation}
 
 \noindent where \(a\) is the extent to which performance is self-similar
-and all other terms are defined above. \(a\) is a coeffient relating
-performance now to performance at the next moment, and when you estimate
-that term in a statistical model it is called an autoregressive term.
-When the autoregressive term is large performance is highly
-self-similar, whereas when \(a\) is close to zero performance has less
-self-similarity. Two other statistical terms for self-similarity you may
-come across include autocorrelation and serial correlation -- both refer
-to the correlation a state has with itself over time.
+and all other terms are defined above.
 
-\hypertarget{fundamental-autoregressive-behaviors}{%
-\subsubsection{Fundamental Autoregressive
-Behaviors}\label{fundamental-autoregressive-behaviors}}
+\hypertarget{fundamental-behaviors}{%
+\subsubsection{Fundamental Behaviors}\label{fundamental-behaviors}}
 
 There are fundamental behaviors of dynamic states based on their
-autoregressive terms, and these are shown in figure \ref{dynamics_plot}.
-The top row of figure \ref{dynamics_plot} shows the trajectory of states
-with autoregressive terms that are greater than one in absolute value.
-These large terms produce explosive behavior -- exponential growth when
-\(a\) is positive and extreme oscillations when \(a\) is negative. When
-the autoregressive term falls between zero and one in absolute value,
+self-similarity or memory terms and these are shown in Figure
+\ref{dynamics_plot}. The top row of Figure \ref{dynamics_plot} shows the
+trajectory of states with terms that are greater than one in absolute
+value. These large terms produce explosive behavior -- exponential
+growth when \(a\) is positive and extreme oscillations when \(a\) is
+negative. When the term falls between zero and one in absolute value,
 conversely, the state converges to equilibrium -- shown in the bottom
 two panels. Either the state oscillates at a decreasing rate until it
 reaches equilibrium (when \(a\) is negative) or it converges there
 smoothly (when \(a\) is positive). Again, these behaviors hold for all
-states given the respective self-similarity terms shown in the figure.
+states given the respective self-similarity terms shown in the Figure.
 
 \begin{center}
 
@@ -647,13 +662,13 @@ net dynamics of the states remain stable.
 
 Our route so far has been deterministic -- the mathematical
 representations do not contain error. Stochastics, stated simply, refers
-to processes with error, and there are a host of additional principles
-to consider once error enters the conceptual space. Consider our simple
+to processes with error and there are a host of additional principles to
+consider once error enters the conceptual space. Consider our simple
 difference equation from above, adding an error component produces:
 
 \begin{equation}
 \label{diffE}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t-1} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t-1} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but \(e_{t}\) represents an
@@ -665,16 +680,12 @@ value and at \(t+1\) to a lower value. Errors are therefore said to be
 random because we cannot predict their value at any specific \(t\). In
 aggregation (i.e., averaged across time), however, positive errors
 cancel negative errors and large errors are less likely than small
-errors. Any time we have an accumulation of random error we get a normal
-distribution (McElreath, 2016). In stochastic systems, therefore, the
-errors are said to be distributed \(N(0, 1)\) -- that is, random and
-unpredictable at any specific \(t\) but distributed with certain
-constraints across time.
-
-It can also be helpful to think about what error is not. Anything that
-is systematic, predictable, or common (using those in layman's terms)
+errors. In stochastic systems, therefore, the errors are said to be
+distributed \(N(0, 1)\) -- that is, random and unpredictable at any
+specific \(t\) but distributed with certain constraints across time. It
+can also be helpful to think about what error is not. Anything that is
+systematic, predictable, or common (using those in layman's terms)
 cannot be error -- leaving error to be the random \enquote{left overs.}
-An aggregation of randomness is a normal distribution.
 
 \hypertarget{white-noise-and-random-walks}{%
 \subsubsection{White Noise and Random
@@ -687,7 +698,7 @@ zero in equation \ref{diffE} produces a white noise process.
 \begin{equation}
 \begin{split}
 \label{whitenoise}
-\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\
+\textrm{Performance}_{t} &= a * \textrm{Performance}_{t-1} + e_{t} \\
 a &= 0
 \end{split}
 \end{equation}
@@ -699,7 +710,7 @@ walks are similar, but \(a\) is now equal to one.
 \begin{equation}
 \begin{split}
 \label{rw}
-\textrm{Performance}_{t} &= a \textrm{Performance}_{t-1} + e_{t} \\ 
+\textrm{Performance}_{t} &= a * \textrm{Performance}_{t-1} + e_{t} \\ 
 a &= 1 \\ 
 \end{split}
 \end{equation}
@@ -754,10 +765,10 @@ performance and effort, we need one equation for each.
 
 \begin{equation}
 \label{sysy}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent Here, both equations posit that their state is a function of
@@ -772,10 +783,10 @@ Another way to say this is that effort\(_t\) causes performance\(_t\):
 
 \begin{equation}
 \label{sysy2}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + b * \textrm{Effort}_{t} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx2}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but now the equation for
@@ -794,10 +805,10 @@ following:
 
 \begin{equation}
 \label{sysy3}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + b * \textrm{Effort}_{t - 2} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx3}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent Here, all terms are nearly identical to what we saw above but
@@ -812,10 +823,10 @@ equations with a simple change:
 
 \begin{equation}
 \label{sysy3}
-\textrm{Performance}_{t} = a \textrm{Performance}_{t - 1} + b \textrm{Effort}_{t - 2} + e_{t}
+\textrm{Performance}_{t} = a * \textrm{Performance}_{t - 1} + b * \textrm{Effort}_{t - 2} + e_{t}
 \end{equation} \begin{equation}
 \label{sysx3}
-\textrm{Effort}_{t} = a \textrm{Effort}_{t - 1} + b \textrm{Performance}_{t - 2} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + b * \textrm{Performance}_{t - 2} + e_{t}
 \end{equation}
 
 \noindent where all terms are defined above but now effort and
@@ -854,7 +865,7 @@ random walk and white noise.\label{noise}}
 \hypertarget{dynamic-modeling}{%
 \subsection{Dynamic Modeling}\label{dynamic-modeling}}
 
-We have introduced some fundemental concepts for dynamics. Memory,
+Above, we introduced fundemental concepts for dynamics. Memory,
 constraints, initial conditions, equilibrium, reciprocal influence --
 these elements constitute the underlying dynamics and are ingredients to
 grapple with as researchers consider dynamic phenomenon. Dynamic
@@ -865,8 +876,13 @@ glass up to their observed data and its statistical properties and
 clearly identify the underlying dynamics. Unfortunately we do not live
 in that world. Instead, there are a host of challenges that must be
 considered when researchers collect longitudinal data and estimate
-models to make inferences about dynamics. In this section we are going
-to describe stationarity, dynamic panel bias, and ergodicity.
+models to make inferences about dynamics. In this section we describe
+stationarity, dynamic panel bias, and ergodicity. Note that throughout
+the rest of the paper we replace the layman's term for \(a\)
+(self-similarity) with its more common name in the statistical
+literature: autoregression, serial correlation, or autocorrelation --
+all of these refer to the relationship a state has with itself over
+time.
 
 \hypertarget{stationarity}{%
 \subsubsection{Stationarity}\label{stationarity}}
@@ -1000,24 +1016,24 @@ getting our thinking beyond static, cross-sectional associations. They
 were appropriate first steps toward dynamics given our field's history
 with random coefficient models and recent introduction to growth curve
 modeling, but there are many dynamic principles outside the context of a
-specific longitudinal model -- we broached them here. Taking a dynamic
+specific longitudinal model -- we presented them here. Taking a dynamic
 perspective means focusing on memory, constraints, timescales,
 reciprocal influence, initial conditions, and exploring an array of
 satistical properties like serial correlation and stationarity. Taking a
 dynamic perspective means being seriously concerned that your trajectory
 is not simply a random walk or white noise process.
 
-We are going to close this paper with three short, unique sections to
-solidify the principles and what we mean by a dynamic perspective. In
-the first section we highlight recent dynamic studies that explore some
-of the principles discussed here. Then, we consider what dynamics is
-not. We conclude by presenting the linear dynamic systems model as the
+We close this paper with three short, unique sections to solidify the
+principles and what we mean by a dynamic perspective. In the first
+section we highlight recent dynamic studies that explore some of the
+principles discussed here. Then, we consider what dynamics is not. We
+conclude by presenting the linear dynamic systems model as the
 fundamental framework for dynamic investigations.
 
 \hypertarget{recent-work}{%
 \subsection{Recent Work}\label{recent-work}}
 
-There are a variety of great studies already exploring some of the key
+There are several great studies already exploring some of the key
 dynamic properties. To get a sense for this literature and to highlight
 the principles that they capture we searched for empirical studies that
 were (1) published in the last five years (2) in the \emph{Journal of
@@ -1026,7 +1042,7 @@ Management Journal} and (3) contained \enquote{dynamic} or
 \enquote{dynamics} in the title. We exclude research that is
 cross-sectional, ethnographic, or focuses only on growth/covariates of
 growth. The articles and the dynamic notions that they emphasize are
-listed in table one.
+listed in Table one.
 
 The studies as a whole explore a number of dynamic principles. First,
 every study emphasizes lags -- they evaluate associations, influence,
@@ -1051,19 +1067,19 @@ exciting dynamic perspectives that our literature is beginning to
 expose.
 
 Notice, however, that we also included an \enquote{opportunities} column
-in table one that highlights the principles not discussed in each
-article. Although researchers are thinking about lags and
-autocorrelation, there are other principles like initial conditions,
-equilibrium, timescales, random walks, stationarity, and endogeneity
-that have yet to be explored and are great opportunities to discover
-even more dynamics. We also noticed that many of the studies that assess
-autocorrelation do not have conceptual discussions about memory or
-self-similarity or constraints, but instead assess autocorrelation as a
-statistical hurdle to overcome before discussing the lag relationship of
-interest. It is certainly appropriate to assess -- especially to avoid
-inferential errors -- but we would like to reiterate that finding
-evidence of memory in a state is useful knowledge on its own and helps
-build theoretical understanding.
+in table one that highlights the principles that could be examined with
+the data that currently exist but are not discussed in each article.
+Although researchers are thinking about lags and autocorrelation, there
+are other principles like initial conditions, equilibrium, timescales,
+random walks, stationarity, and endogeneity that have yet to be explored
+and are great opportunities to discover even more dynamics. We also
+noticed that many of the studies that assess autocorrelation do not have
+conceptual discussions about memory or self-similarity or constraints,
+but instead assess autocorrelation as a statistical hurdle to overcome
+before discussing the lag relationship of interest. It is certainly
+appropriate to assess -- especially to avoid inferential errors -- but
+we would like to reiterate that finding evidence of memory in a state is
+useful knowledge on its own and helps build theoretical understanding.
 
 \begin{center}
 
@@ -1076,18 +1092,17 @@ Insert Table 1 Here
 \end{center}
 
 Finally, many of the principles that we highlight as opportunities do
-not require grueling extra work. Rather, they are simple points to
-consider to (a) deter inferential errors and (b) learn more about the
-system without requiring any new cumbersome data collection, just a
-different point of view. We hope this paper will ignite more study into
-the principles we described.
+not require grueling extra work. Rather, they can be examined without
+any new data collection to (a) learn more about the system and (b) deter
+inferential errors. We hope this paper will ignite more study into the
+principles we described.
 
 \hypertarget{what-dynamics-is-not}{%
 \subsection{What Dynamics Is Not}\label{what-dynamics-is-not}}
 
 During a time when authors were discussing what constitues theory,
 Sutton and Staw (1995) produced a useful article describing what theory
-is not -- and it is a conerstone reading for management, organizational
+is not -- it is a conerstone reading for management, organizational
 behavior, human resources, and organizational psychology programs across
 the country. A similar approach may be useful here, where addressing
 what dynamics is not could help researchers fully grasp its content.
@@ -1114,14 +1129,14 @@ they do argue that they are studying dynamics because state behaviors
 differ at time 3 compared to time 2. Identifying that time 3 states and
 relationship patterns are different from those at time 2 is useful, but
 it is not dynamics, it is not characterizing how past behavior
-constrains how states or relationships unfold through time, or how
-states from one moment reach others at subsequent moments. In concrete
-terms, finding that job satisfaction is high for newcomers and low for
-old-timers is not dynamics, neither is recognizing that it positively
-relates to performance during week one but negatively relates to
-performance after a month on the job, but studying how job satisfaction
-unfolds through time based on its constraints, self-similarity, initial
-conditions, and reciprocal sources of influence is.
+constrains new state patterns or how states from one moment reach others
+at subsequent moments. In concrete terms, finding that job satisfaction
+is high for newcomers and low for old-timers is not dynamics, neither is
+recognizing that it positively relates to performance during week one
+but negatively relates to performance after a month on the job. Dynamics
+is studying how job satisfaction unfolds through time based on its
+constraints, self-similarity, initial conditions, and reciprocal sources
+of influence.
 
 \hypertarget{static-relationships-across-time-are-not-dynamics.}{%
 \subsubsection{Static relationships across time are not
@@ -1138,7 +1153,7 @@ on satisfaction on time \(t\) and report the relationship. Their
 analysis, therefore, considers the following relationship:
 
 \begin{equation}
-\textrm{Satisfaction}_{t} = a \textrm{Burnout}_{t} + e_{t}
+\textrm{Satisfaction}_{t} = a * \textrm{Burnout}_{t} + e_{t}
 \end{equation}
 
 \noindent where satisfaction at time 1 is related to burnout at time 1,
@@ -1148,7 +1163,7 @@ Now consider a slight change. The researchers instead examine
 self-similarity in satisfaction and a lag effect from burnout. That is:
 
 \begin{equation}
-\textrm{Satisfaction}_{t} = a \textrm{Satisfaction}_{t - 1} + b \textrm{Burnout}_{t - 1} + e_{t}
+\textrm{Satisfaction}_{t} = a * \textrm{Satisfaction}_{t - 1} + b * \textrm{Burnout}_{t - 1} + e_{t}
 \end{equation}
 
 \noindent where satisfaction at time 5 is related to its prior self and
@@ -1165,7 +1180,8 @@ implies that any state behaviors or relationships among the states
 follow a seemingly odd sequence: relationships happen at one moment and
 then are wiped out and replaced by completely new behavior and
 relationship patterns at the next. Finally, it represents a world where
-burnout instantaneously causes satisfaction.
+burnout instantaneously causes satisfaction. Virtually all studies that
+use a time-varying covariates model adopt this perspective.
 
 The second, dynamic perspective represents a much different structure.
 Satisfaction is constrained by where it was in the past and therefore it
@@ -1173,8 +1189,8 @@ cannot bounce to extreme levels without first moving from its prior
 state. Moreover, the effect from burnout takes time to occur and aligns
 with intuitive and theoretical notions of causality. Finally, the
 patterns between satisfaction and burnout will ultimately drive toward
-equilibrium. A study of relationship patterns over time is useful, but
-it is not dynamics.
+equilibrium. A study of relationships over time is useful, but it is not
+dynamics.
 
 \hypertarget{dynamics-is-not-synonymous-with-growth.}{%
 \subsubsection{Dynamics is not synonymous with
@@ -1268,6 +1284,12 @@ Article & Dynamic Notions & Opportunities\\
 \setlength{\leftskip}{0.5in}
 
 \hypertarget{refs}{}
+\leavevmode\hypertarget{ref-beck2013state}{}%
+Beck, J. W., \& Schmidt, A. M. (2013). State-level goal orientations as
+mediators of the relationship between time pressure and performance: A
+longitudinal study. \emph{Journal of Applied Psychology}, \emph{98}(2),
+354.
+
 \leavevmode\hypertarget{ref-boulding1955defense}{}%
 Boulding, K. E. (1955). In defense of statics. \emph{The Quarterly
 Journal of Economics}, \emph{69}(4), 485--502.
@@ -1277,6 +1299,18 @@ Braun, M. T., Kuljanin, G., \& DeShon, R. P. (2013). Spurious Results in
 the Analysis of Longitudinal Data in Organizational Research.
 \emph{Organizational Research Methods}, \emph{16}(2), 302--330.
 doi:\href{https://doi.org/10.1177/1094428112469668}{10.1177/1094428112469668}
+
+\leavevmode\hypertarget{ref-dalal2015personality}{}%
+Dalal, R. S., Meyer, R. D., Bradshaw, R. P., Green, J. P., Kelly, E. D.,
+\& Zhu, M. (2015). Personality strength and situational influences on
+behavior: A conceptual review and research agenda. \emph{Journal of
+Management}, \emph{41}(1), 261--287.
+
+\leavevmode\hypertarget{ref-dragoni2005understanding}{}%
+Dragoni, L. (2005). Understanding the emergence of state goal
+orientation in organizational work groups: The role of leadership and
+multilevel climate perceptions. \emph{Journal of Applied Psychology},
+\emph{90}(6), 1084.
 
 \leavevmode\hypertarget{ref-dunford_is_2012}{}%
 Dunford, B. B., Shipp, A. J., Boss, R. W., Angermeier, I., \& Boss, A.
@@ -1309,6 +1343,11 @@ behavioral consequences of helping at work. \emph{Personnel Psychology},
 Granger, C. W., \& Newbold, P. (1974). Spurious regressions in
 econometrics. \emph{Journal of Econometrics}, \emph{2}(2), 111--120.
 
+\leavevmode\hypertarget{ref-hamaker2007integrated}{}%
+Hamaker, E. L., Nesselroade, J. R., \& Molenaar, P. C. (2007). The
+integrated trait--state model. \emph{Journal of Research in
+Personality}, \emph{41}(2), 295--315.
+
 \leavevmode\hypertarget{ref-hardy_interrelationships_2018}{}%
 Hardy, J. H., Day, E. A., \& Steele, L. M. (2018). Interrelationships
 Among Self-Regulated Learning Processes: Toward a Dynamic Process-Based
@@ -1326,6 +1365,10 @@ doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000104
 Ilgen, D. R., \& Hulin, C. L. (2000). \emph{Computational modeling of
 behavior in organizations: The third scientific discipline.} American
 Psychological Association.
+
+\leavevmode\hypertarget{ref-james1982causal}{}%
+James, L., Mulaik, S., \& Brett, J. M. (1982). \emph{Causal analysis:
+Assumptions, models, and data}. Newbury Park, CA: Sage publications.
 
 \leavevmode\hypertarget{ref-jebb_time_2015}{}%
 Jebb, A. T., Tay, L., Wang, W., \& Huang, Q. (2015). Time series
@@ -1353,6 +1396,10 @@ Keele, L., \& Kelly, N. J. (2006). Dynamic models for dynamic theories:
 The ins and outs of lagged dependent variables. \emph{Political
 Analysis}, \emph{14}(2), 186--205.
 
+\leavevmode\hypertarget{ref-kenny1979correlation}{}%
+Kenny, D. A. (1979). \emph{Correlation and causality}. \emph{New York:
+Wiley}.
+
 \leavevmode\hypertarget{ref-koopman_integrating_2016}{}%
 Koopman, J., Lanaj, K., \& Scott, B. A. (2016). Integrating the Bright
 and Dark Sides of OCB: A Daily Investigation of the Benefits and Costs
@@ -1371,9 +1418,17 @@ Liebovitch, L. S., Vallacher, R. R., \& Michaels, J. (2010). Dynamics of
 cooperation--competition interaction models. \emph{Peace and Conflict},
 \emph{16}(2), 175--188.
 
-\leavevmode\hypertarget{ref-mcelreath_statistical_2016}{}%
-McElreath, R. (2016). \emph{Statistical Rethinking: A Bayesian Course
-with Examples in R and Stan} (Vol. 122). CRC Press.
+\leavevmode\hypertarget{ref-mathieu2006clarifying}{}%
+Mathieu, J. E., \& Taylor, S. R. (2006). Clarifying conditions and
+decision points for mediational type inferences in organizational
+behavior. \emph{Journal of Organizational Behavior: The International
+Journal of Industrial, Occupational and Organizational Psychology and
+Behavior}, \emph{27}(8), 1031--1056.
+
+\leavevmode\hypertarget{ref-miner2010state}{}%
+Miner, A. G., \& Glomb, T. M. (2010). State mood, task performance, and
+behavior at work: A within-persons approach. \emph{Organizational
+Behavior and Human Decision Processes}, \emph{112}(1), 43--57.
 
 \leavevmode\hypertarget{ref-monge_theoretical_1990}{}%
 Monge, P. R. (1990). Theoretical and analytical issues in studying
