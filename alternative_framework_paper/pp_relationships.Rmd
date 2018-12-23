@@ -16,6 +16,6 @@ Another popular approach to "getting dynamic" is to examine relationships across
 
 ## Summary
 
-These authors are also interested in dynamics. All test for within-person variance and motivate their studies by stating that "the good stuff" resides in the within-person relationships. They examine concurrent or lagged relationships across their variables over time, and they are able to collect many observations due to their frequent sampling.
+These authors are also interested in dynamics. All test for within-person variance and motivate their studies by stating that "the good stuff" resides in the within-person relationships. They examine concurrent or lagged relationships across their variables over time and collect many observations due to their frequent sampling.
 
 
