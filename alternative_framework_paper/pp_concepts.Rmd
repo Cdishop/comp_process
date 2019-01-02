@@ -8,11 +8,11 @@ These first principles are concepts or ways of thinking.
 
 ### States
 
-In organizational science we typically use the term "variable" to describe a measured construct and our lens is usually across people. Burnout, depletion, fatigue, OCBs, performance, job satisfaction -- these are all variables; they are quantities with values that fluctuate across people. When we instead focus on how values fluctuate across time we call them "states." Performance as a variable, therefore, focuses on the set of values across people, whereas performance as a state focuses on its values across time. 
+In organizational science we typically use the term "variable" to describe a measured construct and our lens is usually across people. Burnout, depletion, fatigue, OCBs, performance, job satisfaction -- these are all variables; they are quantities with values that fluctuate across people. When we instead focus on how those values fluctuate across time we call them "states." Performance as a variable, therefore, focuses on the set of values across people, whereas performance as a state focuses on its values across time. 
 
 Researchers have indirectly called attention to the dynamic notion of states by distinguishing traits, or stable individual differences, from states. This distinction is prevalent in personality resarch [e.g., @dalal2015personality ;@hamaker2007integrated ], but also emerges in motivation [e.g., @beck2013state; @dragoni2005understanding] and emotion [e.g., @miner2010state] research, among others.
 
-The convention to label states is to use what is called a state vector. A state vector for depletion, fatigue, and performance would be: (depletion, fatigue, burnout) and its mathematical equivalent is, $(x_1, x_2, x_3)$ or $(x_1 ...x_n)$. We will use this notation later after introducing more concepts.
+The convention to label states is to use what is called a state vector. A state vector for depletion, fatigue, and performance would be: (depletion, fatigue, performance) and its mathematical equivalent is, $(x_1, x_2, x_3)$ or $(x_1 ...x_n)$. We will use this notation later after introducing more concepts.
 
 ### Memory and Self-similarity
 
@@ -34,7 +34,7 @@ Many research questions can be boiled down to trying to find antecedents and out
 
 ### Timescales
 
-Timescales are an important concept in systems with lags, memory, constraints, and reciprocal influence. Consider the temperature of a building. The quick dynamics occur from room to room, where air molecules pass between rooms until all are roughly the same temperature. The exterior weather, conversely, influences the building under a different, delayed timescale. Heat confronts the exterior walls, warms them, and ultimately influences the entire building only after a much longer period of time than the interior air-flow. 
+Timescales are an important concept in systems with lags, memory, constraints, and reciprocal influence. Eeven within one phenomenon, effects can occur on different timescales. Consider the temperature of a building. The quick dynamics occur from room to room, where air molecules pass between rooms until all are roughly the same temperature. The exterior weather, conversely, influences the building under a different, delayed timescale. Heat confronts the exterior walls, warms them, and ultimately influences the entire building only after a much longer period of time than the interior air-flow. 
 
 @mathieu2006clarifying provide another timescales example with respect to employee motivation. "Consider a work redesign effort intended to empower employees and thereby to enhance their work motivation with the aim of increasing customer satisfaction. How long does it take to establish the new work design? If employees are indeed more motivated to perform, how long will it take for customers to notice and for them to become more satisfied?" (p. 1035). Note that we are emphasizing the timescales of the underlying phenomena, not measurement timing. Measurement timing is of course an important issue but it has received attention elsewhere [@kenny1979correlation; @james1982causal].
 
