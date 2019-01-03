@@ -16,7 +16,7 @@ The convention to label states is to use what is called a state vector. A state 
 
 ### Memory and Self-similarity
 
-Arguably the most fundamental concept in dynamics is that states often have memory -- they are self-similar across time. Performance may vary or fluctuate over time, but it retains self-similarity from one moment to the next. Job satisfaction now is some function of what it was just prior to now. My conscientiousness tomorrow will have carry over from what it was today, as will the number of people I communicate with. Researchers of course may argue that some states have no memory, but the point here is that states tend to retain something about what they are from moment to moment. 
+A fundamental concept in dynamics is that states often have memory -- they are self-similar across time. Performance may vary or fluctuate over time, but it retains self-similarity from one moment to the next. Job satisfaction now is some function of what it was just prior to now. My conscientiousness tomorrow will have carry over from what it was today, as will the number of people I communicate with. Researchers of course may argue that some states have no memory, but the point here is that states tend to retain something about what they are from moment to moment. 
 
 ### Constraints
 
@@ -30,7 +30,7 @@ Memory is not limited to a single variable. Job satisfaction may also be influen
 
 ### Reciprocal Influence
 
-Many research questions can be boiled down to trying to find antecedents and outcomes, but when we focus on dynamics and start thinking about memory, constraints, and lags across multiple states we focus less on "true causes" or antecendents and more on reciprocal influence. This kind of thinking often takes the form, "and then this happens." Consider the (example) reciprocal relationships between performance, superior support, and fatigue. I perform my assignment well so my boss sends a nice email letting me know that she appreciates my work. Feeling inspired, I subsequently increase my performance and again perform well on my second assignment. Having increased my performance, however, I am now more fatigued and on my third assignment I perform poorly -- and this poor performance is not followed by another congratulatory email. In this simple example, performance, fatigue, and superior support fluctuate across time. We are not necessarily interested in finding the "true" cause, direction of effects, or the exact coefficient between one state and another, but we are interested in the pattern of reciprocal relationships across time. 
+Many research questions can be boiled down to trying to find antecedents and outcomes, but when we focus on dynamics and start thinking about memory, constraints, and lags across multiple states we focus less on "true causes" or antecendents and more on reciprocal influence. This kind of thinking often takes the form, "and then this happens." Consider the (example) reciprocal relationships between performance, superior support, and fatigue. I perform my assignment well so my boss sends a nice email letting me know that she appreciates my work. Feeling inspired, I subsequently increase my performance and again perform well on my second assignment. Having increased my performance, however, I am now more fatigued and on my third assignment I perform poorly -- and this poor performance is not followed by another congratulatory email. In this simple example, performance, fatigue, and superior support fluctuate across time. We are not necessarily interested in finding the "true" cause, direction of effects, or the exact coefficient between one state and another, but instead the pattern of reciprocal relationships across time. 
 
 ### Timescales
 
@@ -40,7 +40,7 @@ Timescales are an important concept in systems with lags, memory, constraints, a
 
 ### Boundary Space
 
-When researchers estimate a growth curve and argue for a positive linear trend they are implying that the trajectory increases forever. Job satisfaction perpetually increases; OCBs go down endlessly. In dynamic systems with reciprocal influence and constraints there are boundaries on where processes can go. Communication may fluctuate day to day, and it may even increase steadily as an employee transitions into a new role, but it is unlikely that it will continue to increase or decrease without bound forever. Estimating a quadratic term does not resolve this issue. A predicted quadratic line can appear to level-off, but it appears so because the prediction line is cut-off by the number of observed time points in the study -- a quadratic term implies a full U-shaped trajectory. 
+When researchers estimate a growth curve and argue for a positive linear trend they are implying that the trajectory increases forever. Job satisfaction perpetually increases; OCBs go down endlessly. In dynamic systems with reciprocal influence and constraints, there are boundaries on where processes can go. Communication may fluctuate day to day, and it may even increase steadily as an employee transitions into a new role, but it is unlikely that it will continue to increase or decrease without bound forever. Estimating a quadratic term does not resolve this issue. A predicted quadratic line can appear to level-off, but it appears so because the prediction line is cut-off by the number of observed time points in the study -- a quadratic term implies a full U-shaped trajectory. 
 
 ### Initial Conditions
 
@@ -50,5 +50,5 @@ An example is in @liebovitch2010dynamics explanation and model of conflict and c
 
 ### Describing Trajectories
 
-In this paper we introduce concepts and statistical properties that merit attention as we approach dynamics. We want to close this section by pointing readers to a paper by Monge (1990) that provides basic vocabularly for describing trajectories. He discusses terms like trend, periodicity, and cycles -- lexicon for patterns over time rather than key concepts that are emphasized here. We feel that his paper should be required reading for anyone interested in dynamics. 
+In this paper, we introduce concepts and statistical properties that merit attention as we approach dynamics. We want to close this section by pointing readers to a paper by Monge (1990) that provides basic vocabulary for describing trajectories. He discusses terms like trend, periodicity, and cycles -- lexicon for patterns over time rather than key concepts that are emphasized here. We feel that his paper should be required reading for anyone interested in dynamics. 
 
