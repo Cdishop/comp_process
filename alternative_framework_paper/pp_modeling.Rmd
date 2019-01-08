@@ -36,5 +36,5 @@ Dynamic panel bias is the combined effect of these two biases. Lagged DVs concep
 
 In the section above we spoke about unobserved heterogeneity, which can be thought of as heterogeneity of individual differences or unit effects. That is, there are unmeasured differences that result in Rachel's trajectory being different from Bob's. An appropriate next question is, when is it reasonable to pool Rachel and Bob's data? When can we be confident that there is homogeneity of dynamics? This is the notion of ergodicity.
 
-*One more paragraph about it. HELP.*
+*One more paragraph about it.*
 
