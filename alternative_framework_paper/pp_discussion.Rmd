@@ -40,7 +40,7 @@ We agree with these statements but extend them slightly to encompass a dynamic p
 
 ### Static relationships across time are not dynamics.
 
-Longitudinal data do not automatically make the focus of a study dynamics. Many studies that collect longitudinal data examine static relationships across time rather than dynamics, and to see this consider two simple (mock) examples of studies on burnout and job satisfaction. 
+Longitudinal data do not automatically make the focus of a study dynamics. Many studies that collect longitudinal data do not examine dynamics but instead assess static relationships across time. Consider two simple (mock) examples of studies on burnout and job satisfaction. 
 
 The first study collects self reports of burnout and job satisfaction everyday for three weeks. The researchers regress burnout at time $t$ on satisfaction on time $t$ and report the relationship. Their analysis, therefore, considers the following relationship:
 
@@ -104,14 +104,14 @@ highlight_df <- data.frame(
 	       linebreak("Lags\nAutocorrelation\nReciprocal relationships"),
 	       linebreak("Lags\nAutoregression")),
  
- "C" = c(linebreak("Initial conditions\nMemory\nTimescales\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nMemory\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity"),
-	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nReciprocal relationships\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nEndogeneity")))
+ "C" = c(linebreak("Initial conditions\nMemory\nTimescales\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nReciprocal relationships\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nMemory\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nErgodicity"),
+	       linebreak("Initial conditions\nTimescales\nBoundary conditions\nEquilibrium\nReciprocal relationships\nRandom walks and white noise\nUnobserved heterogeneity\nStationarity\nErgodicity")))
 
 
 
