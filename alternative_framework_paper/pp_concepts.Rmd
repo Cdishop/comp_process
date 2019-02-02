@@ -4,7 +4,7 @@ output: pdf_document
 
 ## Concepts and Conventions
 
-These first principles are concepts or ways of thinking.
+These first principles are concepts to help researchers think about dynamics.
 
 ### States
 
@@ -16,7 +16,7 @@ The convention to label states is to use what is called a state vector. A state 
 
 ### Memory and Self-similarity
 
-A fundamental concept in dynamics is that states often have memory -- they are self-similar across time. Performance may vary or fluctuate over time, but it retains self-similarity from one moment to the next. Job satisfaction now is some function of what it was just prior to now. My conscientiousness tomorrow will have carry over from what it was today, as will the number of people I communicate with. Researchers of course may argue that some states have no memory, but the point here is that states tend to retain something about what they are from moment to moment. 
+A fundamental concept in dynamics is that states often have memory -- they are self-similar across time. Individual, dyadic, and team performance may vary or fluctuate over time, but they retain self-similarity from one moment to the next. Job satisfaction now is some function of what it was just prior to now. My conscientiousness tomorrow will have carry over from what it was today, as will the number of people I communicate with. Researchers of course may argue that some states have no memory, but the point here is that states tend to retain something about what they are from moment to moment. 
 
 ### Constraints
 

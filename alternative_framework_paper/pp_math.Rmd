@@ -6,8 +6,6 @@ output: pdf_document
 
 We now translate some of the concepts into math. Doing so (a) reiterates the principles above, (b) introduces new dynamic principles, and (c) makes it easier to talk about some of the more complicated statistical properties of dynamic modeling that we turn to in the final section.
 
-### Basic Concepts In Equations
-
 Remember that dynamics emphasizes memory, self-similarity, and constraints as states move across time. Here, we capture those ideas with equations using performance as an example. First, consider performance across time:
 
 \begin{equation}
@@ -95,7 +93,7 @@ Insert Figure \ref{noise} Here
 
 ### Dynamic Systems
 
-Up to this point we have focused on a single state, performance. Remember that dynamic perspectives also consider reciprocal influence, but before moving to two or more state equations notice how much researchers can explore with single states. It is of course interesting and fun to ask how two or more states are related, or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. Our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
+Up to this point we have focused on a single state, performance. Remember that dynamic perspectives also consider reciprocal influence, but before moving to two or more state equations notice how much researchers can explore with single states. It is of course interesting and fun to ask how two or more states are related or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. Our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
 
 With multivariate systems we need multiple equations -- one for each state. Before, we demonstrated a simple difference equation for performance. In a multivariate system with two states, such as performance and effort, we need one equation for each.
 
@@ -147,7 +145,7 @@ What if we want to convey feedback, or a reciprocal relationship between effort 
 \textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + b * \textrm{Performance}_{t - 2} + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but now effort and performance are reciprocally related. Both are determined by themselves at the immediately prior time point and the other state two time points in the past. Effort happens, and two moments later this influences performance, and two moments later this goes back to influence effort, and so on throughout time. All the while, both states retain self-similarity -- they fluctuate and develop but only under the constraints afforded by the autoregressive terms. 
+\noindent where all terms are defined above but now effort and performance are reciprocally related. Both are determined by themselves at the immediately prior time point and the other state two time points in the past. Effort happens and two moments later it influences performance, and two moments later performance goes back to influence effort, and so on throughout time. All the while, both states retain self-similarity -- they fluctuate and develop but only under the constraints afforded by the autoregressive terms. 
 
 We can make the equations more complicated by continuing to add variables or longer/shorter lag effects, but the beauty of math is its freedom to capture whatever the researcher desires. These equations are language tools to help researchers convey dynamics. In addition, researchers who are interested in studying dynamic phenomena will likely find use in explicitly stating their hypothesized relationships in equation form. In general, language-based theorizing is good at description but struggles with specificity and complex relationships. The shortcomings of such theories can be amplified when a researcher attempts to discuss how variables interact dynamically over time because it is difficult for people to conceptualize how these systems develop as time iterates [@cronin2009don]. Placing one’s theorizing into the actual underlying equations will help formalize and organize the researcher’s thoughts and assist in avoiding inferential and logical errors in the theory. 
 
