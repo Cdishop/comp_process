@@ -12,7 +12,7 @@ Remember that dynamics emphasizes memory, self-similarity, and constraints as st
 \textrm{Performance}_{t} = \textrm{Performance}_{t-1}
 \end{equation}
 
-\noindent where performance at time $t$ is exactly identical to what it was at $t-1$. This equation says that performance does not fluctuate, change, move, or grow across time -- there is zero trend. Performance is, say, four at time one, four at time two, four at time three, and so on. This type of equation is called a difference equation, and it is a foundational tool in dynamics. 
+\noindent where performance at time $t$ is exactly identical to what it was at $t-1$. This equation says that performance does not fluctuate, change, move, or grow across time -- there is zero trend. Performance is, say, four at time one, four at time two, four at time three, and so on. This type of equation is called a difference equation, and it is a foundational tool in dynamics [@hunter_state_2018; @boulding1955defense; @flytzanis1976linear]. 
 
 Although this first equation seems deceptively simple, we already captured memory. Performance in this case is perfectly self-similar. What if, instead, performance is similar but not perfectly self-similar across time? To capture this idea we need a new term:
 
@@ -40,8 +40,6 @@ Insert Figure \ref{dynamics_plot} Here
 
 Notice that we introduced a new word in our description above: equilibrium. Equilibrium describes the state of a variable that no longer changes unless disturbed by an outside force. It can also be used to describe multiple variable systems -- where equilibrium again means that the state remains constant unless disturbed by an outside force, but here state refers to the the entire system (i.e., all of the variables). In *static* equilibriums, the system has reached a point of stability with no change, whereas *dynamic* equilibrium refers to systems with changes and fluctuations but no net change. That is, the variables fluctuate across time in periodic ways but the general state of the system does not diverge so as to change the behavior of the entire system. 
 
-Predator-prey relationships are a typical example of a system in dynamic equilibrium. For example, consider a predator-prey relationship between bobcats and rabbits. As the rabbit population increases, the amount of available food for the bobcats goes up. Over time, this raises the population of the bobcats as well. Now with a greater bobcat population, the rabbit population decreases because more are being killed. Over time, this reduction in food decreases the bobcat population. The back and forth oscillating pattern is the outcome of a state system in dynamic equilibrium, where despite random disturbances across time the net dynamics of the states remain stable.
-
 ### Stochastics
 
 Our route so far has been deterministic -- the mathematical representations do not contain error. Stochastics, stated simply, refers to processes with error and there are a host of additional principles to consider once error enters the conceptual space. Consider the difference equation from above, adding an error component produces:
@@ -51,11 +49,11 @@ Our route so far has been deterministic -- the mathematical representations do n
 \textrm{Performance}_{t} = a * \textrm{Performance}_{t-1} + e_{t}
 \end{equation}
 
-\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into performance at each time point. Errors cause performance to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push performance to a higher value and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors and large errors are less likely than small errors. In stochastic systems, therefore, the errors are said to be distributed $N(0, 1)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time. It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs."
+\noindent where all terms are defined above but $e_{t}$ represents an error term that is incorporated into performance at each time point. Errors causes performance to be higher or lower at specific points in time than we would have expected given a deterministic process. For example, at time $t$ the error might push performance to a higher value and at $t+1$ to a lower value. Errors are therefore said to be random because we cannot predict their value at any specific $t$. In aggregation (i.e., averaged across time), however, positive errors cancel negative errors and large errors are less likely than small errors. In stochastic systems, therefore, the errors are said to be distributed $N(0, \sigma^2)$ -- that is, random and unpredictable at any specific $t$ but distributed with certain constraints across time. It can also be helpful to think about what error is not. Anything that is systematic, predictable, or common (using those in layman's terms) cannot be error -- leaving error to be the random "left overs."
 
 ### White Noise and Random Walks
 
-There are two fundamental stochastic processes: white noise and random walks. White noise is a process that only has error. Setting $a$ to zero in equation \ref{diffE} produces a white noise process.
+There are two fundamental stochastic processes: white noise and random walks [@petris]. White noise is a process that only has error. Setting $a$ to zero in equation \ref{diffE} produces a white noise process.
 
 \begin{equation}
 \begin{split}
@@ -78,7 +76,7 @@ a &= 1 \\
 
 \noindent This representation is also an error process but now error is not the only operator, performance retains self-similarity across time as well. The upper panel of Figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
 
-Random walks and white noise are error processes over time. Both flucutate randomly, but random walks retain some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. This step is currently absent in our literature but, again, is the essential starting place in econometrics. 
+Random walks and white noise are error processes over time. Both flucutate randomly, but random walks retain some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. 
 
 
 \begin{center}
@@ -93,7 +91,7 @@ Insert Figure \ref{noise} Here
 
 ### Dynamic Systems
 
-Up to this point we have focused on a single state, performance. Remember that dynamic perspectives also consider reciprocal influence, but before moving to two or more state equations notice how much researchers can explore with single states. It is of course interesting and fun to ask how two or more states are related or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. Our field could substantially benefit from spending more time plotting and analyzing the individual trajctories of every measured variable in a study. 
+Up to this point we have focused on a single state, performance. Remember that dynamic perspectives also consider reciprocal influence, but before moving to two or more state equations notice how much researchers can explore with single states. It is of course interesting to ask how two or more states are related or posit a complex sequence among a set of states. But understanding whether or not one state exhibits white noise or random walk behavior across time is a valuable study in itself. 
 
 With multivariate systems we need multiple equations -- one for each state. Before, we demonstrated a simple difference equation for performance. In a multivariate system with two states, such as performance and effort, we need one equation for each.
 
@@ -116,10 +114,10 @@ First, consider a system where effort concurrently causes performance, or where 
 \end{equation}
 \begin{equation}
 \label{sysx2}
-\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}
+\textrm{Effort}_{t} = a * \textrm{Effort}_{t - 1} + e_{t}.
 \end{equation}
 
-\noindent where all terms are defined above but now the equation for performance also includes Effort$_t$, which is the value of effort at time $t$, and $b$, the coefficient relating effort to performance. This set of equations says that effort is simply a product of itself over time (with error), whereas performance is a function of itself and also effort at the immediate time point.
+\noindent All terms are defined above but now the equation for performance also includes Effort$_t$, which is the value of effort at time $t$, and $b$, the coefficient relating effort to performance. This set of equations says that effort is simply a product of itself over time (with error), whereas performance is a function of itself and also effort at the immediate time point.
 
 What if effort causes performance after some lag? That is, perhaps we posit that effort does not immediately cause performance but instead causes performance after some period of time. If the lag effect were 2, that would mean that Effort$_t$ causes Performance$_{t+2}$, and to express the "lag 2 effect" mathematically we would use the following:
 
