@@ -63,7 +63,7 @@ a &= 0
 \end{split}
 \end{equation}
 
-\noindent Here, all we have is error over time; the lower panel of Figure \ref{noise} shows the behavior of a white noise process. Random walks are similar, but $a$ is now equal to one.
+\noindent Here, all we have is error over time. Random walks are similar, but $a$ is equal to one.
 
 \begin{equation}
 \begin{split}
@@ -74,20 +74,10 @@ a &= 1 \\
 \end{equation}
 
 
-\noindent This representation is also an error process but now error is not the only operator, performance retains self-similarity across time as well. The upper panel of Figure \ref{noise} presents a random walk. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable: they could go up or down at any moment. 
+\noindent This representation is also an error process but with an additional operator alongside error itself: performance retains self-similarity across time as well. Although random walks can sometimes appear to be moving in a systematic direction, ultimately their behavior is unpredictable; they could go up or down at any moment. 
 
 Random walks and white noise are error processes over time. Both flucutate randomly, but random walks retain some self-similarity through time. These two principles are the null hypotheses of time-series analysis in econometrics -- where the first task in a longitudinal study is to demonstrate that you are investigating something that is not a random walk or white noise. That is, if a researcher wanted to show the effect of IVs on performance across time they would first need to demonstrate that performance and all of their IVs are not random walks or white noise processes. 
 
-
-\begin{center}
-
----------------
-
-Insert Figure \ref{noise} Here
-
----------------
-
-\end{center}
 
 ### Dynamic Systems
 
@@ -207,43 +197,3 @@ ggplot(df, aes(x = Time, y = value)) +
 ```
 
 
-```{r, echo = F, fig.cap='Two fundamental stochastic processes: a random walk and white noise.\\label{noise}'}
-
-set.seed(5)
-timer <- 100
-
-wn <- numeric(timer)
-wn[1] <- 2
-rw <- numeric(timer)
-rw[1] <- 2
-
-for(i in 2:timer){
-  
-  wn[i] <- rnorm(1, 0, 1)
-  rw[i] <- 1* rw[i - 1] + rnorm(1,0,1)
-  
-}
-
-stoch_df <- data.frame(
-  'time' = c(c(1:timer), c(1:timer)),
-  'label' = c(rep('random_walk', timer), rep('white_noise', timer)),
-  'value' = c(rw, wn)
-)
-
-stoch_df$label <- factor(stoch_df$label,
-                         labels = c('Random Walk',
-                                    'White Noise'))
-
-
-library(ggplot2)
-rwwn <- ggplot(stoch_df, aes(x = time, y = value)) + 
-  geom_point() + 
-  geom_line() + 
-  facet_wrap(~label, ncol = 1, scales = 'free_y') + 
-  theme_classic() + 
-  ylab('Value') + 
-  xlab('Time')
-
-rwwn
-
-```

@@ -10,11 +10,3 @@ oscillates explosively or grows exponentially. When the coefficient is
 between zero and one (in absolute value) the trajectory converges to
 equilibrium.\label{dynamics_plot}}
 \end{figure*}
-\begin{figure*}[hbt]
-\ifnextchar[{\eatarg}{}
-
-\centering
-\includegraphics{figs/unnamed-chunk-10-1.pdf}
-\caption{\label{fig:unnamed-chunk-10}Two fundamental stochastic processes: a
-random walk and white noise.\label{noise}}
-\end{figure*}
