@@ -3,10 +3,5 @@
 
 \centering
 \includegraphics{figs/unnamed-chunk-9-1.pdf}
-\caption{\label{fig:unnamed-chunk-9}Trajectories driving toward equilibrium
-or explosive behavior based on their autoregressive coefficient. When
-the coefficient is greater than one (in absolute value) the trajectory
-oscillates explosively or grows exponentially. When the coefficient is
-between zero and one (in absolute value) the trajectory converges to
-equilibrium.\label{dynamics_plot}}
+\caption{\label{fig:unnamed-chunk-9}Trajectories driving toward equilibrium or explosive behavior based on their autoregressive coefficient. When the coefficient is greater than one (in absolute value) the trajectory oscillates explosively or grows exponentially. When the coefficient is between zero and one (in absolute value) the trajectory converges to equilibrium.\label{dynamics_plot}}
 \end{figure*}
