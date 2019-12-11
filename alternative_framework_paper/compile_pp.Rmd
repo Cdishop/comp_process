@@ -24,9 +24,9 @@ affiliation:
 
 
 author_note: |
-  This article is currently in press for the Handbook of Dynamic Organizational Behavior. It can be cited as:
+  This article is currently in press for the Handbook of Temporal Dynamic Organizational Behavior. It can be cited as:
   
-  Dishop, C. R., Olenick, J., & DeShon, R. P. (In press). Principles For Taking a Dynamic Perspective. In Griep, Y., Hansen, S. D., Vantilborgh, T., & Hofmans, J. (Ed.), Handbook of Dynamic Organizational Behavior. Edward Elgar Publishing.
+  Dishop, C. R., Olenick, J., & DeShon, R. P. (In press). Principles For Taking a Dynamic Perspective. In Griep, Y., Hansen, S. D., Vantilborgh, T., & Hofmans, J. (Ed.), Handbook of Temporal Dynamic Organizational Behavior. Edward Elgar Publishing.
 
 abstract: |
   Over the past two decades, researchers have become increasingly interested in dynamics. Longitudinal data structures are increasingly common and dynamic theories and hypotheses enter the literature every week. Despite more emphasis on dynamic relationships, researchers tend to discuss only a limited set of dynamic principles -- e.g., lags -- or couch their thinking with respect to a specific statistical model -- e.g., growth curves. Our field has without question benefited from studies turning to longitudinal data and exploring some dynamic ideas, but there are many more fundamental dynamic principles to consider. In this paper, we provide a host of dynamic principles to build consensus on what it means to take a dynamic perspective and provide new opportunities for researchers to emphasize as we enter this domain. 
