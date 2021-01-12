@@ -1,3 +1,6 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[english,,man]{apa6}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -6,35 +9,31 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
 \else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
+  \usepackage{unicode-math}
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-\usepackage{microtype}
+\usepackage[]{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
 \usepackage{hyperref}
-\hypersetup{unicode=true,
+\hypersetup{
             pdftitle={Principles For Taking a Dynamic Perspective},
-            pdfauthor={Christopher R. Dishop, Jeffrey Olenick, \& Richard. P DeShon},
             pdfkeywords={dynamic, dynamics, linear dynamic systems model, dynamic systems, longitudinal, process},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[shorthands=off,main=english]{babel}
-\else
-  \usepackage{polyglossia}
-  \setmainlanguage[]{english}
-\fi
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -44,60 +43,63 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
 
-%%% Use protect on footnotes to avoid problems with footnotes in titles
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 
-
-  \title{Principles For Taking a Dynamic Perspective}
-    \author{Christopher R. Dishop\textsuperscript{1}, Jeffrey Olenick\textsuperscript{1}, \& Richard. P DeShon\textsuperscript{1}}
-    \date{}
-  
-\shorttitle{DYNAMICS PRINCIPLES}
-\affiliation{
-\vspace{0.5cm}
-\textsuperscript{1} Michigan State University}
-\keywords{dynamic, dynamics, linear dynamic systems model, dynamic systems, longitudinal, process}
-\usepackage{csquotes}
+% Manuscript styling
 \usepackage{upgreek}
 \captionsetup{font=singlespacing,justification=justified}
 
+% Table formatting
 \usepackage{longtable}
 \usepackage{lscape}
-\usepackage{multirow}
-\usepackage{tabularx}
-\usepackage[flushleft]{threeparttable}
-\usepackage{threeparttablex}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
 
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\begin{center}\begin{threeparttable}}
+%   {\end{threeparttable}\end{center}\end{landscape}}
 \newenvironment{lltable}{\begin{landscape}\begin{center}\begin{ThreePartTable}}{\end{ThreePartTable}\end{center}\end{landscape}}
 
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
 \makeatletter
 \newcommand\LastLTentrywidth{1em}
 \newlength\longtablewidth
 \setlength{\longtablewidth}{1in}
 \newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
 
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
 
+% \usepackage{etoolbox}
+\makeatletter
+\patchcmd{\HyOrg@maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\makeatother
+\shorttitle{DYNAMICS PRINCIPLES}
+\author{Christopher R. Dishop\textsuperscript{1}, Jeffrey Olenick\textsuperscript{1}, \& Richard. P DeShon\textsuperscript{1}}
+\affiliation{
+\vspace{0.5cm}
+\textsuperscript{1} Michigan State University}
+\authornote{Dishop, C. R., Olenick, J., \& DeShon, R. P. (2020). Principles For Taking a Dynamic Perspective. In Griep, Y., Hansen, S. D., Vantilborgh, T., \& Hofmans, J. (Ed.), Handbook of Temporal Dynamic Organizational Behavior. Edward Elgar Publishing.
+
+
+Correspondence concerning this article should be addressed to Christopher R. Dishop, 316 Physics Rd, Psychology Building Room 348, East Lansing, MI 48823. E-mail: dishopch@msu.edu}
+\keywords{dynamic, dynamics, linear dynamic systems model, dynamic systems, longitudinal, process}
 \DeclareDelayedFloatFlavor{ThreePartTable}{table}
 \DeclareDelayedFloatFlavor{lltable}{table}
 \DeclareDelayedFloatFlavor*{longtable}{table}
@@ -107,17 +109,21 @@
 \usepackage{lineno}
 
 \linenumbers
+\usepackage{csquotes}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,main=english]{babel}
+\else
+  % load polyglossia as late as possible as it *could* call bidi if RTL lang (e.g. Hebrew or Arabic)
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+\fi
 
-\authornote{This article is currently in press for the Handbook of Temporal Dynamic Organizational Behavior. It can be cited as:
+\title{Principles For Taking a Dynamic Perspective}
 
-Dishop, C. R., Olenick, J., \& DeShon, R. P. (In press). Principles For Taking a Dynamic Perspective. In Griep, Y., Hansen, S. D., Vantilborgh, T., \& Hofmans, J. (Ed.), Handbook of Temporal Dynamic Organizational Behavior. Edward Elgar Publishing.
-
-Correspondence concerning this article should be addressed to Christopher R. Dishop, 316 Physics Rd, Psychology Building Room 348, East Lansing, MI 48823. E-mail: \href{mailto:dishopch@msu.edu}{\nolinkurl{dishopch@msu.edu}}}
+\date{}
 
 \abstract{
 Over the past two decades, researchers have become increasingly interested in dynamics. Longitudinal data structures are increasingly common and dynamic theories and hypotheses enter the literature every week. Despite more emphasis on dynamic relationships, researchers tend to discuss only a limited set of dynamic principles -- e.g., lags -- or couch their thinking with respect to a specific statistical model -- e.g., growth curves. Our field has without question benefited from studies turning to longitudinal data and exploring some dynamic ideas, but there are many more fundamental dynamic principles to consider. In this paper, we provide a host of dynamic principles to build consensus on what it means to take a dynamic perspective and provide new opportunities for researchers to emphasize as we enter this domain.
-
-
 }
 
 \begin{document}
@@ -482,7 +488,7 @@ Beck, J. W., \& Schmidt, A. M. (2013). State-level goal orientations as mediator
 Boulding, K. E. (1955). In defense of statics. \emph{The Quarterly Journal of Economics}, \emph{69}(4), 485--502.
 
 \leavevmode\hypertarget{ref-braun_spurious_2013}{}%
-Braun, M. T., Kuljanin, G., \& DeShon, R. P. (2013). Spurious Results in the Analysis of Longitudinal Data in Organizational Research. \emph{Organizational Research Methods}, \emph{16}(2), 302--330. doi:\href{https://doi.org/10.1177/1094428112469668}{10.1177/1094428112469668}
+Braun, M. T., Kuljanin, G., \& DeShon, R. P. (2013). Spurious Results in the Analysis of Longitudinal Data in Organizational Research. \emph{Organizational Research Methods}, \emph{16}(2), 302--330. \url{https://doi.org/10.1177/1094428112469668}
 
 \leavevmode\hypertarget{ref-cronin2009don}{}%
 Cronin, M. A., Gonzalez, C., \& Sterman, J. D. (2009). Why don't well-educated adults understand accumulation? A challenge to researchers, educators, and citizens. \emph{Organizational Behavior and Human Decision Processes}, \emph{108}(1), 116--130.
@@ -503,7 +509,7 @@ Dragoni, L. (2005). Understanding the emergence of state goal orientation in org
 Duggan, J. (2016). \emph{Systems dynamics modeling with r}. Springer International Publishing.
 
 \leavevmode\hypertarget{ref-dunford_is_2012}{}%
-Dunford, B. B., Shipp, A. J., Boss, R. W., Angermeier, I., \& Boss, A. D. (2012). Is burnout static or dynamic? A career transition perspective of employee burnout trajectories. \emph{Journal of Applied Psychology}, \emph{97}(3), 637--650. doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0027060}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0027060}
+Dunford, B. B., Shipp, A. J., Boss, R. W., Angermeier, I., \& Boss, A. D. (2012). Is burnout static or dynamic? A career transition perspective of employee burnout trajectories. \emph{Journal of Applied Psychology}, \emph{97}(3), 637--650. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0027060}
 
 \leavevmode\hypertarget{ref-engle_co-integration_1987}{}%
 Engle, R. F., \& Granger, C. W. (1987). Co-integration and error correction: Representation, estimation, and testing. \emph{Econometrica: Journal of the Econometric Society}, 251--276.
@@ -521,13 +527,13 @@ Granger, C. W., \& Newbold, P. (1974). Spurious regressions in econometrics. \em
 Hamaker, E. L., Nesselroade, J. R., \& Molenaar, P. C. (2007). The integrated trait--state model. \emph{Journal of Research in Personality}, \emph{41}(2), 295--315.
 
 \leavevmode\hypertarget{ref-hunter_state_2018}{}%
-Hunter, M. D. (2018). State Space Modeling in an Open Source, Modular, Structural Equation Modeling Environment. \emph{Structural Equation Modeling: A Multidisciplinary Journal}, \emph{25}(2), 307--324. doi:\href{https://doi.org/10.1080/10705511.2017.1369354}{10.1080/10705511.2017.1369354}
+Hunter, M. D. (2018). State Space Modeling in an Open Source, Modular, Structural Equation Modeling Environment. \emph{Structural Equation Modeling: A Multidisciplinary Journal}, \emph{25}(2), 307--324. \url{https://doi.org/10.1080/10705511.2017.1369354}
 
 \leavevmode\hypertarget{ref-hurwicz1950least}{}%
 Hurwicz, L. (1950). Least squares bias in time series. \emph{Statistical Inference in Dynamic Economic Models}, \emph{10}, 365--383.
 
 \leavevmode\hypertarget{ref-hulsheger_dawn_2016}{}%
-Hülsheger, U. R. (2016). From dawn till dusk: Shedding light on the recovery process by investigating daily change patterns in fatigue. \emph{Journal of Applied Psychology}, \emph{101}(6), 905--914. doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000104}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000104}
+Hülsheger, U. R. (2016). From dawn till dusk: Shedding light on the recovery process by investigating daily change patterns in fatigue. \emph{Journal of Applied Psychology}, \emph{101}(6), 905--914. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000104}
 
 \leavevmode\hypertarget{ref-ilgen_computational_2000}{}%
 Ilgen, D. R., \& Hulin, C. L. (2000). \emph{Computational modeling of behavior in organizations: The third scientific discipline.} American Psychological Association.
@@ -551,10 +557,10 @@ Kelderman, H., \& Molenaar, P. C. (2007). The effect of individual differences i
 Kenny, D. A. (1979). \emph{Correlation and causality}. \emph{New York: Wiley}.
 
 \leavevmode\hypertarget{ref-koopman_integrating_2016}{}%
-Koopman, J., Lanaj, K., \& Scott, B. A. (2016). Integrating the Bright and Dark Sides of OCB: A Daily Investigation of the Benefits and Costs of Helping Others. \emph{Academy of Management Journal}, \emph{59}(2), 414--435. doi:\href{https://doi.org/10.5465/amj.2014.0262}{10.5465/amj.2014.0262}
+Koopman, J., Lanaj, K., \& Scott, B. A. (2016). Integrating the Bright and Dark Sides of OCB: A Daily Investigation of the Benefits and Costs of Helping Others. \emph{Academy of Management Journal}, \emph{59}(2), 414--435. \url{https://doi.org/10.5465/amj.2014.0262}
 
 \leavevmode\hypertarget{ref-kuljanin_cautionary_2011}{}%
-Kuljanin, G., Braun, M. T., \& DeShon, R. P. (2011). A cautionary note on modeling growth trends in longitudinal data. \emph{Psychological Methods}, \emph{16}(3), 249--264. doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}
+Kuljanin, G., Braun, M. T., \& DeShon, R. P. (2011). A cautionary note on modeling growth trends in longitudinal data. \emph{Psychological Methods}, \emph{16}(3), 249--264. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}
 
 \leavevmode\hypertarget{ref-liebovitch2010dynamics}{}%
 Liebovitch, L. S., Vallacher, R. R., \& Michaels, J. (2010). Dynamics of cooperation--competition interaction models. \emph{Peace and Conflict}, \emph{16}(2), 175--188.
@@ -605,7 +611,7 @@ Ployhart, R. E., \& Vandenberg, R. J. (2010). Longitudinal research: The theory,
 Rosen, C. C., Koopman, J., Gabriel, A. S., \& Johnson, R. E. (2016). Who strikes back? A daily investigation of when and why incivility begets incivility. \emph{Journal of Applied Psychology}, \emph{101}(11), 1620.
 
 \leavevmode\hypertarget{ref-serang_correspondence_2018}{}%
-Serang, S., Grimm, K. J., \& Zhang, Z. (2018). On the Correspondence between the Latent Growth Curve and Latent Change Score Models. \emph{Structural Equation Modeling: A Multidisciplinary Journal}, 1--13. doi:\href{https://doi.org/10.1080/10705511.2018.1533835}{10.1080/10705511.2018.1533835}
+Serang, S., Grimm, K. J., \& Zhang, Z. (2018). On the Correspondence between the Latent Growth Curve and Latent Change Score Models. \emph{Structural Equation Modeling: A Multidisciplinary Journal}, 1--13. \url{https://doi.org/10.1080/10705511.2018.1533835}
 
 \leavevmode\hypertarget{ref-simon1991architecture}{}%
 Simon, H. A. (1991). The architecture of complexity. In \emph{Facets of systems science} (pp. 457--476). Springer.
@@ -614,13 +620,12 @@ Simon, H. A. (1991). The architecture of complexity. In \emph{Facets of systems 
 Sutton, R. I., \& Staw, B. M. (1995). What theory is not. \emph{Administrative Science Quarterly}, 371--384.
 
 \leavevmode\hypertarget{ref-vancouver_translating_2018}{}%
-Vancouver, J. B., Wang, M., \& Li, X. (2018). Translating Informal Theories Into Formal Theories: The Case of the Dynamic Computational Model of the Integrated Model of Work Motivation. \emph{Organizational Research Methods}, 109442811878030. doi:\href{https://doi.org/10.1177/1094428118780308}{10.1177/1094428118780308}
+Vancouver, J. B., Wang, M., \& Li, X. (2018). Translating Informal Theories Into Formal Theories: The Case of the Dynamic Computational Model of the Integrated Model of Work Motivation. \emph{Organizational Research Methods}, 109442811878030. \url{https://doi.org/10.1177/1094428118780308}
 
 \leavevmode\hypertarget{ref-voelkle_relating_2015}{}%
-Voelkle, M. C., \& Oud, J. H. L. (2015). Relating Latent Change Score and Continuous Time Models. \emph{Structural Equation Modeling: A Multidisciplinary Journal}, \emph{22}(3), 366--381. doi:\href{https://doi.org/10.1080/10705511.2014.935918}{10.1080/10705511.2014.935918}
+Voelkle, M. C., \& Oud, J. H. L. (2015). Relating Latent Change Score and Continuous Time Models. \emph{Structural Equation Modeling: A Multidisciplinary Journal}, \emph{22}(3), 366--381. \url{https://doi.org/10.1080/10705511.2014.935918}
 
 \leavevmode\hypertarget{ref-wooldridge2005simple}{}%
 Wooldridge, J. M. (2005). Simple solutions to the initial conditions problem in dynamic, nonlinear panel data models with unobserved heterogeneity. \emph{Journal of Applied Econometrics}, \emph{20}(1), 39--54.
-
 
 \end{document}
